@@ -29,6 +29,16 @@ body{
     font-size: 34px;
   }
 
+
+
+  #left-bottom-holder{
+    background: white;
+    height: 100vh; 
+    width: 100%; 
+    position:absolute; 
+    left: 0; 
+  }
+
   button#trigger-overlay:focus{
     outline:none;
   }
@@ -129,6 +139,19 @@ body{
     display: inline;
   }
 
+  #creep{
+    background: white;
+    height: 98vh;
+  }
+
+  #googlemaps { 
+    height: 98vh; 
+  }
+
+  #copy{
+    height: 2vh;
+  }
+
   #subheader-greeting {
     font-size: 74px;
     line-height: 92px;
@@ -217,16 +240,37 @@ body{
     text-transform: capitalize;
   }
 
-  .col-md-4.center-contact-cols span#build-something {
+  span#build-something {
     font-family: 'Roboto Slab', serif;
     text-align: center;
     font-size: 22px;
     font-weight: 400;
     color: #00FFD2;
     text-transform: capitalize;
+    padding-left: 30px;
   }
 
-  .col-md-4.right-contact-cols span#quote {
+  div#email-container {
+    padding-left: 8px;
+}
+
+  #social-holder{
+    padding-left: 25px;
+  }
+
+  div#bottom-top-holder {
+      padding-top: 100px;
+  }
+
+  div#bottom-middle-holder{
+    padding-top: 20px;
+  }
+
+  div#bottom-bottom-holder {
+      padding-top: 20px;
+  }
+
+  span#quote {
     position: relative;
     right: -12px;
     font-family: 'Roboto Slab', serif;
@@ -234,10 +278,6 @@ body{
     font-weight: 400;
     color: #00FFD2;
     text-transform: capitalize;
-  }
-
-  .col-md-4.center-contact-cols {  
-    text-align: center;
   }
 
   .col-md-4.right-contact-cols {
@@ -263,7 +303,6 @@ body{
     opacity: 0.9;
     top: 0; 
     left: 0; 
-    pointer-events: none;
   }
 
   h3#ui-id-1, h3#ui-id-3, h3#ui-id-5, h3#ui-id-7, h3#ui-id-9, h3#ui-id-11 {
@@ -421,9 +460,10 @@ body{
 /******************* Social Media Icons ***********************/
 /* Wrapper */
 .icon-button {
-  background-color: white;
+  background-color: rgb(230, 230, 230);
   border-radius: 3.6rem;
   cursor: pointer;
+  text-align: center;
   display: inline-block;
   font-size: 2.0rem;
   height: 3.6rem;
@@ -576,8 +616,6 @@ p {
 }
 
 div#bottom-copyright {
-  padding-top: 5px;
-  padding-bottom: 5px;
   text-transform: uppercase;
   font-family: helveticaneue;
   width: 100%;
@@ -585,6 +623,7 @@ div#bottom-copyright {
   background: rgba(0, 0, 0, 0.19);
   text-align: center;
   font-size: 11px;
+  height: 2vh;
 }
 
 div .col-md-12 {

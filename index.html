@@ -372,7 +372,6 @@
 
                 In the menu section I also made the videos using the Ken Burns effect in Adobe After Effects aswell as narrating them.
                 </p><br>
-                
                 </div>
                 <div id="accordian-dropDown-left" class="col-md-2 animated fadeInUp bottom-acc-container">
                   <h4 id="acc-dropdown-content-header">Technologies</h4>
@@ -383,8 +382,6 @@
                     <li id="tech-item">Action Script 3</li>
                   </ol>
                 </div>
-
-                
                 <div id="accordian-dropDown-right" class="col-md-6 animated fadeInUp bottom-acc-container">
                   <p id="dropDown-content">
                     <img class="img-responsive" src="img/vis.png">
@@ -394,7 +391,6 @@
           </div>
         </div>
       </div>
-
       <div id="section3" class="row">
         <div class="col-md-12">
         <section id="timeline">
@@ -499,18 +495,20 @@
         </div>
       </div>
 
-      <div id="section4" class="row">
-          <div class="col-md-12 bottom-class" id="subheader-greeting">Contact</div>
 
-          <div id="bottom-stuff" class="col-md-12">
-            <div class="col-md-4 left-contact-cols">
+      <div id="section4" class="row">
+        <div id="creep" class="col-md-6">
+            <div id="subheader-greeting">Contact</div>
+            
+            <div id="bottom-top-holder">
               <span id="build-something">Wanna build something?</span><br>
               <div id="email-container">
                 <span id="email-phone">michael.gannon13@gmail.com<br>0879240500</span>
               </div>
-            </div>
-            <div class="col-md-4 center-contact-cols"><span id="build-something">Wanna creep?</span>
-              <div id="bottom-social-icons">
+            </div>  
+            <div id="bottom-middle-holder">
+              <span id="build-something">Wanna Creep?</span><br>
+              <div id="social-holder">
                 <a target="_blank" href="https://www.linkedin.com/in/michael-gannon-4758198b?trk=hp-identity-name" class="icon-button twitter">
                   <i class="fa fa-linkedin"></i><span></span>
                 </a>
@@ -523,41 +521,25 @@
                 <a target="_blank" href="cv.pdf" class="icon-button google-plus">
                     <i class="fa fa-file-pdf-o"></i><span></span>
                 </a>
-                <!-- <div class='form-overlay'></div>
-                <div class='icon fa fa-pencil' id='form-container'>
-                  <span class='icon fa fa-close' id='form-close'></span>
-                  <div id='form-content'>
-                    <div id='form-head'>
-                      <h1 class='pre'>Get in touch</h1>
-                      <p class='pre'>Good choice...</p>
-                      <h1 class='post'>Thanks!</h1>
-                      <p class='post'>I'll be in touch ASAP</p>
-                    </div>
-                    <form>
-                      <input class='input name' name='user_name' placeholder='Your name please' type='text'>
-                      <input class='input email' name='user_email' placeholder='A contact email' type='text'>
-                      <select class='input select' name='subject'>
-                        <option disabled=''>What shall we talk about?</option>
-                        <option selected=''>About a new project</option>
-                        <option>About a job opportunity</option>
-                        <option>Let's do this over a coffee</option>
-                      </select>
-                      <textarea class='input message' placeholder='How can I help?'></textarea>
-                      <input class='input submit' type='submit' value='Send Message'>
-                    </form>
-                  </div>
-                </div> -->
               </div>
             </div>
-            <div class="col-md-4 right-contact-cols"><span id="quote">Wanna get a quote?</span><br>
-              <div id="form-holder"> 
-                <span id="quote-bottom">Complete the form below<br><a href="linktoform">FORM</a></span>
+            <div id="bottom-bottom-holder">
+              <span id="build-something">Wanna build something?</span><br>
+              <div id="email-container">
+                <span id="email-phone">michael.gannon13@gmail.com<br>0879240500</span>
               </div>
-            </div>
-          <div id="bottom-copyright" class="col-md-12 copyright-bottom">© 2016 Michael Gannon All Rights Reserved</div>
-        </div>  
+            </div> 
+        </div>
+
+        <div id="googlemaps" class="col-md-6">
+          <div ></div>
+        </div>
+        <div id="bottom-copyright" class="col-md-12">© 2016 Michael Gannon All Rights Reserved</div>
       </div>
-    </div>
+
+      </div>
+
+    </div> <!-- container-fluid end -->
     <div class="overlay overlay-hugeinc">
       <button type="button" class="overlay-close">Close</button>
       <nav>
@@ -593,101 +575,6 @@
             });
         });
 
- 
-// The latitude and longitude of your business / place
-var position = [27.1959739, 78.02423269999997];
- 
-function showGoogleMaps() {
- 
-    var latLng = new google.maps.LatLng(position[0], position[1]);
- 
-    var mapOptions = {
-        zoom: 16, // initialize zoom level - the max value is 21
-        streetViewControl: false, // hide the yellow Street View pegman
-        scaleControl: true, // allow users to zoom the Google Map
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        center: latLng
-    };
- 
-    map = new google.maps.Map(document.getElementById('section4'),
-        mapOptions);
- 
-    // Show the default red marker at the location
-    marker = new google.maps.Marker({
-        position: latLng,
-        map: map,
-        draggable: false,
-        animation: google.maps.Animation.DROP
-    });
-}
- 
-google.maps.event.addDomListener(window, 'load', showGoogleMaps);
-
-
-        // var formContainer = $('#form-container');
-
-        
-
-        // bindFormClick();
-        // //Opening the form
-        // function bindFormClick() {
-        //   $(formContainer).on('click', function(e) {
-        //     e.preventDefault();
-        //     toggleForm();
-        //     //Ensure container doesn't togleForm when open
-        //     $(this).off();
-        //   });
-        // }
-
-        // //Closing the form
-        // $('#form-close, .form-overlay').click(function(e) {
-        //   e.stopPropagation();
-        //   e.preventDefault();
-        //   toggleForm();
-        //   bindFormClick();
-        // });
-
-        // function toggleForm() {
-        //   $(formContainer).toggleClass('expand');
-        //   $(formContainer).children().toggleClass('expand');
-        //   $('body').toggleClass('show-form-overlay');
-        //   $('.form-submitted').removeClass('form-submitted');
-        // }
-
-        // //Form validation
-        // $('form').submit(function() {
-        //   var form = $(this);
-        //   form.find('.form-error').removeClass('form-error');
-        //   var formError = false;
-
-        //   form.find('.input').each(function() {
-        //     if ($(this).val() == '') {
-        //       $(this).addClass('form-error');
-        //       $(this).select();
-        //       formError = true;
-        //       return false;
-        //     } else if ($(this).hasClass('email') && !isValidEmail($(this).val())) {
-        //       $(this).addClass('form-error');
-        //       $(this).select();
-        //       formError = true;
-        //       return false;
-        //     }
-        //   });
-
-        //   if (!formError) {
-        //     $('body').addClass('form-submitted');
-        //     $('#form-head').addClass('form-submitted');
-        //     setTimeout(function() {
-        //       $(form).trigger("reset");
-        //     }, 1000);
-        //   }
-        //   return false;
-        // });
-
-        // function isValidEmail(email) {
-        //   var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
-        //   return pattern.test(email);
-        // };
 
         $("h3#accordian-header-text").click(function() {
           var $this = $(this);        
@@ -695,6 +582,39 @@ google.maps.event.addDomListener(window, 'load', showGoogleMaps);
           $this.addClass("active");
           console.log("bla");
         });
+
+
+
+ 
+    // The latitude and longitude of your business / place
+    var position = [53.2851751, -6.2696356];
+     
+    function showGoogleMaps() {
+     
+        var latLng = new google.maps.LatLng(position[0], position[1]);
+        var mapOptions = {
+            zoom: 16, // initialize zoom level - the max value is 21
+            streetViewControl: false, // hide the yellow Street View pegman
+            scaleControl: true, // allow users to zoom the Google Map
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            center: latLng
+        };
+     
+        map = new google.maps.Map(document.getElementById('googlemaps'),
+            mapOptions);
+     
+        // Show the default red marker at the location
+        marker = new google.maps.Marker({
+            position: latLng,
+            map: map,
+            draggable: false,
+            animation: google.maps.Animation.DROP
+        });
+    }
+     
+    google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+
+
 
         /* ---- particles.js config ---- */
         particlesJS("particles-js", {
