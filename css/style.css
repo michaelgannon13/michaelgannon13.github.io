@@ -29,8 +29,6 @@ body{
     font-size: 34px;
   }
 
-
-
   #left-bottom-holder{
     background: white;
     height: 100vh; 
@@ -205,7 +203,7 @@ body{
   li#tech-item {
     font-weight: 400;
     font-size: 14px;
-    color: rgb(0, 145, 255); /*or #FF2E63 #0CD1E5 #5EE6E4 #0434E8 #176ECA #0387FB*/
+    color: #00DEB7; /*or #FF2E63 #0CD1E5 #5EE6E4 #0434E8 #176ECA #0387FB*/
 }
 
   .col-md-4.left-contact-cols, .col-md-4.center-contact-cols, .col-md-4.right-contact-cols{
@@ -362,6 +360,7 @@ body{
     height: 79vh;
     overflow: scroll;
   }
+
   div#accordian-background {
     padding-left: 0;
     padding-right: 0;
@@ -375,7 +374,7 @@ body{
   }
 
   p#dropDown-content {
-    color: #848484;
+    color: #5A5A55;
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -393,6 +392,7 @@ body{
     -moz-box-shadow: none;
     box-shadow: none;
     outline: none;
+    clear: both;
   }
 
   h3#accordian-header-text:hover {
@@ -824,7 +824,7 @@ body {
   animation-fill-mode: forwards;
 }
 
-@-moz-keyframes squishBottom {
+/* @-moz-keyframes squishBottom {
   0% {
     margin-top: 32px;
     -webkit-transform: rotate(0deg);
@@ -1403,7 +1403,7 @@ body {
   100% {
     opacity: 1;
   }
-}
+} */
 
 
 .form-overlay {
@@ -1773,3 +1773,60 @@ input:-webkit-autofill {
             transform: rotate(15deg);
   }
 }
+
+/* Bootsrap breakpoint */
+@media (max-width: 995px) {
+   div#accordian-dropDown-left, div#accordian-dropDown-middle, div#accordian-dropDown-right{
+    height: auto;
+  }
+
+  h2#exp-edu {
+      font-size: 70px;
+  }
+
+  figcaption#left-items, figcaption#right-items {
+      font-size: 20px;
+  }
+
+  div#subheader-greeting {
+      font-size: 70px;
+  }
+
+  h3#accordian-header-text span#title-right, h3#accordian-header-text span#title-left {
+      font-size: 28px;
+  }
+
+  .timeline p, .timeline ol{
+      width: 92% !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

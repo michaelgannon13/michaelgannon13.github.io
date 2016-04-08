@@ -4,7 +4,7 @@
 }
 
 #timeline {
-  padding-top: 4%;
+  padding-top: 2%;
 }
 .timeline {
   height: 100%;
@@ -19,12 +19,12 @@
 }
 
 figcaption#left-items {
-    color: #00FFD2;
+    color: #9E9E9E;
     -webkit-text-stoke: 1px;
 }
 
 figcaption#right-items {
-    color: rgb(0, 67, 111);
+    color: #9E9E9E;
 }
 
 .timeline figcaption {
@@ -42,14 +42,14 @@ figcaption#right-items {
   margin-bottom: 0;
 }
 .timeline h6 {
-  color: #0090F5;
+  color: #00FFD2;
   font: 400 80% Tahoma;
 }
 .timeline p,
 .timeline ol {
   font: 300 95% 'lato';
   padding: 3px 0 20px 0;
-  color: #848484;
+  color: #5A5A55;
   width: 70%;
   font-size: 14px;
   line-height: 22px;
@@ -85,7 +85,7 @@ figcaption#right-items {
 }
 .timeline article:last-of-type h6,
 .timeline article:last-of-type a {
-  color: #40aa00;
+  color: #00436F;
 }
 .timeline article:last-of-type a:hover {
   color: #95D40D;
