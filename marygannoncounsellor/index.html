@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Front end Developer | UX/UI Designer | Project Manager</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700, 900' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script>
+      $(function() {
+        $( "#accordion" ).accordion({
+          heightStyle: "content",
+          collapsible: true,
+          active: "none",
+          animate: 300,
+          activate: function(event, ui) {
+            try {
+                theOffset = ui.newHeader.offset();
+                $('body,html').animate({ 
+                    scrollTop: theOffset.top -20
+                });
+            } catch(err){}
+          }
+        });
+      });
+    </script>
+    <script type="text/javascript">
+        $(function(){
+          $("#typed").typed({
+              // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+              stringsElement: $('#typed-strings'),
+              typeSpeed: 30,
+              backDelay: 500,
+              loop: false,
+              contentType: 'html', // or text
+              // defaults to false for infinite loop
+              loopCount: false,
+              resetCallback: function() { newTyped(); }
+          });
+          $(".reset").click(function(){
+              $("#typed").typed('reset');
+          });
+      });
+    </script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />    
+    <link rel="stylesheet" type="text/css" href="css/demo1.css" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+
+      <div id="section1" class="row">
+        <a href="#section2"><i class="fa fa-angle-down arrow bounce"></i></a>
+
+        <div id="particles-js"></div>
+        <div class="col-md-12"> 
+            <nav class="navbar navbar-default navbar-fixed-top">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#"></a>
+                </div>
+                <ul class="nav navbar-nav">
+                  <li><a href="#section1">Home</a></li>
+                  <li><a href="#section2">Projects</a></li>
+                  <li><a href="#section3">Experience</a></li> 
+                  <li><a href="#section4">Contact</a></li> 
+                </ul>
+              </div>
+            </nav>
+          <button id="trigger-overlay" type="button"><i class="fa fa-bars"></i></button>
+          <div id="landing-greeting" class="landing-main">Michael Gannon<br>is a</div> 
+          <div class="type-wrap">
+              <div id="typed-strings">
+                  <p>Web Developer</p>
+                  <p>Project Manager</p>
+                  <p>UX/UI Designer</p>
+              </div>
+              <span id="typed" style="white-space:pre;"></span>
+          </div>
+          
+        </div>
+      </div>
+      <div id="section2" class="row">
+        <div class="col-md-12" id="accordian-background">
+        <div id="subheader-greeting">Projects</div>
+          <div id="accordion">
+            <h3 id="accordian-header-text"><span id="title-left">DODDLE / </span> <span id="title-right">marketing material builder</span>
+            </h3>
+            <div id="accordian-dropdown-container">
+              <div id="accordian-dropDown-left" class="col-md-4 col-sm-8 animated fadeInUp">
+                  <h4 id="acc-dropdown-content-header">Description</h4>
+                  <p id="dropDown-content">
+                    This was a redesign of the Visual ID artwork creation toolkit. The objective was to make it easier to navigate, easier to access and easier to understand for both Client side and Administration side. The old system contains a lot of functionality, which requires one to one training. Doddle comes with integrated walk through tours of major operation flows, video tutorials and a more intuitive user experience.
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    Doddle is integrated with the Stripe API for secure online payments, the Tawk API which enables live chat and the Facebook API which allows marketing materials to be shared on Facebook. One of the challenges with creating Doddle was writing HTML which was nested in Lasso Script and styling elements which were generated by Lasso on the fly.
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    The objective for Doddle was to be an entirely on-demand product that involved no client interfacing. It is a refined version of the current Visual ID toolkit which includes functionality to create your marketing materials, share them on Facebook and push promotions to Digital Screens.
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    <a id="link" target="_blank" href="http://doddleco.com/">Brochure site</a>
+                  </p><br>
+                  <p id="dropDown-content">
+                    <a id="link" target="_blank" href="http://doddleco.com/">System Demo</a>
+                  </p>
+                </div>                
+                <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp"> 
+                  <h4 id="acc-dropdown-content-header">Technologies</h4>
+                  <ol id="tech-list">
+                    <li id="tech-item">HTML5</li>
+                    <li id="tech-item">CSS3</li>
+                    <li id="tech-item">Javascript & jQuery</li>
+                    <li id="tech-item">Bootstrap 3</li>
+                    <li id="tech-item">Vagrant</li>                    
+                    <li id="tech-item">Facebook API</li>
+                    <li id="tech-item">Tawk API</li>
+                    <li id="tech-item">Stripe API</li>
+                  </ol>
+                </div>
+                <div id="accordian-dropDown-right" class="col-md-6 col-sm-12 animated fadeInUp">
+                  <p id="dropDown-content">
+                    <img class="img-responsive" style="width: 85%;" src="img/quick-trip.png">
+                  </p>
+                </div>
+            </div>
+
+            <h3 id="accordian-header-text"><span id="title-left">DODDLECO / </span> <span id="title-right">website design</span>
+            </h3>
+            <div id="accordian-dropdown-container">
+              <div id="accordian-dropDown-left" class="col-md-4 col-sm-8 animated fadeInUp">
+                  <h4 id="acc-dropdown-content-header">Description</h4>
+
+                  <p id="dropDown-content">
+                    An information site to promote a new product from Visual ID called Doddle. Doddle is a marketing material builder that allows users to create point of sale content for print, web, digital screens and social media. It is a redesign of the Visual ID marketing material production system.
+                  </p><br><br>
+                  <p id="dropDown-content">
+                   The website was built using the Wordpress CMS and a theme which was heavily customised to ensure mobile responsiveness and create a unique identity for the new product. The website includes Live chat which I managed as well as custom animations. This project involved extensive research into the Grocery, Butchery, Hopspitality, Real Estate, Newsagents, D.I.Y, Beautician, Financial Broker & Sports markets to devise an accurate marketing strategy.
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    The site is essentially a single page site except for the blog which was added at a later date. The theme however was a multi-page template. So I had to restructure the landing page and customize a lot of the page functionality. Blogging was carried out twice a week as well as using the Yeost SEO plugin for the purpose of SEO.
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    <a id="link" target="_blank" href="http://www.doddleco.com/">Website</a><br>
+                  </p>
+                </div>
+                <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp">
+                    <h4 id="acc-dropdown-content-header">Technologies</h4>
+                    <ol id="tech-list">
+                      <li id="tech-item">Wordpress</li>
+                      <li id="tech-item">Yeost SEO</li>
+                      <li id="tech-item">CSS</li>
+                      <li id="tech-item">PHP</li>
+                      <li id="tech-item">Tawk API</li>
+                    </ol>
+                </div>
+                <div id="accordian-dropDown-right" class="col-md-6 col-sm-12 animated fadeInUp">
+                  <p id="dropDown-content">
+                    <img class="img-responsive" style="width: 750px" src="img/doddleco.png">
+                  </p>
+                </div>
+            </div>
+
+            <h3 id="accordian-header-text"><span id="title-left">VISUAL ID / </span> <span id="title-right">website redesign</span>
+            </h3>
+            <div id="accordian-dropdown-container">
+              <div id="accordian-dropDown-left" class="col-md-4 col-sm-8 animated fadeInUp">
+                  <h4 id="acc-dropdown-content-header">Description</h4>
+                  <p id="dropDown-content">
+                    This was a redesign of the Visual ID website using the Wordpress CMS. The site is optimised for mobile, tablet and desktop. The site has also been integrated with the existing Visual ID blog and linked to all related social media platforms. The site is built from a theme and has been customized for a unique brand identity.
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    This project presented a great oppertunity to learn how to use everybodys favourite content management system. Extensive security measure were taken to keep the data secure including changing the wp-admin address and also using Wordfence to track the site's traffic and all hack attemps. 
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    The objective was to bring a new look and feel to existing Visual ID website. Since Visual ID has so many products, partners, pricing plans and clients the website had a lot of content that needed to be managed so the site visitor is not overwhelmed with information.
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    <a id="link"  target="_blank" href="http://visualid.com/">Website</a>
+                  </p>
+                </div>
+                <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp">
+                  <h4 id="acc-dropdown-content-header">Technologies</h4>
+                  <ol id="tech-list">
+                    <li id="tech-item">Wordpress</li>
+                    <li id="tech-item">Yeost SEO</li>
+                    <li id="tech-item">CSS</li>
+                    <li id="tech-item">PHP</li>
+                  </ol>
+                </div>
+
+                <div id="accordian-dropDown-middle" class="col-md-6 col-sm-12 animated fadeInUp">
+                  <p id="dropDown-content">
+                    <img class="img-responsive" src="img/vis.png">
+                  </p>
+                </div>
+            </div>
+
+            <h3 id="accordian-header-text"><span id="title-left">LETS GO / </span> <span id="title-right">elearning web application</span>
+            </h3>
+            <div id="accordian-dropdown-container">
+              <div id="accordian-dropDown-left" class="col-md-4 col-sm-8 animated fadeInUp">
+                  <h4 id="acc-dropdown-content-header">Description</h4>
+                  <p id="dropDown-content">
+                    The objecive was to develop an assistive technology that educates people with special needs on the importance of safety when it comes to public transport. Having worked with Saint John of Gods and the families of people with special needs I was always aware of how challenging it can be. This is what sparked the idea for Lets Go.
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    The initial stages involved low fidelity prototypes to illustrate to both my college supervisor and the SJOG staff the concept. Lets Go followed a user led design approach and for that reason, every design iteration was submitted to the SJOG staff and critiqued, from the font choice, to the accessibility to the colours.
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    The refined concept had two core components: An educational drag and drop game for the SJOG clients built in Javascript and a
+                    a score tracking system for the SJOG staff to monitor the Clients progress in the game, the functionality of which was built in PHP and SQL.
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    <a id="link"  target="_blank"  href="http://www.moikel.com/game/">Live Site</a>
+                  </p>
+                </div>
+                <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp">
+                  <h4 id="acc-dropdown-content-header">Technologies</h4>
+                  <ol id="tech-list">
+                    <li id="tech-item">HTML5</li>
+                    <li id="tech-item">CSS3</li>
+                    <li id="tech-item">Javascript & jQuery</li>
+                    <li id="tech-item">PHP</li>
+                    <li id="tech-item">SQL</li>
+                  </ol>
+                </div>
+                
+                <div id="accordian-dropDown-right" class="col-md-6 col-sm-12 animated fadeInUp">
+                  <p id="dropDown-content">
+                    <img class="img-responsive" src="img/letsGo.png">
+                  </p>
+                </div>
+            </div>
+
+            <h3 id="accordian-header-text"><span id="title-left">QUICK TRIP / </span> <span id="title-right">fuel effieciency calculator</span>
+            </h3>
+            <div id="accordian-dropdown-container">
+              <div id="accordian-dropDown-left" class="col-md-4 col-sm-8 animated fadeInUp">
+                <h4 id="acc-dropdown-content-header">Description</h4>
+                <p id="dropDown-content">
+                  Quick Trip is a native Android application that was designed and developed when I was in college. It utilises the Google Maps API and asynchronous threads. Quick Trip estimates how much a car journey will cost a user based on the MPG of the car, how far the journey is and how much the user is paying for petrol. 
+                </p><br><br>
+                <p id="dropDown-content">
+                  A MySQL database stores the cars and all other necessary information.The user selects their car and both destination points on the map and the distance is calculated asynchronously. This data is inserted into the cost formula along with the car MPG and price of fuel. The result appears asynchronously. 
+                </p><br><br>
+                <p id="dropDown-content">
+                  The platform utilized was the Eclipse IDE, Android Developer Tools and GenyMotion and Vagrant were needed for the testing environment. This project developed my skills in Java, PHP, SQL, JSON and XML.<br>
+                </p><br><br>
+                <p id="dropDown-content">
+                  <a id="link"  target="_blank" href="https://www.youtube.com/watch?list=PLME_KoX3Ju49Kn-BpU6aZjsFH-8isud_Q&v=1TRsDARj4vY">Concept Demo</a><br>
+                  <a id="link"  target="_blank" href="https://www.youtube.com/watch?v=GzcPokY_sSQ&index=2&list=PLME_KoX3Ju49Kn-BpU6aZjsFH-8isud_Q">Interim Demo</a><br>
+                  <a id="link"  target="_blank" href="https://www.youtube.com/watch?v=cTVl2j3ta8k&list=PLME_KoX3Ju49Kn-BpU6aZjsFH-8isud_Q&index=3">Final Demo</a>
+                </p>
+              </div>
+                <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp">
+                  <h4 id="acc-dropdown-content-header">Technologies</h4>
+                  <ol id="tech-list">
+                    <li id="tech-item">Java</li>
+                    <li id="tech-item">Eclipse IDE</li>
+                    <li id="tech-item">Android SDK</li>                    
+                    <li id="tech-item">PHP</li>
+                    <li id="tech-item">SQL</li>
+                    <li id="tech-item">Google Maps API</li>
+                    <li id="tech-item">Axure</li>
+                    <li id="tech-item">Genymotion</li>
+                  </ol>
+                </div>
+
+                <div id="accordian-dropDown-right" class="col-md-6 col-sm-12 animated fadeInUp">
+                  <p id="dropDown-content">
+                  <img class="img-responsive" style="width: 85%;" src="img/quick-trip.png">
+                  </p>
+                </div>
+            </div>
+
+            <h3 id="accordian-header-text"><span id="title-left">STUDENT SEARCH / </span> <span id="title-right">restful web app</span></h3>
+            <div id="accordian-dropdown-container">
+              <div id="accordian-dropDown-left" class="col-md-4 col-sm-8 animated fadeInUp">
+                  <h4 id="acc-dropdown-content-header">Description</h4>
+                   <p id="dropDown-content">
+                    This was a a single page web application which implements a REST API and allows CRUD functionality on a MongoDB database. This project outlined the benefits of a Mongo database over a MySQL database. It was also a good oppertunity to become familiar with the templating engine Jade.
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    It also allowed me to see how back end javascript behaves and how it interacts with a Mongo Database. This project outlined to me how essential the node package manager is for any web developer aswell as a familiarity with the command line.
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    The purpose of this excercise was to understand how the technologies outlined function and interact with eachother and as a result no emphasis was placed on the interface design. Hence no sexy photshop mockups.
+                  </p><br><br>            
+                </div>
+                <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp">
+                  <h4 id="acc-dropdown-content-header">Technologies</h4>
+                  <ol id="tech-list">
+                    <li id="tech-item">Node</li>
+                    <li id="tech-item">MongoDB</li>
+                    <li id="tech-item">Express</li>
+                    <li id="tech-item">Jade</li>
+                    <li id="tech-item">Javascript</li>
+                  </ol>
+                </div>
+                <div id="accordian-dropDown-right" class="col-md-6 col-sm-12 animated fadeInUp">
+                  <p id="dropDown-content">
+                  <img class="img-responsive" src="img/mong.png">
+                  </p>
+                </div>
+            </div>
+
+            <h3 id="accordian-header-text"><span id="title-left">THE GANNON TIMES / </span> <span id="title-right">responsive news site</span>
+            </h3>
+            <div id="accordian-dropdown-container">
+              <div id="accordian-dropDown-left" class="col-md-4 col-sm-8 animated fadeInUp">
+                  <h4 id="acc-dropdown-content-header">Description</h4>
+                  <p id="dropDown-content">
+                    This is a college project undertaken in order to learn the most popular responsive web design framework, Twitter Bootstrap. It was also essential for gaining an undertanding of web typography and web design principles. The objective was to use no colour until the very end and create a visually appealing page using just black and white, an appropriate font combination and making correct use of the space available.
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    The inspirations for this site came from the French newspaper 'La Monde', 'The Financial Times' and 'The Boston Globe' news site. Extensive research was carried out on newspaper design trends dating back as far as 1630. Then two concept designs were drawn up in Photoshop and iterated again and again until the met the task objectives.
+                  </p><br><br>         
+                  <p id="dropDown-content">
+                    JavaScript was used to start a timer every 30 minutes to emulate a feed of updates to the site. The clock at the top displays the current time of the device the site is being viewed on. <br><br>
+                  </p>
+                  <p id="dropDown-content">
+                  <a id="link"  target="_blank" href="http://awesome184.websrvr.in/">Website</a>
+                  </p>
+                </div>
+              <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp">
+              <h4 id="acc-dropdown-content-header">Technologies</h4>
+                  <ol id="tech-list">
+                    <li id="tech-item">HTML5</li>
+                    <li id="tech-item">CSS3</li>
+                    <li id="tech-item">Bootstrap3</li>
+                    <li id="tech-item">Photoshop</li>
+                  </ol>
+              </div>
+                <div id="accordian-dropDown-right" class="col-md-6 col-sm-12 animated fadeInUp">
+                  <p id="dropDown-content">
+                  <img class="img-responsive" src="img/mac.png">
+                  </p>
+                </div>
+            </div>           
+
+            <h3 id="accordian-header-text"><span id="title-left">LETS PAINT / </span> <span id="title-right">drawing application</span>
+            </h3>
+            <div id="accordian-dropdown-container">
+              <div id="accordian-dropDown-left" class="col-md-4 col-sm-8 animated fadeInUp">
+                  <h4 id="acc-dropdown-content-header">Description</h4>
+                  <p id="dropDown-content">
+                    This college project was an oppertunity to get up to speed with HTML5 canvas. The objective was to create a drawing application that rapidly drew filled circles along each path the mouse was clicked and dragged. The radius of the circles could be changed in the toolbar on the left along with the colour.
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    Lets Paint has the option to undo your work by clicking and holding the undo button which redraws the path but in reverse. The user is also given the option to change the canvas background colour and interact with it using the up, down, left and right arrow keys which draws random shapes at random sizes in random colours at random positions around the canvas. 
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    This assignment illustrated to me the practicality of using jQuery over Javascript where possible, for web animations in particular.
+                  </p>       
+                  <p id="dropDown-content">
+                  <a id="link"  target="_blank" href="http://www.moikel.com/paintApp.html">Web App</a>
+                  </p><br><br>
+                </div>
+                <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp">
+                <h4 id="acc-dropdown-content-header">Technologies</h4>
+                  <ol id="tech-list">
+                    <li id="tech-item">HTML5 Canvas</li>
+                    <li id="tech-item">CSS3</li>
+                    <li id="tech-item">Javascript & jQuery</li>
+                  </ol>
+                </div>
+                <div id="accordian-dropDown-right" class="col-md-6 col-sm-12 animated fadeInUp">
+                  <p id="dropDown-content">
+                    <img class="img-responsive" src="img/paint.png">
+                  </p>
+                </div>
+            </div> 
+
+            <h3 id="accordian-header-text"><span id="title-left">MUSEUM GAME / </span> <span id="title-right">elearning game</span>
+            </h3>
+            <div id="accordian-dropdown-container">
+              <div id="accordian-dropDown-left" class="col-md-4 col-sm-8 animated fadeInUp bottom-acc-container">
+                <h4 id="acc-dropdown-content-header">Description</h4>
+                 <p id="dropDown-content">
+                    This was a flash project carried out in college for the Dun Laoghaire Maritime Museum. Despite being a language that is considered 'dead', Action Script is a very practical way of learning how to code and has similarities to Javascript. 
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    The objective of the game was to document the life of Robert Halpin, a famous sailour by way of an educational Flash game and also videos created using Adobe After Effects. The project was selected from the class to be put on display in the Maritime Museum. I have not yet been to see it yet because I did the voice overs for the videos and am simply too embarrassed :\
+                  </p><br><br>         
+                  <p id="dropDown-content">
+                  <a id="link" target="_blank" href="http://www.moikel.com/">Flash Game</a>
+                  </p>
+                </div>
+                <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp bottom-acc-container">
+                  <h4 id="acc-dropdown-content-header">Technologies</h4>
+                  <ol id="tech-list">
+                  <li id="tech-item">Photoshop</li>
+                    <li id="tech-item">After Effects</li>
+                    <li id="tech-item">Action Script 3</li>
+                  </ol>
+                </div>
+                <div id="accordian-dropDown-right" class="col-md-6 col-sm-12 animated fadeInUp bottom-acc-container">
+                  <p id="dropDown-content">
+                    <img class="img-responsive" src="img/vis.png">
+                  </p>
+                </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+      <div id="section3" class="row">
+        <div class="col-md-12">
+        <section id="timeline">
+          <div class="timeline">
+              <canvas id="cvs3"></canvas>
+              <article>
+                  <h2 id="exp-edu">Education</h2>          
+                  <figure>
+                      <figcaption id="left-items">Web Engineering</figcaption>
+                      <h6>2012 - 2015<br>INSTITUTE OF ART, DESIGN & TECHNOLOGY</h6>
+                      <p>
+                        I studied Multimedia Programming and Web Engineering in IADT. Some of the things covered were languages and frameworks such as HTML5, CSS3, Javascript & jQuery, Java, XML, JSON, SQL as well as the Android SDK, Twitter Bootstrap, Backbone.js, ASP.NET, MongoDB, Node & npm.<br>
+                        <a id="link" target="_blank" href="http://www.iadt.ie/en/ProspectiveStudents/FacultiesCourses/FacultyofFilmArtCreativeTechnologies/DL836-BScHonoursinCreativeComputing/">Course curriculum</a>
+                      </p>
+                  </figure>
+                  <figure>
+                      <figcaption id="left-items">Web Design</figcaption>
+                      <h6>2011<br>DUBLIN BUSINESS SCHOOL</h6>
+                      <p>
+                        I undertook a night course in DBS in 2011 in Web Design and SEO during my gap year. I studied the fundamentals of HTML, CSS, SEO and Photoshop. The objective of this course was to get a taste of programming and web development.<br>
+                        <a id="link" target="_blank" href="http://www.dbs.ie/course/professional-evening-diploma/diploma-in-web-design">Course curriculum</a>
+                      </p>
+                  </figure>
+                  <figure>
+                      <figcaption id="left-items">Civil Engineering</figcaption>
+                      <h6>2008 - 2011<br>DUBLIN INSTITURE OF TECHNOLOGY</h6>
+                      <p>
+                        I studied Civil Engineering for three years in DIT. Despite not influincing my choice of career path it did teach me the thought process behind problem solving, the importance of attention ot detail and also tools such as Auto CAD.<br>
+                        <a id="link" target="_blank" href="https://www.dit.ie/catalogue/Programmes/Details/DT004">Course curriculum</a>
+                      </p>
+                  </figure>
+              </article>
+
+              <article>
+                  <h2 id="exp-edu">Experience</h2>
+                  <figure>
+                      <figcaption id="right-items">Visual ID</figcaption>
+                      <h6>2015 - 2016<br>FRONT END DEVELOPER / PROJECT MANAGER</h6>
+                      <p>
+                        As Front End Developer I am responsible for the design, functionality & maintenance of all client side access points. Consisting of two websites, the Visual ID artwork toolkit and Doddle a new pay online product.
+                      </p> 
+                      <p>
+                        As Project Manager od Doddle my responsibilities include all design and functionality relating to Doddle, calling and chairing scrum meetings, writing meeting minutes, ensuring all Doddle deadlines are met and interfacing with Doddle clients and partners.
+                        <br>
+                        <a id="link" href="#section2">Visual ID Work</a>.
+                      </p>  
+                  </figure>
+                  <figure>
+                      <figcaption id="right-items">Upstream Digital</figcaption>
+                      <h6>2013<br>SYSTEM TESTER</h6>
+                      <p>
+                        As System Tester, my responsibilities included testing out client sites on various hardware and software platforms and logging the results using Jira and Confluence. This work provided a good insight into the importance of system testing before release.
+                      </p>
+                  </figure>
+                  <figure>
+                      <figcaption id="right-items">Tech-Space</figcaption>
+                      <h6>2012 & 2013 (SUMMER) <br>TEACHER</h6>
+                      <p>
+                         During college I volunteered at Tech Space as a Web Design and animation teacher. We carried out 2 week crash courses on topics such as the fundamentals of HTML, CSS, Photoshop, After Effects and Action Script. 
+                      </p>
+                  </figure>
+              </article>
+              <br style="clear:both" />
+          </div>
+        </section>
+
+        <!--
+          <div id="subheader-greeting">Who Am I? <i class="fa fa-user"></i></div>
+          <div>developer // designer // problem solver</div>
+          I am a graduate of Multimedia Systems / Web Engineering in IADT. I also have a degree in Civil Engineering. This background has provided me with the skills to analyze problems and develop creative solutions to these problems.
+
+          From my course in IADT I have learned a wide range of skills including Web and Mobile Development, Programming, Database Management, Usability, Networks, Software Development and Design.
+
+          My objective is to maintain a healthy balance between functionality and visual impact. My hobbies include travelling, skateboarding, learning new skills and socializing.
+
+          I am a Web Developer. I have a BSc (Honours) in Computing Multimedia Systems/Web Engineering (2nd Class Honours, Grade 1) from I.A.D.T. I specialise in Front-End Development, incorporating my skills in HTML5, CSS3, JavaScript (and jQuery), Bootstrap, Wordpress and UX Design into delivering compelling User Experiences. I also have experience with the Android SDK, Eclipse and Virtual Box.
+
+          I have a good knowledge of User Interface Design principles and communicating visually with the end user (Photoshop and Illustrator). I integrate these principles into all my work.
+
+          I also have a BEngTech in Structural Engineering from D.I.T. I covered various modules during this time which have contributed to my skills in problem solving, computation and graphic design.
+
+          My areas of interest are Front-End Web Development Technologies, Digital Media, Graphic Design / Video Editing and delivering optimal user experiences.
+
+          I enjoy turning complex problems into simple, beautiful and intuitive interface designs. When I'm not coding or pushing pixels, you'll find me in the gym or on the court shooting hoops.
+
+          I develop modern, highly interactive, responsive websites & web apps with cutting edge technologies such as AngularJS and React.
+
+          I love great design and my passion is to "make it real" by blending colors and shapes with meaningful transitions in order to achieve the best user experience.
+
+          I'm strongly focused on modularity and maintainability and I pay great attention to details.
+
+          Over the past few years I've been lucky enough to work with agencies in UK and USA for brands such as Google, Land Rover, Billabong, Ferrero, Converse, Carlsberg and many others. I'm also author for Codrops and I like to experiment with JavaScript on my own projects and Codepen.
+
+          About this Website
+
+          This site has been designed and built by hand from the ground up. It's handled through AngularJS and animated with the fantastic GreenSock Animation Platform.
+
+          The CSS is written in Sass, with a mobile first approach and this modular scale for a more meaningful typography.
+
+          Everything is optimised for speed, browser compatibility and SEO.
+
+          i write clean, elegant and efficient code, ive a passion for designing functional and beautiful user experiences.
+
+          I enjoy turning complex problems into simple, beautiful and intuitive interface designs. When I'm not coding or pushing pixels, you'll find me in the gym or on the court shooting hoops.-->
+
+        </div>
+      </div>
+
+
+      <div id="section4" class="row">
+        <div id="creep" class="col-md-12">
+            <div id="subheader-greeting">Contact</div>
+            
+            <div id="bottom-top-holder" class="col-md-4">
+            <i class="fa fa-code" aria-hidden="true"></i><br>
+
+              <span id="build-something">Wanna build something?</span><br>
+              <div id="email-container">
+                <span id="email-phone">michael.gannon13@gmail.com<br>0879240500</span>
+              </div>
+            </div>  
+
+            <div id="bottom-middle-holder" class="col-md-4">
+            <i class="fa fa-eye" aria-hidden="true"></i><br>
+              <span id="build-something">Wanna Creep?</span><br>
+              <div id="social-holder">
+                <a target="_blank" href="https://www.linkedin.com/in/michael-gannon-4758198b?trk=hp-identity-name" class="icon-button twitter">
+                  <i class="fa fa-linkedin"></i><span></span>
+                </a>
+                <a target="_blank" href="https://github.com/" class="icon-button facebook">
+                    <i class="fa fa-github"></i><span></span>
+                </a>
+                <a target="_blank" href="https://plus.google.com/u/0/" class="icon-button google-plus">
+                    <i class="fa fa-google-plus"></i><span></span>
+                </a>
+                <a target="_blank" href="cv.pdf" class="icon-button google-plus">
+                    <i class="fa fa-file-pdf-o"></i><span></span>
+                </a>
+              </div>
+            </div>
+
+            <div id="bottom-bottom-holder" class="col-md-4">
+            <i class="fa fa-eur" aria-hidden="true"></i><br>
+              <span id="wanna-quote">Wanna quote?</span><br>
+              <div id="email-container">
+                <span id="email-phone">michael.gannon13@gmail.com<br>0879240500</span>
+              </div>
+            </div> 
+        </div>
+
+        <div id="googlemaps" class="col-md-12">
+        </div>
+        <footer id="bottom-copyright" class="col-md-12">© 2016 Michael Gannon All Rights Reserved</footer>
+      </div>
+
+      </div>
+
+    </div> <!-- container-fluid end -->
+    <div class="overlay overlay-hugeinc">
+      <button type="button" class="overlay-close">Close</button>
+      <nav>
+        <ul>
+          <li><a class="menu-hide" href="#section1">Home</a></li>
+          <li><a class="menu-hide" href="#section2">Projects</a></li>
+          <li><a class="menu-hide" href="#section3">About</a></li>
+          <li><a class="menu-hide" href="#section4">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/classie.js"></script>
+    <script src="js/demo1.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/svganimations.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/smoothScroll.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function () {
+                window.location.hash = target;
+            });
+        });
+
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 920) { 
+              $('.navbar').addClass('solid');
+          } else {
+              $('.navbar').removeClass('solid');
+          }
+        });
+
+        $("h3#accordian-header-text").click(function() {
+          var $this = $(this);        
+          $("h3#accordian-header-text").removeClass("active");
+          $this.addClass("active");
+          console.log("bla");
+        });
+ 
+    // The latitude and longitude of your business / place
+    var position = [53.300498, -6.283854];
+     
+    function showGoogleMaps() {
+     
+        var latLng = new google.maps.LatLng(position[0], position[1]);
+        var mapOptions = {
+            streetViewControl: false, // hide the yellow Street View pegman
+            scaleControl: true, // allow users to zoom the Google Map
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            center: latLng,
+            zoom: 14,                        // set the zoom level manually
+            zoomControl: false,
+            scrollwheel: false,
+        };
+     
+        map = new google.maps.Map(document.getElementById('googlemaps'),
+            mapOptions);
+     
+        // Show the default red marker at the location
+        marker = new google.maps.Marker({
+            position: latLng,
+            map: map,
+            draggable: false,
+            animation: google.maps.Animation.DROP
+        });
+    }
+     
+    google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+
+        /* ---- particles.js config ---- */
+        particlesJS("particles-js", {
+          "particles": {
+            "number": {
+              "value": 110,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#ffffff"
+            },
+            "shape": {
+              "type": "circle",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              },
+              "polygon": {
+                "nb_sides": 5
+              },
+              "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+              }
+            },
+            "opacity": {
+              "value": 0.5,
+              "random": false,
+              "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 3,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#ffffff",
+              "opacity": 0.4,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 6,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "grab"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 140,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+              },
+              "repulse": {
+                "distance": 200,
+                "duration": 0.4
+              },
+              "push": {
+                "particles_nb": 4
+              },
+              "remove": {
+                "particles_nb": 2
+              }
+            }
+          },
+          "retina_detect": true
+        });
+      /* ---- stats.js config ---- */
+
+      (function () {
+          var active;
+          active = true;
+          $('#navicon').click(function () {
+              if (active === true) {
+                  $('#navicon').removeClass('inactive').addClass('active');
+                  active = false;
+                  return console.log(active);
+              } else {
+                  $('#navicon').removeClass('active').addClass('inactive');
+                  active = true;
+                  return console.log(active);
+              }
+          });
+      }.call(this));
+
+      var count_particles, stats, update;
+      stats = new Stats;
+      stats.setMode(0);
+      stats.domElement.style.position = 'absolute';
+      stats.domElement.style.left = '0px';
+      stats.domElement.style.top = '0px';
+      document.body.appendChild(stats.domElement);
+      count_particles = document.querySelector('.js-count-particles');
+      update = function() {
+        stats.begin();
+        stats.end();
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+          count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+      });
+
+    </script>
+  </body>
+</html>
