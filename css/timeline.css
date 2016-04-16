@@ -28,7 +28,7 @@ figcaption#right-items {
 }
 
 .timeline figcaption {
-  font: 900 190% 'Lato';
+  font: 900 150% 'Lato';
   text-transform: uppercase;
   -webkit-text-stroke: .25px;
 }
@@ -42,7 +42,7 @@ figcaption#right-items {
   margin-bottom: 0;
 }
 .timeline h6 {
-  color: #00FFD2;
+  color: #00A789;
   font: 400 80% Tahoma;
 }
 .timeline p,
@@ -50,7 +50,7 @@ figcaption#right-items {
   font: 300 95% 'lato';
   padding: 3px 0 20px 0;
   color: #5A5A55;
-  width: 95%;
+  width: 70%;
   font-size: 14px;
   line-height: 22px;
 }

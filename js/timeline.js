@@ -20,7 +20,7 @@ function Timeline(cvs) {
         [49, 140, 190, 200]
     ];
     self.dotColors = [
-        ['#00FFD2', 'rgba(0, 255, 210, 0.2)', 'rgba(255, 210, 0.2)'], //left dots (big and small)
+        ['#00A789', 'rgba(0,167,137,0.2)', 'rgba(0,167,137,0.2)'], //left dots (big and small)
         ['rgb(0, 67, 111)', 'rgba(13,167,255,0.2)', 'rgba(13,167,255,0.2)'], //right dots (big and small)
     ];
         //core color //surrounding colour         //strings

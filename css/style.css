@@ -6,6 +6,60 @@ body{
 		height: 100vh;
 	} 
 
+  nav.navbar.navbar-default {
+      margin-bottom: 0;
+      margin-left: -15px;
+      margin-right: -15px;
+      border-radius: 0;
+      background: rgba(240, 248, 255, 0);
+      border-color: rgba(0, 128, 0, 0);
+      -webkit-transition: background-color 1s ease 0s;
+      transition: background-color 1s ease 0s;
+  }
+
+  ul.nav.navbar-nav {
+      float: right;
+      padding-right: 20px;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+      color: rgba(255,255,255,0.9);
+      font-family: opensans;
+      font-size: 15px;
+      padding: 20px;
+  }
+
+  i.fa.fa-code, i.fa.fa-eye, i.fa.fa-eur {
+    font-size: 44px;
+    color: #D8D8D8;
+    padding-bottom: 10px;
+}
+
+div#bottom-top-holder,  div#bottom-middle-holder,  div#bottom-bottom-holder {
+    text-align: center;
+}
+
+div#email-container, div#social-holder {
+    padding-top: 10px;
+}
+
+  .navbar-default .navbar-nav>li>a:active, .navbar-default .navbar-nav>li>a:hover{
+    color: #00FFD2;
+  }
+
+  .navbar.solid .navbar-nav > li > a {
+    color: #333;
+    -webkit-transition: color 1s ease 0s;
+    transition: color 1s ease 0s;
+    font-weight: 500;
+  }
+
+  .navbar.navbar-default.navbar-fixed-top.solid{
+    -webkit-transition: color 1s ease 0s;
+    transition: color 1s ease 0s;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
 	#section1{
 		background-color: #e6e6e6;
 		background: -webkit-linear-gradient(#e6e6e6, #b3b3b3); 
@@ -20,10 +74,12 @@ body{
   }
 
   button#trigger-overlay {
+    visibility: hidden;
     background: rgba(255, 255, 255, 0);
-    color: white;
+    color: #00FFD2;
+    position: fixed;
+    z-index: 10;
     border: none;
-    position: absolute;
     top: 20px;
     right: 20px;
     font-size: 34px;
@@ -66,7 +122,7 @@ body{
   ol#tech-list li::before {
     content: counter(step-counter);
     margin-right: 5px;
-    color: rgb(169, 169, 169);
+    color: #9F9F9F;
     font-weight: bold;
     padding: 3px 8px 0 16px;
 }
@@ -138,12 +194,15 @@ body{
   }
 
   #creep{
-    background: white;
-    height: 98vh;
+    height: 59vh;
   }
 
+  div#bottom-top-holder,  div#bottom-middle-holder,  div#bottom-bottom-holder {
+    padding-top: 120px;
+}
+
   #googlemaps { 
-    height: 98vh; 
+    height: 35vh; 
   }
 
   #copy{
@@ -171,12 +230,7 @@ body{
   }
   
 	#section2{
-    background-color: #F3F3F3;
-		/* background-color: #b3b3b3;
-		background: -webkit-linear-gradient(#b3b3b3, #808080);  
-	  background: -o-linear-gradient(#b3b3b3, #808080); 
-	  background: -moz-linear-gradient(#b3b3b3, #808080); 
-	  background: linear-gradient(#b3b3b3, #808080);  */
+    background-color: #fff;
 	}
 
  h3#accordian-header-text span#title-left {
@@ -203,7 +257,7 @@ body{
   li#tech-item {
     font-weight: 400;
     font-size: 14px;
-    color: #00DEB7; /*or #FF2E63 #0CD1E5 #5EE6E4 #0434E8 #176ECA #0387FB*/
+    color: #00A789; /*or #FF2E63 #0CD1E5 #5EE6E4 #0434E8 #176ECA #0387FB*/
 }
 
   .col-md-4.left-contact-cols, .col-md-4.center-contact-cols, .col-md-4.right-contact-cols{
@@ -220,12 +274,9 @@ body{
   }
 
   span#email-phone {
-    position: relative;
-    left: 25px;
     font-family: lato;
     font-weight: 500;
-    font-size: 16px;
-    opacity:0.7;
+    font-size: 17px;
   }
 
   .col-md-4.left-contact-cols span#build-something {
@@ -234,38 +285,41 @@ body{
     font-family: 'Roboto Slab', serif;
     font-size: 22px;
     font-weight: 400;
-    color: #00FFD2;
+    color: #00A789;
     text-transform: capitalize;
   }
 
   span#build-something {
     font-family: 'Roboto Slab', serif;
     text-align: center;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 400;
-    color: #00FFD2;
+    color: #00A789;
     text-transform: capitalize;
-    padding-left: 30px;
   }
 
-  div#email-container {
-    padding-left: 8px;
-}
-
-  #social-holder{
-    padding-left: 25px;
+  div#bottom-middle-holder {
+      text-align: center;
   }
 
-  div#bottom-top-holder {
-      padding-top: 100px;
+  span#wanna-quote {
+      font-family: 'Roboto Slab', serif;
+      font-size: 30px;
+      font-weight: 400;
+      color: #00A789;
+      text-transform: capitalize;
   }
 
-  div#bottom-middle-holder{
-    padding-top: 20px;
-  }
-
-  div#bottom-bottom-holder {
-      padding-top: 20px;
+  footer#bottom-copyright {
+      padding: 20px;
+      height: 6vh;
+      text-transform: uppercase;
+      font-family: helveticaneue;
+      width: 100%;
+      color: #474747;
+      background: rgb(232, 232, 232);
+      text-align: center;
+      font-size: 12px;
   }
 
   span#quote {
@@ -274,7 +328,7 @@ body{
     font-family: 'Roboto Slab', serif;
     font-size: 22px;
     font-weight: 400;
-    color: #00FFD2;
+    color: #00A789;
     text-transform: capitalize;
   }
 
@@ -295,12 +349,19 @@ body{
       opacity:0.7;
   }
 
-	#section4{
+/* 	#section4{
     background-size: cover;
     position: relative;
+    opacity: 0.9;
     top: 0; 
     left: 0; 
-  }
+  } */
+
+  a#link {
+    font-weight: 500;
+    color: #004438;
+    font-size: 14px;
+}
 
   h3#ui-id-1, h3#ui-id-3, h3#ui-id-5, h3#ui-id-7, h3#ui-id-9, h3#ui-id-11 {
     border: 1px solid #8E8E8E;
@@ -311,10 +372,29 @@ body{
 
   .arrow {
     font-size: 40px;
-    position: fixed;
-    left: 50%;
+    position: absolute;
+    left: 50vw;
     color: #00FFD2;
     bottom: 0;
+     -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+  }
+
+  .arrow:hover {
+     -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.3); 
   }
 
   div#accordian-dropDown-left {
@@ -368,12 +448,12 @@ body{
   h4#acc-dropdown-content-header {
       margin-left: 15px;
       font-family: 'Roboto Slab', serif;
-      color: #4a4a4a;
+      color: #9F9F9F;
       font-size: 20px;
   }
 
   p#dropDown-content {
-    color: #5A5A55;
+    color: #000;
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -614,17 +694,6 @@ p {
   color: #2c3e50;
 }
 
-div#bottom-copyright {
-  text-transform: uppercase;
-  font-family: helveticaneue;
-  width: 100%;
-  color: #FFFFFF;
-  background: rgba(0, 0, 0, 0.19);
-  text-align: center;
-  font-size: 11px;
-  height: 2vh;
-}
-
 div .col-md-12 {
     padding-left: 0px;
     padding-right: 0;
@@ -734,9 +803,7 @@ canvas {
 /* Hamburger */
 
 @import url("http://fonts.googleapis.com/css?family=Open+Sans");
-body {
-  background-color: #333;
-}
+
 #navicon {
   position: fixed;
   top: 5%;
@@ -1724,6 +1791,7 @@ input:-webkit-autofill {
     transition: none;
   }
 }
+
 @-webkit-keyframes error {
   0%, 100% {
     -webkit-transform: translateX(0);
@@ -1774,6 +1842,64 @@ input:-webkit-autofill {
 }
 
 /* Bootsrap breakpoint */
+@media (max-width: 780px) {
+    nav.navbar.navbar-default.navbar-fixed-top {
+      display: none;
+  }
+
+  button#trigger-overlay {
+      visibility: visible;
+  }
+
+
+  #landing-greeting {
+      display: inherit;
+  }
+
+  div#subheader-greeting {
+      font-size: 90px;
+  }
+
+  .landing-main {
+      top: 30vh;
+      color: rgba(255,255,255,0.5) !important;
+      text-align: center;
+      font-size: 102px !important;
+      left: 0 !important;
+  }
+
+  div#landing-greeting {
+      line-height: 0.95 !important;
+      letter-spacing: -3px;
+  }
+
+  .type-wrap {
+      position: relative !important;
+      top: 31vh !important;
+      display: inherit  !important; 
+      margin-left: auto !important;
+      text-align: center;
+  }
+
+  span.typed-cursor {
+      font-size: 40px !important;
+      padding-left: inherit;
+  }
+
+  span#typed{
+    margin-left: auto;
+    font-size: 55px !important;
+  }
+
+  div#landing-greeting {
+      font-size: 48px;
+      line-height: normal;
+  }
+
+
+}
+
+/* Bootsrap breakpoint */
 @media (max-width: 995px) {
    div#accordian-dropDown-left, div#accordian-dropDown-middle, div#accordian-dropDown-right{
     height: auto;
@@ -1800,18 +1926,134 @@ input:-webkit-autofill {
     }
 }
 
+/* Bootsrap breakpoint */
+@media (max-width: 999px) {
+    div#section3 {
+      overflow: scroll;
+  }
+}
 
 
+/* iPhone */
+@media (max-width: 480px) {
 
+  div#particles-js {
+    display: none;
+  }
 
+  #landing-greeting {
+      display: inherit;
+  }
 
+  div#subheader-greeting {
+      font-size: 90px;
+  }
 
+  .landing-main {
+      top: 30vh;
+      color: rgba(255,255,255,0.5) !important;
+      text-align: center;
+      font-size: 90px !important;
+      left: 0 !important;
+  }
 
+  div#landing-greeting {
+      line-height: 0.95 !important;
+      letter-spacing: -3px;
+  }
 
+  .type-wrap {
+      position: relative !important;
+      top: 31vh !important;
+      display: inherit  !important; 
+      margin-left: auto !important;
+      text-align: center;
+  }
 
+  span.typed-cursor {
+      font-size: 40px !important;
+      padding-left: inherit;
+  }
 
+  span#typed{
+    margin-left: auto;
+    font-size: 40px !important;
+  }
 
+  canvas#cvs3 {
+      display: none;
+  }
 
+  div#section1{
+    background: linear-gradient(135deg, rgb(0, 0, 0) 0%,rgb(0, 146, 121) 100%);
+  }
+
+  div#landing-greeting {
+      font-size: 48px;
+      line-height: normal;
+  }
+
+  span#typed {
+      font-size: 26px;
+  }
+
+  #social-holder {
+      padding-left: 0;
+  }
+
+  div#bottom-top-holder, div#bottom-middle-holder, div#bottom-bottom-holder {
+      text-align: center;
+  }
+
+  span#build-something {
+      padding-left: 0;
+  }
+
+  div#email-container span {
+      left: 0;
+  }
+
+    span.typed-cursor {
+      font-size: 26px;
+  }
+
+  span#title-left {
+      font-size: 20px !important;
+  }
+
+  span#title-right {
+      font-size: 16px !important;
+  }
+
+  h3#accordian-header-text {
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+
+  p#dropDown-content {
+      font-size: 13px;
+  }
+
+  h4#acc-dropdown-content-header {
+      font-size: 16px;
+  }
+
+  li#tech-item {
+      font-size: 13px;
+  }
+
+  div#accordian-dropDown-left {
+      padding: 6px;
+  }
+
+  h3#accordian-header-text {
+      padding-left: 34px;
+  }
+
+  i.fa.fa-bars {
+      font-size: 26px;
+  }
+}
 
 
 
