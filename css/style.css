@@ -215,7 +215,7 @@ div#email-container, div#social-holder {
 }
 
   #googlemaps { 
-    height: 35vh; 
+    height: 45vh; 
   }
 
   #copy{
@@ -324,8 +324,7 @@ div#email-container, div#social-holder {
   }
 
   footer#bottom-copyright {
-      padding: 20px;
-      height: 6vh;
+      padding: 22px;
       text-transform: uppercase;
       font-family: helveticaneue;
       width: 100%;
