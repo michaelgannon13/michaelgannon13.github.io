@@ -578,7 +578,7 @@
       <button type="button" class="overlay-close">Close</button>
       <nav>
         <ul>
-          <li><a class="menu-hide" href="#section1" onclick="close()">Home</a></li>
+          <li><a class="menu-hide" href="#section1">Home</a></li>
           <li><a class="menu-hide" href="#section2">Projects</a></li>
           <li><a class="menu-hide" href="#section3">About</a></li>
           <li><a class="menu-hide" href="#section4">Contact</a></li>
@@ -618,10 +618,6 @@
               $('.navbar').removeClass('solid');
           }
         });
-
-        close(){
-          $(".overlay-close").click();
-        }
 
         $("h3#accordian-header-text").click(function() {
           var $this = $(this);        
