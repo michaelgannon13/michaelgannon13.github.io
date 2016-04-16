@@ -578,7 +578,7 @@
       <button type="button" class="overlay-close">Close</button>
       <nav>
         <ul>
-          <li><a class="menu-hide" href="#section1">Home</a></li>
+          <li><a class="menu-hide" href="#section1" onclick="close()">Home</a></li>
           <li><a class="menu-hide" href="#section2">Projects</a></li>
           <li><a class="menu-hide" href="#section3">About</a></li>
           <li><a class="menu-hide" href="#section4">Contact</a></li>
@@ -619,6 +619,10 @@
           }
         });
 
+        close(){
+          $(".overlay-close").click();
+        }
+
         $("h3#accordian-header-text").click(function() {
           var $this = $(this);        
           $("h3#accordian-header-text").removeClass("active");
@@ -655,8 +659,6 @@
     }
      
     google.maps.event.addDomListener(window, 'load', showGoogleMaps);
-
-
 
         /* ---- particles.js config ---- */
         particlesJS("particles-js", {
@@ -772,20 +774,20 @@
       /* ---- stats.js config ---- */
 
       (function () {
-      var active;
-      active = true;
-      $('#navicon').click(function () {
-          if (active === true) {
-              $('#navicon').removeClass('inactive').addClass('active');
-              active = false;
-              return console.log(active);
-          } else {
-              $('#navicon').removeClass('active').addClass('inactive');
-              active = true;
-              return console.log(active);
-          }
-      });
-  }.call(this));
+          var active;
+          active = true;
+          $('#navicon').click(function () {
+              if (active === true) {
+                  $('#navicon').removeClass('inactive').addClass('active');
+                  active = false;
+                  return console.log(active);
+              } else {
+                  $('#navicon').removeClass('active').addClass('inactive');
+                  active = true;
+                  return console.log(active);
+              }
+          });
+      }.call(this));
 
       var count_particles, stats, update;
       stats = new Stats;
