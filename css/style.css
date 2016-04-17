@@ -584,6 +584,11 @@ div#email-container, div#social-holder {
           transition: all 0.3s;
   width: 0;
 }
+
+#mail{
+  color: #333;
+}
+
 .icon-button:hover span {
   width: 3.6rem;
   height: 3.6rem;
