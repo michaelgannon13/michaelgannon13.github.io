@@ -503,7 +503,7 @@ div#email-container, div#social-holder {
   }
 
   p#dropDown-content {
-    color: #000;
+    color: #1a1a1a;
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -1636,7 +1636,7 @@ figcaption#right-items {
 .timeline ol {
   font: 300 95% 'lato';
   padding: 3px 0 20px 0;
-  color: #5A5A55;
+  color: #1a1a1a;
   width: 70%;
   font-size: 14px;
   line-height: 22px;
