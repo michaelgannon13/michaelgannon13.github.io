@@ -25,7 +25,7 @@
             try {
                 theOffset = ui.newHeader.offset();
                 $('body,html').animate({ 
-                    scrollTop: theOffset.top -20
+                    scrollTop: theOffset.top -83
                 });
             } catch(err){}
           }
@@ -57,7 +57,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-    <link href="css/timeline.css" rel="stylesheet">
   </head>
 
   <body>
@@ -71,7 +70,7 @@
             <nav class="navbar navbar-default navbar-fixed-top">
               <div class="container-fluid">
                 <div class="navbar-header">
-                  <a class="navbar-brand" href="#"><!--<img class="img-responsive" src="img/logo.png">--></a>
+                  <a class="navbar-brand" href="#"><img id="top-logo" class="img-responsive" src="img/logo.png"></a>
                 </div>
                 <ul class="nav navbar-nav">
                   <li><a href="#section1">Home</a></li>
@@ -170,7 +169,7 @@
                 </div>
                 <div id="accordian-dropDown-right" class="col-md-6 col-sm-12 animated fadeInUp">
                   <p id="dropDown-content">
-                    <img class="img-responsive" style="width: 750px" src="img/doddleco.png">
+                    <img class="img-responsive" style="width: 750px" src="img/Doddle.png">
                   </p>
                 </div>
             </div>
@@ -381,7 +380,7 @@
                 </div>
                 <div id="accordian-dropDown-right" class="col-md-6 col-sm-12 animated fadeInUp">
                   <p id="dropDown-content">
-                    <img class="img-responsive" src="img/paint.png">
+                    <img class="img-responsive" src="img/paintt.png">
                   </p>
                 </div>
             </div> 
@@ -411,7 +410,7 @@
                 </div>
                 <div id="accordian-dropDown-right" class="col-md-6 col-sm-12 animated fadeInUp bottom-acc-container">
                   <p id="dropDown-content">
-                    <img class="img-responsive" src="img/vis.png">
+                    <object width="400" height="50" data="game.swf"></object>
                   </p>
                 </div>
             </div>            
@@ -487,19 +486,7 @@
         <!--
           <div id="subheader-greeting">Who Am I? <i class="fa fa-user"></i></div>
           <div>developer // designer // problem solver</div>
-          I am a graduate of Multimedia Systems / Web Engineering in IADT. I also have a degree in Civil Engineering. This background has provided me with the skills to analyze problems and develop creative solutions to these problems.
-
-          From my course in IADT I have learned a wide range of skills including Web and Mobile Development, Programming, Database Management, Usability, Networks, Software Development and Design.
-
-          My objective is to maintain a healthy balance between functionality and visual impact. My hobbies include travelling, skateboarding, learning new skills and socializing.
-
-          I am a Web Developer. I have a BSc (Honours) in Computing Multimedia Systems/Web Engineering (2nd Class Honours, Grade 1) from I.A.D.T. I specialise in Front-End Development, incorporating my skills in HTML5, CSS3, JavaScript (and jQuery), Bootstrap, Wordpress and UX Design into delivering compelling User Experiences. I also have experience with the Android SDK, Eclipse and Virtual Box.
-
-          I have a good knowledge of User Interface Design principles and communicating visually with the end user (Photoshop and Illustrator). I integrate these principles into all my work.
-
-          I also have a BEngTech in Structural Engineering from D.I.T. I covered various modules during this time which have contributed to my skills in problem solving, computation and graphic design.
-
-          My areas of interest are Front-End Web Development Technologies, Digital Media, Graphic Design / Video Editing and delivering optimal user experiences.
+         
 
           I enjoy turning complex problems into simple, beautiful and intuitive interface designs. When I'm not coding or pushing pixels, you'll find me in the gym or on the court shooting hoops.
 
@@ -529,7 +516,11 @@
 
       <div id="section4" class="row">
         <div id="creep" class="col-md-12">
-            <div id="subheader-greeting">Contact</div>
+            <div id="subheader-greeting" class="contact-bottom">Contact</div>
+            <div id="bottom-container">
+              <div id="contact-message">Do you have an idea for a project?</div>
+              <div id="sub-contact-message">Just get in touch and I'd be happy to talk to discuss it with you.</div>
+            </div>
             
             <div id="bottom-top-holder" class="col-md-4">
             <i class="fa fa-envelope-o" aria-hidden="true"></i><br>
@@ -580,10 +571,10 @@
       <button type="button" class="overlay-close">Close</button>
       <nav>
         <ul>
-          <li><a class="menu-hide" href="#section1">Home</a></li>
-          <li><a class="menu-hide" href="#section2">Projects</a></li>
-          <li><a class="menu-hide" href="#section3">About</a></li>
-          <li><a class="menu-hide" href="#section4">Contact</a></li>
+          <li><a class="menu-hide1" href="#section1">Home</a></li>
+          <li><a class="menu-hide2" href="#section2">Projects</a></li>
+          <li><a class="menu-hide3" href="#section3">Experience</a></li>
+          <li><a class="menu-hide4" href="#section4">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -616,8 +607,10 @@
           // checks if window is scrolled more than 500px, adds/removes solid class
           if($(this).scrollTop() > 750) { 
               $('.navbar').addClass('solid');
+              $('#top-logo').fadeIn(1000);
           } else {
               $('.navbar').removeClass('solid');
+              $('#top-logo').fadeOut(1000);
           }
         });
 
