@@ -178,7 +178,6 @@ div#email-container, div#social-holder {
     content: counter(step-counter);
     margin-right: 5px;
     color: #9F9F9F;
-    font-weight: bold;
     padding: 3px 8px 0 16px;
 }
 
