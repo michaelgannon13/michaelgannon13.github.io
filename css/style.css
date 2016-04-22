@@ -54,6 +54,11 @@ div#sub-contact-message {
     font-weight: 500;
 }
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #00F9CD !important;
+    background-color: rgba(231, 231, 231, 0);
+}
+
 div#bottom-container {
     margin-top: 60px;
 }
