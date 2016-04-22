@@ -61,7 +61,7 @@
     <link href="css/animate.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbar">
     <div class="container-fluid">
 
       <div id="section1" class="row">
@@ -74,12 +74,14 @@
                 <div class="navbar-header">
                   <a class="navbar-brand" href="#"><img id="top-logo" class="img-responsive" src="img/logo.png"></a>
                 </div>
-                <ul class="nav navbar-nav">
-                  <li><a href="#section1">Home</a></li>
-                  <li><a href="#section2">Projects</a></li>
-                  <li><a href="#section3">Experience</a></li> 
-                  <li><a href="#section4">Contact</a></li> 
-                </ul>
+                <div id="navbar">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#section1">Home</a></li>
+                    <li><a href="#section2">Projects</a></li>
+                    <li><a href="#section3">Experience</a></li> 
+                    <li><a href="#section4">Contact</a></li> 
+                  </ul>
+                </div>  
               </div>
             </nav>
           <button id="trigger-overlay" type="button"><i class="fa fa-bars"></i></button>
