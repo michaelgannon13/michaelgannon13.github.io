@@ -1359,6 +1359,10 @@ input:-webkit-autofill {
       border-bottom: none !important;
   }
 
+  li#tech-item {
+      display: inline-block;
+  }
+
   .arrow {
     font-size: 30px;
   }
