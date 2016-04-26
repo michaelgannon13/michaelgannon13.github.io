@@ -1355,6 +1355,10 @@ input:-webkit-autofill {
     display: none;
   }
 
+  a.menu-hide1, a.menu-hide2, a.menu-hide3, a.menu-hide4{
+    font-size: 50px;
+  }
+
   span#build-something, span#wanna-quote {
       font-size: 28px;
   }
