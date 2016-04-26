@@ -1355,6 +1355,10 @@ input:-webkit-autofill {
     display: none;
   }
 
+  p#dropDown-content {
+      border-bottom: none !important;
+  }
+
   .arrow {
     font-size: 30px;
   }
