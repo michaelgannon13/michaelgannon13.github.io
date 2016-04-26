@@ -1238,6 +1238,10 @@ input:-webkit-autofill {
   }
 
   button#trigger-overlay {
+    z-index: 0;
+}
+
+  button#trigger-overlay {
       visibility: visible;
   }
 
@@ -1353,6 +1357,11 @@ input:-webkit-autofill {
 
   div#particles-js {
     display: none;
+  }
+
+  .overlay .overlay-close {
+      width: 40px !important;
+      height: 40px !important;
   }
 
   p#dropDown-content {
