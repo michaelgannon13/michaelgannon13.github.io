@@ -161,6 +161,41 @@ div#email-container, div#social-holder {
     position: relative;
   }
 
+  .container {
+    width:80%;
+    margin:0 auto;
+    overflow:auto;
+    padding:2%;
+  }
+
+  .right-content, .left-content {
+    float:left;
+    display:block;
+    width:50%;
+    padding:1% 2%;
+  }
+
+  .left-content {
+    border-right: 2px dotted #B8B8B8;
+    text-align:right;
+  }
+
+  .left-content p {
+    margin:150px 0 0;
+  }
+
+  .right-content p {
+    margin:80px 0 150px;
+  }
+
+  .left-content .more-padding {
+    padding-right:100px;
+  }
+  .right-content .more-padding {
+    padding-left:100px;
+  }
+
+
   #content img {
       position: absolute;
       top: 0px;
@@ -1378,7 +1413,6 @@ input:-webkit-autofill {
 
   #section3-a{
     visibility: visible !important;
-    height: 100vh;
   }
 
   li#tech-item {
