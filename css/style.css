@@ -1237,8 +1237,12 @@ input:-webkit-autofill {
       display: none;
   }
 
+  .overlay.overlay-hugeinc.open {
+      z-index: 2;
+  }
+
   button#trigger-overlay {
-    z-index: 0;
+    z-index: 1;
 }
 
   button#trigger-overlay {
