@@ -1359,6 +1359,15 @@ input:-webkit-autofill {
       border-bottom: none !important;
   }
 
+  div#section3 {
+      display: none;
+  }
+
+  #section3-a{
+    visibility: visible !important;
+    height: 100vh;
+  }
+
   li#tech-item {
       display: inline-block;
   }
