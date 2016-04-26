@@ -1365,6 +1365,10 @@ input:-webkit-autofill {
 
   #landing-greeting {
       display: inherit;
+      font-size: 50px !important;
+      line-height: 1.2 !important;
+      letter-spacing: -0.5 !important;
+      padding-top: 50px;
   }
 
   div#subheader-greeting {
