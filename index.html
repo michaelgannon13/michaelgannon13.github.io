@@ -520,7 +520,7 @@
         <div class="container">
         <div id="subheader-greeting">Timeline</div>
          <div class="left-content">
-         <h3>Educatin</h3>
+         <h3>Education</h3>
             <p>Content 01</p>
             <p>Content 02</p>
             <p>Content 03</p>
@@ -533,7 +533,6 @@
             <p>Content 02</p>
             <p>Content 03</p>
             <p>Content 04</p>
-            <p>Content 05</p>
          </div>
       </div>
       </div>
@@ -638,6 +637,23 @@
               $('#top-logo').fadeOut(1000);
           }
         });
+
+        $(window).scroll(function(){         
+        $('.container p').each(function(){
+            var scrollTop     = $(window).scrollTop(),
+                elementOffset = $(this).offset().top,
+                distance      = (elementOffset - scrollTop),
+                windowHeight  = $(window).height(),
+                breakPoint    = windowHeight*0.9;
+
+            if(distance > breakPoint) {
+              $(this).addClass("more-padding"); 
+            }  if(distance < breakPoint) {
+              $(this).removeClass("more-padding");  
+            }
+        });
+      });
+
 
         $("h3#accordian-header-text").click(function() {
           var $this = $(this);        

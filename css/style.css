@@ -168,6 +168,14 @@ div#email-container, div#social-holder {
     padding:2%;
   }
 
+  .container p {
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7 ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out; 
+  }
+
   .right-content, .left-content {
     float:left;
     display:block;
