@@ -1289,7 +1289,7 @@ input:-webkit-autofill {
   }
 
   #section3-a{
-    height: 100vh;
+    height: inherit;
     visibility: visible !important;
   }
 
