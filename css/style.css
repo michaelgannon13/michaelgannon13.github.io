@@ -32,6 +32,10 @@ body{
 		height: 100vh;
 	} 
 
+  #section3-a{
+    height: 0;
+  }
+
   nav.navbar.navbar-default {
       margin-bottom: 0;
       margin-left: -15px;
@@ -1280,6 +1284,15 @@ input:-webkit-autofill {
       display: none;
   }
 
+  #section3{
+    display: none;
+  }
+
+  #section3-a{
+    height: 100vh;
+    visibility: visible !important;
+  }
+
   .overlay.overlay-hugeinc.open {
       z-index: 2;
   }
@@ -1415,13 +1428,13 @@ input:-webkit-autofill {
       border-bottom: none !important;
   }
 
-  div#section3 {
+/*   div#section3 {
       display: none;
   }
 
   #section3-a{
     visibility: visible !important;
-  }
+  } */
 
   li#tech-item {
       display: inline-block;
