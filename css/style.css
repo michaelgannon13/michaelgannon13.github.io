@@ -36,6 +36,11 @@ body{
     height: 0;
   }
 
+  h6#tl-left-head, h6#tl-right-head{
+    font: 600 15px 'Lato';
+    color: #00A789;
+  }
+
   nav.navbar.navbar-default {
       margin-bottom: 0;
       margin-left: -15px;
