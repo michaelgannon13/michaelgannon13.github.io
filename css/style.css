@@ -284,10 +284,15 @@ div#email-container, div#social-holder {
   span#typed {
     font-size: 56px;
     margin-left: 55px;
-    color: #00FFD2;
-    font-weight: 300;
+/*     color: #00FFD2;
+ */    font-weight: 300;
     font-family: lato;
     text-transform: uppercase;
+
+    background: -webkit-linear-gradient(left, #00FFD3, #FFFFFF);
+    background: linear-gradient(top, #00FFD3, #FFFFFF));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .type-wrap{
@@ -299,11 +304,11 @@ div#email-container, div#social-holder {
 
   #landing-greeting {
     color: black;
-    font-size: 88px;
+    font-size: 90px;
     font-family: HelveticaNeue-Bold;
     line-height: 92px;
     font-weight: 600;
-    letter-spacing: -2px;
+    letter-spacing: -5px;
     left: 30px;
     position: relative;
     display: inline;
