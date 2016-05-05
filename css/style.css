@@ -266,6 +266,11 @@ span#tl-low {
     color: #006B57;
 }
 
+p#tm-content {
+    font-size: 13px;
+    color: #464646;
+}
+
 /* Mobile timeline */
 
 
