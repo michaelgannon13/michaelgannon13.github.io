@@ -378,7 +378,7 @@ span#tl-low {
   #landing-greeting {
     color: black;
     font-size: 90px;
-    font-family: HelveticaNeue-Bold;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 92px;
     font-weight: 600;
     letter-spacing: -5px;
