@@ -175,8 +175,34 @@ div#email-container, div#social-holder {
     position: relative;
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile timeline */
   .container {
-    width:80%;
     margin:0 auto;
     overflow:auto;
     padding:2%;
@@ -202,20 +228,68 @@ div#email-container, div#social-holder {
     text-align:right;
   }
 
-  .left-content p {
-    margin:150px 0 0;
-  }
+  h2#tl-head {
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 34px;
+}
 
-  .right-content p {
-    margin:80px 0 150px;
-  }
+span#tl-low-r {
+    font-size: 12px;
+    color: #002E4C;
+}
 
-  .left-content .more-padding {
+.left-content .more-padding {
     padding-right:100px;
   }
   .right-content .more-padding {
     padding-left:100px;
   }
+
+h5#tl-sub-head-left, h5#tl-sub-head-right {
+    text-transform: uppercase;
+    font-family: lato;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+h5#tl-sub-head-left{
+    color: #00A789;
+}
+
+h5#tl-sub-head-right{
+    color: #00436F;
+}
+
+span#tl-low {
+    font-size: 12px;
+    color: #006B57;
+}
+
+/* Mobile timeline */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   #content img {
@@ -1296,6 +1370,10 @@ input:-webkit-autofill {
 @media (max-width: 780px) {
     nav.navbar.navbar-default.navbar-fixed-top {
       display: none;
+  }
+
+  div.tl-mobile {
+      padding-left: 0 !important;
   }
 
   #section3{
