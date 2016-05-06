@@ -543,19 +543,13 @@ p#tm-content {
       opacity:0.7;
   }
 
-/* 	#section4{
-    background-size: cover;
-    position: relative;
-    opacity: 0.9;
-    top: 0; 
-    left: 0; 
-  } */
-
   a#link {
     font-weight: 600;
-    color: #00436F;
+    color: white;
     font-size: 14px;
-}
+    background: #333333;
+    padding: 5px;
+    border-radius: 4px;}
 
   h3#ui-id-1, h3#ui-id-3, h3#ui-id-5, h3#ui-id-7, h3#ui-id-9, h3#ui-id-11 {
     border: 1px solid #8E8E8E;
@@ -567,7 +561,7 @@ p#tm-content {
   .arrow {
     font-size: 40px;
     position: absolute;
-    left: 50vw;
+    left: 48.7vw;
     color: #00FFD2;
     bottom: 0;
      -webkit-transition: all 200ms ease-in;
@@ -1868,10 +1862,7 @@ figcaption#right-items {
 .timeline article:last-of-type h2 {
   color: #333;
 }
-.timeline article:last-of-type h6,
-.timeline article:last-of-type a {
-  color: #333;
-}
+
 .timeline article:last-of-type a:hover {
   color: #95D40D;
 }
