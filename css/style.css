@@ -1678,7 +1678,7 @@ p#tm-content {
     h2#tl-head {
       font-weight: 600;
       letter-spacing: -1px;
-      font-size: 34px !important;
+      font-size: 30px !important;
   }
 
   span#tl-low-r {
@@ -1697,12 +1697,11 @@ p#tm-content {
     border-left: 2px dotted #ccc;
   }
 
-
   h5#tl-sub-head-left, h5#tl-sub-head-right {
       text-transform: uppercase;
       font-family: lato;
       font-weight: 900;
-      font-size: 14px !important;
+      font-size: 13px !important;
   }
 
   h5#tl-sub-head-left{
