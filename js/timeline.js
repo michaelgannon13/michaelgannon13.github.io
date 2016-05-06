@@ -16,8 +16,8 @@ function Timeline(cvs) {
         radius: 600,
     };
     self.targets = [
-        [49, 130, 180, 200],
-        [49, 140, 190, 200]
+        [80, 130, 180, 200],
+        [75, 140, 190, 200]
     ];
     self.dotColors = [
         ['#00A789', 'rgba(0,167,137,0.2)', 'rgba(0,167,137,0.2)'], //left dots (big and small)
