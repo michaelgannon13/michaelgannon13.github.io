@@ -1650,8 +1650,6 @@ p#tm-content {
 @media (max-width: 500px) {
 
 
-
-/* Mobile timeline */
     .container {
       margin:0 auto;
       overflow:auto;
@@ -1704,7 +1702,7 @@ p#tm-content {
       text-transform: uppercase;
       font-family: lato;
       font-weight: 900;
-      font-size: 16px !important;
+      font-size: 14px !important;
   }
 
   h5#tl-sub-head-left{
@@ -1716,9 +1714,14 @@ p#tm-content {
   }
 
   span#tl-low {
-      font-size: 12px;
+      font-size: 12px !important;
       color: #006B57;
   }
+
+  span#tl-low-r {
+    font-size: 12px !important;
+    color: #002E4C;
+}
 
   p#tm-content {
       font-size: 13px !important;
