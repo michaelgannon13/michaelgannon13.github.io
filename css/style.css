@@ -224,7 +224,6 @@ div#email-container, div#social-holder {
   }
 
   .left-content {
-    border-right: 2px dotted #B8B8B8;
     text-align:right;
   }
 
@@ -242,15 +241,20 @@ span#tl-low-r {
 .left-content .more-padding {
     padding-right:100px;
   }
-  .right-content .more-padding {
+
+.right-content .more-padding {
     padding-left:100px;
   }
+.right-content{
+  border-left: 2px dotted #ccc;
+}
+
 
 h5#tl-sub-head-left, h5#tl-sub-head-right {
     text-transform: uppercase;
     font-family: lato;
     font-weight: 900;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 h5#tl-sub-head-left{
@@ -322,27 +326,6 @@ p#tm-content {
     padding: 3px 8px 0 16px;
 }
 
-/* moving background image for header text */
-/*
-  div#landing-greeting {
-    background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: aitf 80s linear infinite;
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-}
-
-@-webkit-keyframes aitf {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-*/
-
   h3#accordian-header-text:hover {
     background: #fff;
   }
@@ -366,7 +349,6 @@ p#tm-content {
     font-weight: 300;
     font-family: lato;
     text-transform: uppercase;
-
     background: -webkit-linear-gradient(left, #00F2FF,#00FFD3);
     background: linear-gradient(left, #00F2FF,#00FFD3);
     -webkit-background-clip: text;
@@ -489,7 +471,7 @@ p#tm-content {
     font-family: lato, serif;
     text-align: center;
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 400;
     color: #00A789;
     text-transform: capitalize;
   }
@@ -501,7 +483,7 @@ p#tm-content {
   span#wanna-quote {
       font-family: lato, serif;
       font-size: 30px;
-      font-weight: 300;
+      font-weight: 400;
       color: #00A789;
       text-transform: capitalize;
   }
@@ -549,9 +531,7 @@ p#tm-content {
     font-size: 14px;
     background: #333333;
     padding: 5px;
-    border-radius: 4px;
-    margin-right: 5px;
-  }
+    border-radius: 4px;}
 
   h3#ui-id-1, h3#ui-id-3, h3#ui-id-5, h3#ui-id-7, h3#ui-id-9, h3#ui-id-11 {
     border: 1px solid #8E8E8E;
