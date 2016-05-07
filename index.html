@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Michael Gannon | Front end Developer | UX/UI Designer | Project Manager</title>
+    <meta name="keywords" content="web designer, cheap, web developer, UI designer, UX designer, good, experienced">
+    <meta name="description" content="Official website of Michael Gannon; Front End Developer, UX/UI Designer, Project Manger">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">  
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700, 900' rel='stylesheet' type='text/css'>    
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
 
     <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
@@ -25,7 +27,7 @@
             try {
                 theOffset = ui.newHeader.offset();
                 $('body,html').animate({ 
-                    scrollTop: theOffset.top -20
+                    scrollTop: theOffset.top -83
                 });
             } catch(err){}
           }
@@ -49,18 +51,30 @@
               $("#typed").typed('reset');
           });
       });
+
+      // Flash game stuff
+      var flashEmbed = null;
+      function startFlash() {
+        if(flashEmbed != null) {
+            document.getElementById("flashContainer").removeChild(flashEmbed);
+        }
+
+        flashEmbed = document.createElement("embed");
+        document.getElementById("flashContainer").appendChild(flashEmbed);
+        flashEmbed.src="Game/game.swf";
+        flashEmbed.type="application/x-shockwave-flash";
+      }
     </script>
     <script src="js/typed-min.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />    
     <link rel="stylesheet" type="text/css" href="css/demo1.css" />
-    <link rel="stylesheet" type="text/css" href="css/style1.css" />
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<!--     <link rel="stylesheet" type="text/css" href="css/style1.css" />
+ -->    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-    <link href="css/timeline.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbar">
     <div class="container-fluid">
 
       <div id="section1" class="row">
@@ -71,14 +85,16 @@
             <nav class="navbar navbar-default navbar-fixed-top">
               <div class="container-fluid">
                 <div class="navbar-header">
-                  <a class="navbar-brand" href="#"><!--<img class="img-responsive" src="img/logo.png">--></a>
+                  <a class="navbar-brand" href="#"><img id="top-logo" class="img-responsive" src="img/logo.png"></a>
                 </div>
-                <ul class="nav navbar-nav">
-                  <li><a href="#section1">Home</a></li>
-                  <li><a href="#section2">Projects</a></li>
-                  <li><a href="#section3">Experience</a></li> 
-                  <li><a href="#section4">Contact</a></li> 
-                </ul>
+                <div id="navbar">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#section1">Home</a></li>
+                    <li><a href="#section2">Projects</a></li>
+                    <li><a href="#section3">Experience</a></li> 
+                    <li><a href="#section4">Contact</a></li> 
+                  </ul>
+                </div>  
               </div>
             </nav>
           <button id="trigger-overlay" type="button"><i class="fa fa-bars"></i></button>
@@ -113,11 +129,9 @@
                     The objective for Doddle was to be an entirely on-demand product that involved no client interfacing. It is a refined version of the current Visual ID toolkit which includes functionality to create your marketing materials, share them on Facebook and push promotions to Digital Screens.
                   </p><br><br>
                   <p id="dropDown-content">
-                    <a id="link" target="_blank" href="http://doddleco.com/">Brochure site</a>
-                  </p><br>
-                  <p id="dropDown-content">
-                    <a id="link" target="_blank" href="http://doddleco.com/">System Demo</a>
+                    <a id="link" target="_blank" href="http://doddleco.com/">Live Website</a><a id="link" target="_blank" href="http://doddleco.com/">System Demo</a><br><br>
                   </p>
+                  
                 </div>                
                 <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp"> 
                   <h4 id="acc-dropdown-content-header">Technologies</h4>
@@ -155,7 +169,7 @@
                     The site is essentially a single page site except for the blog which was added at a later date. The theme however was a multi-page template. So I had to restructure the landing page and customize a lot of the page functionality. Blogging was carried out twice a week as well as using the Yeost SEO plugin for the purpose of SEO.
                   </p><br><br>
                   <p id="dropDown-content">
-                    <a id="link" target="_blank" href="http://www.doddleco.com/">Website</a><br>
+                    <a id="link" target="_blank" href="http://www.doddleco.com/">Live Website</a><br><br>
                   </p>
                 </div>
                 <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp">
@@ -165,12 +179,13 @@
                       <li id="tech-item">Yeost SEO</li>
                       <li id="tech-item">CSS</li>
                       <li id="tech-item">PHP</li>
+                      <li id="tech-item">Google Analytics</li>
                       <li id="tech-item">Tawk API</li>
                     </ol>
                 </div>
                 <div id="accordian-dropDown-right" class="col-md-6 col-sm-12 animated fadeInUp">
                   <p id="dropDown-content">
-                    <img class="img-responsive" style="width: 750px" src="img/doddleco.png">
+                    <img class="img-responsive" style="width: 750px" src="img/Doddle.png">
                   </p>
                 </div>
             </div>
@@ -190,7 +205,7 @@
                     The objective was to bring a new look and feel to existing Visual ID website. Since Visual ID has so many products, partners, pricing plans and clients the website had a lot of content that needed to be managed so the site visitor is not overwhelmed with information.
                   </p><br><br>
                   <p id="dropDown-content">
-                    <a id="link"  target="_blank" href="http://visualid.com/">Website</a>
+                    <a id="link"  target="_blank" href="http://visualid.com/">Live Website</a><br><br>
                   </p>
                 </div>
                 <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp">
@@ -200,6 +215,7 @@
                     <li id="tech-item">Yeost SEO</li>
                     <li id="tech-item">CSS</li>
                     <li id="tech-item">PHP</li>
+                    <li id="tech-item">Google Analytics</li>
                   </ol>
                 </div>
 
@@ -226,7 +242,7 @@
                     a score tracking system for the SJOG staff to monitor the Clients progress in the game, the functionality of which was built in PHP and SQL.
                   </p><br><br>
                   <p id="dropDown-content">
-                    <a id="link"  target="_blank"  href="http://www.moikel.com/game/">Live Site</a>
+                    <a id="link"  target="_blank"  href="http://www.moikel.com/game/">Live Website</a><br><br>
                   </p>
                 </div>
                 <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp">
@@ -247,7 +263,7 @@
                 </div>
             </div>
 
-            <h3 id="accordian-header-text"><span id="title-left">QUICK TRIP / </span> <span id="title-right">fuel effieciency calculator</span>
+            <h3 id="accordian-header-text"><span id="title-left">QUICK TRIP / </span> <span id="title-right">fuel effieciency app</span>
             </h3>
             <div id="accordian-dropdown-container">
               <div id="accordian-dropDown-left" class="col-md-4 col-sm-8 animated fadeInUp">
@@ -262,9 +278,9 @@
                   The platform utilized was the Eclipse IDE, Android Developer Tools and GenyMotion and Vagrant were needed for the testing environment. This project developed my skills in Java, PHP, SQL, JSON and XML.<br>
                 </p><br><br>
                 <p id="dropDown-content">
-                  <a id="link"  target="_blank" href="https://www.youtube.com/watch?list=PLME_KoX3Ju49Kn-BpU6aZjsFH-8isud_Q&v=1TRsDARj4vY">Concept Demo</a><br>
-                  <a id="link"  target="_blank" href="https://www.youtube.com/watch?v=GzcPokY_sSQ&index=2&list=PLME_KoX3Ju49Kn-BpU6aZjsFH-8isud_Q">Interim Demo</a><br>
-                  <a id="link"  target="_blank" href="https://www.youtube.com/watch?v=cTVl2j3ta8k&list=PLME_KoX3Ju49Kn-BpU6aZjsFH-8isud_Q&index=3">Final Demo</a>
+                  <a id="link"  target="_blank" href="https://www.youtube.com/watch?list=PLME_KoX3Ju49Kn-BpU6aZjsFH-8isud_Q&v=1TRsDARj4vY">Concept Demo</a>
+                  <a id="link"  target="_blank" href="https://www.youtube.com/watch?v=GzcPokY_sSQ&index=2&list=PLME_KoX3Ju49Kn-BpU6aZjsFH-8isud_Q">Interim Demo</a>
+                  <a id="link"  target="_blank" href="https://www.youtube.com/watch?v=cTVl2j3ta8k&list=PLME_KoX3Ju49Kn-BpU6aZjsFH-8isud_Q&index=3">Final Demo</a><br><br>
                 </p>
               </div>
                 <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp">
@@ -334,7 +350,7 @@
                     JavaScript was used to start a timer every 30 minutes to emulate a feed of updates to the site. The clock at the top displays the current time of the device the site is being viewed on. <br><br>
                   </p>
                   <p id="dropDown-content">
-                  <a id="link"  target="_blank" href="http://awesome184.websrvr.in/">Website</a>
+                  <a id="link"  target="_blank" href="http://awesome184.websrvr.in/">Live Website</a><br><br>
                   </p>
                 </div>
               <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp">
@@ -351,7 +367,40 @@
                   <img class="img-responsive" src="img/mac.png">
                   </p>
                 </div>
-            </div>           
+            </div>
+
+            <h3 id="accordian-header-text"><span id="title-left">COUNSELLING BUSINESS / </span> <span id="title-right">responsive site</span>
+            </h3>
+            <div id="accordian-dropdown-container">
+              <div id="accordian-dropDown-left" class="col-md-4 col-sm-8 animated fadeInUp">
+                  <h4 id="acc-dropdown-content-header">Description</h4>
+                  <p id="dropDown-content">
+                  Responsive Web Design is going nowhere so I decided to make a RWD brochure site for my mother's new business venture. As a branding excercise I also designed custom business cards. The site uses CSS animaitons, has a contact form which relies on PHP for the back end handling and is built on Twitter Bootstrap
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    The inspirations for this site came from the French newspaper 'La Monde', 'The Financial Times' and 'The Boston Globe' news site. Extensive research was carried out on newspaper design trends dating back as far as 1630. Then two concept designs were drawn up in Photoshop and iterated again and again until the met the task objectives.
+                  </p><br><br>         
+                  <p id="dropDown-content">
+                    JavaScript was used to start a timer every 30 minutes to emulate a feed of updates to the site. The clock at the top displays the current time of the device the site is being viewed on. <br><br>
+                  </p>
+                  <p id="dropDown-content">
+                  <a id="link"  target="_blank" href="http://marygannoncounsellor.com/">Live Website</a><br><br>
+                  </p>
+                </div>
+              <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp">
+              <h4 id="acc-dropdown-content-header">Technologies</h4>
+                  <ol id="tech-list">
+                    <li id="tech-item">HTML5</li>
+                    <li id="tech-item">CSS3</li>
+                    <li id="tech-item">Bootstrap3</li>
+                  </ol>
+              </div>
+                <div id="accordian-dropDown-right" class="col-md-6 col-sm-12 animated fadeInUp">
+                  <p id="dropDown-content">
+                  <img class="img-responsive" src="img/bus.png">
+                  </p>
+                </div>
+            </div>              
 
             <h3 id="accordian-header-text"><span id="title-left">LETS PAINT / </span> <span id="title-right">drawing application</span>
             </h3>
@@ -368,8 +417,8 @@
                     This assignment illustrated to me the practicality of using jQuery over Javascript where possible, for web animations in particular.
                   </p>       
                   <p id="dropDown-content">
-                  <a id="link"  target="_blank" href="http://www.moikel.com/paintApp.html">Web App</a>
-                  </p><br><br>
+                  <a id="link"  target="_blank" href="http://www.moikel.com/paintApp.html">Live Website</a><br><br>
+                  </p>
                 </div>
                 <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp">
                 <h4 id="acc-dropdown-content-header">Technologies</h4>
@@ -381,7 +430,7 @@
                 </div>
                 <div id="accordian-dropDown-right" class="col-md-6 col-sm-12 animated fadeInUp">
                   <p id="dropDown-content">
-                    <img class="img-responsive" src="img/paint.png">
+                    <img class="img-responsive" src="img/paintt.png">
                   </p>
                 </div>
             </div> 
@@ -392,14 +441,12 @@
               <div id="accordian-dropDown-left" class="col-md-4 col-sm-8 animated fadeInUp bottom-acc-container">
                 <h4 id="acc-dropdown-content-header">Description</h4>
                  <p id="dropDown-content">
-                    This was a flash project carried out in college for the Dun Laoghaire Maritime Museum. Despite being a language that is considered 'dead', Action Script is a very practical way of learning how to code and has similarities to Javascript. 
+                    This was a joint project carried out in college for the Dun Laoghaire Maritime Museum. Despite being a language that is considered 'dead', Action Script is a very practical way of learning how to code and has similarities to Javascript. 
                   </p><br><br>
                   <p id="dropDown-content">
-                    The objective of the game was to document the life of Robert Halpin, a famous sailour by way of an educational Flash game and also videos created using Adobe After Effects. The project was selected from the class to be put on display in the Maritime Museum. I have not yet been to see it yet because I did the voice overs for the videos and am simply too embarrassed :\
+                    The objective of the game was to document the life of Robert Halpin, a famous sailour by way of an educational Flash game and also videos created using Adobe After Effects. The project was selected from the class to be put on display in the Maritime Museum. I have not yet been to see it yet because I did the voice overs for the videos and am simply too embarrassed :\ 
                   </p><br><br>         
-                  <p id="dropDown-content">
-                  <a id="link" target="_blank" href="http://www.moikel.com/">Flash Game</a>
-                  </p>
+                  
                 </div>
                 <div id="accordian-dropDown-left" class="col-md-2 col-sm-4 animated fadeInUp bottom-acc-container">
                   <h4 id="acc-dropdown-content-header">Technologies</h4>
@@ -409,9 +456,10 @@
                     <li id="tech-item">Action Script 3</li>
                   </ol>
                 </div>
-                <div id="accordian-dropDown-right" class="col-md-6 col-sm-12 animated fadeInUp bottom-acc-container">
+                  <div id="accordian-dropDown-right" class="col-md-6 col-sm-12 animated fadeInUp bottom-acc-container">
                   <p id="dropDown-content">
-                    <img class="img-responsive" src="img/vis.png">
+                    <button onclick="startFlash()">start flash</button>
+                    <div id="flashContainer"></div>
                   </p>
                 </div>
             </div>            
@@ -430,7 +478,7 @@
                       <h6>2012 - 2015<br>INSTITUTE OF ART, DESIGN & TECHNOLOGY</h6>
                       <p>
                         I studied Multimedia Programming and Web Engineering in IADT. Some of the things covered were languages and frameworks such as HTML5, CSS3, Javascript & jQuery, Java, XML, JSON, SQL as well as the Android SDK, Twitter Bootstrap, Backbone.js, ASP.NET, MongoDB, Node & npm.<br>
-                        <a id="link" target="_blank" href="http://www.iadt.ie/en/ProspectiveStudents/FacultiesCourses/FacultyofFilmArtCreativeTechnologies/DL836-BScHonoursinCreativeComputing/">Course curriculum</a>
+                        <a  target="_blank" href="http://www.iadt.ie/en/ProspectiveStudents/FacultiesCourses/FacultyofFilmArtCreativeTechnologies/DL836-BScHonoursinCreativeComputing/">Course curriculum</a>
                       </p>
                   </figure>
                   <figure>
@@ -438,7 +486,7 @@
                       <h6>2011<br>DUBLIN BUSINESS SCHOOL</h6>
                       <p>
                         I undertook a night course in DBS in 2011 in Web Design and SEO during my gap year. I studied the fundamentals of HTML, CSS, SEO and Photoshop. The objective of this course was to get a taste of programming and web development.<br>
-                        <a id="link" target="_blank" href="http://www.dbs.ie/course/professional-evening-diploma/diploma-in-web-design">Course curriculum</a>
+                        <a target="_blank" href="http://www.dbs.ie/course/professional-evening-diploma/diploma-in-web-design">Course curriculum</a>
                       </p>
                   </figure>
                   <figure>
@@ -446,7 +494,7 @@
                       <h6>2008 - 2011<br>DUBLIN INSTITURE OF TECHNOLOGY</h6>
                       <p>
                         I studied Civil Engineering for three years in DIT. Despite not influincing my choice of career path it did teach me the thought process behind problem solving, the importance of attention ot detail and also tools such as Auto CAD.<br>
-                        <a id="link" target="_blank" href="https://www.dit.ie/catalogue/Programmes/Details/DT004">Course curriculum</a>
+                        <a target="_blank" href="https://www.dit.ie/catalogue/Programmes/Details/DT004">Course curriculum</a>
                       </p>
                   </figure>
               </article>
@@ -457,12 +505,12 @@
                       <figcaption id="right-items">Visual ID</figcaption>
                       <h6>2015 - 2016<br>FRONT END DEVELOPER / PROJECT MANAGER</h6>
                       <p>
-                        As Front End Developer I am responsible for the design, functionality & maintenance of all client side access points. Consisting of two websites, the Visual ID artwork toolkit and Doddle a new pay online product.
+                        As Front End Developer I am responsible for the design, functionality & maintenance of all client side access points. This consists of the Visual ID and Doddle brochure site aswell as the Doddle web application.
                       </p> 
                       <p>
-                        As Project Manager od Doddle my responsibilities include all design and functionality relating to Doddle, calling and chairing scrum meetings, writing meeting minutes, ensuring all Doddle deadlines are met and interfacing with Doddle clients and partners.
+                        As Project Manager of Doddle my responsibilities include all design and functionality relating to Doddle, calling and chairing scrum meetings, writing meeting minutes, ensuring all Doddle deadlines are met and interfacing with Doddle clients and partners.
                         <br>
-                        <a id="link" href="#section2">Visual ID Work</a>.
+                        <a href="#section2">Visual ID Work</a>.
                       </p>  
                   </figure>
                   <figure>
@@ -487,19 +535,7 @@
         <!--
           <div id="subheader-greeting">Who Am I? <i class="fa fa-user"></i></div>
           <div>developer // designer // problem solver</div>
-          I am a graduate of Multimedia Systems / Web Engineering in IADT. I also have a degree in Civil Engineering. This background has provided me with the skills to analyze problems and develop creative solutions to these problems.
-
-          From my course in IADT I have learned a wide range of skills including Web and Mobile Development, Programming, Database Management, Usability, Networks, Software Development and Design.
-
-          My objective is to maintain a healthy balance between functionality and visual impact. My hobbies include travelling, skateboarding, learning new skills and socializing.
-
-          I am a Web Developer. I have a BSc (Honours) in Computing Multimedia Systems/Web Engineering (2nd Class Honours, Grade 1) from I.A.D.T. I specialise in Front-End Development, incorporating my skills in HTML5, CSS3, JavaScript (and jQuery), Bootstrap, Wordpress and UX Design into delivering compelling User Experiences. I also have experience with the Android SDK, Eclipse and Virtual Box.
-
-          I have a good knowledge of User Interface Design principles and communicating visually with the end user (Photoshop and Illustrator). I integrate these principles into all my work.
-
-          I also have a BEngTech in Structural Engineering from D.I.T. I covered various modules during this time which have contributed to my skills in problem solving, computation and graphic design.
-
-          My areas of interest are Front-End Web Development Technologies, Digital Media, Graphic Design / Video Editing and delivering optimal user experiences.
+         
 
           I enjoy turning complex problems into simple, beautiful and intuitive interface designs. When I'm not coding or pushing pixels, you'll find me in the gym or on the court shooting hoops.
 
@@ -525,21 +561,51 @@
 
         </div>
       </div>
+      <div id="section3-a" style="visibility:hidden;">
+        <div class="container">
+        <div id="subheader-greeting" class="tl-mobile">Timeline</div>
+         <div class="left-content">
+         <h2 id="tl-head">Education</h2>
+            <h5 id="tl-sub-head-left">Web Engineering<br><span id="tl-low">2012 - 2015</span></h5>
+            <p id="tm-content">Front end -<br>Back end -<br>Networking -<br>Android development -<br>Responsive Web Design -<br>Graphic Design -<br>Flash -<br>Various Web Frameworks -<br><a target="_blank" href="http://www.iadt.ie/en/ProspectiveStudents/FacultiesCourses/FacultyofFilmArtCreativeTechnologies/DL836-BScHonoursinCreativeComputing/">Course curriculum</a></p><br>
 
+            <h5 id="tl-sub-head-left">Web Design<br><span id="tl-low">2011</span></h5>
+            <p id="tm-content">HTML -<br>CSS -<br>Photoshop -<br> SEO -<br><a target="_blank" href="http://www.dbs.ie/course/professional-evening-diploma/diploma-in-web-design">Course curriculum</a></p><br>
 
+            <h5 id="tl-sub-head-left">Civil Engineering<br><span id="tl-low">2008 - 2011</span></h5>
+            <p id="tm-content">Problem Solving -<br> Graphic Design -<br> AutoCAD -<br><a target="_blank" href="https://www.dit.ie/catalogue/Programmes/Details/DT004">Course curriculum</a>
+</p><br>
+         </div>
+         <div class="right-content">
+         <h2 id="tl-head">Experience</h2>
+            <h5 id="tl-sub-head-right">Web Developer<br><span id="tl-low-r">2015 - 2016</span></h5>
+            <p id="tm-content">- Front end technologies<br>- Virtual Environment<br>- Version Control<br>- Responsive Web Design<br>- Cross platform support<br>- Usability Testing<br>- Interface design<br>- Agile Development<br><a href="#section2">Details</a></p><br>
+
+            <h5 id="tl-sub-head-right">Project Manager<br><span id="tl-low-r">2015 - 2016</span></h5>
+            <p id="tm-content">- Managing team of 6<br>- Meeting Project Deadlines<br>- Motivating team<br>- Calling & chairing meetings<br>- Meeting minutes<br>- Interfacing with clients/partners<br>- Agile Development<br><a href="#section2">Details</a></p><br>
+
+            <h5 id="tl-sub-head-right">System Tester<br><span id="tl-low-r">2013</span></h5>
+            <p id="tm-content">- Usability Testing<br>- Jira<br>- Confluence</p><br>
+
+            <h5 id="tl-sub-head-right">Teacher<br><span id="tl-low-r">2012 & 2013</span></h5>
+            <p id="tm-content">- Teaching<br>- Interface Design<br>- Front end technologies</p><br>
+         </div>
+      </div>
+      </div>
       <div id="section4" class="row">
         <div id="creep" class="col-md-12">
-            <div id="subheader-greeting">Contact</div>
-            
+            <div id="subheader-greeting" class="contact-bottom">Contact</div>
+            <div id="bottom-container">
+              <div id="contact-message">Do you have an idea for a project?</div>
+              <div id="sub-contact-message">Just get in touch and I'd be happy to talk to discuss it with you.</div>
+            </div>
             <div id="bottom-top-holder" class="col-md-4">
             <i class="fa fa-envelope-o" aria-hidden="true"></i><br>
-
               <span id="build-something">Wanna email?</span><br>
               <div id="email-container">
                 <span id="email-phone"><a id="mail" href="mailto:michael.gannon13@gmail.com">michael.gannon13@gmail.com</a></span>
               </div>
             </div>  
-
             <div id="bottom-middle-holder" class="col-md-4">
             <i class="fa fa-eye" aria-hidden="true"></i><br>
               <span id="build-something">Wanna Creep?</span><br>
@@ -558,7 +624,6 @@
                 </a>
               </div>
             </div>
-
             <div id="bottom-bottom-holder" class="col-md-4">
             <i class="fa fa-phone" aria-hidden="true"></i><br>
               <span id="wanna-quote">Wanna chat?</span><br>
@@ -567,23 +632,20 @@
               </div>
             </div> 
         </div>
-
         <div id="googlemaps" class="col-md-12">
         </div>
         <footer id="bottom-copyright" class="col-md-12">© 2016 Michael Gannon All Rights Reserved</footer>
       </div>
-
       </div>
-
     </div> <!-- container-fluid end -->
     <div class="overlay overlay-hugeinc">
       <button type="button" class="overlay-close">Close</button>
       <nav>
         <ul>
-          <li><a class="menu-hide" href="#section1">Home</a></li>
-          <li><a class="menu-hide" href="#section2">Projects</a></li>
-          <li><a class="menu-hide" href="#section3">About</a></li>
-          <li><a class="menu-hide" href="#section4">Contact</a></li>
+          <li><a class="menu-hide1" href="#section1">Home</a></li>
+          <li><a class="menu-hide2" href="#section2">Projects</a></li>
+          <li><a class="menu-hide3" href="#section3-a">Experience</a></li>
+          <li><a class="menu-hide4" href="#section4">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -616,10 +678,28 @@
           // checks if window is scrolled more than 500px, adds/removes solid class
           if($(this).scrollTop() > 750) { 
               $('.navbar').addClass('solid');
+              $('#top-logo').fadeIn(1000);
           } else {
               $('.navbar').removeClass('solid');
+              $('#top-logo').fadeOut(1000);
           }
         });
+
+        $(window).scroll(function(){         
+        $('.container p').each(function(){
+            var scrollTop     = $(window).scrollTop(),
+                elementOffset = $(this).offset().top,
+                distance      = (elementOffset - scrollTop),
+                windowHeight  = $(window).height(),
+                breakPoint    = windowHeight*0.9;
+
+            if(distance > breakPoint) {
+              $(this).addClass("more-padding"); 
+            }  if(distance < breakPoint) {
+              $(this).removeClass("more-padding");  
+            }
+        });
+      });
 
         $("h3#accordian-header-text").click(function() {
           var $this = $(this);        
@@ -662,7 +742,7 @@
         particlesJS("particles-js", {
           "particles": {
             "number": {
-              "value": 110,
+              "value": 100,
               "density": {
                 "enable": true,
                 "value_area": 800
