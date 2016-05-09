@@ -461,7 +461,9 @@ div#email-container, div#social-holder {
     font-size: 14px;
     background: #333333;
     padding: 5px;
-    border-radius: 4px;}
+    border-radius: 4px;
+    margin-right: 6px;
+  }
 
   h3#ui-id-1, h3#ui-id-3, h3#ui-id-5, h3#ui-id-7, h3#ui-id-9, h3#ui-id-11 {
     border: 1px solid #8E8E8E;
