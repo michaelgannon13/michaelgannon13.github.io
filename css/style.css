@@ -41,6 +41,10 @@ body{
     height: 0;
   }
 
+  .left-content, .right-content {
+    height: 0;
+}
+
 /*   h6#tl-left-head, h6#tl-right-head{
     font: 600 15px 'Lato';
     color: #00A789;
@@ -1278,6 +1282,10 @@ input:-webkit-autofill {
     nav.navbar.navbar-default.navbar-fixed-top {
       display: none;
   }
+
+  .left-content, .right-content {
+    height: auto;
+}
 
   div.tl-mobile {
       padding-left: 0 !important;
