@@ -543,8 +543,8 @@ div#email-container, div#social-holder {
 
   div#accordian-dropDown-left, div#accordian-dropDown-middle, div#accordian-dropDown-right{
     height: 79vh;
-/*     overflow: scroll;
- */  }
+     overflow: scroll;
+  }
 
   div#accordian-background {
     padding-left: 0;
