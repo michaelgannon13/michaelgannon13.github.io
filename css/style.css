@@ -312,7 +312,7 @@ div#email-container, div#social-holder {
 	}
 
   li#tech-item {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     color: #00A789; /*or #FF2E63 #0CD1E5 #5EE6E4 #0434E8 #176ECA #0387FB*/
 }
@@ -507,7 +507,9 @@ div#email-container, div#social-holder {
     color: #1a1a1a;
     margin-left: 15px;
     margin-right: 15px;
+    font-weight: 300;
     text-rendering: optimizeLegibility;
+
   }
 
   h3#accordian-header-text {
