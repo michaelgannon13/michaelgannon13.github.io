@@ -19,11 +19,6 @@
     font-style: normal;
 } 
 
-@import url(http://fonts.googleapis.com/css?family=Lato:400);
-* {
-  box-sizing: border-box;
-}
-
 embed {
     width: 800px;
     height: 400px;
@@ -54,6 +49,8 @@ body{
     color: #00A789;
   } */
 
+
+/* scroll bar https://css-tricks.com/custom-scrollbars-in-webkit/ */
   nav.navbar.navbar-default {
       margin-bottom: 0;
       margin-left: -15px;
