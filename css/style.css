@@ -26,6 +26,8 @@ embed {
 
 body{
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
   }  
 
   .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus{
@@ -229,7 +231,7 @@ div#email-container, div#social-holder {
     font-weight: 300;
     font-family: lato;
     text-transform: uppercase;
-    
+
 /*     background: -webkit-linear-gradient(left, #00F2FF,#00FFD3);
     background: linear-gradient(left, #00F2FF,#00FFD3);
     -webkit-background-clip: text;
