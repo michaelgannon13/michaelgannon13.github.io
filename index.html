@@ -37,6 +37,19 @@
           }
         });
 
+        // The script below asynchronously loads the css file and reduces DOM load time to about 600ms
+        // but it affects the UX and doesnt load timeline 
+
+        // var cb = function() {
+        // var l = document.createElement('link'); l.rel = 'stylesheet';
+        //   l.href = 'css/style.css';
+        //   var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+        // };
+        // var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        //     webkitRequestAnimationFrame || msRequestAnimationFrame;
+        // if (raf) raf(cb);
+        // else window.addEventListener('load', cb);
+
         $("#typed").typed({
               // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
               stringsElement: $('#typed-strings'),
@@ -74,8 +87,8 @@
 <!--     <link rel="stylesheet" type="text/css" href="css/demo1.css" />
  -->    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-  </head>
+<!--     <link href="css/animate.css" rel="stylesheet">
+ -->  </head>
 
   <body data-spy="scroll" data-target="#navbar">
     <div class="container-fluid">
@@ -679,17 +692,26 @@
             });
         });
 
-        // Transition effect for navbar 
-        $(window).scroll(function() {
-          // checks if window is scrolled more than 500px, adds/removes solid class
-          if($(this).scrollTop() > 750) { 
-              $('.navbar').addClass('solid');
-              $('#top-logo').fadeIn(1000);
-          } else {
-              $('.navbar').removeClass('solid');
-              $('#top-logo').fadeOut(1000);
-          }
-        });
+
+
+
+
+
+
+          // Transition effect for navbar 
+          $(window).scroll(function() {
+            // checks if window is scrolled more than 500px, adds/removes solid class
+            if($(this).scrollTop() > 750) { 
+                $('.navbar').addClass('solid');
+                $('#top-logo').fadeIn(1000);
+            } else {
+                $('.navbar').removeClass('solid');
+                $('#top-logo').fadeOut(1000);
+            }
+          });
+
+
+
 
         $(window).scroll(function(){         
         $('.container p').each(function(){
