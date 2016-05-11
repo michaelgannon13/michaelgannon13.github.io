@@ -1,23 +1,23 @@
-@font-face {
+/* @font-face {
     font-family: HelveticaNeue;
     src: url(../fonts/HelveticaNeue/HelveticaNeue-Bold.otf);
     font-weight: normal;
     font-style: normal;
 } 
-
+ */
 @font-face {
     font-family: HelveticaNeue;
     src: url(../fonts/HelveticaNeue/HelveticaNeue.otf);
     font-weight: normal;
     font-style: normal;
 } 
-
+/* 
 @font-face {
     font-family: HelveticaNeue;
     src: url(../fonts/HelveticaNeue/HelveticaNeue-Light.otf);
     font-weight: normal;
     font-style: normal;
-} 
+}  */
 
 embed {
     width: 800px;
