@@ -223,15 +223,17 @@ div#email-container, div#social-holder {
   }
 
   span#typed {
+    color: #00FFD2;
     font-size: 56px;
     margin-left: 55px;
     font-weight: 300;
     font-family: lato;
     text-transform: uppercase;
-    background: -webkit-linear-gradient(left, #00F2FF,#00FFD3);
+    
+/*     background: -webkit-linear-gradient(left, #00F2FF,#00FFD3);
     background: linear-gradient(left, #00F2FF,#00FFD3);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
   }
 
   .type-wrap{
