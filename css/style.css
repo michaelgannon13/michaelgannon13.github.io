@@ -27,7 +27,6 @@ embed {
 body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
   }  
 
   .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus{
