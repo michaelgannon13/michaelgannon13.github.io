@@ -999,8 +999,8 @@ div.col-md-6.col-sm-12.animated.fadeInUp.center {
 }
 
 #form-content {
-  font-family: Roboto, sans-serif;
-  -webkit-transform: translateY(150%);
+/*   font-family: Roboto, sans-serif;
+ */  -webkit-transform: translateY(150%);
           transform: translateY(150%);
   width: 100%;
   opacity: 0;
