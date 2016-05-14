@@ -434,8 +434,9 @@ div#email-container, div#social-holder {
 i.fa.fa-angle-down.arrow.animated.infinite.bounce{
 
     animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
+    animation-delay: 8s;
+/*     animation-iteration-count: ;
+ */}
 
   .arrow {
     font-size: 40px;
