@@ -24,6 +24,17 @@ embed {
     height: 400px;
 }
 
+i#down-arrow, i#up-arrow {
+    font-size: 32px;
+    color: #333333;
+    position: relative;
+    top: -30px;
+}
+
+div#arrows {
+    
+}
+
 #thisImg{
       -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -70,6 +81,10 @@ body{
       transition: background-color 1s ease 0s;
       padding: 10px;
       height: 85px;
+  }
+
+  div#arrows {
+      text-align: center;
   }
 
 div#sub-contact-message {
