@@ -23,6 +23,21 @@
     outline: none !important;
 }
 
+div#flashContainer {
+    margin-top: 25px;
+}
+
+button#flash {
+    font-weight: 600;
+    color: white;
+    font-size: 14px;
+    background: #333333;
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 6px;
+    border: none;
+}
+
 #mob-info{
     color: #333;
     font: 400 80% helveticaneue;
@@ -541,6 +556,7 @@ i.fa.fa-angle-down.arrow.animated.infinite.bounce{
     line-height: 25px;
     animation-duration: 0.7s;
     margin-top: -10px;
+    text-align: center;
   }
 
   div.col-md-6.animated.fadeInUp.bottom-acc-container {
@@ -549,7 +565,7 @@ i.fa.fa-angle-down.arrow.animated.infinite.bounce{
 
   div#accordian-dropDown-left, div#accordian-dropDown-middle, div#accordian-dropDown-right{
     height: 79vh;
-     overflow: scroll;
+    overflow: scroll;
   }
 
   div#accordian-background {
