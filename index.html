@@ -53,32 +53,24 @@
           $('h3#accordian-header-text').addClass("active");
         };
 
-      var flashEmbed = null;
-      function startFlash() {
-        if(flashEmbed != null) {
-            document.getElementById("flashContainer").removeChild(flashEmbed);
-        }
+        var flashEmbed = null;
+        function startFlash() {
+          if(flashEmbed != null) {
+              document.getElementById("flashContainer").removeChild(flashEmbed);
+          }
 
-        flashEmbed = document.createElement("embed");
-        document.getElementById("flashContainer").appendChild(flashEmbed);
-        flashEmbed.src="Game/game.swf";
-        flashEmbed.type="application/x-shockwave-flash";
-      }
+          flashEmbed = document.createElement("embed");
+          document.getElementById("flashContainer").appendChild(flashEmbed);
+          flashEmbed.src="Game/game.swf";
+          flashEmbed.type="application/x-shockwave-flash";
+        }
     </script>
 
-<!--     <script type="text/javascript" src="js/typed-min.js"></script>
- -->
-<!--     <link rel="stylesheet" type="text/css" href="css/normalize-min.css" />    
- --><!--     <link rel="stylesheet" type="text/css" href="css/demo1.css" />
- -->     <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet"> 
- <!--     <link href="css/animate.css" rel="stylesheet">
- -->  
-<!-- <link href="css/minified.css.php" rel="stylesheet">
- --> </head>
+ </head>
 
   <body data-spy="scroll" data-target="#navbar">
-  <div class="se-pre-con"></div>
     <div class="container-fluid">
 
       <div id="section1" class="row">
@@ -722,14 +714,6 @@
     <script  type="text/javascript" src="js/modernizr.custom-min.js"></script> 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>   
     <script type="text/javascript">
-
-     // UNCOMMENT FOR LOADING GIF ON PAGE LOAD
-     // $(window).load(function() {
-     //    // Animate loader off screen
-     //    $(".se-pre-con").fadeOut("slow");;
-     //  });
-
-
       $(document).ready(function(){
         $('a[href^="#"]').on('click',function (e) {
             e.preventDefault();
@@ -765,7 +749,7 @@
 
  
     // The latitude and longitude of your business / place
-    var position = [53.300498, -6.283854];
+    var position = [53.3004978, -6.2838544];
      
     function showGoogleMaps() {
      
