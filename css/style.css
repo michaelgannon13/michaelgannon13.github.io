@@ -1684,16 +1684,13 @@ p#tm-content {
   }
 }
 
+@media (max-width: 1300px) {
 
+  .timeline p, .timeline ol{
+    width: 90% !important;
+  }
 
-
-
-
-
-
-
-
-
+}
 
 
 @media (max-width: 500px) {
@@ -1934,14 +1931,6 @@ p#tm-content {
 
 
 
-
-
-
-
-
-
-
-
 /* Overlay style */
 .overlay {
   position: fixed;
@@ -2108,7 +2097,7 @@ figcaption#right-items {
   font: 300 95% 'lato';
   padding: 3px 0 20px 0;
   color: #1a1a1a;
-  width: 97%;
+  width: 70%;
   font-size: 14px;
   line-height: 22px;
   text-rendering: optimizeLegibility;
