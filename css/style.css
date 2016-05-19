@@ -23,6 +23,10 @@
     outline: none !important;
 }
 
+div#sub-contact-message {
+    padding: 5px 15px 5px 15px;
+}
+
 div#flashContainer {
     margin-top: 25px;
 }
@@ -130,7 +134,6 @@ body{
   }
 
 div#sub-contact-message {
-    padding-top: 3px;
     font-size: 20px;
     color: #ABABAB;
     font-family: helveticaneue;
