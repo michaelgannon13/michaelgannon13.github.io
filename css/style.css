@@ -37,12 +37,13 @@ p#mob-para-right {
 }
 
 p#mob-para-right, p#mob-para{
-    line-height: 25px;
+    line-height: 20px;
     padding-left: 10px;
     color: #1a1a1a;
     font-weight: 300;
     text-rendering: optimizeLegibility;
     font-family: lato;
+    text-align: justify;
 }
 
 embed {
