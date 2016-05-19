@@ -23,6 +23,28 @@
     outline: none !important;
 }
 
+#mob-info{
+    color: #333;
+    font: 400 80% helveticaneue;
+}
+
+p#mob-para {
+    border-left: 5px solid rgba(0, 167, 137, 0.2);
+}
+
+p#mob-para-right {
+    border-left: 5px solid rgba(0,67,111,0.2);
+}
+
+p#mob-para-right, p#mob-para{
+    line-height: 25px;
+    padding-left: 10px;
+    color: #1a1a1a;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    font-family: lato;
+}
+
 embed {
     width: 800px;
     height: 400px;
