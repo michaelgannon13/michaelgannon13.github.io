@@ -1648,6 +1648,8 @@ p#tm-content {
 
   h3#accordian-header-text {
       padding-left: 34px;
+      padding-top: 25px;
+      padding-bottom: 25px;
   }
 
   i.fa.fa-bars {
