@@ -1230,6 +1230,18 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px #FFF inset;
 }
 
+#bottom-contact{
+    font-size: 74px;
+    line-height: 92px;
+    font-weight: 600;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-top: 90px;
+    padding-bottom: 10px;
+}
+
+
 @media (max-width: 600px) {
   #form-container.expand {
     height: 100%;
@@ -1275,6 +1287,12 @@ input:-webkit-autofill {
 
   .left-content, .right-content {
     height: auto;
+}
+
+#bottom-contact {
+    padding-top: 5px;
+    text-align: center;
+    padding-left: 0;
 }
 
   div.tl-mobile {
@@ -1384,7 +1402,7 @@ input:-webkit-autofill {
   }
 
   .timeline p, .timeline ol{
-      width: 97% !important;
+      width: 97%;
     }
 }
 
@@ -2057,7 +2075,7 @@ figcaption#right-items {
   font: 300 95% 'lato';
   padding: 3px 0 20px 0;
   color: #1a1a1a;
-  width: 70%;
+  width: 97%;
   font-size: 14px;
   line-height: 22px;
   text-rendering: optimizeLegibility;
