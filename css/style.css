@@ -1335,6 +1335,10 @@ input:-webkit-autofill {
     visibility: visible !important;
   }
 
+  .container {
+    display: block !important;
+}
+
   .overlay.overlay-hugeinc.open {
       z-index: 2;
   }
