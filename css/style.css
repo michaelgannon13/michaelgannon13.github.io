@@ -23,6 +23,10 @@
     outline: none !important;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 div#sub-contact-message {
     padding: 5px 15px 5px 15px;
 }
