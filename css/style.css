@@ -21,13 +21,16 @@ html, body {
     overflow-x: hidden;
 }
 
+
+/* Sprites */
 .Doddle-compressed, .vis-compressed, .letsGo-compressed, .quick-trip-compressed, .mac-compressed, .paint-compressed{
   background: url(../img/sprites.png) no-repeat;
 }
+/* Sprites */
 
 .navbar.solid .navbar-nav > li > a {
-    -webkit-transition: color 0.3s ease 0s;
-    transition: color 0.3s ease 0s;
+    -webkit-transition: color 0.5s ease 0s !important;
+    transition: color 0.5s ease 0s !important;
 }
 
 .Doddle-compressed{
