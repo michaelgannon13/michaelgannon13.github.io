@@ -20,13 +20,20 @@
 html, body {
     overflow-x: hidden;
 }
-
-
-/* Sprites */
-.Doddle-compressed, .vis-compressed, .letsGo-compressed, .quick-trip-compressed, .mac-compressed, .paint-compressed{
-  background: url(../img/sprites.png) no-repeat;
-}
-/* Sprites */
+	
+.bus-compressed, .letsgo-compressed, .mong-compressed, .paint-compressed, .vis-compressed, 
+.doddle-compressed, .mac-compressed, .quick-trip-compressed, .logo-compressed
+{ max-width: 100%; background-size: 100%; background-image: url('../img/sprite.png'); }
+ 
+.bus-compressed { background-position: 0 0%; background-size: 100%; width: 100% !important; height: 100% !important; }
+.letsgo-compressed { background-position: 0 17.209302%; background-size: 100%; width: 100% !important;height: 100% !important;}
+.mong-compressed { background-position: 0 27.688098%; background-size: 100%; width: 100% !important;height: 100% !important;}
+.paint-compressed { background-position: 0 39.130435% !important; background-size: 100%; width: 100% !important;height: 100% !important;}
+.vis-compressed { background-position: 0 52.398317% !important; background-size: 100%; width: 100% !important;height: 100% !important;}
+.doddle-compressed { background-position: 0 66.524581%; background-size: 102.666667%; width: 100% !important;height: 100% !important;}
+.mac-compressed { background-position: 0 80.608794% !important; background-size: 137.010676%; width: 100% !important;height: 100% !important;}
+.quick-trip-compressed { background-position: 0 96.597463% !important; background-size: 226.470588%; width: 100% !important;height: 100% !important;}
+.logo-compressed { background-position: 0 100%; background-size: 770%; }
 
 .navbar.solid .navbar-nav > li > a {
     -webkit-transition: color 0.5s ease 0s !important;
