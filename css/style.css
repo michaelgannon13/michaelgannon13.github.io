@@ -23,7 +23,7 @@ html, body {
 	
 .bus-compressed, .letsgo-compressed, .mong-compressed, .paint-compressed, .vis-compressed, 
 .doddle-compressed, .mac-compressed, .quick-trip-compressed, .logo-compressed
-{ max-width: 100%; background-size: 100%; background-image: url('../img/sprite.png'); }
+{ max-width: 100%; background-size: 100%; background-image: url('../img/sprite-compressed.png'); }
  
 .bus-compressed { background-position: 0 0%; background-size: 100%; width: 100% !important; height: 100% !important; }
 .letsgo-compressed { background-position: 0 17.209302%; background-size: 100%; width: 100% !important;height: 100% !important;}
