@@ -765,8 +765,6 @@
           $("h3#accordian-header-text").removeClass("active");
           $this.addClass("active");
         });
-
-
  
     // The latitude and longitude of your business / place
     var position = [53.3004978, -6.2838544];
@@ -821,18 +819,6 @@
       requestAnimationFrame(update);
 
       });
-
-      function downloadJSAtOnload() {
-      var element = document.createElement("script");
-      element.src = "js/maps.js";
-      document.body.appendChild(element);
-      }
-      if (window.addEventListener)
-      window.addEventListener("load", downloadJSAtOnload, false);
-      else if (window.attachEvent)
-      window.attachEvent("onload", downloadJSAtOnload);
-      else window.onload = downloadJSAtOnload;
-
     </script>
 
   </body>
