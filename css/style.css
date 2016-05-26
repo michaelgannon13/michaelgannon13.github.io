@@ -42,6 +42,7 @@ html, body {
 
 div#googlemaps {
     position: relative;
+    background-image: url('../img/map-hold.png');
 }
 
 form#myform {
