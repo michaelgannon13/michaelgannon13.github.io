@@ -685,7 +685,39 @@
               </div>
             </div> 
         </div>
+        <script type="text/javascript">
+          <!-- Display Map -->
+              function showmap() {
+                   
+              function initialize() {
+                var map;
+                    var map = new google.maps.Map(document.getElementById('googlemaps'), {
+             center: {lat: 53.3004978, lng: -6.2838544},
+             zoom: 14, 
+             scrollwheel: false
+           });
+
+           marker = new google.maps.Marker({
+              position: {lat: 53.3004978, lng: -6.2838544},
+              map: map,
+              animation: google.maps.Animation.DROP
+          });
+
+
+                    map = new google.maps.Map(document.getElementById('googlemaps'),
+                        mapOptions);
+                  }
+
+              initialize();
+              }
+        </script>
+        
         <div id="googlemaps" class="col-md-12">
+
+        <form id="myform">
+             <input id="map-button" type="button" value="Show Map" onClick="showmap();">
+        </form>
+
         </div>
         <footer id="bottom-copyright" class="col-md-12">© 2016 Michael Gannon All Rights Reserved</footer>
       </div>
@@ -703,22 +735,22 @@
       </nav>
     </div>
     <script>
-        function initMap() {
-          var map = new google.maps.Map(document.getElementById('googlemaps'), {
-            center: {lat: 53.3004978, lng: -6.2838544},
-            zoom: 14, 
-            scrollwheel: false
-          });
+        // function initMap() {
+        //   var map = new google.maps.Map(document.getElementById('googlemaps'), {
+        //     center: {lat: 53.3004978, lng: -6.2838544},
+        //     zoom: 14, 
+        //     scrollwheel: false
+        //   });
 
-          marker = new google.maps.Marker({
-             position: {lat: 53.3004978, lng: -6.2838544},
-             map: map,
-             animation: google.maps.Animation.DROP
-         });
-        }
+        //   marker = new google.maps.Marker({
+        //      position: {lat: 53.3004978, lng: -6.2838544},
+        //      map: map,
+        //      animation: google.maps.Animation.DROP
+        //  });
+        // }
 </script>
 
-    <script defer src="http://maps.googleapis.com/maps/api/js?KEY=AIzaSyDo-JOylQbwsUyvizO5EQknCMnPqB3WVjMsensor=false&callback=initMap"></script> 
+    <script defer src="http://maps.googleapis.com/maps/api/js?KEY=AIzaSyDo-JOylQbwsUyvizO5EQknCMnPqB3WVjMsensor=false"></script> 
 
 <!--     <script src="https://maps.googleapis.com/maps/api/js?KEY=AIzaSyDo-JOylQbwsUyvizO5EQknCMnPqB3WVjM" async defer></script>
  -->

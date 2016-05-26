@@ -40,6 +40,25 @@ html, body {
     transition: color 0.5s ease 0s !important;
 }
 
+div#googlemaps {
+    position: relative;
+}
+
+form#myform {
+    text-align: center;
+}
+
+input#map-button {
+    margin-top: 10%;
+    font-weight: 600;
+    color: white;
+    font-size: 14px;
+    background: #333333;
+    padding: 5px;
+    border-radius: 4px;
+    margin-right: 6px;
+}
+
 .Doddle-compressed{
   background-position: -892px -944px ;
   width: 750px;
