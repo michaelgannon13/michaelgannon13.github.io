@@ -42,8 +42,8 @@ html, body {
 
 div#googlemaps {
     position: relative;
-    background-image: url('../img/map-hold.png');
-}
+/*     background-image: url('../img/map-hold.png');
+ */}
 
 .FA{
 	font-family: fontawesome, lato;
