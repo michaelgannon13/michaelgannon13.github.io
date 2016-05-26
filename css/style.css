@@ -45,6 +45,10 @@ div#googlemaps {
     background-image: url('../img/map-hold.png');
 }
 
+.FA{
+	font-family: fontawesome, lato;
+}
+
 form#myform {
     text-align: center;
 }
@@ -55,9 +59,10 @@ input#map-button {
     color: white;
     font-size: 14px;
     background: #333333;
-    padding: 5px;
+    padding: 12px;
     border-radius: 4px;
     margin-right: 6px;
+    border: none;
 }
 
 .Doddle-compressed{
