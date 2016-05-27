@@ -1423,8 +1423,7 @@ input:-webkit-autofill {
 
 #bottom-contact {
     padding-top: 5px;
-    text-align: center;
-    padding-left: 0;
+    font-size: 50px;
 }
 
   div.tl-mobile {
@@ -1682,9 +1681,8 @@ p#tm-content {
   }
 
   div#subheader-greeting {
-      font-size: 70px;
-      text-align: center;
-      padding-left: 0;
+      font-size: 50px;
+      
   }
 
   .landing-main {
@@ -1858,7 +1856,7 @@ p#tm-content {
       text-transform: uppercase;
       font-family: lato;
       font-weight: 900;
-      font-size: 13px !important;
+      font-size: 20px !important;
   }
 
   h5#tl-sub-head-left{
