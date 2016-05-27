@@ -150,7 +150,7 @@ embed {
 
 i#down-arrow, i#up-arrow {
     font-size: 32px;
-    color: #333333;
+    color: #aaa;
     position: absolute;
     right: 50px;
 }
@@ -1486,7 +1486,7 @@ input:-webkit-autofill {
 
   div#landing-greeting {
       line-height: 1.05 !important;
-      letter-spacing: -3px;
+      letter-spacing: -5px;
   }
 
   .type-wrap {
@@ -1511,8 +1511,6 @@ input:-webkit-autofill {
       font-size: 48px;
       line-height: normal;
   }
-
-
 }
 
 /* Bootsrap breakpoint */
@@ -1680,7 +1678,7 @@ p#tm-content {
       display: inherit;
       font-size: 50px !important;
       line-height: 1.2 !important;
-      letter-spacing: -1px !important;
+      letter-spacing: -5px !important;
       padding-top: 50px;
   }
 
@@ -1700,7 +1698,7 @@ p#tm-content {
 
   div#landing-greeting {
       line-height: 0.95 !important;
-      letter-spacing: -3px;
+      letter-spacing: -5px;
   }
 
   .type-wrap {
