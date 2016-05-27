@@ -151,8 +151,20 @@ embed {
 i#down-arrow, i#up-arrow {
     font-size: 32px;
     color: #333333;
-    position: relative;
-    top: -30px;
+    position: absolute;
+    right: 50px;
+}
+
+i#down-arrow:hover, i#up-arrow:hover{
+	cursor: pointer;;
+}
+
+i#down-arrow{
+	bottom: 200px;
+}
+
+i#up-arrow{
+	top:-10px;
 }
 
 div#arrows {
