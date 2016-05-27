@@ -1567,9 +1567,13 @@ input:-webkit-autofill {
 /* iPhone */
 @media (max-width: 480px) {
 
-  div#particles-js {
+/*   div#particles-js {
     display: none;
-  }
+  } */
+
+  i#down-arrow, i#up-arrow {
+    display: none;
+}
 
   .overlay .overlay-close {
       width: 40px !important;
