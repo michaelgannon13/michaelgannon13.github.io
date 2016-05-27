@@ -1564,6 +1564,10 @@ input:-webkit-autofill {
     display: none;
   } */
 
+  i.fa.fa-angle-down.arrow.animated.infinite.bounce {
+    font-size: 50px;
+}
+
   i#down-arrow, i#up-arrow {
     display: none;
 }
