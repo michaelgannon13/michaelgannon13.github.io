@@ -425,7 +425,7 @@ div#email-container, div#social-holder {
     font-size: 74px;
     line-height: 92px;
     font-weight: 600;
-    letter-spacing: -2px;
+    letter-spacing: -3px;
     margin-bottom: 20px;
     padding-left: 30px;
     padding-top: 90px;
@@ -1366,7 +1366,7 @@ input:-webkit-autofill {
     font-size: 74px;
     line-height: 92px;
     font-weight: 600;
-    letter-spacing: -2px;
+    letter-spacing: -3px;
     margin-bottom: 20px;
     padding-left: 30px;
     padding-top: 90px;
@@ -2188,7 +2188,7 @@ figcaption#right-items {
   font-size: 74px;
   line-height: 92px;
   font-weight: 600;
-  letter-spacing: -2px;
+  letter-spacing: -3px;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 70px;
