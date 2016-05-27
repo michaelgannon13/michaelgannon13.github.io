@@ -7,7 +7,6 @@
     <title> Michael Gannon | Front end Developer | UX/UI Designer | Project Manager</title>
     <meta name="keywords" content="web designer, cheap, web developer, UI designer, UX designer, good, experienced">
     <meta name="description" content="web design ireland, quality website designing, affordable web design, web development ireland, creative logo design, creative freelance web designer in ireland, responsive website designer in ireland, best web designer in ireland, professional freelance web designer, UI Design, logo design, photo editing, freelance ui designer, freelance web developer, front-end developer, web designer portfolio, ui/ux designer, wordpress development in ireland, hire web designer">
-  
     <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 
@@ -39,8 +38,6 @@
               loop: true,
           });
       });
-
-
     </script>
 
 <!--         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -730,41 +727,20 @@
         </ul>
       </nav>
     </div>
-    <script>
-        // function initMap() {
-        //   var map = new google.maps.Map(document.getElementById('googlemaps'), {
-        //     center: {lat: 53.3004978, lng: -6.2838544},
-        //     zoom: 14, 
-        //     scrollwheel: false
-        //   });
-
-        //   marker = new google.maps.Marker({
-        //      position: {lat: 53.3004978, lng: -6.2838544},
-        //      map: map,
-        //      animation: google.maps.Animation.DROP
-        //  });
-        // }
-</script>
-
     <script defer src="http://maps.googleapis.com/maps/api/js?KEY=AIzaSyDo-JOylQbwsUyvizO5EQknCMnPqB3WVjMsensor=false"></script> 
-
-<!--     <script src="https://maps.googleapis.com/maps/api/js?KEY=AIzaSyDo-JOylQbwsUyvizO5EQknCMnPqB3WVjM" async defer></script>
- -->
     <!-- classie & demo1 are needed for monbile menu. they have been minified and concatonated into modernizr and so has typed.js -->
     <!-- <script async type="text/javascript" src="js/classie-min.js"></script>
     <script async type="text/javascript" src="js/demo1-min.js"></script> -->
     <script  type="text/javascript" src="js/modernizr.custom-min.js"></script> 
-<!--     <script type="text/javascript" src="js/bootstrap.min.js"></script>   
- -->    <script type="text/javascript">
+<!--     <script type="text/javascript" src="js/bootstrap.min.js"></script> -->    
+    <script type="text/javascript">
 
       $(document).ready(function(){
         // arrow smooth scroll
         $('a[href^="#"]').on('click',function (e) {
             e.preventDefault();
-
             var target = this.hash;
             var $target = $(target);
-
             $('html, body').stop().animate({
                 'scrollTop': $target.offset().top
             }, 900, 'swing', function () {
@@ -783,8 +759,6 @@
               $('#top-logo').fadeOut(1000);
           }
         })
-
-
         $(window).scroll(function() {
            if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
                $(window).unbind('scroll');
@@ -795,64 +769,12 @@
         function change(){
           $('h3#accordian-header-text').addClass("active");
         };
-
         $("h3#accordian-header-text").click(function() {
           var $this = $(this);        
           $("h3#accordian-header-text").removeClass("active");
           $this.addClass("active");
         });
-     
-    // function showGoogleMaps() {
-     
-    //     var latLng = new google.maps.LatLng(position[0], position[1]);
-    //     var mapOptions = {
-    //         streetViewControl: false, // hide the yellow Street View pegman
-    //         scaleControl: true, // allow users to zoom the Google Map
-    //         mapTypeId: google.maps.MapTypeId.ROADMAP,
-    //         center: latLng,
-    //         zoom: 14,                        // set the zoom level manually
-    //         zoomControl: false,
-    //         scrollwheel: false,
-    //     };
-     
-    //     map = new google.maps.Map(document.getElementById('googlemaps'),
-    //         mapOptions);
-     
-    //     // Show the default red marker at the location
-    //     marker = new google.maps.Marker({
-    //         position: latLng,
-    //         map: map,
-    //         draggable: false,
-    //         animation: google.maps.Animation.DROP
-    //     });
-    // }
-     
-    // google.maps.event.addDomListener(window, 'load', showGoogleMaps);
-
-    /* ---- particles.js config ---- */
-        
-      /* ---- stats.js config ---- */
-
-      // var count_particles, stats, update;
-      // stats = new Stats;
-      // stats.setMode(0);
-      // stats.domElement.style.position = 'absolute';
-      // stats.domElement.style.left = '0px';
-      // stats.domElement.style.top = '0px';
-      // document.body.appendChild(stats.domElement);
-      // count_particles = document.querySelector('.<<<j></j>></j>></j>s-count-particles');
-      // update = function() {
-      //   stats.begin();
-      //   stats.end();
-      //   if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      //     count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-      //   }
-      //   requestAnimationFrame(update);
-      // };
-      // requestAnimationFrame(update);
-
       });
     </script>
-
   </body>
 </html>
