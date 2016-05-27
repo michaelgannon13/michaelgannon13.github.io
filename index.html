@@ -46,12 +46,6 @@
 
 <!--         <link href="css/bootstrap.min.css" rel="stylesheet">
  -->        <link href="css/style.css" rel="stylesheet"> 
- <?php
-
-$starttime = explode(' ', microtime());
-$starttime = $starttime[1] + $starttime[0];
-
-?>
  </head>
 
   <body data-spy="scroll" data-target="#navbar">
@@ -714,9 +708,7 @@ $starttime = $starttime[1] + $starttime[0];
         
         <div id="googlemaps" class="col-md-12">
         </div>
-        <footer id="bottom-copyright" class="col-md-12"><html><center>Page generated in <?php $load = microtime();print (number_format($load,2));?> seconds. <?php
-$loadtime = explode(' ', microtime()); $loadtime = $loadtime[0]+$loadtime[1]-$starttime; echo 'Peak memory usage: ',round(memory_get_peak_usage()/1048576, 2), 'MB';
-?></center></html><br>© 2016 Michael Gannon All Rights Reserved</footer>
+        <footer id="bottom-copyright" class="col-md-12">© 2016 Michael Gannon All Rights Reserved</footer>
       </div>
       </div>
     </div> <!-- container-fluid end -->
