@@ -180,6 +180,7 @@ body{
 	} 
 
   #section3-a{
+  	display: none;
     height: 0;
   }
 
@@ -1429,7 +1430,7 @@ input:-webkit-autofill {
 
   #section3-a{
     height: inherit;
-    visibility: visible !important;
+    display: inline-block; !important;
   }
 
   .container {
