@@ -144,14 +144,14 @@ embed {
 }
 
 i#down-arrow, i#up-arrow {
-    font-size: 32px;
+    font-size: 40px;
     color: #aaa;
     position: absolute;
     right: 50px;
 }
 
 i#down-arrow:hover, i#up-arrow:hover{
-	cursor: pointer;;
+	cursor: pointer;
 }
 
 i#down-arrow{
@@ -159,7 +159,7 @@ i#down-arrow{
 }
 
 i#up-arrow{
-	top:-10px;
+	top:10px;
 }
 
 div#arrows {
