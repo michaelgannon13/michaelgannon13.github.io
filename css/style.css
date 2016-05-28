@@ -378,11 +378,12 @@ div#email-container, div#social-holder {
 
   span#typed {
     color: #00FFD2;
-    font-size: 55px;
+    font-size: 62px;
     margin-left: 55px;
     font-weight: 300;
     font-family: lato;
     text-transform: uppercase;
+    letter-spacing: -1px;
 
 /*     background: -webkit-linear-gradient(left, #00F2FF,#00FFD3);
     background: linear-gradient(left, #00F2FF,#00FFD3);
