@@ -670,10 +670,10 @@ i.fa.fa-angle-down.arrow.animated.infinite.bounce{
   }
 
   p#dropDown-content {
-    color: #1a1a1a;
+    color: #333;
     margin-left: 15px;
     margin-right: 15px;
-    font-weight: 300;
+    font-weight: 400;
     text-rendering: optimizeLegibility;
 
   }
