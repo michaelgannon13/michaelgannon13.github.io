@@ -37,6 +37,8 @@
               backDelay: 1000,
               loop: true,
           });
+
+
       });
 
         function change(){
@@ -658,13 +660,13 @@
                 <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/michael-gannon-4758198b?trk=hp-identity-name" class="icon-button twitter" data-toggle="tooltip" title="LinkedIn" data-placement="bottom">
                   <i class="fa fa-linkedin"></i><span></span>
                 </a>
-                <a target="_blank" rel="noopener" href="https://github.com/michaelgannon13" class="icon-button facebook">
+                <a target="_blank" rel="noopener" href="https://github.com/michaelgannon13" class="icon-button facebook" data-toggle="tooltip" title="Github" data-placement="bottom">
                     <i class="fa fa-github"></i><span></span>
                 </a>
-                <a target="_blank" rel="noopener" href="https://plus.google.com/u/0/108718574853096050583" class="icon-button google-plus">
+                <a target="_blank" rel="noopener" href="https://plus.google.com/u/0/108718574853096050583" class="icon-button google-plus" data-toggle="tooltip" title="Google+" data-placement="bottom">
                     <i class="fa fa-google-plus"></i><span></span>
                 </a>
-                <a target="_blank" rel="noopener" href="cv.pdf" class="icon-button cv">
+                <a target="_blank" rel="noopener" href="cv.pdf" class="icon-button cv" data-toggle="tooltip" title="CV" data-placement="bottom">
                     <i class="fa fa-file-pdf-o"></i><span></span>
                 </a>
               </div>
@@ -725,11 +727,13 @@
     <!-- classie & demo1 are needed for monbile menu. they have been minified and concatonated into modernizr and so has typed.js -->
     <!-- <script async type="text/javascript" src="js/classie-min.js"></script>
     <script async type="text/javascript" src="js/demo1-min.js"></script> -->
-    <script defer type="text/javascript" src="js/modernizr.custom-min.js"></script> 
+    <script defer type="text/javascript" src="js/master-min.js"></script> 
 <!--     <script type="text/javascript" src="js/bootstrap.min.js"></script> -->    
     <script type="text/javascript">
 
       $(document).ready(function(){
+
+        $('a').tooltip();
         // arrow smooth scroll
         $('a[href^="#"]').on('click',function (e) {
             e.preventDefault();
