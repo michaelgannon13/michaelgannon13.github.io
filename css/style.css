@@ -654,8 +654,9 @@ i.fa.fa-angle-down.arrow.animated.infinite.bounce{
 }
 
   div#accordian-dropDown-left, div#accordian-dropDown-middle, div#accordian-dropDown-right{
-    height: 79vh;
-    overflow: scroll;
+    /* height: 79vh;
+    overflow: scroll; */
+    min-height: 50vh;
   }
 
   div#accordian-background {
@@ -1511,7 +1512,7 @@ input:-webkit-autofill {
 /* Bootsrap breakpoint */
 @media (max-width: 995px) {
    div#accordian-dropDown-left, div#accordian-dropDown-middle, div#accordian-dropDown-right{
-    height: auto;
+    height: auto !important;
   }
 
   h2#exp-edu {
@@ -1968,6 +1969,10 @@ p#tm-content {
       margin:0 auto;
       overflow:auto;
       padding:2%;
+    }
+
+    div#accordian-dropDown-left, div#accordian-dropDown-middle, div#accordian-dropDown-right{
+    	min-height: auto;
     }
 
     .container p {
