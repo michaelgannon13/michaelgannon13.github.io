@@ -635,8 +635,6 @@
       </div>
       </div>
 
-
-
       <div id="section4" class="row">
         <div id="creep" class="col-md-12">
             <div id="bottom-contact" class="contact-bottom">Contact</div>
@@ -680,31 +678,26 @@
         </div>
         <script type="text/javascript">
               function showmap() {
-                   
-              function initialize() {
-                var map;
-                    var map = new google.maps.Map(document.getElementById('googlemaps'), {
-             center: {lat: 53.3004978, lng: -6.2838544},
-             zoom: 14, 
-             scrollwheel: false
-           });
+                function initialize() {
+                  var map;
+                      var map = new google.maps.Map(document.getElementById('googlemaps'), {
+                        center: {lat: 53.3004978, lng: -6.2838544},
+                        zoom: 14, 
+                        scrollwheel: false
+                      });
+                      marker = new google.maps.Marker({
+                        position: {lat: 53.3004978, lng: -6.2838544},
+                        map: map,
+                        animation: google.maps.Animation.DROP
+                      });
+                      map = new google.maps.Map(document.getElementById('googlemaps'),
+                          mapOptions);
+                    }
 
-           marker = new google.maps.Marker({
-              position: {lat: 53.3004978, lng: -6.2838544},
-              map: map,
-              animation: google.maps.Animation.DROP
-          });
-
-
-                    map = new google.maps.Map(document.getElementById('googlemaps'),
-                        mapOptions);
-                  }
-
-              initialize();
+                initialize();
               }
 
         </script>
-        
         <div id="googlemaps" class="col-md-12">
         </div>
         <footer id="bottom-copyright" class="col-md-12">© 2016 Michael Gannon All Rights Reserved</footer>
