@@ -269,7 +269,7 @@ div#bottom-container {
     padding-bottom: 10px;
 }
 
-i.fa.fa-linkedin:hover, i.fa.fa-github:hover, i.fa.fa-google-plus:hover, i.fa.fa-file-pdf-o:hover {
+i.fa.fa-linkedin:hover, i.fa.fa-github:hover, i.fa.fa-google-plus:hover, i.fa.fa-file-pdf-o:hover, i.fa.fa-twitter:hover  {
     color: white;
 }
 
@@ -807,9 +807,15 @@ i.fa.fa-angle-down.arrow.animated.infinite.bounce{
   border-radius: 3.6rem;
   margin: -1.8rem;
 }
+
+.linkedin span{
+	background: #007BB7;
+}
+
 .twitter span {
   background-color: #1D87BD;
 }
+
 .facebook span {
   background-color: #3B5998;
 }
@@ -849,7 +855,7 @@ i.fa.fa-angle-down.arrow.animated.infinite.bounce{
 
 .icon-button:hover .icon-twitter,
 .icon-button:hover .icon-facebook,
-.icon-button:hover .icon-google-plus {
+.icon-button:hover .icon-google-plus, {
   color: white;
 }
 
