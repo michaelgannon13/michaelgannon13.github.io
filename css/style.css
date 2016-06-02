@@ -155,11 +155,11 @@ i#down-arrow:hover, i#up-arrow:hover{
 }
 
 i#down-arrow{
-	bottom: 200px;
+	bottom: 14%;
 }
 
 i#up-arrow{
-	top:10px;
+	top:0%;
 }
 
 div#arrows {
