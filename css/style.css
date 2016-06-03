@@ -148,7 +148,7 @@ div.last-elem {
 }
 
 i#down-arrow, i#up-arrow {
-    font-size: 40px;
+    font-size: 36px;
     color: #aaa;
     position: absolute;
     right: 50px;
@@ -1990,8 +1990,8 @@ p#tm-content {
     }
 
     #bottom-contact {
-    padding-left: 20px;
-}
+	    padding-left: 20px;
+	}
 
     .container p {
     -webkit-transition: all 0.7s ease-in-out;
