@@ -143,6 +143,10 @@ embed {
     height: 400px;
 }
 
+div.last-elem {
+    border-bottom: 1px solid #CCCCCC;
+}
+
 i#down-arrow, i#up-arrow {
     font-size: 40px;
     color: #aaa;
