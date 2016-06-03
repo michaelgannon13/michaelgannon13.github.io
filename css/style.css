@@ -1579,6 +1579,10 @@ input:-webkit-autofill {
     font-size: 50px;
 }
 
+div#subheader-greeting {
+    padding-left: 20px;
+}
+
   i#down-arrow, i#up-arrow {
     display: none;
 }
@@ -1984,6 +1988,10 @@ p#tm-content {
     div#accordian-dropDown-left, div#accordian-dropDown-middle, div#accordian-dropDown-right{
     	min-height: auto;
     }
+
+    #bottom-contact {
+    padding-left: 20px;
+}
 
     .container p {
     -webkit-transition: all 0.7s ease-in-out;
