@@ -60,6 +60,10 @@ input#map-button {
     border: none;
 }
 
+canvas.particles-js-canvas-el {
+    position: fixed;
+}
+
 .Doddle-compressed{
   background-position: -892px -944px ;
   width: 750px;
