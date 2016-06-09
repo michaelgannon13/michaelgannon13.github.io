@@ -6,13 +6,6 @@
 /*# sourceMappingURL=bootstrap.min.css.map */
 
 
-@font-face {
-    font-family: Montserrat;
-    src: url(../fonts/Montserrat.ttf);
-    font-weight: normal;
-    font-style: normal;
-} 
-
 *:focus, *:visited, *:after, *:active, *:link {
     outline: none !important;
 }
@@ -248,7 +241,7 @@ div#bottom-container {
       text-align: center;
       font-size: 38px;
       font-family: Lato,Arial,sans-serif;
-      font-weight: 600;
+      font-weight: 500;
       color: #6F6F6F;
   }
 
