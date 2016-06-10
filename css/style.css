@@ -112,6 +112,10 @@ button#flash {
     border: none;
 }
 
+div#section4 {
+    background: linear-gradient(135deg, rgb(0, 146, 121) 0%,#ffffff 100%);
+}
+
 #mob-info{
     color: #333;
     font: 400 80% Montserrat;
