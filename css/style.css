@@ -113,7 +113,7 @@ button#flash {
 }
 
 div#section4 {
-    background: linear-gradient(135deg, rgb(0, 146, 121) 0%,#ffffff 100%);
+    background: linear-gradient(135deg, rgb(0, 146, 121) 0%,rgb(243, 243, 243) 100%);
 }
 
 #mob-info{
@@ -226,7 +226,7 @@ body{
 
 div#sub-contact-message {
     font-size: 23.5px;
-    color: #ABABAB;
+    color: rgba(255,255,255,0.9);;
     font-family: lato;
     text-align: center;
     font-weight: 500;
@@ -246,7 +246,7 @@ div#bottom-container {
       font-size: 38px;
       font-family: Lato,Arial,sans-serif;
       font-weight: 500;
-      color: #6F6F6F;
+      color: #333;
   }
 
   ul.nav.navbar-nav {
@@ -270,7 +270,7 @@ div#bottom-container {
 
   i.fa.fa-code, i.fa.fa-eye, i.fa.fa-eur, i.fa.fa-phone, i.fa.fa-envelope-o {
     font-size: 36px;
-    color: rgb(175, 175, 175);
+    color: #fff;
     padding-bottom: 10px;
 }
 
@@ -513,7 +513,7 @@ div#email-container, div#social-holder {
     text-align: center;
     font-size: 30px;
     font-weight: 400;
-    color: #00A789;
+    color: #fff;
     text-transform: capitalize;
   }
 
@@ -525,7 +525,7 @@ div#email-container, div#social-holder {
       font-family: lato, serif;
       font-size: 30px;
       font-weight: 400;
-      color: #00A789;
+      color: #fff;
       text-transform: capitalize;
   }
 
