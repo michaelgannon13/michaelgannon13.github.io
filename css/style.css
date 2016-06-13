@@ -409,7 +409,7 @@ div#email-container, div#social-holder {
     font-family: "Montserrat",Helvetica,Arial,sans-serif;
     line-height: 92px;
     font-weight: 600;
-    letter-spacing: -5px;
+    letter-spacing: -4px;
     left: 30px;
     position: relative;
     display: inline;
@@ -1494,7 +1494,7 @@ input:-webkit-autofill {
 
   div#landing-greeting {
       line-height: 1.05 !important;
-      letter-spacing: -5px;
+      letter-spacing: -4px;
   }
 
   .type-wrap {
@@ -1713,7 +1713,7 @@ p#tm-content {
 
   div#landing-greeting {
       line-height: 0.95 !important;
-      letter-spacing: -5px;
+      letter-spacing: -4px;
   }
 
   .type-wrap {
