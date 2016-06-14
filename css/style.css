@@ -661,7 +661,7 @@ i.fa.fa-angle-down.arrow.animated.infinite.bounce{
   div#accordian-dropDown-left, div#accordian-dropDown-middle, div#accordian-dropDown-right{
     /* height: 79vh;
     overflow: scroll; */
-    /* min-height: 50vh; */
+    min-height: 50vh; 
   }
 
   div#accordian-background {
@@ -1590,10 +1590,6 @@ div#subheader-greeting {
     padding-left: 20px;
 }
 
-  i#down-arrow, i#up-arrow {
-    display: none;
-}
-
   .overlay .overlay-close {
       width: 40px !important;
       height: 40px !important;
@@ -1705,7 +1701,6 @@ p#tm-content {
 
   div#subheader-greeting {
       font-size: 50px;
-      
   }
 
   .landing-main {
@@ -1817,11 +1812,19 @@ p#tm-content {
 }
 
 @media (max-width: 1300px) {
-
   .timeline p, .timeline ol{
     width: 90% !important;
   }
+}
 
+@media (max-width: 1200px) {
+  div#accordian-dropDown-left, div#accordian-dropDown-middle, div#accordian-dropDown-right{
+  	min-height: auto;
+  }
+
+  i#down-arrow, i#up-arrow {
+    position: initial;
+}
 }
 
 
@@ -1991,6 +1994,10 @@ p#tm-content {
       overflow:auto;
       padding:2%;
     }
+
+      li#tech-item {
+	      display: inline-block;
+	  }
 
     div#accordian-dropDown-left, div#accordian-dropDown-middle, div#accordian-dropDown-right{
     	min-height: auto;
