@@ -150,7 +150,7 @@ div.last-elem {
 
 i#down-arrow, i#up-arrow {
     font-size: 32px;
-    color: #aaa;
+    color: #333;
     position: absolute;
     right: 50px;
 }
