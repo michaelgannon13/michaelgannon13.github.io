@@ -661,7 +661,7 @@ i.fa.fa-angle-down.arrow.animated.infinite.bounce{
   div#accordian-dropDown-left, div#accordian-dropDown-middle, div#accordian-dropDown-right{
     /* height: 79vh;
     overflow: scroll; */
-    min-height: 50vh;
+    /* min-height: 50vh; */
   }
 
   div#accordian-background {
@@ -1523,8 +1523,13 @@ input:-webkit-autofill {
 
 /* Bootsrap breakpoint */
 @media (max-width: 995px) {
+	i#down-arrow, i#up-arrow {
+  	position: initial;
+  }
+
+
    div#accordian-dropDown-left, div#accordian-dropDown-middle, div#accordian-dropDown-right{
-    height: auto !important;
+    height: auto;
   }
 
   h2#exp-edu {
