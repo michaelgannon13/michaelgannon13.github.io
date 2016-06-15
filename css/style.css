@@ -1853,7 +1853,7 @@ and (min-width : 414px)
 and (max-width : 736px) 
 and (orientation : portrait) { 
 	#landing-greeting {
-    font-size: 70px !important;
+    font-size: 60px !important;
 	}
 
 	span#typed{
