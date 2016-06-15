@@ -1834,6 +1834,7 @@ p#tm-content {
 	}
 }
 
+/* iMac 27" */
 @media (min-width: 2500px){
 	#landing-greeting {
 	    font-size: 130px;
