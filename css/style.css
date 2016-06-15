@@ -1817,6 +1817,7 @@ p#tm-content {
   }
 }
 
+/* iphone 6+ landscape*/
 @media only screen 
 and (min-width : 414px) 
 and (max-width : 736px) 
@@ -1835,6 +1836,17 @@ and (orientation : landscape) {
  	font-size: 50px !important;
 	}
 }
+
+/* iphone 5s portrait */
+
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 568px) 
+and (orientation : portrait) { 
+	#landing-greeting {
+    padding-top: 0px;
+	}
+ }
 
 
 
