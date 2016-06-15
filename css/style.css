@@ -1818,7 +1818,7 @@ p#tm-content {
 }
 
 /* iMac 21.5" */
-@media (max-width: 1680px){
+@media (max-width: 2000px){
 	#landing-greeting {
     	font-size: 110px;
     	line-height: 112px;
