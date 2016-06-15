@@ -1817,6 +1817,23 @@ p#tm-content {
   }
 }
 
+/* iMac 21.5" */
+@media (min-width: 1680px){
+	#landing-greeting {
+    	font-size: 110px;
+    	line-height: 112px;
+	}
+
+	span#typed {
+	    font-size: 80px;
+	    margin-left: 60px;
+	}
+
+	a#nav-link {
+	    font-size: 20px;
+	}
+}
+
 /* iphone 6+ landscape*/
 @media only screen 
 and (min-width : 414px) 
