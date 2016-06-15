@@ -492,6 +492,11 @@ div#email-container, div#social-holder {
     color: white;
   }
 
+  a#link-2 {
+	    color: #00436f;
+	    font-weight: 400;
+	}
+
   span#email-phone {
     font-family: lato;
     font-weight: 500;

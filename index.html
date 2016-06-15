@@ -514,7 +514,7 @@
                       <h6>2012 - 2015<br>INSTITUTE OF ART, DESIGN & TECHNOLOGY</h6>
                       <p>
                         I studied Multimedia Programming and Web Engineering in IADT. Some of the things covered were languages and frameworks such as HTML5, CSS3, Javascript & jQuery, Java, XML, JSON, SQL as well as the Android SDK, Twitter Bootstrap, Backbone.js, ASP.NET, MongoDB, Node & npm.<br>
-                        <a  target="_blank" rel="noopener" href="http://www.iadt.ie/en/ProspectiveStudents/FacultiesCourses/FacultyofFilmArtCreativeTechnologies/DL836-BScHonoursinCreativeComputing/">Course curriculum</a>
+                        <a id="link-2" target="_blank" rel="noopener" href="http://www.iadt.ie/en/ProspectiveStudents/FacultiesCourses/FacultyofFilmArtCreativeTechnologies/DL836-BScHonoursinCreativeComputing/">Course curriculum</a>
                       </p>
                   </figure>
                   <figure>
@@ -522,7 +522,7 @@
                       <h6>2011<br>DUBLIN BUSINESS SCHOOL</h6>
                       <p>
                         I undertook a night course in DBS in 2011 in Web Design and SEO during my gap year. I studied the fundamentals of HTML, CSS, SEO and Photoshop. The objective of this course was to get a taste of programming and web development.<br>
-                        <a target="_blank" rel="noopener" href="http://www.dbs.ie/course/professional-evening-diploma/diploma-in-web-design">Course curriculum</a>
+                        <a id="link-2" target="_blank" rel="noopener" href="http://www.dbs.ie/course/professional-evening-diploma/diploma-in-web-design">Course curriculum</a>
                       </p>
                   </figure>
                   <figure>
@@ -530,7 +530,7 @@
                       <h6>2008 - 2011<br>DUBLIN INSTITURE OF TECHNOLOGY</h6>
                       <p>
                         I studied Civil Engineering for three years in DIT. Despite not influencing my choice of career path it did teach me the thought process behind problem solving, the importance of attention to detail and also tools such as Auto CAD.<br>
-                        <a target="_blank" rel="noopener" href="https://www.dit.ie/catalogue/Programmes/Details/DT004">Course curriculum</a>
+                        <a id="link-2" target="_blank" rel="noopener" href="https://www.dit.ie/catalogue/Programmes/Details/DT004">Course curriculum</a>
                       </p>
                   </figure>
               </article>
@@ -541,12 +541,12 @@
                       <figcaption id="right-items">Visual ID</figcaption>
                       <h6>2015 - 2016<br>FRONT END DEVELOPER / PROJECT MANAGER</h6>
                       <p>
-                        As Front End Developer I am responsible for the design, functionality & maintenance of all client side access points. This consists of the Visual ID and Doddle brochure site aswell as the Doddle web application.
+                        As Front End Developer I am responsible for the design, functionality & maintenance of all client side access points. This consists of the Visual ID and Doddle brochure site aswell as the <a id="link-2" href="#" onclick="doddleCall();">Doddle web application.</a>
                       </p> 
                       <p>
                         As Project Manager of Doddle my responsibilities include all design and functionality relating to Doddle, scheduling and chairing Scrum meetings, preparing meeting minutes, ensuring all Doddle deadlines are met and interfacing with Doddle clients and partners.
                         <br>
-                        <a href="#section2">Visual ID Work</a>.
+                        <a id="link-2" href="#section2">Visual ID Work</a>.
                       </p>  
                   </figure>
                   <figure>
@@ -684,6 +684,10 @@
             </div> 
         </div>
         <script type="text/javascript">
+              function doddleCall(){
+                $( "#accordian-header-text" ).click();
+              }
+
               function showmap() {
                 function initialize() {
                   var map;
