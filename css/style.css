@@ -1818,11 +1818,11 @@ p#tm-content {
 }
 
 @media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px) 
+and (min-width : 414px) 
+and (max-width : 736px) 
 and (orientation : landscape) { 
 	.landing-main {
- 	top: 22vh;
+ 	top: 22vh !important;
   	font-size: 64px !important;
  	}
 
@@ -1831,7 +1831,7 @@ and (orientation : landscape) {
  	}
 
 	span#typed {
- 	margin-left: auto;
+ 	margin-left: auto !important;
  	font-size: 50px !important;
 	}
 }
