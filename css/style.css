@@ -1848,7 +1848,18 @@ and (orientation : portrait) {
 	}
  }
 
+@media only screen 
+and (min-width : 414px) 
+and (max-width : 736px) 
+and (orientation : portrait) { 
+	#landing-greeting {
+    font-size: 70px !important;
+	}
 
+	span#typed{
+		font-size: 45px;
+	}
+ }
 
 @media (max-width: 1200px) {
   div#accordian-dropDown-left, div#accordian-dropDown-middle, div#accordian-dropDown-right{
