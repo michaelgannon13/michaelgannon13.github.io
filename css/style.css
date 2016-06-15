@@ -1834,7 +1834,7 @@ p#tm-content {
 	}
 }
 
-@media (min-width: 1680px){
+@media (max-width: 1680px){
 	#landing-greeting {
     	font-size: 110px;
     	line-height: 112px;
@@ -1850,7 +1850,7 @@ p#tm-content {
 	}
 }
 
-@media (min-width: 1800px){
+@media (min-width: 1680px){
 	#landing-greeting {
     	font-size: 130px;
     	line-height: 120px;
