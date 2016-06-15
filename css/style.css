@@ -1818,10 +1818,10 @@ p#tm-content {
 }
 
 /* iMac 21.5" */
-@media (max-width: 2000px){
+@media (min-width: 1680px){
 	#landing-greeting {
-    	font-size: 120px;
-    	line-height: 116px;
+    	font-size: 110px;
+    	line-height: 112px;
 	}
 
 	span#typed {
@@ -1829,33 +1829,8 @@ p#tm-content {
 	    margin-left: 60px;
 	}
 
-	span.typed-cursor {
-    font-size: 68px;
-	}
-
 	a#nav-link {
 	    font-size: 20px;
-	}
-}
-
-/* iMac 27" */
-@media (max-width: 2500px){
-	#landing-greeting {
-    	font-size: 110px;
-    	line-height: 112px;
-	}
-
-span#typed {
-    font-size: 86px;
-    margin-left: 65px;
-}
-
-	a#nav-link {
-	    font-size: 30px;
-	}
-
-	span.typed-cursor {
-    font-size: 72px;
 	}
 }
 
