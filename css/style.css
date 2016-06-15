@@ -1817,6 +1817,24 @@ p#tm-content {
   }
 }
 
+@media (max-height: 1060px) {
+
+	.landing-main {
+ 	top: 22vh;
+  	font-size: 64px !important;
+ 	}
+
+	.type-wrap {
+ 	top: 22vh !important;
+ 	}
+
+	span#typed {
+ 	margin-left: auto;
+ 	font-size: 50px !important;
+	}
+
+}
+
 @media (max-width: 1200px) {
   div#accordian-dropDown-left, div#accordian-dropDown-middle, div#accordian-dropDown-right{
   	min-height: auto;
