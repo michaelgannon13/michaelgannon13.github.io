@@ -225,8 +225,8 @@ body{
   }
 
 div#sub-contact-message {
-    font-size: 25px;
-    color: rgb(55, 87, 81);
+    font-size: 27px;
+    color: rgb(7, 95, 80);
     font-family: lato;
     text-align: center;
     font-weight: 300;
@@ -242,11 +242,11 @@ div#bottom-container {
 }
 
   div#contact-message {
-      text-align: center;
-      font-size: 40px;
-      font-family: Lato,Arial,sans-serif;
-      font-weight: 500;
-      color: rgba(51,51,51,0.7);
+	text-align: center;
+    font-size: 44px;
+    font-family: Lato,Arial,sans-serif;
+    font-weight: 400;
+    color: rgb(9, 97, 82);
   }
 
   ul.nav.navbar-nav {
@@ -270,7 +270,7 @@ div#bottom-container {
 
   i.fa.fa-code, i.fa.fa-eye, i.fa.fa-eur, i.fa.fa-phone, i.fa.fa-envelope-o {
     font-size: 36px;
-    color: #fff;
+    color: #333;
     padding-bottom: 10px;
 }
 
@@ -496,6 +496,7 @@ div#email-container, div#social-holder {
     font-family: lato;
     font-weight: 500;
     font-size: 17px;
+    color: white;
   }
 
   .col-md-4.left-contact-cols span#build-something {
@@ -513,7 +514,7 @@ div#email-container, div#social-holder {
     text-align: center;
     font-size: 30px;
     font-weight: 400;
-    color: #fff;
+    color: #333;
     text-transform: capitalize;
   }
 
@@ -525,7 +526,7 @@ div#email-container, div#social-holder {
       font-family: lato, serif;
       font-size: 30px;
       font-weight: 400;
-      color: #fff;
+      color: #333;
       text-transform: capitalize;
   }
 
@@ -768,7 +769,7 @@ i.fa.fa-angle-down.arrow.animated.infinite.bounce{
 /******************* Social Media Icons ***********************/
 /* Wrapper */
 .icon-button {
-  background-color: rgb(230, 230, 230);
+  background-color: #fff;
   border-radius: 3.6rem;
   cursor: pointer;
   text-align: center;
@@ -803,7 +804,9 @@ i.fa.fa-angle-down.arrow.animated.infinite.bounce{
 }
 
 #mail{
-  color: #333;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
 }
 
 .icon-button:hover span {
@@ -835,7 +838,7 @@ i.fa.fa-angle-down.arrow.animated.infinite.bounce{
 /* Icons */
 .icon-button i {
   background: none;
-  color: #323232;
+  color: #333;
   height: 3.6rem;
   left: 0;
   line-height: 3.6rem;
