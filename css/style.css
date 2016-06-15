@@ -1817,7 +1817,7 @@ p#tm-content {
   }
 }
 
-@media (max-height: 1060px) {
+@media (max-height: 1060px) and (max-width: 1685px) {
 
 	.landing-main {
  	top: 22vh;
