@@ -1834,38 +1834,6 @@ p#tm-content {
 	}
 }
 
-@media (max-width: 1681px){
-	#landing-greeting {
-    	font-size: 110px;
-    	line-height: 112px;
-	}
-
-	span#typed {
-	    font-size: 80px;
-	    margin-left: 60px;
-	}
-
-	a#nav-link {
-	    font-size: 20px;
-	}
-}
-
-@media (min-width: 1682px){
-	#landing-greeting {
-    	font-size: 130px;
-    	line-height: 120px;
-	}
-
-	span#typed {
-	    font-size: 100px;
-	    margin-left: 80px;
-	}
-
-	a#nav-link {
-	    font-size: 30px;
-	}
-}
-
 /* iphone 6+ landscape*/
 @media only screen 
 and (min-width : 414px) 
