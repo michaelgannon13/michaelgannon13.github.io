@@ -535,7 +535,7 @@ div#email-container, div#social-holder {
   }
 
   footer#bottom-copyright {
-      padding: 12px;
+      padding: 6px;
       font-family: Montserrat;
       width: 100%;
       color: #000;
@@ -1818,7 +1818,7 @@ p#tm-content {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .timeline p, .timeline ol{
     width: 90% !important;
   }
