@@ -1841,6 +1841,13 @@ p#tm-content {
 	}
 }
 
+@media (max-width: 1680px){
+	embed{
+		width: 400px;
+		height: 300px;
+	}
+}
+
 /* iMac 27" */
 @media (min-width: 2500px){
 	#landing-greeting {
@@ -1938,8 +1945,12 @@ and (orientation : portrait) {
   }
 
   i#down-arrow, i#up-arrow {
-    position: initial;
-}
+	    position: initial;
+	}
+
+	embed {
+	    width: 100%;
+	}
 }
 
 
