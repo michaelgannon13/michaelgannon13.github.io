@@ -1953,6 +1953,22 @@ and (orientation : portrait) {
 	}
 }
 
+@media (max-height: 360px) {
+	.landing-main {
+	    top: 20vh;
+	    font-size: 74px !important;
+	}
+
+	span#typed {
+	    font-size: 57px !important;
+	}
+
+	.type-wrap {
+	    top: 20vh !important;
+	}
+
+}
+
 
 @media (max-width: 500px) {
 
