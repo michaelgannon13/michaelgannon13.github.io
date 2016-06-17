@@ -44,6 +44,12 @@ blockquote {
   color: #808080;
   font-style: italic;
 }
+
+span#sub-bit {
+    font-size: 22px;
+    font-weight: 100;
+}
+
 hr.small {
   max-width: 100px;
   margin: 15px auto;
