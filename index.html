@@ -42,6 +42,26 @@
 
       });
 
+        function scrollDown(){
+          $("#arrowBounce" ).click();
+        };
+
+        function scrollHome(){
+          $(".homeClick" ).click();
+        };
+
+        function scrollProj(){
+          $(".projClick" ).click();
+        };
+
+        function scrollExp(){
+          $(".expClick" ).click();
+        };
+
+        function scrollCon(){
+          $(".conClick" ).click();
+        };
+
         function change(){
           $('h3#accordian-header-text').addClass("active");
         };
@@ -55,7 +75,7 @@
     <div class="container-fluid">
 
       <div id="section1" class="row">
-        <a href="#section2"><i class="fa fa-angle-down arrow animated infinite bounce"></i></a>
+        <a id="arrowBounce" href="#section2" onmouseover="scrollDown()"><i class="fa fa-angle-down arrow animated infinite bounce"></i></a>
 
         <div id="particles-js"></div>
         <div class="col-md-12"> 
@@ -68,10 +88,10 @@
                 </div>
                 <div id="navbar">
                   <ul class="nav navbar-nav">
-                    <li><a id="nav-link" href="#section1">Home</a></li>
-                    <li><a id="nav-link" href="#section2">Projects</a></li>
-                    <li><a id="nav-link" href="#section3">Experience</a></li> 
-                    <li><a id="nav-link" href="#bottom-contact">Contact</a></li> 
+                    <li><a id="nav-link" class="homeClick" href="#section1" onmouseover="scrollHome()">Home</a></li>
+                    <li><a id="nav-link" class="projClick" href="#section2" onmouseover="scrollProj()">Projects</a></li>
+                    <li><a id="nav-link" class="expClick" href="#section3" onmouseover="scrollExp()">Experience</a></li> 
+                    <li><a id="nav-link" class="conClick" href="#bottom-contact" onmouseover="scrollCon()">Contact</a></li> 
                   </ul>
                 </div>  
               </div>
