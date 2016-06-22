@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+	<title>Steps</title>
+	<link rel="stylesheet" href="dist/uikit.min.css" />
+	<link href="dist/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,500italic,700,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:900,700,400,300,100' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class='container-fluid'> 
+			<section id="wizard">
+		    <div class="row top">
+	          	<div class="col-md-12"><h1>Welcome John</h1><h5 class="low">INDUSTRY: NEWSAGENTS <i class="fa fa-newspaper-o news"></i></h5></div>
+	      </div>
+
+				<div id="rootwizard">
+					<div class="navbar">
+					  <div class="navbar-inner">
+					    <div class="container">
+								<ul>
+								  <li><a href="#tab1" data-toggle="tab" class="tab">Step 1</a></li>
+								  <li><a href="#tab2" data-toggle="tab" class="tab">Step 2</a></li>
+								  <li><a href="#tab3" data-toggle="tab" class="tab">Step 3</a></li>
+								  <li><a href="#tab4" data-toggle="tab" class="tab">Step 4</a></li>
+								  <li><a href="#tab5" data-toggle="tab" class="tab">Step 5</a></li>
+								  <li><a href="#tab6" data-toggle="tab" class="tab">Step 6</a></li>
+								  <li><a href="#tab7" data-toggle="tab" class="tab">Step 7</a></li>
+								  <li><a href="#tab8" data-toggle="tab" class="tab">Step 8</a></li>
+								  <li><a href="#tab9" data-toggle="tab" class="tab">Step 9</a></li>
+								</ul>
+					 	</div>
+					  </div>
+					</div>
+
+					<!--Layout breakpoints-->
+					<div class="row middle">
+						<div class="
+						col-xs-12   
+						col-sm-offset-1 col-sm-10 col-sm-offset-1
+						col-md-offset-2 col-md-8 col-md-offset-2 
+						col-lg-offset-3 col-lg-6 col-lg-offset-3
+						">
+							<div class="brief">First we have a few questions. This will speed up and make your material production process easier. <span id="note">Some questions will be skipped based on your previous answers.</span></div>
+
+              <div id="bar" class="progress"  style="display:none;">
+                <div id+"bar" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+              </div>
+
+							<div class="tab-content">
+								<ul class="pager wizard">
+									<li class="previous first" style="display:none;"><a href="#">First</a></li>
+									<li class="previous"><a href="#" id="jumpBack"><i class="fa fa-arrow-left"></i></a></li>
+									<li class="last" style="display:none;"><a id="final" href="#">Continue</a></li>
+								  <li class="next"><a href="#" id="jump"><i class="fa fa-arrow-right"></i></a></li>
+								</ul>
+
+								<!--TAB 1-->
+							    <div class="tab-pane" id="tab1">
+								    <div class="question">Are you creating materials for:</div>
+								    <form class="qs"> 
+										  <div class="radRow"><input type="radio" id="social" name="whatFor" value="socialMedia" checked><span id="sm" class="sel" onclick="daFunction(this);">Social Media <small> (Facebook, Twitter, Google+ etc.)</small></span></div>
+										  <br>
+										  <div class="radRow"><input type="radio" id="print" name="whatFor" value="print"><span id="pr" class="sel" onclick="daFunction(this);">Print <small> (Posters, Leaflets, Shelf Signs)</small></span></div>
+										  <br>
+										  <div class="radRow"><input type="radio" id="screen" name="whatFor" value="screen"><span id="ds" class="sel" onclick="daFunction(this);">Digital Screens <small> (In-store advertising)</small></span></div>
+										  <br>
+										  <div class="radRow"><input type="radio" id="wb" name="whatFor" value="web"><span id="web" class="sel" onclick="daFunction(this);">Web <small> (Website, Blog, Adwords)</small></span></div>
+										</form> 
+							    </div>
+
+								  <!--TAB 2a-->
+									<div class="tab-pane" id="tab2">
+										<span class="question">What are you Promoting</span>
+								    <form class="qs">
+									    <select id="cat" name="category">
+										  <option value="Confectionary">Confectionary</option>
+										  <option value="Drinks">Drinks</option>
+										  <option value="Cards">Cards</option>
+										  <option value="Deli">Deli</option>
+										  <option value="Stationary">Stationary</option>
+										  <option value="PapersAndBooks">Papers and Books</option>
+										  <option value="Post Office">Post Office</option>
+										  <option value="Photocopying">Photocopying</option>
+										  <option value="Laundry">Laundry</option>
+										  <option value="ATM">ATM</option>
+										  <option value="TransportCards">Transport Cards</option>
+										  <option value="PhoneTopUp">Phone Top Up</option>
+										  <option value="SeasonalAndSporting">Seasonal and Sporting Events</option>
+										<select>
+									</form>
+									</div>
+
+								  <!--TAB 2b-->
+								  <div class="tab-pane" id="tab3">
+									<span class="question">Select Colour Scheme:</span>
+								    <form class="qs">
+								        <div class="row">
+								          <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+									            <a class="thumbnail" id="red">
+									            	<input id="redRad" type="radio" name="paperType" value="red" class="hideMe" />
+									              <img onclick="changeIt(this)" id="redPic" class="img-responsive find" src="dist/minImages/red.jpg" alt="">
+									              <img class="uk-overlay-panel findTick" src="dist/minImages/check.png">
+											        </a>
+									        </div>
+								          <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+									            <a class="thumbnail" id="blue">
+									            	<input id="blueRad" type="radio" name="paperType" value="blue" class="hideMe"/>
+									              <img onclick="changeIt(this)" id="bluePic" class="img-responsive find" src="dist/minImages/blue.jpg" alt="">
+									              <img class="uk-overlay-panel findTick" src="dist/minImages/check.png">
+									            </a>
+									        </div>
+								          <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+									            <a class="thumbnail" id="green">
+									            	<input id="greenRad" type="radio" name="paperType" value="green" class="hideMe"/>
+									                <img onclick="changeIt(this)" id="greenPic" class="img-responsive find" src="dist/minImages/green.jpg" alt="">
+									                <img class="uk-overlay-panel findTick" src="dist/minImages/check.png">
+									            </a>
+									        </div>
+								          <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+									            <a class="thumbnail" id="yellow">
+									            	<input id="yellowRad" type="radio" name="paperType" value="yellow" class="hideMe"/>
+									                <img onclick="changeIt(this)" id="yellowPic" class="img-responsive find" src="dist/minImages/yellow.jpg" alt="">
+									                <img class="uk-overlay-panel findTick" src="dist/minImages/check.png">
+									            </a>
+									        </div>
+								          <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+									            <a class="thumbnail" id="purple">
+									            	<input id="purpleRad" type="radio" name="paperType" value="purple" class="hideMe"/>
+									                <img onclick="changeIt(this)" id="purplePic" class="img-responsive find" src="dist/minImages/purple.jpg" alt="">
+	  								              <img class="uk-overlay-panel findTick" src="dist/minImages/check.png">
+									            </a>
+									        </div>
+								          <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+									            <a class="thumbnail" id="olive">
+									            	<input id="oliveRad" type="radio" name="paperType" value="olive" class="hideMe"/>
+									                <img onclick="changeIt(this)" id="olivePic" class="img-responsive find" src="dist/minImages/olive.jpg" alt="">
+	  								              <img class="uk-overlay-panel findTick" src="dist/minImages/check.png">
+									            </a>
+									        </div>
+								          <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+									            <a class="thumbnail" id="aqua">
+									            	<input id="aquaRad" type="radio" name="paperType" value="aqua" class="hideMe"/>
+									                <img onclick="changeIt(this)" id="aquaPic" class="img-responsive find" src="dist/minImages/aqua.jpg" alt="">
+	  								              <img class="uk-overlay-panel findTick" src="dist/minImages/check.png">
+									            </a> 
+									        </div>
+								          <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+									            <a class="thumbnail" id="pink">
+									            	<input id="pinkRad" type="radio" name="paperType" value="pink" class="hideMe"/>
+									                <img onclick="changeIt(this)" id="pinkPic" class="img-responsive find" src="dist/minImages/pink.jpg" alt="">
+	  								              <img class="uk-overlay-panel findTick" src="dist/minImages/check.png">
+									            </a>
+									        </div>
+								          <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+									            <a class="thumbnail" id="navy">
+									            	<input id="navyRad" type="radio" name="paperType" value="navy" class="hideMe"/>
+									                <img onclick="changeIt(this)" id="navyPic" class="img-responsive find" src="dist/minImages/navy.jpg" alt="">
+	  								              <img class="uk-overlay-panel findTick" src="dist/minImages/check.png">
+									            </a>
+									        </div>
+								        </div> 
+									</form>
+							    </div>
+
+							    <!--TAB 2-->
+							    <div class="tab-pane" id="tab4">
+								    <span class="question">Are you printing:</span>
+								    <form class="qs">
+											<div class="radRow">
+											 <input id="poster" type="radio" name="printing" value="poster" checked>
+											 	<span id="p" class="sel" onclick="daFunction(this);">Poster 
+											  	<a href="#my-id" data-uk-modal><small>see example</small></a>
+											  </span>
+										  </div>
+										  <br>
+										  <div class="radRow">
+											  <input id="leaflet" type="radio" name="printing" value="leaflet">
+											  <span id="l" class="sel" onclick="daFunction(this);">Leaflet 
+											  	<a href="#my-id1" data-uk-modal><small>see example</small></a>
+											  </span>
+										  </div>
+										  <br>
+										  <div class="radRow">
+										  	<input type="radio" name="printing" value="shelfTalker" id="shelf">
+											  	<span id="s" onclick="daFunction(this);" class="sel">Shelf Sign  
+												  	<a href="#my-id2" data-uk-modal><small>see example</small></a>
+												  </span>
+										  </div>
+										  <br><br>
+										  <!-- Modals -->
+											<div id="my-id" class="uk-modal">
+											    <div class="uk-modal-dialog uk-border-rounded">
+											        <a class="uk-modal-close uk-close"></a>
+											        <img class="img-responsive center-block uk-border-rounded" src="dist/minImages/poster.png">
+											    </div>
+											</div>
+											<div id="my-id1" class="uk-modal">
+											    <div class="uk-modal-dialog uk-border-rounded">
+											        <a class="uk-modal-close uk-close"></a>
+											        <img class="img-responsive center-block uk-border-rounded" src="dist/minImages/Leaflet.png">
+											    </div>
+											</div>
+											<div id="my-id2" class="uk-modal">
+											    <div class="uk-modal-dialog uk-border-rounded">
+											        <a class="uk-modal-close uk-close"></a>
+											        <img class="img-responsive center-block uk-border-rounded" src="dist/minImages/shelf.png">
+											    </div>
+											</div>
+									</form>
+							  </div>
+
+							  <!--TAB 4a-->
+								  <div class="tab-pane" id="tab5">
+									<span class="question">Select template:</span>
+								    <form class="qs">
+								        <div class="row">
+								          <div class="col-lg-6 col-md-6 col-xs-6 thumb">
+									            <a class="thumbnail" id="red">
+									            	<input id="redRad" type="radio" name="paperType" value="red" class="hideMe" />
+									              <img onclick="changeIt(this)" id="redPic" class="img-responsive find" src="dist/minImages/1off.png" alt="">
+									              <img class="uk-overlay-panel findTick" src="dist/minImages/check.png">
+											        </a>
+									        </div>
+								          <div class="col-lg-6 col-md-6 col-xs-6 thumb">
+									            <a class="thumbnail" id="blue">
+									            	<input id="blueRad" type="radio" name="paperType" value="blue" class="hideMe"/>
+									              <img onclick="changeIt(this)" id="bluePic" class="img-responsive find" src="dist/minImages/3off.png" alt="">
+									              <img class="uk-overlay-panel findTick" src="dist/minImages/check.png">
+									            </a>
+									        </div>
+								          <div class="col-lg-6 col-md-6 col-xs-6 thumb">
+									            <a class="thumbnail" id="green">
+									            	<input id="greenRad" type="radio" name="paperType" value="green" class="hideMe"/>
+									                <img onclick="changeIt(this)" id="greenPic" class="img-responsive find" src="dist/minImages/6off.png" alt="">
+									                <img class="uk-overlay-panel findTick" src="dist/minImages/check.png">
+									            </a>
+									        </div>
+								          <div class="col-lg-6 col-md-6 col-xs-6 thumb">
+									            <a class="thumbnail" id="yellow">
+									            	<input id="yellowRad" type="radio" name="paperType" value="yellow" class="hideMe"/>
+									                <img onclick="changeIt(this)" id="yellowPic" class="img-responsive find" src="dist/minImages/9off.png" alt="">
+									                <img class="uk-overlay-panel findTick" src="dist/minImages/check.png">
+									            </a>
+									        </div>
+								        </div> 
+										</form>
+							    </div>
+							    	
+							    <!--TAB 3-->
+								<div class="tab-pane" id="tab6">
+									<span class="question">Select Orientation:</span>
+								    <form class="qs">
+										  <div class="radRow">
+										  	<input id="por" type="radio" name="orientation" value="portrait"><span id="portrait" onclick="daFunction(this);" class="sel">Portrait</span>
+										  	<div id="portraitPic"><img id="porImg" src='dist/minImages/port.jpg' onclick="handler1();"></div>
+										  </div>
+										  <br>
+										  <div class="radRow">
+											  <input id="lan" type="radio" name="orientation" value="landscape"><span id="landscape" onclick="daFunction(this);" class="sel">Landscape</span>
+											  <div id="landscapePic"><img id="lanImg" src='dist/minImages/lan.jpg' onclick="handler2();">
+											  </div>
+										  </div>
+									</form>
+							  </div>
+
+							  	<!--TAB 6-->
+						    <div class="tab-pane" id="tab7">
+							    <span class="question">What size do you want:</span>
+							    <form class="qs">
+								    <select id="longerDrop" name="posSize">
+										  <option value="a4">A4 210x297mm</option>
+										  <option value="a3">A3 297x420mm</option>
+										  <option value="a2">A2 420x594mm</option>
+										  <option value="30x20">30x20 508x762mm</option>
+										  <option value="a1">A1 594x841mm</option>
+										  <option value="40x30">40x30 762x1016mm</option>
+										  <option value="A0">A0 841x1189mm</option>
+										  <option value="60x40">60x40 1016x1524mm</option>
+										  <option value="A00">A00 1189x1682mm</option>
+										</select>
+								    <center>
+								    	<img src="dist/minImages/guideRev.png">
+								    </center>
+									</form>
+						  </div>
+
+						  	<!--TAB 6a-->
+						    <div class="tab-pane" id="tab8">
+							    <span class="question">What size do you want:</span>
+							    <form class="qs">
+								    <select id="shorterDrop" name="leafSize">
+										  <option value="a4-ss">A4 Single sided</option>
+										  <option value="a4-ds">A4 Double sided</option>
+										  <option value="a5-ss">A5 Single sided</option>
+										  <option value="a5-ds">A5 Double sided</option>
+										  <option value="dl-ss">DL Single sided</option>
+										  <option value="dl-ds">DL Double sided</option>
+										</select>
+								    <center>
+								    	<img src="dist/minImages/leafletSizes1.png">
+								    </center>
+									</form>
+						  </div>
+
+						  	<!--TAB 7-->
+						  <div class="tab-pane" id="tab9">
+							    <span class="question">Select template format:</span>
+							    <form class="qs">
+										<div class="radRow"><input id="txtRad" type="radio" name="template" value="textOnly" checked><span id="txt" class="sel" onclick="daFunction(this);">
+											Text only 
+										  <a href="#text" data-uk-modal><small>see example</small></a></span>
+										</div>
+										<br>
+										<div class="radRow"><input id="txtImgRad" type="radio" name="template" value="textAndImage"><span id="txtImg" class="sel" onclick="daFunction(this);">
+											Text including image 
+											<a href="#image" data-uk-modal><small>see example</small></a></span>
+										</div>
+										<br>
+										<div id="text" class="uk-modal">
+									    <div class="uk-modal-dialog uk-border-rounded">
+									        <a class="uk-modal-close uk-close"></a>
+									        <img class="img-responsive center-block uk-border-rounded" src="dist/minImages/noImage.png">
+									    </div>
+										</div>
+										<div id="image" class="uk-modal">
+									    <div class="uk-modal-dialog uk-border-rounded">
+									        <a class="uk-modal-close uk-close"></a>
+									        <img class="img-responsive center-block uk-border-rounded" src="dist/minImages/withImage.png">
+									    </div>
+										</div>
+								</form>
+						  </div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</section>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="dist/uikit.min.js"></script>
+  <script src="js/handle.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/jquery.bootstrap.wizard.js"></script>
+	<script src="js/paper.js"></script>
+  <script type="text/javascript" src="node_modules/jquery-serializejson/jquery.serializejson.js"></script>	
+	<script>
+	$(document).ready(function() {
+
+		$(".middle").delay(200).animate({ 
+			opacity: 1 }, 
+			500);
+
+		// Wizard, Serialize & Orientation 
+	  	$('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
+			var $total = navigation.find('li').length;
+			var $current = index+1;
+			var $percent = ($current/$total) * 100;
+			$('#rootwizard .progress-bar').css({width:$percent+'%'});
+
+			// If it's the last tab then hide the last button and show the finish instead
+			if($current >= $total) {
+				$('#rootwizard').find('.pager .next').hide();
+				$('#rootwizard').find('.pager .last').show();
+				// Styling PROCEED button
+				$('#rootwizard').find('.pager .last').css("float", "right");
+				$('#rootwizard').find('.pager .last').removeClass('disabled');
+
+			} else {
+				$('#rootwizard').find('.pager .next').show();
+				$('#rootwizard').find('.pager .finish').hide();
+			}
+		}});
+
+		$('#rootwizard .last').click(function serialize(form) {
+			var json = $('.qs').serializeJSON();
+			console.log(json);
+		});	
+
+	  	$(function () {
+	  		$('[data-toggle="tooltip"]').tooltip()
+		});
+
+	  	// Preselects portrait orientatin
+		handler1();
+	});
+	</script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
