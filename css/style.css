@@ -45,6 +45,14 @@ h2#exp-edu {
     margin-left: -5px !important;
 }
 
+h6#right-exp {
+    color: rgba(0,67,111,0.5);
+}
+
+h6#left-edu {
+    color: rgba(0,167,137,0.5);
+}
+
 input#map-button {
     margin-top: 10%;
     font-weight: 600;
