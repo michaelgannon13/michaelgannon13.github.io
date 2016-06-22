@@ -41,6 +41,10 @@ form#myform {
     text-align: center;
 }
 
+h2#exp-edu {
+    margin-left: -5px !important;
+}
+
 input#map-button {
     margin-top: 10%;
     font-weight: 600;
