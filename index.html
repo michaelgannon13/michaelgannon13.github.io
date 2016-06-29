@@ -17,30 +17,28 @@
 
     <script>
       $(function() {
-        $( "#accordion" ).accordion({
-          heightStyle: "content",
-          collapsible: true,
-          active: "none",
-          animate: 300,
-          activate: function(event, ui) {
-            try {
-                theOffset = ui.newHeader.offset();
-                $('body,html').animate({ 
-                    scrollTop: theOffset.top -83
-                });
-            } catch(err){}
-          }
-        });
+          $( "#accordion" ).accordion({
+            heightStyle: "content",
+            collapsible: true,
+            active: "none",
+            animate: 300,
+            activate: function(event, ui) {
+              try {
+                  theOffset = ui.newHeader.offset();
+                  $('body,html').animate({ 
+                      scrollTop: theOffset.top -83
+                  });
+              } catch(err){}
+            }
+          });
 
-        $("#typed").typed({
+          $("#typed").typed({
               stringsElement: $('#typed-strings'),
               typeSpeed: 50,
               backDelay: 1000,
               loop: true,
-          });
-
-
-      });
+            });
+        });
 
         function scrollDown(){
           $("#arrowBounce" ).click();
@@ -50,9 +48,7 @@
           $('h3#accordian-header-text').addClass("active");
         };
     </script>
-
-<!--         <link href="css/bootstrap.min.css" rel="stylesheet">
- -->        <link href="css/style.css" rel="stylesheet"> 
+      <link href="css/style.css" rel="stylesheet"> 
  </head>
 
   <body data-spy="scroll" data-target="#navbar">
