@@ -236,7 +236,7 @@ body{
 
 div#sub-contact-message {
     font-size: 27px;
-    color: rgb(7, 95, 80);
+    color: rgb(3, 74, 62);
     font-family: lato;
     text-align: center;
     font-weight: 300;
@@ -256,7 +256,7 @@ div#bottom-container {
     font-size: 44px;
     font-family: Lato,Arial,sans-serif;
     font-weight: 400;
-    color: rgb(9, 97, 82);
+    color: rgb(3, 74, 62);
   }
 
   ul.nav.navbar-nav {
