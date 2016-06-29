@@ -144,11 +144,9 @@ p#mob-para-right {
 p#mob-para-right, p#mob-para{
     line-height: 20px;
     padding-left: 10px;
-    color: #1a1a1a;
-    font-weight: 300;
-    text-rendering: optimizeLegibility;
+    color: #333;
+    font-weight: 400;
     font-family: lato;
-    text-align: justify;
 }
 
 embed {
@@ -479,11 +477,11 @@ div#email-container, div#social-holder {
     color: #9F9F9F;
   }
 
-	#section3{
+#section3 {
     background-size: cover;
     position: relative;
-    background-color:white;
-	}
+    background: linear-gradient(135deg, #fff 0%,rgba(236, 233, 230, 0.47) 100%);
+}
 
   li#tech-item {
     font-weight: 500;
@@ -1469,6 +1467,7 @@ input:-webkit-autofill {
   #section3-a{
     height: inherit;
     display: inline-block; !important;
+    background: linear-gradient(135deg, #fff 0%,rgba(236, 233, 230, 0.47) 100%);
   }
 
   .container {
