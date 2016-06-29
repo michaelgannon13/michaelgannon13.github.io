@@ -2395,10 +2395,10 @@ figcaption#right-items {
 
 .timeline p,
 .timeline ol {
-  font: 300 95% 'lato';
+  font: 400 95% 'lato';
   padding: 3px 0 20px 0;
-  color: #1a1a1a;
-  width: 70%;
+  color: #333;
+  width: 72%;
   font-size: 14px;
   line-height: 22px;
   text-rendering: optimizeLegibility;
