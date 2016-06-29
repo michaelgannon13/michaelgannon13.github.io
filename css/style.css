@@ -584,9 +584,9 @@ div#email-container, div#social-holder {
   a#link {
     font-weight: 600;
     color: white;
-    font-size: 12px;
+    font-size: 11px;
     background: #333333;
-    padding: 6px;
+    padding: 7px;
     border-radius: 4px;
     margin-right: 6px;
     text-transform: uppercase;

@@ -770,20 +770,20 @@
 
         // Transition effect for navbar 
         $(window).scroll(function() {
-          // checks if window is scrolled more than 750px, adds/removes solid class
-          if($(this).scrollTop() > 750) { 
-              $('.navbar').addClass('solid');
-              $('#top-logo').fadeIn(1000);
-          } else {
-              $('.navbar').removeClass('solid');
-              $('#top-logo').fadeOut(1000);
-          }
+            // checks if window is scrolled more than 750px, adds/removes solid class
+            if($(this).scrollTop() > 750) { 
+                $('.navbar').addClass('solid');
+                $('#top-logo').fadeIn(1000);
+            } else {
+                $('.navbar').removeClass('solid');
+                $('#top-logo').fadeOut(1000);
+            }
 
-          if($(window).scrollTop() + $(window).height() > $(document).height() - 250) {
-               $(window).unbind('scroll');
-               showmap();
-           }
-        })
+            if($(window).scrollTop() + $(window).height() > $(document).height() - 250) {
+                 $(window).unbind('scroll');
+                 showmap();
+             }
+          })
 
         $("h3#accordian-header-text").click(function() {
           var $this = $(this);        
