@@ -49,6 +49,16 @@ h6#right-exp {
     color: rgba(0,67,111,0.7);
 }
 
+a#link:hover, a#link:visited, a#link:active, button#flash:hover {
+    text-decoration: none !important;
+    background: #00A789;
+    -o-transition:color .2s ease-out, background .2s ease-in;
+    -ms-transition:color .2s ease-out, background .2s ease-in;
+    -moz-transition:color .2s ease-out, background .2s ease-in;
+    -webkit-transition:color .2s ease-out, background .2s ease-in;
+    transition:color .2s ease-out, background .2s ease-in;
+}
+
 h6#left-edu {
     color: rgba(0,167,137,0.7);
 }
@@ -122,6 +132,11 @@ button#flash {
     border-radius: 4px;
     margin-right: 6px;
     border: none;
+    -o-transition:color .2s ease-out, background .2s ease-in;
+    -ms-transition:color .2s ease-out, background .2s ease-in;
+    -moz-transition:color .2s ease-out, background .2s ease-in;
+    -webkit-transition:color .2s ease-out, background .2s ease-in;
+    transition:color .2s ease-out, background .2s ease-in;
 }
 
 div#section4 {
@@ -590,6 +605,12 @@ div#email-container, div#social-holder {
     border-radius: 4px;
     margin-right: 6px;
     text-transform: uppercase;
+
+    -o-transition:color .2s ease-out, background .2s ease-in;
+    -ms-transition:color .2s ease-out, background .2s ease-in;
+    -moz-transition:color .2s ease-out, background .2s ease-in;
+    -webkit-transition:color .2s ease-out, background .2s ease-in;
+    transition:color .2s ease-out, background .2s ease-in;
   }
 
   h3#ui-id-1, h3#ui-id-3, h3#ui-id-5, h3#ui-id-7, h3#ui-id-9, h3#ui-id-11 {
