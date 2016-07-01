@@ -318,7 +318,7 @@ div#email-container, div#social-holder {
 
   .landing-main{
     top: 36vh;
-    color: rgba(255,255,255,0.5) !important;
+    color: rgba(255,255,255,0.6) !important;
   }
 
   button#trigger-overlay {
