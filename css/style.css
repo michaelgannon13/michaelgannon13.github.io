@@ -49,7 +49,7 @@ h6#right-exp {
     color: rgba(0,67,111,0.7);
 }
 
-a#link:hover, a#link:visited, a#link:active, button#flash:hover {
+a#link:hover, button#flash:hover {
     text-decoration: none !important;
     background: #00A789;
     -o-transition:color .2s ease-out, background .2s ease-in;
@@ -57,6 +57,10 @@ a#link:hover, a#link:visited, a#link:active, button#flash:hover {
     -moz-transition:color .2s ease-out, background .2s ease-in;
     -webkit-transition:color .2s ease-out, background .2s ease-in;
     transition:color .2s ease-out, background .2s ease-in;
+}
+
+a#link:visited, a#link:active, a#link:link{
+	text-decoration: none !important;
 }
 
 h6#left-edu {
