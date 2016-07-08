@@ -38,6 +38,10 @@ div#googlemaps {
     position: relative;
 }
 
+i#down-here {
+    font-size: 40px;
+}
+
 form#myform {
     text-align: center;
 }
