@@ -512,57 +512,17 @@
               <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp bottom-acc-container">
                 <h4 id="acc-dropdown-content-header">Description</h4>
                  <p id="dropDown-content">
-                   Angular makes it easier to develop single page web apps.
-                  It saves you writing javascript from scratch by utilising the built in functionality of Angular. In the same way we use Bootstrap to avoid writing custom css to make sites responsive.
-
-                    MVC
-                    Models: Data
-                    Controllers: Javascript functionality
-                    View: The template that displays your data
-
-                    MODULAR
-                    Benefit: keeps code separate
-
-                    CONTROLLER.JS
-                    Holds our modules
-
-                    VIEW
-                    Is associated with a controller which handles the data, so this view will show
-                    whatever is returned by it’s associated controller
-
-                    DATA.JSON
-                    Contains name value pairs of our data i.e.
-                    name:john
-                    age:26
-                    gender:male
-                    etc.
-
-                    NG-REPEAT directive tag
-                    Let’s us go through the elements in our array in our scope (holds the data and let’s pass the data between the model, view and controller).
-                    Then we feed the data into our template.
-
-                    HTTP SERVICE
-                    Let’s the app read the data from the data file data.json. It won’t work lolly because ajax communication is meant for use between a client and a server.
-
-                    ROUTING (Deep linking)
-                    Loading different data depending on the url. This is needed since it’s a single page web app we’re creating
-
-                    NEXT/PREV BUTTON
-                    By clicking next/previous artist your using angular partials which means your loading different content rather than reloading the page.
-                    list.html is our partial, it contains all the artist list code and get’s called from the main container using ng-view.
-
-                    This functionality of this code is added to our controller.js file.
-                    We create another scope variable for the prev and next
-
-                    DETAILS.HTML
-                    Contains artist details. It must be hooked up to the data.json file and loop through
-
-                    USING THE ANIMATE MODULE
-                    Being applied by declaring there module in index.html with out angular libraries
-                    Next we add it as a dependency to our controller
-                    Next we add it to our list partial by declaring ng-animate
-                  </p><br><br>         
-                  
+                    A web application built on Google's Angular.js web application framework. The UFC Fighter directory allows users search through the UFC fighters and filter the results alphabetically, by weight or in descending order. There is also a brief bio for each fighter.
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    The benefit of using Angular was being able to avail of Angular's built filter funcionality without having to write the javascript from scratch. The other benefit was working with the modular structure of Angular.
+                  </p><br><br>   
+                  <p id="dropDown-content">
+                    There is a data.json file which contains name value pairs of the fighter's name, weight and bio. This is looped through using Angular's ng-repeat tag. To read the data from the JSON the HTTP Service was used. 
+                  </p><br><br>
+                  <p id="dropDown-content">
+                    In the details page there is fighter bio and a next and previous button. These buttons make use of Angular's partials so different data is loaded into the same template view without the page having to be reloaded.
+                  </p><br><br>           
                 </div>
                 <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp bottom-acc-container">
                   <h4 id="acc-dropdown-content-header">Technologies</h4>
