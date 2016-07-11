@@ -3,14 +3,14 @@
     "name":"Daniel Cormier",
     "shortname":"Daniel_Cormier",
     "reknown":"205 lbs",
-    "gender: Male",
+    "gender": "Male",
     "bio":"Daniel Ryan Cormier (born March 20, 1979) is an American mixed martial artist and former Olympic wrestler. He competes in the light heavyweight division of the Ultimate Fighting Championship, where he is the current UFC Light Heavyweight Champion. He is currently #9 in official UFC pound-for-pound rankings. Cormier was also the Strikeforce Heavyweight Grand Prix Champion."
   },
   {
     "name":"Conor McGregor",
     "shortname":"Conor_McGregor",
     "reknown":"170 lbs",
-    "gender: Male",
+    "gender": "Male",
     "bio":"Conor Anthony McGregor (born 14 July 1988) is an Irish professional mixed martial artist who is currently signed to the Ultimate Fighting Championship (UFC). Throughout his career, he has competed as a featherweight, lightweight and welterweight. McGregor is the current UFC Featherweight Champion."
   },
   {
@@ -24,42 +24,42 @@
     "name":"Miesha Tate",
     "shortname":"Miesha_Tate",
     "reknown":"135 lbs",
-    "gender: Female",
+    "gender": "Female",
     "bio":"Miesha Theresa Tate (born August 18, 1986) is an American mixed martial artist who competes in the Ultimate Fighting Championship (UFC) and is the current UFC Women's Bantamweight Champion. Primarily known for her grappling ability, Tate became a wrestler while attending Franklin Pierce High School in Tacoma, Washington and won a state championship during her senior year in 2005. She began her professional mixed martial arts (MMA) career in 2007, and won the bantamweight championship of the Freestyle Cage Fighting promotion in 2009. Tate gained increased recognition in 2011, when she won the Strikeforce Women's Bantamweight Championship. She has also won a silver medal in the FILA Grappling Championships."
   },
   {
     "name":"Holly Holmes",
     "shortname":"Holly_Holms",
     "reknown":"135 lbs",
-    "gender: Female",
+    "gender": "Female",
     "bio":"Holly Rene Holm-Kirkpatrick (born Holly Rene Holm; October 17, 1981) is an American mixed martial artist who competes in the Ultimate Fighting Championship (UFC) bantamweight division. She is the former UFC Women's Bantamweight Champion. Holm is also a former professional boxer and kickboxer. She was a multiple-time world champion in boxing, defending her titles 18 times in three weight classes, and was a two-time Ring magazine fighter of the year (2005, 2006)."
   },
   {
     "name":"Raphael Dos Anjos",
     "shortname":"Dos_Anjos",
     "reknown":"155 lbs",
-    "gender: Male",
+    "gender": "Female",
     "bio":"Rafael Souza dos Anjos (born October 26, 1984) is a Brazilian mixed martial artist in the Ultimate Fighting Championship's lightweight division and the former UFC Lightweight Champion. He is currently #6 in official UFC pound-for-pound rankings and ranked as the #1 lightweight and #2 pound-for-pound fighter in the world by Sherdog."
   },
   {
     "name":"Jose Aldo",
     "shortname":"Jose_Aldo",
     "reknown":"145 lbs",
-    "gender: Male",
+    "gender": "Male",
     "bio":"José Aldo da Silva Oliveira Junior (September 9, 1986) is a Brazilian mixed martial artist in the Ultimate Fighting Championship (UFC). He was the fourth and final WEC Featherweight Champion and thus, became the first UFC Featherweight Champion during the UFC/WEC merger. He was named Sherdog's 2009 Fighter of the Year. He is currently #10 in official UFC pound-for-pound rankings, having been ranked as high as #1 in 2015, and ranked the #2 featherweight in the world and #9 pound-for-pound by Sherdog. In the decade between losses in November 2005 and December 2015, Aldo was undefeated in 18 fights (including 10 title fights and 9 title defenses), reigning as a world champion in the WEC and UFC for 6 years until he was knocked out by Conor McGregor in 13 seconds, making it the fastest title fight finish in UFC history."
   },
   {
     "name":"Brock Lesnar",
     "shortname":"Brock_Lesnar",
     "reknown":"265 lbs",
-    "gender: Male",
+    "gender": "Male",
     "bio":"Brock Edward Lesnar (born July 12, 1977) is an American professional wrestler, mixed martial artist, and former amateur wrestler and professional American football player. He is currently signed to WWE. Lesnar is a four-time WWE (World Heavyweight) Champion, a former UFC Heavyweight Champion, and an NCAA Division I Heavyweight Wrestling Champion. He is also a one-time IWGP Heavyweight Champion, making him a five-time world champion in professional wrestling."
   },
     {
     "name":"Jon Jones",
     "shortname":"Jon_Jones",
     "reknown":"205 lbs",
-    "gender: Male"
+    "gender": "Male",
     "bio":"Jonathan Dwight 'Jon' Jones (born July 19, 1987) is an American mixed martial artist and current interim UFC Light Heavyweight Champion. He is widely regarded as the best mixed martial arts fighter in the world and as one of the greatest fighters of all time. When he won the title in March 2011 at the age of 23, he became the youngest champion in the Ultimate Fighting Championship's (UFC) history. He was ranked as the #1 light heavyweight fighter in the world by various media outlets for a number of years, and was also ranked the #1 pound-for-pound fighter in the world by multiple publications. However, in April 2015, Jones was stripped of his title and was removed from the official rankings following his arrest on felony hit-and-run charges. He was reinstated into the UFC in October 2015."
   }
 ]
