@@ -504,7 +504,89 @@
                 <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp last-elem">
                     <i id="up-arrow" class="fa fa-angle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 8); change();" data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
                 </div>
-            </div>            
+            </div>
+
+            <h3 id="accordian-header-text"><span id="title-left">UFC Fighter Search / </span> <span id="title-right">angular app</span>
+            </h3>
+            <div id="accordian-dropdown-container">
+              <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp bottom-acc-container">
+                <h4 id="acc-dropdown-content-header">Description</h4>
+                 <p id="dropDown-content">
+                   Angular makes it easier to develop single page web apps.
+                  It saves you writing javascript from scratch by utilising the built in functionality of Angular. In the same way we use Bootstrap to avoid writing custom css to make sites responsive.
+
+                    MVC
+                    Models: Data
+                    Controllers: Javascript functionality
+                    View: The template that displays your data
+
+                    MODULAR
+                    Benefit: keeps code separate
+
+                    CONTROLLER.JS
+                    Holds our modules
+
+                    VIEW
+                    Is associated with a controller which handles the data, so this view will show
+                    whatever is returned by it’s associated controller
+
+                    DATA.JSON
+                    Contains name value pairs of our data i.e.
+                    name:john
+                    age:26
+                    gender:male
+                    etc.
+
+                    NG-REPEAT directive tag
+                    Let’s us go through the elements in our array in our scope (holds the data and let’s pass the data between the model, view and controller).
+                    Then we feed the data into our template.
+
+                    HTTP SERVICE
+                    Let’s the app read the data from the data file data.json. It won’t work lolly because ajax communication is meant for use between a client and a server.
+
+                    ROUTING (Deep linking)
+                    Loading different data depending on the url. This is needed since it’s a single page web app we’re creating
+
+                    NEXT/PREV BUTTON
+                    By clicking next/previous artist your using angular partials which means your loading different content rather than reloading the page.
+                    list.html is our partial, it contains all the artist list code and get’s called from the main container using ng-view.
+
+                    This functionality of this code is added to our controller.js file.
+                    We create another scope variable for the prev and next
+
+                    DETAILS.HTML
+                    Contains artist details. It must be hooked up to the data.json file and loop through
+
+                    USING THE ANIMATE MODULE
+                    Being applied by declaring there module in index.html with out angular libraries
+                    Next we add it as a dependency to our controller
+                    Next we add it to our list partial by declaring ng-animate
+                  </p><br><br>         
+                  
+                </div>
+                <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp bottom-acc-container">
+                  <h4 id="acc-dropdown-content-header">Technologies</h4>
+                  <ol id="tech-list">
+                  <li id="tech-item">Angular.js</li>
+                    <li id="tech-item">Javascript</li>
+                    <li id="tech-item">JSON</li>
+                    <li id="tech-item">MVC pattern</li>
+                  </ol>
+                </div>
+                  <div id="accordian-dropDown-right" class="col-lg-5 col-md-12 col-sm-12 animated fadeInUp bottom-acc-container last-elem">
+                  <p id="dropDown-content">
+                  <!-- <img width="562" height="450" class="img-responsive" src="img/mac-compressed.png"> -->
+                  <img class="mac-compressed" alt="The Gannon Times" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjIAAAHCAQMAAADPeLGeAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeDR+kAABdezbqAAAAABJRU5ErkJggg==">
+                  </p>
+                  <br><br>
+                  <p id="dropDown-content">
+                  <a id="link"  target="_blank" rel="noopener" href="angular/index.html">Live Website</a><br><br>
+                  </p>
+                </div>
+                <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp last-elem">
+                    <i id="up-arrow" class="fa fa-angle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 8); change();" data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
+                </div>
+            </div>              
           </div>
         </div>
       </div>
