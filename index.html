@@ -7,6 +7,7 @@
     <title> Michael Gannon | Front end Developer | UX/UI Designer | Project Manager</title>
     <meta name="keywords" content="web designer, cheap, web developer, UI designer, UX designer, good, experienced">
     <meta name="description" content="web design ireland, quality website designing, affordable web design, web development ireland, creative logo design, creative freelance web designer in ireland, responsive website designer in ireland, best web designer in ireland, professional freelance web designer, UI Design, logo design, photo editing, freelance ui designer, freelance web developer, front-end developer, web designer portfolio, ui/ux designer, wordpress development in ireland, hire web designer">
+    
     <script type="text/javascript" src="js/jquery-1.12.4-and-jqueryUI.min.js"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700, 900' rel='stylesheet' type='text/css'>
@@ -764,7 +765,6 @@
                       map = new google.maps.Map(document.getElementById('googlemaps'),
                           mapOptions);
                     }
-
                 initialize();
               }
 
@@ -787,48 +787,7 @@
       </nav>
     </div>
     <script defer src="http://maps.googleapis.com/maps/api/js?KEY=AIzaSyDo-JOylQbwsUyvizO5EQknCMnPqB3WVjMsensor=false"></script> 
-    <!-- classie & demo1 are needed for monbile menu. they have been minified and concatonated into master-min and so has typed.js -->
+    <!-- classie & demo1 are needed for mobile menu. they have been minified and concatonated into master-min and so has typed.js -->
     <script defer type="text/javascript" src="js/master-min.js"></script> 
-    <script type="text/javascript">
-
-      $(document).ready(function(){
-        $('a').tooltip();
-        $('i').tooltip();
-        // arrow smooth scroll
-        $('a[href^="#"]').on('click',function (e) {
-            e.preventDefault();
-            var target = this.hash;
-            var $target = $(target);
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top
-            }, 900, 'swing', function () {
-                window.location.hash = target;
-            });
-        });
-
-        // Transition effect for navbar 
-        $(window).scroll(function() {
-            // checks if window is scrolled more than 750px, adds/removes solid class
-            if($(this).scrollTop() > 700) { 
-                $('.navbar').addClass('solid');
-                $('#top-logo').fadeIn(1000);
-            } else {
-                $('.navbar').removeClass('solid');
-                $('#top-logo').fadeOut(1000);
-            }
-
-            if($(window).scrollTop() + $(window).height() > $(document).height() - 250) {
-                 $(window).unbind('scroll');
-                 showmap();
-             }
-          })
-
-        $("h3#accordian-header-text").click(function() {
-          var $this = $(this);        
-          $("h3#accordian-header-text").removeClass("active");
-          $this.addClass("active");
-        });
-      });
-    </script>
   </body>
 </html>
