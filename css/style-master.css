@@ -178,9 +178,9 @@ embed {
     height: 350px;
 }
 
-div.last-elem {
+ div.last{
     border-bottom: 1px solid #CCCCCC;
-}
+} 
 
 i#down-arrow, i#up-arrow {
     font-size: 30px;
@@ -700,9 +700,9 @@ i.fa.fa-angle-down.arrow.animated.infinite.bounce{
     text-align: center;
   }
 
-  div.col-md-6.animated.fadeInUp.bottom-acc-container {
+/*   div.col-md-6.animated.fadeInUp.bottom-acc-container {
     border-bottom: 1px solid #ccc;
-}
+} */
 
   div#accordian-dropDown-left, div#accordian-dropDown-middle, div#accordian-dropDown-right{
     /* height: 79vh;
