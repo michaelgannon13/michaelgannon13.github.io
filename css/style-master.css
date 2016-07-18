@@ -1749,7 +1749,7 @@ p#tm-content {
   }
 
   div#subheader-greeting {
-      font-size: 50px;
+      font-size: 40px;
   }
 
   .landing-main {
@@ -1851,8 +1851,8 @@ p#tm-content {
 
   h3#accordian-header-text {
       padding-left: 34px;
-      padding-top: 25px;
-      padding-bottom: 25px;
+      padding-top: 20px;
+      padding-bottom: 20px;
   }
 
   i.fa.fa-bars {
