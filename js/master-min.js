@@ -16,7 +16,7 @@
 
         // Transition effect for navbar 
         $(window).scroll(function() {
-            // checks if window is scrolled more than 750px, adds/removes solid class
+            // checks if window is scrolled more than 700px, adds/removes solid class
             if($(this).scrollTop() > 700) { 
                 $('.navbar').addClass('solid');
                 $('#top-logo').fadeIn(1000);
