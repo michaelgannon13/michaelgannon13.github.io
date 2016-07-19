@@ -750,8 +750,15 @@
         </div>
         <script type="text/javascript">
               function doddleCall(){
-                $( ".doddle-click" ).click();
-              }
+
+                if($('#accordion h3').hasClass('ui-state-active')) {
+                    $(".doddle-click").click(); 
+                    $(".doddle-click").click(); 
+                  } else {
+                    $(".doddle-click").click(); 
+                  }
+                }
+                
 
               function showmap() {
                 function initialize() {
