@@ -31,6 +31,10 @@
              }
           })
 
+        // $('#section4').on('scroll', function () {
+        //     alert('scrolling');
+        // });
+
         $("h3#accordian-header-text").click(function() {
           var $this = $(this);        
           $("h3#accordian-header-text").removeClass("active");
