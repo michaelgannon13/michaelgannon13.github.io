@@ -178,10 +178,6 @@ embed {
     height: 350px;
 }
 
- div.last{
-    border-bottom: 1px solid #CCCCCC;
-} 
-
 i#down-arrow, i#up-arrow {
     font-size: 30px;
     color: #333;
