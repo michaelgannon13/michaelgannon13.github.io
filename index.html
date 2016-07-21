@@ -757,8 +757,9 @@
                     $(".doddle-click").click(); 
                   }
                 }
-                
-              function showmap() {
+              var fix = 0;
+              function showmap() { 
+                fix = 1;
                 function initialize() {
                   var map;
                       var map = new google.maps.Map(document.getElementById('googlemaps'), {

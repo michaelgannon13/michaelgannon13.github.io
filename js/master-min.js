@@ -26,8 +26,12 @@
             }
 
             if($(window).scrollTop() + $(window).height() > $(document).height() - 250) {
-                 $(window).unbind('scroll');
+              if(fix==1){
+                return
+              } else{
+                 //$(window).unbind('scroll');
                  showmap();
+               }
              }
           })
 
