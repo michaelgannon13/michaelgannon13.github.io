@@ -775,7 +775,8 @@
                         map: map,
                         animation: google.maps.Animation.DROP
                       });
-                      map = new google.maps.Map(document.getElementById('googlemaps'));
+                      map = new google.maps.Map(document.getElementById('googlemaps'),
+                          mapOptions);
                     }
                 initialize();
               }
