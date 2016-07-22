@@ -1104,6 +1104,10 @@ two columns for large devices
   color: white;
 }
 
+.element-item:hover {
+    cursor: pointer;
+}
+
 .element-item .number {
   position: absolute;
   right: 8px;
