@@ -456,6 +456,18 @@ body {
 
 /* ---- links ---- */
 
+.element-item.windows {
+    background: #00adef;
+}
+
+.element-item.android {
+    background: #a4c639;
+}
+
+.element-item.iOS {
+    background: rgba(156, 156, 156, 1);
+}
+
 a,
 a code {
   color: #FB4;
@@ -1087,7 +1099,7 @@ two columns for large devices
   position: absolute;
   left: 10px;
   top: 0px;
-  font-size: 2.8em;
+  font-size: 1em;
   font-weight: bold;
   color: white;
 }
@@ -2122,23 +2134,6 @@ two columns for large devices
   cursor: pointer;
 }
 
-.button:hover {
-  background-color: #8CF;
-  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
-  color: #222;
-}
-
-.button:active,
-.button.is-checked,
-.button.is-selected {
-  background-color: #28F;
-}
-
-.button.is-checked,
-.button.is-selected {
-  color: white;
-  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
-}
 
 .button:active {
   box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
