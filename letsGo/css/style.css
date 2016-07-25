@@ -2,19 +2,19 @@ body {
     background-image:url('../pics/bg1.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
-    font-family: "calibri";
+    font-family: "lato" !important;
 }
 
 #list{
     margin-left: 75%;
     font-size: 4em;
-    font-family: "calibri";
+    font-family: "lato";
     font-weight: 700;
 }
 
 #big{
     font-weight: 700;
-    font-style: 'calibri';
+    font-style: 'lato';
     font-size: 1em;
 }
 
@@ -133,7 +133,7 @@ visibility:visible;
     background-color: transparent;
     text-align: center;
     border:0px; 
-    font-family: "calibri";
+    font-family: "lato";
     position: relative;
     top: -100px;
 }
@@ -173,7 +173,7 @@ visibility:visible;
     width:85%;
     height:9%;
     border:3px solid #038BCC;
-    font-family: "calibri";
+    font-family: "lato";
     font-size: 3.5em;
     color: #038BCC;
     font-weight: 700;
