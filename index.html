@@ -772,14 +772,19 @@
                         scrollwheel: false
                       });
 
-                      marker = new google.maps.Marker({
+                      var mapOptions = {
+                        center: {lat: 53.3004978, lng: -6.2838544},
+                        zoom: 14, 
+                        scrollwheel: false
+                        };
+
+                      var marker = new google.maps.Marker({
                         position: {lat: 53.3004978, lng: -6.2838544},
                         map: map,
                         animation: google.maps.Animation.DROP
                       });
                       
-                      map = new google.maps.Map(document.getElementById('googlemaps'),
-                          mapOptions);
+                      map = new google.maps.Map(document.getElementById('googlemaps'), mapOptions, marker);
                     }
                 initialize();
               }
