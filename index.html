@@ -773,16 +773,16 @@
                   var mapOptions = {
                     center: {lat: 53.3004978, lng: -6.2838544},
                     zoom: 14, 
-                    scrollwheel: false
+                    scrollwheel: false,
+                    animation: google.maps.Animation.DROP
                     };
 
                   var marker = new google.maps.Marker({
                     position: {lat: 53.3004978, lng: -6.2838544},
-                    map: map,
-                    animation: google.maps.Animation.DROP
+                    map: map
+                    
                   });
                   
-                  map = new google.maps.Map(document.getElementById('googlemaps'), mapOptions);
                 }
                 initialize();
               }
