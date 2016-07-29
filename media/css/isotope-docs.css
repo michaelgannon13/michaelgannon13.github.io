@@ -17,6 +17,8 @@ html {
 
 body {
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* HTML5 display definitions
@@ -2013,11 +2015,19 @@ two columns for large devices
 
 }
 
+span#all {
+    text-shadow: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
 /* ui-group
 ------------------------- */
 
 .ui-group {
-  display: inline-block;
+    display: block;
+    text-align: center;
 }
 
 .ui-group__title {

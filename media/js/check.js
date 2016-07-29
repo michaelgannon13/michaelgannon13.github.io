@@ -13,7 +13,5 @@ function getMediaQuery(width, height){
 
       alert(media + maxWidth + maxHeight);
 
-      $('#myModal').modal();
-      $('#myModal').modal('show');
-   
+      $('#myModal').modal();   
   }

@@ -34,16 +34,15 @@
 <div class="big-demo" data-js-module="hero-demo">
 
   <div class="ui-group">
-    <h3 class="ui-group__title">Filter</h3>
     <div class="filters button-group js-radio-button-group">
-      <button class="button is-checked" data-filter="*">All Platforms</button>
-      <button class="button" data-filter=".iOS"><img id="plat-img" src="img/apple.png"></button>
-      <button class="button" data-filter=".android"><img id="plat-img" src="img/android.png"></button>
-      <button class="button" data-filter=".windows"><img id="plat-img" src="img/windows.png"></button>
+      <button class="button is-checked" data-filter="*"><img id="plat-img" src="img/all-plat.jpg"><br><span id="all">All</span></button>
+      <button class="button" data-filter=".iOS"><img id="plat-img" src="img/apple.png"><br><span id="all">iOS</span></button>
+      <button class="button" data-filter=".android"><img id="plat-img" src="img/android.png"><br><span id="all">Android</span></button>
+      <button class="button" data-filter=".windows"><img id="plat-img" src="img/windows.png"><br><span id="all">Windows</span></button>
 <!--       <button class="button" data-filter="ium">&#x2013;ium</button>
  -->    </div>
   </div>
-  <div class="ui-group">
+<!--   <div class="ui-group">
     <h3 class="ui-group__title">Sort</h3>
     <div class="sort-by button-group js-radio-button-group">
       <button class="button is-checked" data-sort-by="original-order">original order</button>
@@ -51,7 +50,7 @@
       <button class="button" data-sort-by="symbol">symbol</button>
       <button class="button" data-sort-by="number">number</button>
     </div>
-  </div>
+  </div> -->
 
   
   <div class="modal hide fade" id="myModal">
@@ -69,155 +68,190 @@
   </div>
 
   <div class="grid">
-      <div value="ML640XL" class="element-item windows" data-toggle="modal"  data-category="transition" onclick="getMediaQuery('720', '1280');">
+      <div value="ML640XL" class="element-item windows"  data-category="transition" onclick="getMediaQuery('720', '1280');">
         <h5 class="name">windows</h5>
         <p class="symbol">Microsoft Lumia 640 XL</p>
         <!--Resolution: 720 x 1280-->
 <!--         <p class="weight">200.59</p>
  -->      </div>
-      <div class="element-item windows" data-category="transition">
+      <div class="element-item windows" data-category="transition" onclick="getMediaQuery('480', '854');">
         <h5 class="name">windows</h5>
         <p class="symbol">Nokia Lumia 635</p>
         <!--480 x 854-->
 <!--         <p class="weight">200.59</p>
  -->      </div>
-      <div class="element-item windows" data-category="transition">
+      <div class="element-item windows" data-category="transition" onclick="getMediaQuery('480', '854');">
         <h5 class="name">windows</h5>
         <p class="symbol">Nokia Lumia 530</p>
         <!--480 x 854-->
 <!--         <p class="weight">200.59</p>
  -->      </div>
-      <div class="element-item windows" data-category="transition">
+      <div class="element-item windows" data-category="transition" onclick="getMediaQuery('720', '1280');">
         <h5 class="name">windows</h5>
         <p class="symbol">Nokia Lumia 735</p>
         <!--Resolution: 720 x 1280-->
 <!--         <p class="weight">200.59</p>
  -->      </div>
-      <div class="element-item windows " data-category="transition">
+      <div class="element-item windows " data-category="transition" onclick="getMediaQuery('768', '1280');">
         <h5 class="name">windows</h5>
         <p class="symbol">Nokia Lumia 1020</p>
         <!--768 x 1280-->
 <!--         <p class="weight">200.59</p>
  -->      </div>
-      <div class="element-item windows " data-category="transition">
+      <div class="element-item windows " data-category="transition" onclick="getMediaQuery('720', '1280');">
         <h5 class="name">windows</h5>
-        <p class="symbol">Nokia Lumia 640</p>
+        <p class="symbol">Microsoft Lumia 640</p>
         <!--Resolution: 720 x 1280-->
 <!--         <p class="weight">200.59</p>
  -->      </div>
-      <div class="element-item windows " data-category="transition">
+      <div class="element-item windows " data-category="transition" onclick="getMediaQuery('1080', '1920');">
         <h5 class="name">windows</h5>
         <p class="symbol">Nokia Lumia 1520</p>
         <!--Resolution: 1080 x 1920-->
 <!--         <p class="weight">200.59</p>
  -->      </div>
-      <div class="element-item windows " data-category="transition">
+      <div class="element-item windows " data-category="transition" onclick="getMediaQuery('1080', '1920');">
         <h5 class="name">windows</h5>
         <p class="symbol">Nokia Lumia 930</p>
         <!--Resolution: 1080 x 1920-->
 <!--         <p class="weight">200.59</p>
  -->      </div>
-      <div class="element-item android " data-category="metalloid">
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1080', '1920');">
         <h5 class="name">android</h5>
         <p class="symbol">HTC One A9</p>
         <!--Resolution: 1080 x 1920-->
 <!--         <p class="weight">127.6</p>
  -->      </div>
-      <div class="element-item iOS " data-category="post-transition">
+
+
+
+
+
+
+
+      <div class="element-item iOS " data-category="post-transition" onclick="getMediaQuery('720', '1280');">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 3</p>
 <!--         <img src="img/iPhone4.jpg">
  -->        <!-- <p class="number">83</p> -->
 <!--         <p class="weight">208.980</p>
  -->      </div>
-      <div class="element-item iOS " data-category="post-transition">
+      <div class="element-item iOS " data-category="post-transition" onclick="getMediaQuery('640', '960');">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 4</p>
 <!--         <p class="weight">207.2</p>
  -->      </div>
-      <div class="element-item iOS " data-category="transition">
+      <div class="element-item iOS " data-category="transition" onclick="getMediaQuery('640', '960');">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 4s</p>
 <!--         <p class="weight">196.967</p>
  -->      </div>
-      <div class="element-item iOS " data-category="alkali">
+      <div class="element-item iOS " data-category="alkali" onclick="getMediaQuery('640', '1136');">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 5</p>
 <!--         <p class="weight">39.0983</p>
  -->      </div>
-      <div class="element-item iOS " data-category="alkali">
+
+
+
+      <div class="element-item iOS " data-category="alkali" onclick="getMediaQuery('720', '1280');">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 5s</p>
 <!--         <p class="weight">22.99</p>
  -->      </div>
-      <div class="element-item iOS " data-category="transition">
+      <div class="element-item iOS " data-category="transition" onclick="getMediaQuery('720', '1280');">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 5c</p>
 <!--         <p class="weight">112.411</p>
  -->      </div>
-      <div class="element-item iOS " data-category="alkaline-earth">
+      <div class="element-item iOS " data-category="alkaline-earth" onclick="getMediaQuery('720', '1280');">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 6</p>
 <!--         <p class="weight">40.078</p>
  -->      </div>
-      <div class="element-item iOS " data-category="transition">
+      <div class="element-item iOS " data-category="transition" onclick="getMediaQuery('720', '1280');">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 6 plus</p>
 <!--         <p class="weight">186.207</p>
  -->      </div>
-      <div class="element-item iOS " data-category="post-transition">
+      <div class="element-item iOS " data-category="post-transition" onclick="getMediaQuery('720', '1280');">
         <h5 class="name">iOS</h5>
         <p class="symbol">Tl</p>
 <!--         <p class="weight">204.383</p>
  -->      </div>
-      <div class="element-item android " data-category="metalloid">
+     <div class="element-item iOS" data-category="actinoid" onclick="getMediaQuery('720', '946');">
+            <h5 class="name">iOS</h5>
+            <p class="symbol">iPad Mini</p>
+    <!--         <p class="weight">238.029</p>
+     -->      </div>
+      <div class="element-item iOS " data-category="actinoid" onclick="getMediaQuery('768', '1024');">
+        <h5 class="name">iOS</h5>
+        <p class="symbol">iPad</p>
+<!--         <p class="weight">(244)</p>
+ -->      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('2160', '3840');">
         <h5 class="name">android</h5>
         <p class="symbol">Sony Xperia Z5 Premium</p>
 <!--         <p class="weight">121.76</p>
  -->      </div>
-      <div class="element-item android " data-category="metalloid">
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1440', '2560');">
         <h5 class="name">android</h5>
         <p class="symbol">Nexus 6P</p>
         <!--Resolution: 1440 x 2560-->
 <!--         <p class="weight">121.76</p>
  -->      </div>
-      <div class="element-item android " data-category="metalloid">
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1080', '1280');">
         <h5 class="name">android</h5>
         <p class="symbol">Sony Xperia Z5</p>
         <!--Resolution: 1080 x 1920 -->
 <!--         <p class="weight">121.76</p>
  -->      </div>
-      <div class="element-item android " data-category="metalloid">
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1440', '2560');">
         <h5 class="name">android</h5>
         <p class="symbol">LG G5</p>
         <!--Resolution: 1440 x 2560-->
 <!--         <p class="weight">121.76</p>
  -->      </div>
-      <div class="element-item android " data-category="metalloid">
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1080', '1920');">
         <h5 class="name">android</h5>
         <p class="symbol">OnePlus 3</p>
         <!--Resolution: 1080 x 1920-->
 <!--         <p class="weight">121.76</p>
  -->      </div>
-      <div class="element-item android " data-category="metalloid">
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('720', '1280');" >
         <h5 class="name">android</h5>
         <p class="symbol">HTC 10</p>
         <!--Resolution: 1440 x 2560-->
 <!--         <p class="weight">121.76</p>
  -->      </div>
-      <div class="element-item android " data-category="metalloid">
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1440', '2560');">
         <h5 class="name">android</h5>
         <p class="symbol">Samsung Galaxy S7</p>
         <!--Resolution: 1440 x 2560-->
 <!--         <p class="weight">121.76</p>
  -->      </div>
-      <div class="element-item android " data-category="metalloid">
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1440', '2560');">
         <h5 class="name">android</h5>
         <p class="symbol">Samsung Galaxy S7 Edge</p>
         <!--Resolution: 1440 x 2560-->
 <!--         <p class="weight">121.76</p>
  -->      </div>
-      <div class="element-item iOS" data-category="lanthanoid">
+      <div class="element-item iOS" data-category="lanthanoid" onclick="getMediaQuery('720', '1280');">
         <h5 class="name">iOS</h5>
         <p class="symbol">Yb</p>
 <!--         <p class="weight">173.054</p>
@@ -234,16 +268,7 @@
         <p class="number">7</p>
         <p class="weight">14.007</p>
       </div> -->
-      <div class="element-item iOS" data-category="actinoid">
-        <h5 class="name">iOS</h5>
-        <p class="symbol">U</p>
-<!--         <p class="weight">238.029</p>
- -->      </div>
-      <div class="element-item iOS " data-category="actinoid">
-        <h5 class="name">iOS</h5>
-        <p class="symbol">Pu</p>
-<!--         <p class="weight">(244)</p>
- -->      </div>
+      
   </div>
 
 </div>
