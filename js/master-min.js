@@ -1,3 +1,70 @@
+      $(function() {
+          $( "#accordion" ).accordion({
+            heightStyle: "content",
+            collapsible: true,
+            active: "none",
+            animate: 300,
+            activate: function(event, ui) {
+              try {
+                  theOffset = ui.newHeader.offset();
+                  $('body,html').animate({ 
+                      scrollTop: theOffset.top -83
+                  });
+              } catch(err){}
+            }
+          });
+
+          $("#typed").typed({
+              stringsElement: $('#typed-strings'),
+              typeSpeed: 50,
+              backDelay: 1000,
+              loop: true,
+            });
+        });
+
+        function scrollDown(){
+          $("#arrowBounce" ).click();
+        };
+
+        function change(){
+          $('h3#accordian-header-text').addClass("active");
+        };
+
+        function doddleCall(){
+          if($('#accordion h3').hasClass('ui-state-active')) {
+              $(".doddle-click").click(); 
+              $(".doddle-click").click(); 
+            } else {
+              $(".doddle-click").click(); 
+            }
+          }
+        var fix = 0;
+        function showmap() { 
+          fix = 1;
+          function initialize() {
+            var map = new google.maps.Map(document.getElementById('googlemaps'), {
+              center: {lat: 53.3004978, lng: -6.2838544},
+              zoom: 14, 
+              scrollwheel: false
+            });
+
+            var mapOptions = {
+              center: {lat: 53.3004978, lng: -6.2838544},
+              zoom: 14, 
+              scrollwheel: false,
+              animation: google.maps.Animation.DROP
+              };
+
+            var marker = new google.maps.Marker({
+              position: {lat: 53.3004978, lng: -6.2838544},
+              map: map
+            });
+            
+          }
+          initialize();
+        }
+
+
 // Tooltips, smooth scroll, navbar fade, accordian colour change
       $(document).ready(function(){
         $('a').tooltip();
