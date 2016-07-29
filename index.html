@@ -633,34 +633,6 @@
               <br style="clear:both" />
           </div>
         </section>
-
-        <!--
-          <div id="subheader-greeting">Who Am I? <i class="fa fa-user"></i></div>
-          <div>developer // designer // problem solver</div>
-         
-
-          I enjoy turning complex problems into simple, beautiful and intuitive interface designs. When I'm not coding or pushing pixels, you'll find me in the gym or on the court shooting hoops.
-
-          I develop modern, highly interactive, responsive websites & web apps with cutting edge technologies such as AngularJS and React.
-
-          I love great design and my passion is to "make it real" by blending colors and shapes with meaningful transitions in order to achieve the best user experience.
-
-          I'm strongly focused on modularity and maintainability and I pay great attention to details.
-
-          Over the past few years I've been lucky enough to work with agencies in UK and USA for brands such as Google, Land Rover, Billabong, Ferrero, Converse, Carlsberg and many others. I'm also author for Codrops and I like to experiment with JavaScript on my own projects and Codepen.
-
-          About this Website
-
-          This site has been designed and built by hand from the ground up. It's handled through AngularJS and animated with the fantastic GreenSock Animation Platform.
-
-          The CSS is written in Sass, with a mobile first approach and this modular scale for a more meaningful typography.
-
-          Everything is optimised for speed, browser compatibility and SEO.
-
-          i write clean, elegant and efficient code, ive a passion for designing functional and beautiful user experiences.
-
-          I enjoy turning complex problems into simple, beautiful and intuitive interface designs. When I'm not coding or pushing pixels, you'll find me in the gym or on the court shooting hoops.-->
-
         </div>
       </div>
       <div id="section3-a" >
@@ -760,31 +732,17 @@
                     $(".doddle-click").click(); 
                   }
                 }
-              var fix = 0;
-              function showmap() { 
-                fix = 1;
-                function initialize() {
-                  var map = new google.maps.Map(document.getElementById('googlemaps'), {
-                    center: {lat: 53.3004978, lng: -6.2838544},
-                    zoom: 14, 
-                    scrollwheel: false
-                  });
 
-                  var mapOptions = {
-                    center: {lat: 53.3004978, lng: -6.2838544},
-                    zoom: 14, 
-                    scrollwheel: false,
-                    animation: google.maps.Animation.DROP
-                    };
+                var fix = 0;
+                var map;
 
-                  var marker = new google.maps.Marker({
-                    position: {lat: 53.3004978, lng: -6.2838544},
-                    map: map
+                function showmap() {
+                  map = 1;
+                  map = new google.maps.Map(document.getElementById('googlemaps'), {
+                    center: {lat: -34.397, lng: 150.644},
+                    zoom: 8
                   });
-                  
                 }
-                initialize();
-              }
 
         </script>
         <div id="googlemaps" class="col-md-12">

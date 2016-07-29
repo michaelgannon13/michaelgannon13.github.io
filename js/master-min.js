@@ -28,7 +28,7 @@
             if($(window).scrollTop() + $(window).height() > $(document).height() - 250) {
               if(fix==1){
                 return
-              } else{
+              } else {
                  //$(window).unbind('scroll');
                  showmap();
                }
