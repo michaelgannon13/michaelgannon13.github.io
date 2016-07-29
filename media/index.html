@@ -9,15 +9,14 @@
     <!-- Isotope does not require any CSS files -->
   <link rel="stylesheet" href="css/isotope-docs.css" media="screen">
 
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
-<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 
 </head>
@@ -31,7 +30,31 @@
     <h1 id="title"><span id="simple">Simple</span> CSS Media Queries</h1>
     <br>
     <h3 id="sel-plat">Please specify your platform</h3>
-<div class="big-demo" data-js-module="hero-demo">
+    <div class="big-demo" data-js-module="hero-demo">
+
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
 
   <div class="ui-group">
     <div class="filters button-group js-radio-button-group">
@@ -52,23 +75,10 @@
     </div>
   </div> -->
 
-  
-  <div class="modal hide fade" id="myModal">
-    <div class="modal-header">
-      <a class="close" data-dismiss="modal">×</a>
-      <h3>Modal header</h3>
-    </div>
-    <div class="modal-body">
-      <p>One fine body…</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#" class="btn">Close</a>
-      <a href="#" class="btn btn-primary">Save changes</a>
-    </div>
-  </div>
+
 
   <div class="grid">
-      <div value="ML640XL" class="element-item windows"  data-category="transition" onclick="getMediaQuery('720', '1280');">
+      <div value="ML640XL" class="element-item windows" data-toggle="modal" data-target="#myModal" data-category="transition" onclick="getMediaQuery('720', '1280');">
         <h5 class="name">windows</h5>
         <p class="symbol">Microsoft Lumia 640 XL</p>
         <!--Resolution: 720 x 1280-->
@@ -248,6 +258,8 @@
       <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1440', '2560');">
         <h5 class="name">android</h5>
         <p class="symbol">Samsung Galaxy S7 Edge</p>
+
+
         <!--Resolution: 1440 x 2560-->
 <!--         <p class="weight">121.76</p>
  -->      </div>
@@ -290,5 +302,7 @@
 
 <script src="js/isotope-docs.min.js"></script>
 <script src="js/check.js"></script>
+
+
 </body>
 </html>
