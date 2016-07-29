@@ -2,18 +2,18 @@ var width;
 var height;
 var units = "px";
 
-function getMediaQuery(val){
-  var check = $(val).attr("value");
-    if(check == "ML640XL"){
-      width = 720 + units;
-      height = 1280 + units;
+function getMediaQuery(width, height){
+
+      width = width + units;
+      height = height + units;
 
       var media = "@media only screen ";
-      var maxHeight = "and (max-height : " + height + ") "
-      var maxWidth = "and (max-width : " + width + ") {}" 
+      var maxWidth = "and (max-width : " + width + ") "
+      var maxHeight = "and (max-height : " + height + ") {}" 
 
-      alert(media + maxHeight + maxWidth);
+      alert(media + maxWidth + maxHeight);
 
-      //$('#myModal').modal('show');
-      } 
+      $('#myModal').modal();
+      $('#myModal').modal('show');
+   
   }
