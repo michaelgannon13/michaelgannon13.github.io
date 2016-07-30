@@ -1,15 +1,15 @@
 <?php
     // if something has entered..
 	if(count($_POST)>0) {
-    	$conn = mysql_connect("daneel","N00123141","N00123141");
-    	mysql_select_db("N00123141",$conn);
+    	$conn = mysql_connect("mysql2772.cp.blacknight.com","u1380059_michael","la.j4cQPIR8YGWMM");
+    	mysql_select_db("db1380059_LetsGo",$conn);
         // data inserted to db
     	mysql_query("INSERT INTO score (name, score) VALUES ('" . $_POST["name"] . "','" . $_POST["score"] . "')");
     	$current_id = mysql_insert_id();
     	if(!empty($current_id)) {
     			$message = "New Client Added Successfully";
                 // page redirected
-                header('Location: http://avaya/~N00123141/scoreDB/list_client.php');
+                header('Location: http://michael-gannon.com//scoreDB/list_client.php');
     		}
 	}
 ?>

@@ -1,8 +1,8 @@
 <?php
 $message="";
 if(count($_POST)>0) {
-$conn = mysql_connect("localhost","root","root");
-mysql_select_db("letsGo",$conn);
+$conn = mysql_connect("mysql2772.cp.blacknight.com","u1380059_michael","la.j4cQPIR8YGWMM");
+mysql_select_db("db1380059_LetsGo",$conn);
 mysql_query("INSERT INTO score (name, score) VALUES ('" . $_POST["name"] . "','" . $_POST["score"] . "')");
 $current_id = mysql_insert_id();
 if(!empty($current_id)) {
