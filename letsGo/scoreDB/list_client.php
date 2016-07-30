@@ -1,5 +1,5 @@
 <?php
-	$conn = mysql_connect("mysql2772.cp.blacknight.com","u1380059_michael","la.j4cQPIR8YGWMM");
+	$conn = mysql_connect("mysql2772.cp.blacknight.com","db1380059_LetsGo","la.j4cQPIR8YGWMM");
 	mysql_select_db("db1380059_LetsGo",$conn);
 	// every item from db
 	$result = mysql_query("SELECT * FROM score");
