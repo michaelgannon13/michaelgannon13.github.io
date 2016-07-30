@@ -9,7 +9,7 @@
     	if(!empty($current_id)) {
     			$message = "New Client Added Successfully";
                 // page redirected
-                header('Location: http://michael-gannon.com//scoreDB/list_client.php');
+                header('Location: http://michael-gannon.com/scoreDB/list_client.php');
     		}
 	}
 ?>
