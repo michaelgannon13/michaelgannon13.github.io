@@ -311,6 +311,10 @@
         }
     });
 
+    $( "#copy-button" ).click(function() {
+      $("#copy-button").text("Copied!")
+    });
+
     clipboard.on('success', function(e) {
         console.log(e);
     });

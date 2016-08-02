@@ -3,6 +3,7 @@ var height;
 var units = "px";
 
 function getMediaQuery(width, height){
+      $("#copy-button").text("Copy")
 
       width = width + units;
       height = height + units;
