@@ -282,6 +282,13 @@ input { /* 1 */
   overflow: visible;
 }
 
+input#search {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    outline: none !important;
+}
+
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
@@ -1829,7 +1836,7 @@ h3#sel-plat {
 @media screen and ( min-width: 768px ) {
 
   .primary-content {
-    margin-left: 220px;
+    margin-left: auto;
   }
 
   .main .primary-content > * {
@@ -1842,7 +1849,7 @@ h3#sel-plat {
 @media screen and ( min-width: 960px ) {
 
   .primary-content {
-    margin-right: 6%;
+    margin-right: auto;
   }
 
 }
