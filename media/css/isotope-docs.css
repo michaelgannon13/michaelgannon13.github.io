@@ -392,6 +392,14 @@ textarea {
   outline-offset: -2px; /* 2 */
 }
 
+textarea#gen-media {
+    outline: none !important;
+}
+
+textarea#gen-media {
+    height: 200px;
+}
+
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
  */
