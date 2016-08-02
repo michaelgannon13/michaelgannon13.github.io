@@ -43,10 +43,13 @@
             <h4 class="modal-title">Here is your CSS Media Query</h4>
           </div>
           <div class="modal-body">
-            <p id="gen-media"></p>
+            <p>
+              <textarea id="gen-media" class="copyTarget" style="width: 100%; resize: none;"></textarea>
+            </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button class="btn" data-clipboard-action="copy" data-clipboard-target="div">Copy</button>
           </div>
         </div>
 
@@ -75,7 +78,7 @@
 
 
   <div class="grid">
-      <div value="ML640XL" class="element-item windows" data-toggle="modal" data-target="#myModal" data-category="transition" onclick="getMediaQuery('720', '1280');">
+      <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('720', '1280');">
         <h5 class="name">windows</h5>
         <p class="symbol">Microsoft Lumia 640 XL</p>
         <!--Resolution: 720 x 1280-->
@@ -299,7 +302,22 @@
 
 <script src="js/isotope-docs.min.js"></script>
 <script src="js/check.js"></script>
-<script src="js/mark.min.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script type="text/javascript">
 
+  var clipboard = new Clipboard('.btn', {
+        target: function() {
+            return document.querySelector('textarea#gen-media');
+        }
+    });
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+</script>
 </body>
 </html>

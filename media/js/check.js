@@ -4,8 +4,6 @@ var units = "px";
 
 function getMediaQuery(width, height){
 
-
-
       width = width + units;
       height = height + units;
 
