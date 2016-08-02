@@ -22,7 +22,7 @@
 </head>
 
 
-<body class="page--index" data-page="index">
+<body id="main-container" class="page--index" data-page="index" onload="init();">
 
 <div class="hero">
   <div class="primary-content">
@@ -304,6 +304,10 @@
 <script src="js/check.js"></script>
 <script src="js/clipboard.min.js"></script>
 <script type="text/javascript">
+
+  function init(){
+        $('body').hide().fadeIn('slow');
+  }
 
   var clipboard = new Clipboard('.btn', {
         target: function() {
