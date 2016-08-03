@@ -62,7 +62,9 @@
       <button class="button" data-filter=".iOS"><img id="plat-img" src="img/apple.png"><br><span id="all">iOS</span></button>
       <button class="button" data-filter=".android"><img id="plat-img" src="img/android.png"><br><span id="all">Android</span></button>
       <button class="button" data-filter=".windows"><img id="plat-img" src="img/windows.png"><br><span id="all">Windows</span></button>
-      <button class="button" data-filter=".windows"><img id="plat-img" src="img/bb.png"><br><span id="all">Blackberry</span></button><br>
+      <button class="button" data-filter=".windows"><img id="plat-img" src="img/bb.png"><br><span id="all">Blackberry</span></button>
+      <button class="button" id="screen-button" onclick="yourScreen();"><img id="plat-img" src="img/screen.png"><br><span id="all">Your screen</span>
+      </button><br>
       <input id="search" type="text" class="quicksearch" placeholder="Search" /><br><br>
 <!--       <button class="button" data-filter="ium">&#x2013;ium</button>
  --></div>
@@ -284,7 +286,6 @@
       </div> -->
       
   </div>
-
 </div>
 
   </div> 
@@ -306,6 +307,15 @@
 <script src="js/check.js"></script>
 <script src="js/clipboard.min.js"></script>
 <script type="text/javascript">
+
+function yourScreen(){
+  var viewportWidth = $(window).width();
+  var viewportHeight = $(window).height();
+
+  //alert("Your width is " + viewportWidth + "and your height is " + viewportHeight);
+
+  getMediaQuery(viewportWidth, viewportHeight);
+}
 
   function init(){
         $('body').hide().fadeIn('slow');

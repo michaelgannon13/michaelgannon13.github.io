@@ -30,6 +30,10 @@ body {
  * 2. Add the correct display in IE.
  */
 
+ button#screen-button {
+    border-radius: 0 0.5em 0.5em 0;
+}
+
 article,
 aside,
 details, /* 1 */
