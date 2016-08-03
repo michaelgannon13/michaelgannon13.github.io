@@ -47,7 +47,7 @@ function getMediaQuery(width, height){
       var media = "@media only screen ";
       var maxWidth = "   " + "and (max-width : " + width + ") ";
       var maxHeight = "   " + "and (max-height : " + height + ") " + "{" ;
-      var css = "   " + "/* CSS here */" ;
+      var css = "   " + "/* Styles here */" ;
       var brack = "\n" + "}";
 
 
