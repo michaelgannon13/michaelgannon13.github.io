@@ -25,8 +25,11 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: -webkit-linear-gradient(#ffffff 0%, rgb(228, 228, 228) 100%) !important;
+  background: -o-linear-gradient(#ffffff 0%, rgb(228, 228, 228) 100%) !important;
+  background: linear-gradient(#ffffff 0%, rgb(228, 228, 228) 100%) !important;
+  height: 100vh;
 }
-
 
 @media only screen 
    and (max-width : 720px) 
@@ -1295,7 +1298,7 @@ h3#sel-plat {
 ------------------------- */
 
 .grid {
-  background: hsl(0, 0%, 93%);
+  
   position: relative;
 }
 
