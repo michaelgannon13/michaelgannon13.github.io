@@ -57,4 +57,5 @@ function getMediaQuery(width, height){
       $('#gen-media').text(media + "\n" + maxWidth + "\n" + maxHeight + "\n" + css + brack);
 
       $('#myModal').modal();
+      $('#copy-button').click();
   }
