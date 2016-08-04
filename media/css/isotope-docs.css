@@ -1269,6 +1269,14 @@ h1#title {
   margin-right: 0.2em;
 }
 
+h4.modal-title {
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    color: #888;
+}
+
 .gh-button__stat {
   border-left: 0;
   border-radius: 0 4px 4px 0;
