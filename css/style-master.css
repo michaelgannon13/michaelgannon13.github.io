@@ -2408,7 +2408,7 @@ figcaption#right-items {
 }
 
 .timeline figcaption {
-  font: 900 150% 'Lato';
+  font: 700 150% 'Lato';
   text-transform: uppercase;
   -webkit-text-stroke: .25px;
 }
