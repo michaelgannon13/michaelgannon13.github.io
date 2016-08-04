@@ -1315,8 +1315,8 @@ h1#title, h3#sel-plat {
 }
 
 h3#sel-plat {
-    color: #9c9c9c;
-    font-weight: 600;
+    color: #333;
+    font-size: 21px;
 }
 /* grid
 ------------------------- */
