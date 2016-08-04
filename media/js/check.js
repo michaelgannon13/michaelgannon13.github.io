@@ -50,12 +50,6 @@ function getMediaQuery(width, height){
       var css = "   " + "/* Styles here */" ;
       var brack = "\n" + "}";
 
-
-
-      ///alert(media + maxWidth + maxHeight);
-
       $('#gen-media').text(media + "\n" + maxWidth + "\n" + maxHeight + "\n" + css + brack);
-
       $('#myModal').modal();
-      $('#copy-button').click();
   }
