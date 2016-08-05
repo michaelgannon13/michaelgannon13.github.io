@@ -43,6 +43,11 @@ html, body {
     transition: color 0.5s ease 0s !important;
 }
 
+::selection {
+    background: rgb(51, 51, 51);
+    color: #00f9cd;
+}
+
 div#googlemaps {
     position: relative;
 }
