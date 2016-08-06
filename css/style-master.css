@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('../fonts/Montserrat/Montserrat-Bold.otf') format('otf');
+  src: url('../fonts/Montserrat/Montserrat-Bold.svg') format('svg');
 }
 
 @font-face {
