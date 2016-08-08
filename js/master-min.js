@@ -48,24 +48,57 @@
               scrollwheel: false,
               styles: [
                 {
-                  featureType: 'all',
-                  stylers: [
-                    { saturation: -80 }
-                  ]
-                },{
-                  featureType: 'road.arterial',
-                  elementType: 'geometry',
-                  stylers: [
-                    { hue: '#00ffee' },
-                    { saturation: 50 }
-                  ]
-                },{
-                  featureType: 'poi.business',
-                  elementType: 'labels',
-                  stylers: [
-                    { visibility: 'off' }
-                  ]
-                }
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "saturation": -100
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "saturation": 100
+            },
+            {
+                "hue": "#00ffe6"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "saturation": 100
+            },
+            {
+                "hue": "#00ffcc"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    }
               ]
               
             });
