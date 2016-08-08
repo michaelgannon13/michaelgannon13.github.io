@@ -69,7 +69,7 @@
                 "hue": "#1900ff"
             },
             {
-                "color": "#8EF1DD"
+                "color": "#69CAB8"
             }
         ]
     },
