@@ -46,78 +46,27 @@
               center: {lat: 53.3004978, lng: -6.2838544},
               zoom: 14,
               scrollwheel: false,
-              styles: [{
-        "featureType": "landscape.natural",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "color": "#e0efef"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "hue": "#1900ff"
-            },
-            {
-                "color": "#69CAB8"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape.man_made",
-        "elementType": "geometry.fill"
-    },
-    {
-        "featureType": "road",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "lightness": 100
-            },
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "labels",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "stylers": [
-            {
-                "color": "#73D4C0"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.line",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "lightness": 700
-            }
-        ]
-    }]
+              styles: [
+                {
+                  featureType: 'all',
+                  stylers: [
+                    { saturation: -80 }
+                  ]
+                },{
+                  featureType: 'road.arterial',
+                  elementType: 'geometry',
+                  stylers: [
+                    { hue: '#00ffee' },
+                    { saturation: 50 }
+                  ]
+                },{
+                  featureType: 'poi.business',
+                  elementType: 'labels',
+                  stylers: [
+                    { visibility: 'off' }
+                  ]
+                }
+              ]
               
             });
 
