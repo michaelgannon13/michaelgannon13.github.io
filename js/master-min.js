@@ -50,16 +50,14 @@
                 {
                   featureType: 'all',
                   stylers: [
-                    { saturation: -80 },
-                    { color: '#333' }
+                    { saturation: -80 }
                   ]
                 },{
                   featureType: 'road.arterial',
                   elementType: 'geometry',
                   stylers: [
                     { hue: '#00ffee' },
-                    { saturation: 50 },
-                    { color: '#333' }
+                    { saturation: 50 }
                   ]
                 },{
                   featureType: 'poi.business',
