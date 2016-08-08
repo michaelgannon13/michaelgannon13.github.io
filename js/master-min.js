@@ -54,14 +54,13 @@
                   ]
                 },
                 {
-        "featureType": "water",
-        "stylers": [
-            {
-                "color": "#73D4C0"
-            }
-        ]
-    },
-
+                    "featureType": "water",
+                    "stylers": [
+                        {
+                            "color": "#73D4C0"
+                        }
+                    ]
+                },
                 {
                   featureType: 'road.arterial',
                   elementType: 'geometry',
