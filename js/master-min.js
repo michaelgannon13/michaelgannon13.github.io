@@ -44,8 +44,30 @@
           function initialize() {
             var map = new google.maps.Map(document.getElementById('googlemaps'), {
               center: {lat: 53.3004978, lng: -6.2838544},
-              zoom: 14, 
-              scrollwheel: false
+              zoom: 14,
+              scrollwheel: false,
+              styles: [
+                {
+                  featureType: 'all',
+                  stylers: [
+                    { saturation: -80 }
+                  ]
+                },{
+                  featureType: 'road.arterial',
+                  elementType: 'geometry',
+                  stylers: [
+                    { hue: '#00ffee' },
+                    { saturation: 50 }
+                  ]
+                },{
+                  featureType: 'poi.business',
+                  elementType: 'labels',
+                  stylers: [
+                    { visibility: 'off' }
+                  ]
+                }
+              ]
+              
             });
 
             var mapOptions = {
