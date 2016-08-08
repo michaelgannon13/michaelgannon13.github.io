@@ -47,50 +47,42 @@
               zoom: 14,
               scrollwheel: false,
               styles: [{
-        "featureType": "all",
-        "elementType": "all",
-        "stylers": [
-            {
-                "invert_lightness": true
-            },
-            {
-                "saturation": 20
-            },
-            {
-                "lightness": 50
-            },
-            {
-                "gamma": 0.4
-            },
-            {
-                "hue": "#00ffee"
-            }
-        ]
-    },
-    {
-        "featureType": "all",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "all",
-        "elementType": "labels",
+        "featureType": "landscape.natural",
+        "elementType": "geometry.fill",
         "stylers": [
             {
                 "visibility": "on"
+            },
+            {
+                "color": "#e0efef"
             }
         ]
     },
     {
-        "featureType": "administrative",
-        "elementType": "all",
+        "featureType": "poi",
+        "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#ffffff"
+                "visibility": "on"
+            },
+            {
+                "hue": "#1900ff"
+            },
+            {
+                "color": "#8EF1DD"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape.man_made",
+        "elementType": "geometry.fill"
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "lightness": 100
             },
             {
                 "visibility": "simplified"
@@ -98,29 +90,31 @@
         ]
     },
     {
-        "featureType": "administrative.land_parcel",
-        "elementType": "geometry.stroke",
+        "featureType": "road",
+        "elementType": "labels",
         "stylers": [
             {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "all",
-        "stylers": [
-            {
-                "color": "#405769"
+                "visibility": "off"
             }
         ]
     },
     {
         "featureType": "water",
-        "elementType": "geometry.fill",
         "stylers": [
             {
-                "color": "#232f3a"
+                "color": "#73D4C0"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.line",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "lightness": 700
             }
         ]
     }]
