@@ -64,7 +64,7 @@ textarea#gen-media {
 }
 
 ::selection { 
-  background: rgb(226, 18, 163); 
+  background: #FC5185; 
   color: white;
 }
 
@@ -1158,7 +1158,7 @@ h1#title {
 }
 
 .element-item:hover {
-  background: #e212a3;
+  background: #FC5185;
   -o-transition:color .2s ease-out, background .2s ease-in-out;
   -ms-transition:color .2s ease-out, background .2s ease-in-out;
   -moz-transition:color .2s ease-out, background .2s ease-in-out;
