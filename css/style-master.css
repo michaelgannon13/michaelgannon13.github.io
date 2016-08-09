@@ -1870,6 +1870,15 @@ p#tm-content {
   }
 }
 
+
+/* My Phone */
+@media only screen 
+   and (max-width : 360px) 
+   and (max-height : 511px) {
+   /* Styles here */
+}
+/* My Phone */
+
 @media (max-width: 1440px) {
   .timeline p, .timeline ol{
     width: 90% !important;
