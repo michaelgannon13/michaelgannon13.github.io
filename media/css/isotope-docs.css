@@ -55,6 +55,10 @@ body#main-container {
     border-radius: 0 0.5em 0.5em 0;
 }
 
+.grid {
+    margin-left: 40px;
+}
+
 textarea#gen-media {
     font-family: courier;
     font-weight: 900;
