@@ -78,7 +78,7 @@ img#image-behind {
     max-height: 100%;
     margin: auto;
     overflow: auto;
-    opacity: 0.2;
+    opacity: 0.1;
     border-radius: 50%;
 }
 
@@ -99,7 +99,7 @@ h3#one {
 
 p#quote {
     font-family: futura-light;
-    color: #818181;
+    color: #212121;
     font-size: 24px;
     line-height: 40px;
 }

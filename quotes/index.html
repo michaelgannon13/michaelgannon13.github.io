@@ -44,7 +44,7 @@
 				<a href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Bounderies</span></a>
 				<a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Confrontation</span></a>
 				<a href="#"><i class="fa fa-fw fa-bar-chart-o"></i><span>Detatchment</span></a>
-				<a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span onclick="reset()">Random</span></a>
+				<a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span onclick="reset()">Reset</span></a>
 
 			</div>
 		</nav>
@@ -90,9 +90,9 @@
 						}
 
 						window.onkeydown = function(e){
-							
-							if(e.keyCode === 32){
-									fade();
+
+							function press(){
+								fade();
 							    e.preventDefault();
 							    // fade();
 							    counter++;
@@ -101,7 +101,10 @@
 							    	counter = 0;
 							    }
 							    load();
-							    
+							}
+							
+							if(e.keyCode === 32){
+								press();
 							}
 						};
 
