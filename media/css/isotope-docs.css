@@ -67,6 +67,10 @@ textarea#gen-media {
     color: white;
 }
 
+a:hover {
+    text-decoration: none !important;
+}
+
 ::selection { 
   background: #FC5185; 
   color: #F5F5F5;
@@ -75,7 +79,7 @@ textarea#gen-media {
 #share-buttons img {
     width: 45px;
     padding: 5px;
-    border: 0;
+    border: 0 !important;
     top: 30px;
     position: relative;
     display: inline;
@@ -2426,3 +2430,32 @@ span#all {
 .vertical-list__item .weight { width: 15%; }
 .vertical-list__item .number { width: 10%; }
 .vertical-list__item .category { width: 25%; }
+
+
+
+@media only screen 
+   and (max-width : 473px)  {
+   .button {
+      padding: 5px 10px;
+  }
+
+  #share-buttons img {
+      width: 35px;
+  }
+}
+
+@media only screen 
+   and (max-width : 400px)  {
+   .button {
+      padding: 5px 5px;
+  }
+
+  .ui-group {
+      margin-left: 15px;
+  }
+
+  .grid {
+      margin-left: 25px;
+  }
+}
+
