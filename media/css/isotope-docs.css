@@ -33,6 +33,16 @@ body {
   background: url("img/back.jpg") !important;
 }
 
+form {
+    display: inline;
+    top: 50px;
+    position: relative;
+}
+
+input#donate {
+    width: 100px;
+}
+
 body#main-container {
     background: #F5F5F5 !important;
 }
