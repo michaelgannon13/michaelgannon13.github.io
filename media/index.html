@@ -6,14 +6,6 @@
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="filter &amp; sort magical layouts">
 
-  <title>CSS Media Query Generator</title>
-    <!-- You can use Open Graph tags to customize link previews.
-    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
-  <meta property="og:url"           content="http://www.michael-gannon.com/media/index.html" />
-  <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="Simple CSS Media Query Generator" />
-  <meta property="og:description"   content="Easy to use web app that lets you find the device for which your want a CSS media query. Generate your media query at the click of a button." />
-
     <!-- Isotope does not require any CSS files -->
   <link rel="stylesheet" href="css/isotope-docs.css" media="screen">
 
@@ -31,56 +23,33 @@
 
 <body id="main-container" class="page--index" data-page="index">
 <script>
-
-      // window.twttr = (function(d, s, id) {
-      //   var js, fjs = d.getElementsByTagName(s)[0],
-      //     t = window.twttr || {};
-      //   if (d.getElementById(id)) return t;
-      //   js = d.createElement(s);
-      //   js.id = id;
-      //   js.src = "https://platform.twitter.com/widgets.js";
-      //   fjs.parentNode.insertBefore(js, fjs);
+      window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
        
-      //   t._e = [];
-      //   t.ready = function(f) {
-      //     t._e.push(f);
-      //   };
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
        
-      //   return t;
-      // }(document, "script", "twitter-wjs"));
+        return t;
+      }(document, "script", "twitter-wjs"));
   </script>
 
-    <!-- Load Facebook SDK for JavaScript -->
-<!--   <div id="fb-root"></div>
- -->  <script>
- // (function(d, s, id) {
- //    var js, fjs = d.getElementsByTagName(s)[0];
- //    if (d.getElementById(id)) return;
- //    js = d.createElement(s); js.id = id;
- //    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
- //    fjs.parentNode.insertBefore(js, fjs);
- //  }(document, 'script', 'facebook-jssdk'));
-  </script>
 
-  <!-- Your share button code -->
-<!--   <div class="fb-share-button" 
-    data-href="http://www.michael-gannon.com/media/index.html" 
-    data-layout="button_count">
-  </div> -->
 
 <div class="hero">
   <div class="primary-content">
       
 
-    <h1 id="title">
-    <!-- <a id="tweet" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Uselful%20Tool!" data-size="large" >
+    <h1 id="title"><a id="tweet" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Useful%20Tool!" data-size="large" >
             <img id="tweet" src="img/twitter.png">
-    </a>
-    <div class="fb-share-button" data-href="michael-gannon.com/media/index.html" data-layout="button_count" data-size="small" data-mobile-iframe="true">
-      <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a>
-    </div>
-
-    <br><br> --><span id="simple">Simple</span> CSS Media Queries</h1>
+      </a><br><br><span id="simple">Simple</span> CSS Media Queries</h1>
     <br>
     <h3 id="sel-plat">Please specify your platform</h3>
     <div class="big-demo" data-js-module="hero-demo">
@@ -1457,8 +1426,5 @@ function yourScreen(){
         //console.log(e);
     });
 </script>
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56dd9e92835a999b"></script>
-
 </body>
 </html>
