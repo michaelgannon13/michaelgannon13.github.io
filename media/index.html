@@ -21,7 +21,7 @@
 
 </head>
 
-<body id="main-container" class="page--index" data-page="index" onresize="yourScreen();">
+<body id="main-container" class="page--index" data-page="index">
 
 <div class="hero">
   <div class="primary-content">
@@ -328,25 +328,6 @@
  -->   </div>
 
 <!-- iOS end -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- Android Start -->
@@ -1405,12 +1386,18 @@
 </script>
 <script type="text/javascript">
 
+
 function yourScreen(){
   var viewportWidth = $(window).width();
   var viewportHeight = $(window).height();
 
   getMediaQuery(viewportWidth, viewportHeight);
 }
+
+
+$(window).resize(function() {
+  yourScreen();
+});
 
 
   var clipboard = new Clipboard('.btn', {
