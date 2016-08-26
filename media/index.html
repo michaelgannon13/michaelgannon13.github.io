@@ -22,9 +22,30 @@
 </head>
 
 <body id="main-container" class="page--index" data-page="index">
+<script>
+      window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+       
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+       
+        return t;
+      }(document, "script", "twitter-wjs"));
+  </script>
 
 <div class="hero">
   <div class="primary-content">
+      <a id="tweet" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Uselful%20Tool!" data-size="large" >
+            <img id="tweet" src="img/twitter.png">
+      </a>
 
     <h1 id="title"><span id="simple">Simple</span> CSS Media Queries</h1>
     <br>
@@ -1387,17 +1408,14 @@
 <script type="text/javascript">
 
 
-// function yourScreen(){
-//   var viewportWidth = $(window).width();
-//   var viewportHeight = $(window).height();
+function yourScreen(){
+  var viewportWidth = $(window).width();
+  var viewportHeight = $(window).height();
 
-//   getMediaQuery(viewportWidth, viewportHeight);
-// }
+  getMediaQuery(viewportWidth, viewportHeight);
+}
 
 
-// $(window).resize(function() {
-//   yourScreen();
-// });
 
 
   var clipboard = new Clipboard('.btn', {
