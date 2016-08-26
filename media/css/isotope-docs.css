@@ -72,6 +72,20 @@ textarea#gen-media {
   color: #F5F5F5;
 }
 
+#share-buttons img {
+    width: 45px;
+    padding: 5px;
+    border: 0;
+    top: 30px;
+    position: relative;
+    display: inline;
+    text-align: center !important;
+}
+
+#share-buttons {
+    text-align: center ;
+}
+
 article,
 aside,
 details, /* 1 */

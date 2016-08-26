@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="filter &amp; sort magical layouts">
+  <meta name="description" content="Simple CSS Media Query Generator">
 
     <!-- Isotope does not require any CSS files -->
   <link rel="stylesheet" href="css/isotope-docs.css" media="screen">
@@ -22,34 +22,52 @@
 </head>
 
 <body id="main-container" class="page--index" data-page="index">
-<script>
-      window.twttr = (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0],
-          t = window.twttr || {};
-        if (d.getElementById(id)) return t;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-       
-        t._e = [];
-        t.ready = function(f) {
-          t._e.push(f);
-        };
-       
-        return t;
-      }(document, "script", "twitter-wjs"));
-  </script>
+<div id="share-buttons">
+
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=michael-gannon.com/media/index.html&amp;text=CSS%20Media%20Query%20Generator%20&amp;hashtags=simplecss" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+    </a>
+
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=http://michael-gannon.com/media/index.html" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+    </a>
+    
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=michael-gannon.com/media/index.html" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+    </a>
+    
+    <!-- LinkedIn -->
+    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=michael-gannon.com/media/index.html" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+    </a>
+    
+    <!-- Reddit -->
+    <a href="http://reddit.com/submit?url=michael-gannon.com/media/index.html&amp;title=Simple Share Buttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+    </a>
+
+    
+    <!-- Tumblr-->
+    <a href="http://www.tumblr.com/share/link?url=michael-gannon.com/media/index.html&amp;title=Simple Share Buttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
+    </a>
 
 
+    <!-- Email -->
+    <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 michael-gannon.com/media/index.html">
+        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+    </a>
+    
+</div>
 
 <div class="hero">
   <div class="primary-content">
-      
 
-    <h1 id="title"><a id="tweet" class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Useful%20Tool!" data-size="large" >
-            <img id="tweet" src="img/twitter.png">
-      </a><br><br><span id="simple">Simple</span> CSS Media Queries</h1>
+    <h1 id="title">
+    <span id="simple">Simple</span> CSS Media Queries</h1>
     <br>
     <h3 id="sel-plat">Please specify your platform</h3>
     <div class="big-demo" data-js-module="hero-demo">
@@ -1426,5 +1444,7 @@ function yourScreen(){
         //console.log(e);
     });
 </script>
+
+
 </body>
 </html>
