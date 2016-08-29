@@ -2476,7 +2476,11 @@ span#all {
    and (max-width : 400px)  {
 
   img#plat-img{
-    width: 30px;
+    width: 35px;
+  }
+
+  span#all {
+      font-size: 10px;
   }
 
   h3#sel-plat {
