@@ -2475,6 +2475,10 @@ span#all {
 @media only screen 
    and (max-width : 400px)  {
 
+    h1#title {
+      padding: 0 65px;
+  }
+
   img#plat-img{
     width: 35px;
   }
