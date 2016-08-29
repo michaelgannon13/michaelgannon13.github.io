@@ -2475,6 +2475,10 @@ span#all {
 @media only screen 
    and (max-width : 400px)  {
 
+  img#plat-img{
+    width: 35px;
+  }
+
   h3#sel-plat {
       color: #364F6B;
       font-size: 16px;
@@ -2507,9 +2511,6 @@ span#all {
       margin-left: 25px;
   }
 
-  #share-buttons img {
-      width: 30px;
-  }
 }
 
 
