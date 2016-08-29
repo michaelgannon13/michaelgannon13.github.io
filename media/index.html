@@ -75,60 +75,63 @@
   <h1 id="title">
     <span id="simple">Simple</span> CSS Media Queries</h1>
 
-    <h3 id="sel-plat">Please specify your breakpoint</h3>
-    <div class="big-demo" data-js-module="hero-demo">
+<div id="options-container">
+        <h3 id="sel-plat">Please specify your breakpoint</h3>
+        <div class="big-demo" data-js-module="hero-demo">
 
-  <div class="ui-group">
-    <div id="breakpoints" class="button-group">
-      <button class="button is-checked" data-filter="*" onclick="smallPhone();"><img id="plat-img" src="img/small-phone.png"><br><span id="all">Small Phone</span></button>
-      <button class="button" data-filter=".iOS" onclick="smartPhone();"><img id="plat-img" src="img/smart-phone.png"><br><span id="all">Smart phone</span></button>
-      <button class="button" data-filter=".android" onclick="tablet();"><img id="plat-img" src="img/tablet.png"><br><span id="all">Tablet</span></button>
-      <button class="button" data-filter=".windows" onclick="laptop();"><img id="plat-img" src="img/laptop.png"><br><span id="all">Laptop</span></button>
-      <button class="button" id="screen-button" onclick="largeDesktop();"><img id="plat-img" src="img/desktop.png"><br><span id="all">Large Desktop</span>
-      </button>
-    </div>
-  </div>
-    <h3 id="or">or...</h3>
+      <div class="ui-group">
+        <div id="breakpoints" class="button-group">
+          <button class="button is-checked" data-filter="*" onclick="smallPhone();"><img id="plat-img" src="img/small-phone.png"><br><span id="all">Small Phone</span></button>
+          <button class="button" data-filter=".iOS" onclick="smartPhone();"><img id="plat-img" src="img/smart-phone.png"><br><span id="all">Smart phone</span></button>
+          <button class="button" data-filter=".android" onclick="tablet();"><img id="plat-img" src="img/tablet.png"><br><span id="all">Tablet</span></button>
+          <button class="button" data-filter=".windows" onclick="laptop();"><img id="plat-img" src="img/laptop.png"><br><span id="all">Laptop</span></button>
+          <button class="button" id="screen-button" onclick="largeDesktop();"><img id="plat-img" src="img/desktop.png"><br><span id="all">Desktop</span>
+          </button>
+        </div>
+      </div>
+        <h3 id="or">or...</h3>
 
-    <h3 id="sel-plat">Your platform</h3>
-    <div class="big-demo" data-js-module="hero-demo">
+        <h3 id="sel-plat">Your platform</h3>
+        <div class="big-demo" data-js-module="hero-demo">
 
-    <!-- Modal -->
-    <div id="myModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
 
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Here is your CSS Media Query</h4>
-          </div>
-          <div class="modal-body">
-            <p>
-              <textarea id="gen-media" class="copyTarget" style="width: 100%; resize: none;"></textarea>
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button id="copy-button" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="textarea">Copy</button>
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Here is your CSS Media Query</h4>
+              </div>
+              <div class="modal-body">
+                <p>
+                  <textarea id="gen-media" class="copyTarget" style="width: 100%; resize: none;"></textarea>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button id="copy-button" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="textarea">Copy</button>
+              </div>
+            </div>
+
           </div>
         </div>
 
+      <div class="ui-group">
+        <div id="filters" class="button-group">
+          <button class="button is-checked" data-filter="*"><img id="plat-img" src="img/all-plat.jpg"><br><span id="all">All</span></button>
+          <button class="button" data-filter=".iOS"><img id="plat-img" src="img/apple.png"><br><span id="all">iOS</span></button>
+          <button class="button" data-filter=".android"><img id="plat-img" src="img/android.png"><br><span id="all">Android</span></button>
+          <button class="button" data-filter=".windows"><img id="plat-img" src="img/windows.png"><br><span id="all">Windows</span></button>
+    <!--       <button class="button" data-filter=".windows"><img id="plat-img" src="img/bb.png"><br><span id="all">Blackberry</span></button>
+     -->      <button class="button" id="screen-button" onclick="yourScreen();"><img id="plat-img" src="img/screen.png"><br><span id="all">Your screen</span>
+          </button><br>
+          <input id="search" type="text" class="quicksearch" placeholder="Search for your device..." /><br><br>
+    <!--       <button class="button" data-filter="ium">&#x2013;ium</button>
+     --></div>
       </div>
-    </div>
 
-  <div class="ui-group">
-    <div id="filters" class="button-group">
-      <button class="button is-checked" data-filter="*"><img id="plat-img" src="img/all-plat.jpg"><br><span id="all">All</span></button>
-      <button class="button" data-filter=".iOS"><img id="plat-img" src="img/apple.png"><br><span id="all">iOS</span></button>
-      <button class="button" data-filter=".android"><img id="plat-img" src="img/android.png"><br><span id="all">Android</span></button>
-      <button class="button" data-filter=".windows"><img id="plat-img" src="img/windows.png"><br><span id="all">Windows</span></button>
-<!--       <button class="button" data-filter=".windows"><img id="plat-img" src="img/bb.png"><br><span id="all">Blackberry</span></button>
- -->      <button class="button" id="screen-button" onclick="yourScreen();"><img id="plat-img" src="img/screen.png"><br><span id="all">Your screen</span>
-      </button><br>
-      <input id="search" type="text" class="quicksearch" placeholder="Search for your device..." /><br><br>
-<!--       <button class="button" data-filter="ium">&#x2013;ium</button>
- --></div>
   </div>
   <div class="grid">
 

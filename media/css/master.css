@@ -32,6 +32,12 @@ h3#or {
     color: #222;
     font-size: 15px;
     text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
+div#options-container {
+    margin-top: 50px;
 }
 
 h5.name {
@@ -2468,6 +2474,27 @@ span#all {
 
 @media only screen 
    and (max-width : 400px)  {
+
+  h3#sel-plat {
+      color: #364F6B;
+      font-size: 16px;
+  }
+
+  div#options-container {
+      margin-top: 20px;
+  }
+
+  h3#or {
+      font-size: 12px;
+  }
+
+    input#donate {
+      width: 80px;
+  }
+
+    h1#title {
+      font-size: 30px;
+  }
    .button {
       padding: 5px 5px;
   }
