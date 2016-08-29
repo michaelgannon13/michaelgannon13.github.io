@@ -2506,7 +2506,13 @@ span#all {
   .grid {
       margin-left: 25px;
   }
+
+  #share-buttons img {
+      width: 35px;
+  }
 }
+
+
 
 
 /* Boostrap.css minified */
