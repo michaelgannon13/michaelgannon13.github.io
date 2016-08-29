@@ -2483,12 +2483,10 @@ span#all {
       font-size: 10px;
   }
 
-  .ui-group {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
+  .primary-content{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 
   h3#sel-plat {
       color: #364F6B;
