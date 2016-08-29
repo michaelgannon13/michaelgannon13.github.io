@@ -114,6 +114,86 @@ function getMediaQuery(width, height){
       $('#myModal').modal();
   }
 
+  function smallPhone(){
+      $("#copy-button").text("Copy");
+      $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
+
+      width = width + units;
+      height = height + units;
+
+      var media = "@media only screen ";
+      var maxWidth = "   " + "and (max-width : 200px) {";
+      var css = "   " + "/* Styles here */" ;
+      var brack = "\n" + "}";
+
+      $('#gen-media').text(media + "\n" + maxWidth + "\n" + css + brack);
+      $('#myModal').modal();
+  }
+
+    function smartPhone(){
+      $("#copy-button").text("Copy");
+      $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
+
+      width = width + units;
+      height = height + units;
+
+      var media = "@media only screen ";
+      var maxWidth = "   " + "and (max-width : 320px) {";
+      var css = "   " + "/* Styles here */" ;
+      var brack = "\n" + "}";
+
+      $('#gen-media').text(media + "\n" + maxWidth + "\n" + css + brack);
+      $('#myModal').modal();
+  }
+
+    function tablet(){
+      $("#copy-button").text("Copy");
+      $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
+
+      width = width + units;
+      height = height + units;
+
+      var media = "@media only screen ";
+      var maxWidth = "   " + "and (max-width : 768px) {";
+      var css = "   " + "/* Styles here */" ;
+      var brack = "\n" + "}";
+
+      $('#gen-media').text(media + "\n" + maxWidth + "\n" + css + brack);
+      $('#myModal').modal();
+  }
+
+  	function laptop(){
+      $("#copy-button").text("Copy");
+      $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
+
+      width = width + units;
+      height = height + units;
+
+      var media = "@media only screen ";
+      var maxWidth = "   " + "and (max-width : 1224px) {";
+      var css = "   " + "/* Styles here */" ;
+      var brack = "\n" + "}";
+
+      $('#gen-media').text(media + "\n" + maxWidth + "\n" + css + brack);
+      $('#myModal').modal();
+  }
+
+    function largeDesktop(){
+      $("#copy-button").text("Copy");
+      $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
+
+      width = width + units;
+      height = height + units;
+
+      var media = "@media only screen ";
+      var maxWidth = "   " + "and (max-width : 1824px) {";
+      var css = "   " + "/* Styles here */" ;
+      var brack = "\n" + "}";
+
+      $('#gen-media').text(media + "\n" + maxWidth + "\n" + css + brack);
+      $('#myModal').modal();
+  }
+
 
 // init Isotope
 var $grid = $('.grid').isotope({

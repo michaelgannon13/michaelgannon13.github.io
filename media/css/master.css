@@ -26,6 +26,14 @@ body {
   background: url("img/back.jpg") !important;
 }
 
+h3#or {
+    text-align: center;
+    font-weight: 900;
+    color: #222;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
 form {
     top: 43px;
     position: relative;
