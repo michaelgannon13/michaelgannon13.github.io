@@ -15,8 +15,6 @@
     <!-- Latest compiled and minified CSS -->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-
-
 </head>
 
 <body id="main-container" class="page--index" data-page="index">
@@ -124,8 +122,9 @@
           <button class="button" data-filter=".iOS"><img id="plat-img" src="img/apple.png"><br><span id="all">iOS</span></button>
           <button class="button" data-filter=".android"><img id="plat-img" src="img/android.png"><br><span id="all">Android</span></button>
           <button class="button" data-filter=".windows"><img id="plat-img" src="img/windows.png"><br><span id="all">Windows</span></button>
-    <!--       <button class="button" data-filter=".windows"><img id="plat-img" src="img/bb.png"><br><span id="all">Blackberry</span></button>
-     -->      <button class="button" id="screen-button" onclick="yourScreen();"><img id="plat-img" src="img/screen.png"><br><span id="all">Your screen</span>
+          <button class="button" id="screen-button" onclick="yourAR();"><img id="plat-img" src="img/screen.png"><br><span id="all">Your Aspect Ratio</span>
+          </button>
+          <button class="button" id="screen-button" onclick="yourScreen();"><img id="plat-img" src="img/screen.png"><br><span id="all">Your screen</span>
           </button><br>
           <input id="search" type="text" class="quicksearch" placeholder="Search for your device..." /><br><br>
     <!--       <button class="button" data-filter="ium">&#x2013;ium</button>
@@ -1611,6 +1610,31 @@ function yourScreen(){
 
   getMediaQuery(viewportWidth, viewportHeight);
 }
+
+function yourAR(){
+  var viewportWidth = $(window).width();
+  var viewportHeight = $(window).height();
+  var ar = viewportWidth/viewportHeight;
+
+  var widthValue = Math.round(viewportWidth/viewportWidth*ar);
+  var heightValue = Math.round(viewportWidth/viewportHeight*ar);
+
+
+  var media = "@media only screen ";
+  var maxWidth = "   " + "and (device-aspect-ratio: " + heightValue + "/" + widthValue + ")" + "{";
+  var css = "   " + "/* Styles here */" ;
+  var brack = "\n" + "}";
+
+   $('#gen-media').text(media + "\n" + maxWidth + "\n" + css + brack);
+      $('#myModal').modal();
+}
+
+
+
+
+
+
+
   var clipboard = new Clipboard('.btn', {
         target: function() {
             return document.querySelector('textarea#gen-media');
