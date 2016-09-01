@@ -74,16 +74,16 @@
     <span id="simple">Simple</span> CSS Media Queries</h1>
 
 <div id="options-container">
-        <h3 id="sel-plat">Please specify your breakpoint</h3>
+        <h3 id="sel-plat">Please specify your breakpoint (mobile first approach)</h3>
         <div class="big-demo" data-js-module="hero-demo">
 
       <div class="ui-group">
         <div id="breakpoints" class="button-group">
-          <button class="button is-checked" data-filter="*" onclick="smallPhone();"><img id="plat-img" src="img/small-phone.png"><br><span id="all">Small Phone</span></button>
-          <button class="button" data-filter=".iOS" onclick="smartPhone();"><img id="plat-img" src="img/smart-phone.png"><br><span id="all">Smart phone</span></button>
-          <button class="button" data-filter=".android" onclick="tablet();"><img id="plat-img" src="img/tablet.png"><br><span id="all">Tablet</span></button>
-          <button class="button" data-filter=".windows" onclick="laptop();"><img id="plat-img" src="img/laptop.png"><br><span id="all">Laptop</span></button>
-          <button class="button" id="screen-button" onclick="largeDesktop();"><img id="plat-img" src="img/desktop.png"><br><span id="all">Desktop</span>
+          <button class="button is-checked" data-filter="*" onclick="smallPhone();"><img id="plat-img" src="img/small-phone.png"><br><span id="all">Small Phone +</span></button>
+          <button class="button" data-filter=".iOS" onclick="smartPhone();"><img id="plat-img" src="img/smart-phone.png"><br><span id="all">Smart phone +</span></button>
+          <button class="button" data-filter=".android" onclick="tablet();"><img id="plat-img" src="img/tablet.png"><br><span id="all">Tablet +</span></button>
+          <button class="button" data-filter=".windows" onclick="laptop();"><img id="plat-img" src="img/laptop.png"><br><span id="all">Laptop +</span></button>
+          <button class="button" id="screen-button" onclick="largeDesktop();"><img id="plat-img" src="img/desktop.png"><br><span id="all">Desktop +</span>
           </button>
         </div>
       </div>
@@ -162,17 +162,17 @@
         <p class="symbol">Samsung Galaxy S2</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('720', '1280');">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('320', '640');">
         <h5 class="name">android</h5>
         <p class="symbol">Samsung Galaxy S3</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1080', '1920');">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('320', '640');">
         <h5 class="name">android</h5>
         <p class="symbol">Samsung Galaxy S4</p>
     </div> 
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1080', '1920');">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('360', '640');">
         <h5 class="name">android</h5>
         <p class="symbol">Samsung Galaxy S5</p>
     </div> 
@@ -825,8 +825,13 @@
         <h5 class="name">android</h5>
         <p class="symbol">HTC Evo 3D</p>
       </div>
+      
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('540', '960');">
+        <h5 class="name">android</h5>
+        <p class="symbol">HTC Evo 4G LTE</p>
+      </div>
 
-      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('320', '533');">
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('720', '1280');">
         <h5 class="name">android</h5>
         <p class="symbol">HTC Incredible 2</p>
       </div>

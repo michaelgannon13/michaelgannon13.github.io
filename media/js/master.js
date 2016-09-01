@@ -122,7 +122,7 @@ function getMediaQuery(width, height){
       height = height + units;
 
       var media = "@media only screen ";
-      var maxWidth = "   " + "and (max-width : 200px) {";
+      var maxWidth = "   " + "and (min-width : 200px) {";
       var css = "   " + "/* Styles here */" ;
       var brack = "\n" + "}";
 
@@ -138,7 +138,7 @@ function getMediaQuery(width, height){
       height = height + units;
 
       var media = "@media only screen ";
-      var maxWidth = "   " + "and (max-width : 320px) {";
+      var maxWidth = "   " + "and (min-width : 320px) {";
       var css = "   " + "/* Styles here */" ;
       var brack = "\n" + "}";
 
@@ -154,7 +154,7 @@ function getMediaQuery(width, height){
       height = height + units;
 
       var media = "@media only screen ";
-      var maxWidth = "   " + "and (max-width : 768px) {";
+      var maxWidth = "   " + "and (min-width : 768px) {";
       var css = "   " + "/* Styles here */" ;
       var brack = "\n" + "}";
 
@@ -170,7 +170,7 @@ function getMediaQuery(width, height){
       height = height + units;
 
       var media = "@media only screen ";
-      var maxWidth = "   " + "and (max-width : 1224px) {";
+      var maxWidth = "   " + "and (min-width : 1200px) {";
       var css = "   " + "/* Styles here */" ;
       var brack = "\n" + "}";
 
@@ -186,7 +186,7 @@ function getMediaQuery(width, height){
       height = height + units;
 
       var media = "@media only screen ";
-      var maxWidth = "   " + "and (max-width : 1824px) {";
+      var maxWidth = "   " + "and (min-width : 1600px) {";
       var css = "   " + "/* Styles here */" ;
       var brack = "\n" + "}";
 
