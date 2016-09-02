@@ -23,7 +23,7 @@ body {
   background: linear-gradient(#ffffff 0%, rgb(228, 228, 228) 100%) !important;
   height: 100vh;
   font-family: 'Open Sans', sans-serif !important;
-  background: url("img/back.jpg") !important;
+  background: rgba(247,247,247,0.5) url('../img/background.png') repeat center center fixed !important;
 }
 
 h3#or {
@@ -45,7 +45,7 @@ h5.name {
 }
 
 img#plat-img {
-    width: 45px;
+    width: 42px;
 }
 
 form {
@@ -57,9 +57,6 @@ input#donate {
     width: 100px;
 }
 
-body#main-container {
-    background: #F5F5F5 !important;
-}
 
 @media only screen 
    and (max-width : 720px) 
@@ -2317,7 +2314,7 @@ span#all {
   background: #EEE;
   border: none;
   border-radius: 7px;
-  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1) );
   color: #222;
   font-weight: 500;
   text-shadow: 0 1px white;
