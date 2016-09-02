@@ -87,6 +87,10 @@ button.button {
     margin-left: 40px;
 }
 
+div#share-buttons {
+    background: rgba(51,51,51,0.9) !important;
+}
+
 textarea#gen-media {
     font-family: courier;
     font-weight: 900;
@@ -108,10 +112,9 @@ a:hover {
     width: 40px;
     padding: 5px;
     border: 0 !important;
-    top: 30px;
-    position: relative;
     display: inline;
     text-align: center !important;
+    margin-top: -14px;
 }
 
 #share-buttons {
@@ -1214,6 +1217,17 @@ h1#title {
   -moz-transition:color .2s ease-out, background .2s ease-in-out;
   -webkit-transition:color .2s ease-out, background .2s ease-in-out;
   transition:color .2s ease-out, background .2s ease-in-out;
+}
+
+form#donate-button {
+    display: inline;
+    top: 6px;
+}
+
+div#share-buttons {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .element-item > * {
