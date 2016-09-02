@@ -13,8 +13,12 @@
 			float: left;
 		}
 
+		header#header {
+		    display: none;
+		}
+
 		a#images {
-		    color: #333;
+		    color: #4aa2db;
 		    padding-right: 10px;
 		    font-size: 16px;
 		}
@@ -40,7 +44,7 @@
 		img#about {
 		    width: 70%;
 		    float: right;
-		    margin-top: -305px;
+		    margin-top: -125px;
 		}
 
 		p#about-para {
@@ -115,12 +119,22 @@
 			color: #555;
 		}
 
+		img#about-image {
+		    width: 70%;
+		    float: right;
+		    margin-top: -305px;
+		}
+
 		img#social {
 		    width: 35px;
 		}
 
-		img#main-image {
+		img#main-image-1 {
 		    width: 76%;
+		}
+
+		img#main-image {
+		    width: 40%;
 		}
 
 		img#fingers {
