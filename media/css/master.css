@@ -18,13 +18,15 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: -webkit-linear-gradient(#ffffff 0%, rgb(228, 228, 228) 100%) !important;
+  /* background: -webkit-linear-gradient(#ffffff 0%, rgb(228, 228, 228) 100%) !important;
   background: -o-linear-gradient(#ffffff 0%, rgb(228, 228, 228) 100%) !important;
-  background: linear-gradient(#ffffff 0%, rgb(228, 228, 228) 100%) !important;
+  background: linear-gradient(#ffffff 0%, rgb(228, 228, 228) 100%) !important; */
   height: 100vh;
   font-family: 'Open Sans', sans-serif !important;
-  background: rgba(247,247,247,0.5) url('../img/background.png') repeat center center fixed !important;
-}
+/*   background: rgba(247,247,247,0.5) url('../img/background.png') repeat center center fixed !important;
+ */}
+
+
 
 h3#or {
     text-align: center;
@@ -562,8 +564,8 @@ html.export {
 
 body {
   color: #EEE;
-  background: #262524;
-}
+/*   background: #262524;
+ */}
 
 /* ---- links ---- */
 
