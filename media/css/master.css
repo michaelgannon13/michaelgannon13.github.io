@@ -2216,7 +2216,7 @@ span#all {
 
 .ui-group .button-group {
   display: inline-block;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 @charset "UTF-8";
@@ -2529,9 +2529,9 @@ span#all {
       padding: 5px 5px;
   }
 
-  .ui-group {
+/*   .ui-group {
       margin-left: 15px;
-  }
+  } */
 
   .grid {
       margin-left: 25px;
