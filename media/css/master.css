@@ -33,6 +33,24 @@ body {
 
 .grid-item--width2 { width: 48%; }
 
+div#nav {
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 10;
+}
+
+span#link {
+    color: white;
+    padding: 0 36px;
+    font-weight: 900;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
 h3#or {
     text-align: center;
     font-weight: 900;
