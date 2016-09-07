@@ -28,6 +28,13 @@
 			width: 100%;
 		}
 
+		div#info-vid {
+		    display: inline;
+		    float: right;
+		    margin-top: -124px;
+		    margin-right: 180px;
+		}
+
 		li#list-item {
 		    padding: 5px;
 		}
@@ -77,26 +84,13 @@
 		#footer {
 			clear: both;
 		}
-		
-		/* IE hack */
-		* html #left {
-			left: 150px;
-		}
+
 
 		/* Make the columns the same height as each other */
 		#container {
 			overflow: hidden;
 		}
 
-		/* #container .column {
-			padding-bottom: 1034em;
-    		margin-bottom: -1000em;
-		} */
-
-		/* Fix for the footer */
-		* html body {
-			overflow: hidden;
-		}
 		
 		* html #footer-wrapper {
 			float: left;
@@ -107,7 +101,6 @@
 			background: #fff;
 		}
 
-		/* Aesthetics */
 		body {
 			margin: 0;
 			padding: 0;
@@ -190,10 +183,6 @@
 			background: white;
     		
 		}
-/* 		
-		#right {
-			background: #F7FDEB;
-		} */
 
 		#center {
 			background: #fff;
