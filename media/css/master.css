@@ -43,6 +43,10 @@ div#nav {
     z-index: 10;
 }
 
+div#pre {
+    background: #364F6B;
+}
+
 span#link {
     color: white;
     padding: 0 36px;
