@@ -16,6 +16,7 @@
 
     <!-- Isotope does not require any CSS files -->
   <link rel="stylesheet" href="css/master.css" media="screen">
+  <link rel="stylesheet" href="css/prefix.css" media="screen">
 
 <!--   <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
  -->
@@ -26,32 +27,6 @@
 
 
 <body id="main-container" class="page--index" data-page="index">
-<!-- <div id="nav">
-
-    <a href="">
-        <span id="link">About</span>
-    </a>
-
-    <a href="">
-        <span id="link">Aspect Ratio</span>
-    </a>
-
-    <a href="">
-        <span id="link">Retina</span>
-    </a>
-
-    <a href="">
-        <span id="link">Javascript</span>
-    </a>
-
-    <a href="">
-        <span id="link">Resources</span>
-    </a>
-
-    <a href="">
-        <span id="link">Contact</span>
-    </a>
-</div> -->
 
 <div class="hero">
   <div class="primary-content">
@@ -59,23 +34,10 @@
     <span id="simple">Simple</span> CSS Vendor Prefixes</h1>
 
 <div id="options-container">
-<!--         <h3 id="sel-plat">Please specify your breakpoint (mobile first approach)</h3>
- -->        <div class="big-demo" data-js-module="hero-demo">
-
-<!--       <div class="ui-group">
-        <div id="breakpoints" class="button-group">
-          <button class="button is-checked" data-filter="*" onclick="smallPhone();"><img id="plat-img" src="img/small-phone.png"><br><span id="all">Small Phone</span></button>
-          <button class="button" data-filter=".iOS" onclick="smartPhone();"><img id="plat-img" src="img/smart-phone.png"><br><span id="all">Smart phone</span></button>
-          <button class="button" data-filter=".android" onclick="tablet();"><img id="plat-img" src="img/tablet.png"><br><span id="all">Tablet</span></button>
-          <button class="button" data-filter=".windows" onclick="laptop();"><img id="plat-img" src="img/laptop.png"><br><span id="all">Laptop</span></button>
-          <button class="button" id="screen-button" onclick="largeDesktop();"><img id="plat-img" src="img/desktop.png"><br><span id="all">Desktop</span>
-          </button>
-        </div>
-      </div> -->
-<!--         <h3 id="or">or...</h3>
- -->
-        <h3 id="sel-plat">Enter your CSS below</h3>
         <div class="big-demo" data-js-module="hero-demo">
+
+<!--         <h3 id="sel-plat">Enter your CSS below</h3>
+ -->        <div class="big-demo" data-js-module="hero-demo">
 
         <!-- Modal -->
         <div id="myModal" class="modal fade" role="dialog">
@@ -103,17 +65,8 @@
 
       <div class="ui-group">
         <div id="filters" class="button-group">
-          <!-- <button class="button is-checked" data-filter="*"><img id="plat-img" src="img/all-plat.jpg"><br><span id="all">All</span></button>
-          <button class="button" data-filter=".iOS"><img id="plat-img" src="img/apple.png"><br><span id="all">iOS</span></button>
-          <button class="button" data-filter=".android"><img id="plat-img" src="img/android.png"><br><span id="all">Android</span></button>
-          <button class="button" data-filter=".windows"><img id="plat-img" src="img/windows.png"><br><span id="all">Windows</span></button> -->
-          <!-- <button class="button" id="screen-button" onclick="yourAR();"><img id="plat-img" src="img/screen.png"><br><span id="all">Your Aspect Ratio</span>
-          </button> -->
-          <!-- <button class="button" id="screen-button" onclick="yourScreen();"><img id="plat-img" src="img/screen.png"><br><span id="all">Your screen</span>
-          </button><br> -->
-          <input id="search" type="text" class="quicksearch" placeholder="Search for your device..." /><br><br>
-    <!--       <button class="button" data-filter="ium">&#x2013;ium</button>
-     --></div>
+          <input id="search" type="text" class="quicksearch" placeholder="Search for vendor prefix..." /><br><br>
+        </div>
       </div>
 
   </div>
@@ -122,13 +75,31 @@
 
 <!-- Windows Laptops -->
 
-    <div id="pre" class="element-item windows" data-category="transition" onclick="getVendorPrefix('display: flex;');">
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('display: flex;');">
         <p class="symbol">display: flex;</p>
     </div>
-    <div id="pre" class="element-item windows" data-category="transition" onclick="getVendorPrefix('background: linear-gradient(red, green);');">
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('background: linear-gradient(red, green);');">
         <p class="symbol">background: linear-gradient(red, green);</p>
     </div>
-    <div id="pre" class="element-item windows" data-category="transition" onclick="getVendorPrefix('transition: all 4s ease;');">
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('transition: all 4s ease;');">
+        <p class="symbol">transition: all 4s ease;</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('display: flex;');">
+        <p class="symbol">display: flex;</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('background: linear-gradient(red, green);');">
+        <p class="symbol">background: linear-gradient(red, green);</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('transition: all 4s ease;');">
+        <p class="symbol">transition: all 4s ease;</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('display: flex;');">
+        <p class="symbol">display: flex;</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('background: linear-gradient(red, green);');">
+        <p class="symbol">background: linear-gradient(red, green);</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('transition: all 4s ease;');">
         <p class="symbol">transition: all 4s ease;</p>
     </div>
   
@@ -167,14 +138,16 @@
 </script>
 <script type="text/javascript">
 
-$('.grid').isotope({
-    masonry: {
-    columnWidth: '.grid-sizer',
-    gutter: '.gutter-sizer'
-  },
-  itemSelector: '.grid-item',
-  percentPosition: true
-});
+// $('.grid').isotope({
+//   layoutMode: 'cellsByColumn',
+//   itemSelector: '.grid-item',
+//   percentPosition: true,
+//   cellsByColumn: {
+//     columnWidth: '.grid-sizer',
+//     rowHeight: '.grid-sizer'
+//   }
+// });
+
 
 
 

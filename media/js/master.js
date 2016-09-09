@@ -106,15 +106,8 @@ var oCom = "/*Opera*/";
   function getVendorPrefix(prop){
       $("#copy-button").text("Copy");
       $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
-     
 
-      var media = "@media only screen ";
-      var maxWidth = "   " + "and (max-width : " + width + ") ";
-      var maxHeight = "   " + "and (max-height : " + height + ") " + "{" ;
-      var css = "   " + "/* Styles here */" ;
-      var brack = "\n" + "}";
-
-      $('#gen-media').text(webk + prop + webkCom +  "\n" + moz + prop + mozCom + "\n" + ms + prop + msCom + "\n" + o + prop + oCom + "\n" + prop);
+      $('#gen-media').text(webk + prop +  "\n" + moz + prop + "\n" + ms + prop + "\n" + o + prop + "\n" + prop);
       $('#myModal').modal();
   }
 

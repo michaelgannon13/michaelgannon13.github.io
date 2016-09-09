@@ -1,0 +1,7 @@
+input#search{
+	width: 40vw;
+    height: 6vh;
+    font-size: 28px;
+    border-radius: 8px;
+    border: 2px solid #e6e6e6;
+}
