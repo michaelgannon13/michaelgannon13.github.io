@@ -94,6 +94,10 @@ var units = "px";
 // quick search regex
 var qsRegex;
 var buttonFilter;
+var moz = "-moz-";
+var webk = "-webkit-";
+var ms = "-ms-";
+var o = "-o-";
 
 
 
@@ -111,6 +115,22 @@ function getMediaQuery(width, height){
       var brack = "\n" + "}";
 
       $('#gen-media').text(media + "\n" + maxWidth + "\n" + maxHeight + "\n" + css + brack);
+      $('#myModal').modal();
+  }
+
+  function getVendorPrefix(prop){
+      $("#copy-button").text("Copy");
+      $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
+
+      
+
+      var media = "@media only screen ";
+      var maxWidth = "   " + "and (max-width : " + width + ") ";
+      var maxHeight = "   " + "and (max-height : " + height + ") " + "{" ;
+      var css = "   " + "/* Styles here */" ;
+      var brack = "\n" + "}";
+
+      $('#gen-media').text(prop + "\n" + webk + prop + "\n" + moz + prop + "\n" + ms + prop + "\n" + o + prop);
       $('#myModal').modal();
   }
 
