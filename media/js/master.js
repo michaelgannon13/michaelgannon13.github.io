@@ -114,7 +114,7 @@ var oCom = "/*Opera*/";
       var css = "   " + "/* Styles here */" ;
       var brack = "\n" + "}";
 
-      $('#gen-media').text(prop + "\n" + webk + prop + webkCom +  "\n" + moz + prop + mozCom + "\n" + ms + prop + msCom + "\n" + o + prop + oCom);
+      $('#gen-media').text(webk + prop + webkCom +  "\n" + moz + prop + mozCom + "\n" + ms + prop + msCom + "\n" + o + prop + oCom + "\n" + prop);
       $('#myModal').modal();
   }
 
