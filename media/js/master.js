@@ -95,34 +95,18 @@ var units = "px";
 var qsRegex;
 var buttonFilter;
 var moz = "-moz-";
+var mozCom = "/*Firefox*/";
 var webk = "-webkit-";
+var webkCom = "/*Chrome, Safari, Android*/";
 var ms = "-ms-";
+var msCom = "/*IE, Edge*/";
 var o = "-o-";
-
-
-
-function getMediaQuery(width, height){
-      $("#copy-button").text("Copy");
-      $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
-
-      width = width + units;
-      height = height + units;
-
-      var media = "@media only screen ";
-      var maxWidth = "   " + "and (max-width : " + width + ") ";
-      var maxHeight = "   " + "and (max-height : " + height + ") " + "{" ;
-      var css = "   " + "/* Styles here */" ;
-      var brack = "\n" + "}";
-
-      $('#gen-media').text(media + "\n" + maxWidth + "\n" + maxHeight + "\n" + css + brack);
-      $('#myModal').modal();
-  }
+var oCom = "/*Opera*/";
 
   function getVendorPrefix(prop){
       $("#copy-button").text("Copy");
       $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
-
-      
+     
 
       var media = "@media only screen ";
       var maxWidth = "   " + "and (max-width : " + width + ") ";
@@ -130,89 +114,10 @@ function getMediaQuery(width, height){
       var css = "   " + "/* Styles here */" ;
       var brack = "\n" + "}";
 
-      $('#gen-media').text(prop + "\n" + webk + prop + "\n" + moz + prop + "\n" + ms + prop + "\n" + o + prop);
+      $('#gen-media').text(prop + "\n" + webk + prop + webkCom +  "\n" + moz + prop + mozCom + "\n" + ms + prop + msCom + "\n" + o + prop + oCom);
       $('#myModal').modal();
   }
 
-  function smallPhone(){
-      $("#copy-button").text("Copy");
-      $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
-
-      width = width + units;
-      height = height + units;
-
-      var media = "@media only screen ";
-      var maxWidth = "   " + "and (min-width : 200px) {";
-      var css = "   " + "/* Styles here */" ;
-      var brack = "\n" + "}";
-
-      $('#gen-media').text(media + "\n" + maxWidth + "\n" + css + brack);
-      $('#myModal').modal();
-  }
-
-    function smartPhone(){
-      $("#copy-button").text("Copy");
-      $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
-
-      width = width + units;
-      height = height + units;
-
-      var media = "@media only screen ";
-      var maxWidth = "   " + "and (min-width : 320px) {";
-      var css = "   " + "/* Styles here */" ;
-      var brack = "\n" + "}";
-
-      $('#gen-media').text(media + "\n" + maxWidth + "\n" + css + brack);
-      $('#myModal').modal();
-  }
-
-    function tablet(){
-      $("#copy-button").text("Copy");
-      $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
-
-      width = width + units;
-      height = height + units;
-
-      var media = "@media only screen ";
-      var maxWidth = "   " + "and (min-width : 768px) {";
-      var css = "   " + "/* Styles here */" ;
-      var brack = "\n" + "}";
-
-      $('#gen-media').text(media + "\n" + maxWidth + "\n" + css + brack);
-      $('#myModal').modal();
-  }
-
-  	function laptop(){
-      $("#copy-button").text("Copy");
-      $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
-
-      width = width + units;
-      height = height + units;
-
-      var media = "@media only screen ";
-      var maxWidth = "   " + "and (min-width : 1200px) {";
-      var css = "   " + "/* Styles here */" ;
-      var brack = "\n" + "}";
-
-      $('#gen-media').text(media + "\n" + maxWidth + "\n" + css + brack);
-      $('#myModal').modal();
-  }
-
-    function largeDesktop(){
-      $("#copy-button").text("Copy");
-      $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
-
-      width = width + units;
-      height = height + units;
-
-      var media = "@media only screen ";
-      var maxWidth = "   " + "and (min-width : 1600px) {";
-      var css = "   " + "/* Styles here */" ;
-      var brack = "\n" + "}";
-
-      $('#gen-media').text(media + "\n" + maxWidth + "\n" + css + brack);
-      $('#myModal').modal();
-  }
 
 
 // init Isotope
