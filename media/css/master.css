@@ -1206,8 +1206,13 @@ two columns for large devices
 }
 
 span#simple {
-  color: #FC5185;
-}
+    color: #FC5185;
+    font-weight: 500;
+    background: -webkit-linear-gradient(-145deg,#a000e2, #FC5185);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: blink;
+} 
 
 h1#title {
     color: #364F6B;

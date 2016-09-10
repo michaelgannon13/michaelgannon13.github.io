@@ -103,7 +103,7 @@ var msCom = "/*IE, Edge*/";
 var o = "-o-";
 var oCom = "/*Opera*/";
 
-  function getVendorPrefix(prop){
+  function getVendorPrefix(check, prop){
       $("#copy-button").text("Copy");
       $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
 
