@@ -1212,12 +1212,13 @@ span#simple {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: blink;
+    font-weight: 100;
 } 
 
 h1#title {
     color: #364F6B;
     margin-top: 50px;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 /* element-item
