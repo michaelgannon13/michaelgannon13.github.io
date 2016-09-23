@@ -1,0 +1,266 @@
+<!doctype html>
+<html class="export">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Simple CSS Media Query Generator">
+
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Isotope does not require any CSS files -->
+  <link rel="stylesheet" href="css/master.css" media="screen">
+  <link rel="stylesheet" href="css/prefix.css" media="screen">
+
+<!--   <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+ -->
+    <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+
+
+<body id="main-container" class="page--index" data-page="index">
+
+    <a id="bookmarkme" href="#" rel="sidebar" title="bookmark this page"><span id="b-text">Bookmark</span><img id="bookmark" src="img/agenda.png"> </a>
+
+<ul class="topnav" id="myTopnav">
+  <li><a href="breakpoints.html">Breakpoints</a></li>
+  <li><a href="prefix.html">Vendor Prefixes</a></li>
+  <li><a href="#contact">Tips</a></li>
+  <li><a href="#about">About</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<div class="hero">
+  <div class="primary-content">
+  <h1 id="title">
+    <span id="simple">Simple CSS</span> Vendor Prefixes</h1>
+
+<div id="options-container">
+        <div class="big-demo" data-js-module="hero-demo">
+
+<!--         <h3 id="sel-plat">Enter your CSS below</h3>
+ -->        <div class="big-demo" data-js-module="hero-demo">
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Here is your CSS Vendor Prefix</h4>
+              </div>
+              <div class="modal-body">
+                <p>
+                  <textarea id="gen-media" class="copyTarget" style="width: 100%; resize: none;"></textarea>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button id="copy-button" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="textarea">Copy</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      <div class="ui-group">
+        <div id="filters" class="button-group">
+          <input id="search" type="text" class="quicksearch" placeholder="Search for vendor prefix..." /><br><br>
+        </div>
+      </div>
+
+  </div>
+  <div class="grid">
+
+
+<!-- Windows Laptops -->
+
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('flex', 'display: flex;');">
+        <p class="symbol">display: flex;</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('background', 'background: linear-gradient(red, green);');">
+        <p class="symbol">background: linear-gradient(red, green);</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('transition', 'transition: all 4s ease;');">
+        <p class="symbol">transition: all 4s ease;</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('transform', 'transform: rotate(30deg);');">
+        <p class="symbol">transform: rotate(30deg);</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('column', 'column-count: 3;');">
+        <p class="symbol">column-count: 3;</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('columnG', 'column-gap: 10px;');">
+        <p class="symbol">column-gap: 10px;</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('columnF', 'column-fill: auto;');">
+        <p class="symbol">column-fill: auto;</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('none', 'user-select:none;');">
+        <p class="symbol">user-select:none;</p>
+    </div>
+
+
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('columnR', 'column-rule-color: green;');">
+        <p class="symbol">column-rule-color: green;</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('columnS', 'column-rule-style:initial;">
+        <p class="symbol">column-rule-style: initial;</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('columnRW', 'column-rule-width: 2px;');">
+        <p class="symbol">column-rule-width: 2px;</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('columnW', 'column-width:2px;');">
+        <p class="symbol">column-width: 2px;</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('columns', 'columns: initial;');">
+        <p class="symbol">columns: initial;</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('columnG', 'column-gap: 10px;');">
+        <p class="symbol">column-gap: 10px;</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('columnF', 'column-fill: auto;');">
+        <p class="symbol">column-fill: auto;</p>
+    </div>
+    <div id="pre" class="element-item" data-category="transition" onclick="getVendorPrefix('none', 'user-select:none;');">
+        <p class="symbol">user-select:none;</p>
+    </div>
+
+  
+<!-- End of Page 3 -->
+
+<!-- Android end -->
+
+  </div>
+  </div>
+
+  </div>
+
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+<!-- Looking for isotope.js? Use isotope.pkgd.min.js -->
+<!-- Isotope does NOT require jQuery. But it does make things easier -->
+
+<!-- <script src="js/isotope-docs.min.js"></script> -->
+<script src="js/master.js"></script>
+<!-- <script src="js/clipboard.min.js"></script> -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83159967-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+
+// $('.grid').isotope({
+//   layoutMode: 'cellsByColumn',
+//   itemSelector: '.grid-item',
+//   percentPosition: true,
+//   cellsByColumn: {
+//     columnWidth: '.grid-sizer',
+//     rowHeight: '.grid-sizer'
+//   }
+// });
+
+
+
+
+  var clipboard = new Clipboard('.btn', {
+        target: function() {
+            return document.querySelector('textarea#gen-media');
+        }
+    });
+
+    $( "#copy-button" ).click(function() {
+      $("#copy-button").text("Copied!");
+      $("#copy-button").css("background-color", "#FC5185").css("border-color", "#FC5185").css("font-weight", "900");
+    });
+
+    clipboard.on('success', function(e) {
+        //console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        //console.log(e);
+    });
+</script>
+
+<footer id="footer-container">
+  <div id="share-buttons">
+
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=michael-gannon.com/media/index.html&amp;text=CSS%20Media%20Query%20Generator:%20http://michael-gannon.com/media/index.html&amp;CSS%20Media%20Query%20Generator%20&amp;hashtags=simplecss" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+    </a>
+
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=http://michael-gannon.com/media/index.html" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+    </a>
+    
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=michael-gannon.com/media/index.html" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+    </a>
+    
+    <!-- LinkedIn -->
+    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=michael-gannon.com/media/index.html" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+    </a>
+    
+    <!-- Reddit -->
+    <a href="http://reddit.com/submit?url=michael-gannon.com/media/index.html&amp;title=Simple Share Buttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+    </a>
+
+    
+    <!-- Tumblr-->
+    <a href="http://www.tumblr.com/share/link?url=michael-gannon.com/media/index.html&amp;title=Simple Share Buttons" target="_blank">
+        <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
+    </a>
+
+
+    <!-- Email -->
+    <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 michael-gannon.com/media/index.html">
+        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+    </a>
+
+    <form id="donate-button" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="CU55YNWUKVAQU">
+      <input id="donate"   type="image" src="img/button.png" border="none" name="submit" alt="PayPal - The safer, easier way to pay online!"><!-- 
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> -->
+    </form>
+    
+</div>
+
+</footer>
+<script type="text/javascript">
+ var images = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png', '11.png', '12.png', '13.png'];
+
+ $('body').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+</script>
+</body>
+</html>
