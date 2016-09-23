@@ -48,6 +48,10 @@ html, body {
     color: #00f9cd;
 }
 
+a#mention {
+    color: #01acf2;
+}
+
 div#googlemaps {
     position: relative;
 }
