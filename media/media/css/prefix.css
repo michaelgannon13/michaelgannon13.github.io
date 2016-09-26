@@ -15,3 +15,7 @@ span#simple {
     text-decoration: blink;
     font-weight: 100;
 } 
+
+.element-item .symbol{
+    font-size: 0.9em;
+}
