@@ -19,3 +19,32 @@ span#simple {
 .element-item .symbol{
     font-size: 0.9em;
 }
+
+
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  padding: 10px;
+  background: #364F6B;
+  color: #262524;
+  border-radius: 0.5em;
+
+  -o-transition:color .2s ease-out, background .2s ease-in-out;
+  -ms-transition:color .2s ease-out, background .2s ease-in-out;
+  -moz-transition:color .2s ease-out, background .2s ease-in-out;
+  -webkit-transition:color .2s ease-out, background .2s ease-in-out;
+  transition:color .2s ease-out, background .2s ease-in-out;
+}
+
+.element-item:hover {
+  background: #FC5185;
+  -o-transition:color .2s ease-out, background .2s ease-in-out;
+  -ms-transition:color .2s ease-out, background .2s ease-in-out;
+  -moz-transition:color .2s ease-out, background .2s ease-in-out;
+  -webkit-transition:color .2s ease-out, background .2s ease-in-out;
+  transition:color .2s ease-out, background .2s ease-in-out;
+}

@@ -148,9 +148,7 @@ span#quick, span#quick-width, span#quick-height {
     transition: all 0.5s ease-in-out;
 }
 
-div#pre {
-    background: #364F6B;
-}
+
 
 span#link {
     color: white;
