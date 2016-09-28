@@ -107,6 +107,11 @@ function getVendorPrefix(check, prop){
   $("#copy-button").text("Copy");
   $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
 
+   if (value=="Mobile") {
+	      var maxWidth = "   " + "and (min-width : 200px) {";
+      } else if (value=="Desktop"){
+	      var maxWidth = "   " + "and (max-width : 200px) {";
+      }
 
   // check
   $('#gen-media').text(webk + prop +  "\n" + moz + prop + "\n" + ms + prop + "\n" + o + prop + "\n" + prop);
