@@ -103,21 +103,37 @@ var msCom = "/*IE, Edge*/";
 var o = "-o-";
 var oCom = "/*Opera*/";
 
-function getVendorPrefix(check, prop){
+function getVendorPrefix(value, prop){
   $("#copy-button").text("Copy");
   $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
 
-   if (value=="Mobile") {
-	      var maxWidth = "   " + "and (min-width : 200px) {";
-      } else if (value=="Desktop"){
-	      var maxWidth = "   " + "and (max-width : 200px) {";
+   if (value=="5a") {
+	      $('#gen-media').text(webk + prop +  "\n" + moz + prop + "\n" + ms + prop + "\n" + o + prop + "\n" + prop);
+      } else if (value=="4o"){
+	      $('#gen-media').text(webk + prop +  "\n" + moz + prop + "\n" + o + prop + "\n" + prop);
+      } else if (value=="4m"){
+	      $('#gen-media').text(webk + prop +  "\n" + moz + prop + "\n" + ms + prop + "\n" + prop);
+      } else if (value=="4w"){
+	      $('#gen-media').text(webk + prop +  "\n" + "\n" + ms + prop + "\n" + o + prop + "\n" + prop);
+      } else if (value=="4mz"){
+	      $('#gen-media').text(webk + prop +  "\n" + moz + prop + "\n" + ms + prop + "\n" + "\n" + prop);
+      } else if (value=="3wo"){
+	      $('#gen-media').text(webk + prop +  "\n" + o + prop + "\n" + prop);
+      } else if (value=="3wm"){
+	      $('#gen-media').text(webk + prop +  "\n" + ms + prop + "\n" + "\n" + prop);
+      } else if (value=="3mm"){
+	      $('#gen-media').text(moz + prop + "\n" + ms + prop + "\n" + prop);
+      } else if (value=="3wmz"){
+	      $('#gen-media').text(webk + prop +  "\n" + moz + prop + "\n" + prop);
+      } else if (value=="3mo"){
+	      $('#gen-media').text(moz + prop + "\n" + o + prop + "\n" + prop);
+      } else if (value=="2w"){
+	      $('#gen-media').text(webk + prop + "\n" + prop);
+      } else if (value=="2ms"){
+	      $('#gen-media').text(ms + prop  + "\n" + prop);
+      } else if (value=="2o"){
+	      $('#gen-media').text(o + prop + "\n" + prop);
       }
-
-  // check
-  $('#gen-media').text(webk + prop +  "\n" + moz + prop + "\n" + ms + prop + "\n" + o + prop + "\n" + prop);
-
-
-
 
   $('#myModal').modal();
 }
