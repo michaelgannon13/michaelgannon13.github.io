@@ -107,20 +107,23 @@ function getVendorPrefix(value, prop){
   $("#copy-button").text("Copy");
   $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
 
-   if (value=="5a") {
+  console.log(value);
+
+   if (value=="5a" && prop !== null) { 
+   	alert("text")
 	      $('#gen-media').text(webk + prop +  "\n" + moz + prop + "\n" + ms + prop + "\n" + o + prop + "\n" + prop);
       } else if (value=="4o"){
 	      $('#gen-media').text(webk + prop +  "\n" + moz + prop + "\n" + o + prop + "\n" + prop);
       } else if (value=="4m"){
 	      $('#gen-media').text(webk + prop +  "\n" + moz + prop + "\n" + ms + prop + "\n" + prop);
       } else if (value=="4w"){
-	      $('#gen-media').text(webk + prop +  "\n" + "\n" + ms + prop + "\n" + o + prop + "\n" + prop);
+	      $('#gen-media').text(webk + prop + "\n" + ms + prop + "\n" + o + prop + "\n" + prop);
       } else if (value=="4mz"){
-	      $('#gen-media').text(webk + prop +  "\n" + moz + prop + "\n" + ms + prop + "\n" + "\n" + prop);
+	      $('#gen-media').text(webk + prop +  "\n" + moz + prop + "\n" + ms + prop + "\n" + prop);
       } else if (value=="3wo"){
 	      $('#gen-media').text(webk + prop +  "\n" + o + prop + "\n" + prop);
       } else if (value=="3wm"){
-	      $('#gen-media').text(webk + prop +  "\n" + ms + prop + "\n" + "\n" + prop);
+	      $('#gen-media').text(webk + prop +  "\n" + ms + prop + "\n" + prop);
       } else if (value=="3mm"){
 	      $('#gen-media').text(moz + prop + "\n" + ms + prop + "\n" + prop);
       } else if (value=="3wmz"){
