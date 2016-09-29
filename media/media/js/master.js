@@ -107,10 +107,8 @@ function getVendorPrefix(value, prop){
   $("#copy-button").text("Copy");
   $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
 
-  console.log(value);
 
-   if (value=="5a" && prop !== null) { 
-   	alert("text")
+   if (value=="5a") { 
 	      $('#gen-media').text(webk + prop +  "\n" + moz + prop + "\n" + ms + prop + "\n" + o + prop + "\n" + prop);
       } else if (value=="4o"){
 	      $('#gen-media').text(webk + prop +  "\n" + moz + prop + "\n" + o + prop + "\n" + prop);
