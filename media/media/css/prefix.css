@@ -62,5 +62,10 @@ button#pre {
     width: 50vw;
     height: 7vh;
   }
+}
 
+@media screen and (max-width:600px) {
+  input#search{
+    width: 80vw;
+  }
 }

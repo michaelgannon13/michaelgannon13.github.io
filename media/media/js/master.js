@@ -106,6 +106,7 @@ var oCom = "/*Opera*/";
 function getVendorPrefix(value, prop){
   $("#copy-button").text("Copy");
   $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
+  $('#modalFooter').css("visibility", "hidden");
 
 
    if (value=="5a") { 
@@ -167,6 +168,7 @@ function getVendorPrefix(value, prop){
 function getMediaQuery(width, height){
       $("#copy-button").text("Copy");
       $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
+      $('#modalFooter').css("visibility", "hidden");
 
       width = width + units;
       height = height + units;
@@ -181,6 +183,10 @@ function getMediaQuery(width, height){
       $('#myModal').modal();
   }
 
+  function fancy(){
+  	$('#modalFooter').css("visibility", "visible");
+  }
+
 
   var media = "@media only screen ";
   var css = "   " + "/* Styles here */" ;
@@ -190,7 +196,7 @@ function getMediaQuery(width, height){
   function smallPhone(value){
       $("#copy-button").text("Copy");
       $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
-
+      $('#modalFooter').css("visibility", "hidden");
 
       if (value=="Mobile") {
 	      var maxWidth = "   " + "and (min-width : 200px) {";
@@ -206,15 +212,13 @@ function getMediaQuery(width, height){
     function smartPhone(value){
       $("#copy-button").text("Copy");
       $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
-
-
+      $('#modalFooter').css("visibility", "hidden");
 
       if (value=="Mobile") {
 	      var maxWidth = "   " + "and (min-width : 320px) {";
       } else if (value=="Desktop"){
 	      var maxWidth = "   " + "and (max-width : 320px) {";
       }
-
 
       $('#gen-media').text(media + "\n" + maxWidth + "\n" + css + brack);
       $('#myModal').modal();
@@ -223,8 +227,7 @@ function getMediaQuery(width, height){
     function tablet(value){
       $("#copy-button").text("Copy");
       $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
-
-
+      $('#modalFooter').css("visibility", "hidden");
 
       if (value=="Mobile") {
 	      var maxWidth = "   " + "and (min-width : 768px) {";
@@ -240,14 +243,13 @@ function getMediaQuery(width, height){
     function laptop(value){
       $("#copy-button").text("Copy");
       $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
-
+      $('#modalFooter').css("visibility", "hidden");
 
       if (value=="Mobile") {
 	      var maxWidth = "   " + "and (min-width : 1200px) {";
       } else if (value=="Desktop"){
 	      var maxWidth = "   " + "and (max-width : 1200px) {";
       }
-
 
       $('#gen-media').text(media + "\n" + maxWidth + "\n" + css + brack);
       $('#myModal').modal();
@@ -256,14 +258,13 @@ function getMediaQuery(width, height){
     function largeDesktop(value){
       $("#copy-button").text("Copy");
       $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
-
+      $('#modalFooter').css("visibility", "hidden");
 
       if (value=="Mobile") {
 	      var maxWidth = "   " + "and (min-width : 1600px) {";
       } else if (value=="Desktop"){
 	      var maxWidth = "   " + "and (max-width : 1600px) {";
       }
-
 
       $('#gen-media').text(media + "\n" + maxWidth + "\n" + css + brack);
       $('#myModal').modal();
