@@ -130,6 +130,16 @@ canvas.particles-js-canvas-el {
   height: 530px;
 }
 
+a#award{
+	width:106px;
+	height:92px;
+	position: absolute;
+	top:0px;left:0px;
+	z-index:99999;
+	text-indent:-9999px;
+	background: url(http://www.bestcss.in/ribbons/gray-left.png) no-repeat;
+}
+
 .mac-compressed{
   background-position: -352px -3px ;
   width: 562px;
