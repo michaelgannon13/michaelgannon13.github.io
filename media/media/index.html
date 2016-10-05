@@ -37,15 +37,23 @@
 <body id="main-container" class="page--index" data-page="index">
     <a id="bookmarkme" href="#" rel="sidebar" title="bookmark this page"><span id="b-text">Bookmark</span><img id="bookmark" src="img/agenda.png"> </a>
 
-<ul class="topnav" id="myTopnav">
-  <li><a href="breakpoints.html">Breakpoints</a></li>
-  <li><a href="prefix.html">Vendor Prefixes</a></li>
-  <li><a href="#contact">Tips</a></li>
-  <li><a href="#about">About</a></li>
-  <li class="icon">
-    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
-  </li>
-</ul>
+<div id="pagina">
+    <div class="barra-menu">
+        <!-- Boton Desplegar/Replegar menú -->  <a href="#" id="btn-drop" class="btn-menu aln-centro">MENU</a>  
+        <!-- Menú de navegación -->
+        <ul id="submenu" class="lista-menu aln-centro">
+            <li><a href="index.html">Media Queries</a>
+
+            </li>
+            <li><a href="prefix.html">Vendor Prefixes</a>
+
+            </li>
+            <li><a href="breakpoints.html">Browser Breakpoints</a>
+
+            </li>
+        </ul>
+    </div>
+</div>
 
 <div class="hero">
   <div class="primary-content">
@@ -53,10 +61,10 @@
     <span id="simple">Simple CSS</span> Media Queries</h1>
 
 <div id="options-container">
-        <h3 id="sel-plat">Please specify your breakpoint (mobile first approach)</h3>
+        <h3 id="sel-plat">Please specify your platform</h3>
         <div class="big-demo" data-js-module="hero-demo">
 
-      <div class="ui-group">
+<!--       <div class="ui-group">
         <div id="breakpoints" class="button-group">
                 <button value="Desktop" class="button is-checked" data-filter="*" onclick="smallPhone(this.value);"><img alt="small phone button" id="plat-img" src="img/small-phone.png"><br><span id="all">Small Phone</span></button>
                 <button value="Desktop" class="button" data-filter=".iOS" onclick="smartPhone(this.value);"><img id="plat-img" alt="smart phone button" src="img/smart-phone.png"><br><span id="all">Smart phone</span></button>
@@ -66,10 +74,10 @@
                 </button>
               </div>
       </div>
-        <h3 id="or">or...</h3>
+        <h3 id="or">or...</h3> -->
 
-        <h3 id="sel-plat">Your platform</h3>
-        <div class="big-demo" data-js-module="hero-demo">
+<!--         <h3 id="sel-plat">Your platform</h3>
+ -->        <div class="big-demo" data-js-module="hero-demo">
 
         <!-- Modal -->
         <div id="myModal" class="modal fade" role="dialog">
@@ -1765,14 +1773,23 @@ function yourAR(){
 </script>
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"30eda457c7d2bec3542d6d966","lid":"67381fd6e4"}) })</script>
 <script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
+$(document).ready(function () {
+      
+    /* Toggle menú de móviles  */
+    $('#btn-drop').on('click', function (e) {
+        e.preventDefault();
+        $('#submenu').slideToggle(500);
+    }); // fin click
+    
+    /* Hacer visible el menú al agrandar */
+    $(window).resize(function () {
+        if (innerWidth >= 480) {
+            if ($('#submenu').css('display') == 'none') {
+                $('#submenu').removeAttr('style');
+            }
+        }
+    }); // fin resize
+});
 </script>
 </body>
 </html>
