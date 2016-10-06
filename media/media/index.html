@@ -7,14 +7,24 @@ return;
 <!doctype html>
 <html class="export">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Simple CSS Media Query Generator">
 
-  <title>Simple CSS Media Query Generator</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Simple CSS Generator for returning CSS code for media queries, vendor prefixes and browser breakpoints.">
+  <title>Simple CSS - CSS code generator</title>
+  <meta itemprop="name" content="Simple CSS">
+  <meta itemprop="description" content="Simple CSS Generator for returning CSS code for media queries, vendor prefixes and browser breakpoints.">
+  <meta property="og:title" content="Simple CSS">
+  <meta property="og:url" content="http://simplecss.eu">
+  <meta property="og:site_name" content="Simple CSS">
+  <meta property="og:description" content="Simple CSS Generator for returning CSS code for media queries, vendor prefixes and browser breakpoints.">
+  <meta name="twitter:site" content="@simplecss">
+  <meta name="twitter:description" content="Simple CSS Generator for returning CSS code for media queries, vendor prefixes and browser breakpoints.">
+  <meta name="twitter:title" content="Simple CSS">
+  <meta name="twitter:url" content="http://simplecss.eu">
+  <meta name="twitter:creator" content="@michaelgannon90">
   <meta name="keywords" content="simple, css, css media query generator, generator, easy css, tool, productivity, template, popular, devices">
-  <meta name="description" content="A simple CSS media query generator for every device. It also includes typical browser breakpoint sizes.">
 
   <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 
@@ -37,7 +47,7 @@ return;
 
 
 <body id="main-container" class="page--index" data-page="index">
-    <a id="bookmarkme" href="#" rel="sidebar" title="bookmark this page"><span id="b-text">Bookmark</span><img id="bookmark" src="img/agenda.png"> </a>
+    <a id="bookmarkme" href="#" rel="sidebar" title="bookmark this page"><span id="b-text">Bookmark</span><img alt="simple-bookmark" id="bookmark" src="img/agenda.png"> </a>
 
 <div id="pagina">
     <div class="barra-menu">
@@ -67,20 +77,8 @@ return;
         <h3 id="sel-plat">Please specify your platform</h3>
         <div class="big-demo" data-js-module="hero-demo">
 
-<!--       <div class="ui-group">
-        <div id="breakpoints" class="button-group">
-                <button value="Desktop" class="button is-checked" data-filter="*" onclick="smallPhone(this.value);"><img alt="small phone button" id="plat-img" src="img/small-phone.png"><br><span id="all">Small Phone</span></button>
-                <button value="Desktop" class="button" data-filter=".iOS" onclick="smartPhone(this.value);"><img id="plat-img" alt="smart phone button" src="img/smart-phone.png"><br><span id="all">Smart phone</span></button>
-                <button value="Desktop" class="button" data-filter=".android" onclick="tablet(this.value);"><img id="plat-img" alt="tablet button" src="img/tablet.png"><br><span id="all">Tablet</span></button>
-                <button value="Desktop" class="button" data-filter=".windows" onclick="laptop(this.value);"><img id="plat-img" alt="laptop button" src="img/laptop.png"><br><span id="all">Laptop</span></button>
-                <button value="Desktop" class="button" id="screen-button" onclick="largeDesktop(this.value);"><img id="plat-img" alt="desktop button" src="img/desktop.png"><br><span id="all">Desktop</span>
-                </button>
-              </div>
-      </div>
-        <h3 id="or">or...</h3> -->
 
-<!--         <h3 id="sel-plat">Your platform</h3>
- -->        <div class="big-demo" data-js-module="hero-demo">
+        <div class="big-demo" data-js-module="hero-demo">
 
         <!-- Modal -->
         <div id="myModal" class="modal fade" role="dialog">
@@ -113,8 +111,6 @@ return;
           <button class="button" data-filter=".iOS"><img id="plat-img" alt="ios screen sizes" src="img/apple.png"><br><span id="all">iOS</span></button>
           <button class="button" data-filter=".android"><img id="plat-img" alt="android screen sizes" src="img/android.png"><br><span id="all">Android</span></button>
           <button class="button" data-filter=".windows"><img id="plat-img" alt="windows screen sizes" src="img/windows.png"><br><span id="all">Windows</span></button>
-          <!-- <button class="button" id="screen-button" onclick="yourAR();"><img id="plat-img" src="img/screen.png"><br><span id="all">Your Aspect Ratio</span>
-          </button> -->
           <button class="button" id="screen-button" onclick="yourScreen();"><img alt="your screen size resolution" id="plat-img" src="img/screen.png"><br><span id="all">Your screen</span>
           </button><br>
           <input id="search" type="text" class="quicksearch" autofocus placeholder="Search for your device..." /><br><br>
@@ -1722,41 +1718,40 @@ function yourAR(){
 <footer id="footer-container">
     <div id="share-buttons">
 
-    <!-- Twitter -->
     <a href="https://twitter.com/share?url=http://simplecss.eu&amp;text=CSS%20Media%20Query%20Generator:%20&amp;CSS%20Media%20Query%20Generator%20&amp;hashtags=simplecss" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+        <img alt="simple-twitter-share" src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
     </a>
 
     <!-- Facebook -->
     <a href="http://www.facebook.com/sharer.php?u=http://simplecss.eu" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+        <img alt="simple-facebook-share" src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
     </a>
     
     <!-- Google+ -->
     <a href="https://plus.google.com/share?url=http://simplecss.eu" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+        <img alt="simple-google-share" src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
     </a>
     
     <!-- LinkedIn -->
     <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://simplecss.eu" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+        <img alt="simple-linkedin-share" src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
     </a>
     
     <!-- Reddit -->
     <a href="http://reddit.com/submit?url=http://simplecss.eu&amp;title=Simple Share Buttons" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+        <img alt="simple-reddit-share" src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
     </a>
 
     
     <!-- Tumblr-->
     <a href="http://www.tumblr.com/share/link?url=http://simplecss.eu&amp;title=Simple Share Buttons" target="_blank">
-        <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
+        <img alt="simple-tumblr-share" src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
     </a>
 
 
     <!-- Email -->
     <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 http://simplecss.eu">
-        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+        <img alt="simple-mail-share" src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
     </a>
 
     <form id="donate-button" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
