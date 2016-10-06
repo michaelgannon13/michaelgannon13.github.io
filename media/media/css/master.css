@@ -26,6 +26,23 @@ body {
 /*   background: rgba(247,247,247,0.5) url('../img/background.png') repeat center center fixed !important;
  */}
 
+p#simple-intro {
+    line-height: 1.8;
+    color: #555;
+    font-size: 15px;
+    margin: 0 0 10px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+a#mail-link {
+    color: #3d289b;
+}
+
+a#mail-link:hover{
+  color: rgb(252, 81, 133) !important;
+}
+
 .grid-sizer,
 .grid-item { width: 22%; }
 
