@@ -41,7 +41,7 @@ div#qards,div#flat {
 }
 
 div#qards, div#shop {
-    top: 55%;
+    top: 45%;
 }
 
 div#flat, div#slides {
@@ -51,6 +51,15 @@ div#flat, div#slides {
 div#shop,div#slides {
     position: fixed;
     right: 0;
+}
+
+h3#prompt {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fc5185;
 }
 
 @media only screen 
@@ -1421,7 +1430,7 @@ span#quick-width, span#quick-height {
     color: #364f6b;
     position: fixed;
     right: 2%;
-    top: 40%;
+    top: 30%;
     text-align: right;
     z-index: 3;
 
