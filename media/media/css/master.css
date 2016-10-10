@@ -35,6 +35,36 @@ p#simple-intro {
     text-align: center;
 }
 
+div#qards,div#flat {
+    position: fixed;
+    left: 0;
+}
+
+div#qards, div#shop {
+    top: 55%;
+}
+
+div#flat, div#slides {
+    top: 70%;
+}
+
+div#shop,div#slides {
+    position: fixed;
+    right: 0;
+}
+
+@media only screen 
+   and (max-width : 1355px){
+   div#qards,div#flat, div#slides, div#shop{
+    display: none;
+   }
+}
+
+
+a#bookmarkme:hover, a#bookmarkme:focus {
+    color: #fc5185 !important;
+}
+
 a#mail-link {
     color: #3d289b;
 }
@@ -925,27 +955,27 @@ code .isotope_keyword { color: #0FF; text-decoration: underline; }
 }
 
 @font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot');
-	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.woff') format('woff'),
-		url('../fonts/icomoon.ttf') format('truetype'),
-		url('../fonts/icomoon.svg#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot');
+  src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
-	font-family: 'icomoon';
-	content: attr(data-icon);
-	speak: none;
-	font-weight: normal;
-	font-variant: normal;
-	font-style: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  font-style: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Use the following CSS code if you want to have a class per icon */
@@ -955,23 +985,23 @@ you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
 .icon {
-	font-family: 'icomoon';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 .icon-file-download:before {
-	content: "\e001";
+  content: "\e001";
 }
 .icon-folder-download:before {
-	content: "\e002";
+  content: "\e002";
 }
 .icon-github:before {
-	content: "\e000";
+  content: "\e000";
 }
 
 /* main

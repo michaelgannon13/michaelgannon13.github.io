@@ -9,6 +9,7 @@ return;
 <head>
 
   <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="Simple CSS Generator for returning CSS code for media queries, vendor prefixes and browser breakpoints.">
@@ -71,10 +72,9 @@ return;
   <div class="primary-content">
   <h1 id="title">
     <span id="simple">Simple CSS</span> Media Queries</h1>
-    <p id="simple-intro">Simple CSS Media queries is a free tool for Web Designers & Front End Developers to make css media queries, simple. The site is intended as a quick reference, educational tool and for the occasions where the developer must target a specific device. Click ‘Your Screen’ to generate the media query for the screen you’re viewing the site on…and try resize the browser ;)</p>
+    <p id="simple-intro">Simple CSS Media queries is a free tool for Web Designers & Front End Developers to make css media queries, simple. The site is intended as a quick reference, educational tool and for the occasions where the developer must target a specific device. Click Your Screen’ to generate the media query for the screen you’re viewing the site on…and try resize the browser ;)</p>
 
 <div id="options-container">
-        <h3 id="sel-plat">Please specify your platform</h3>
         <div class="big-demo" data-js-module="hero-demo">
 
 
@@ -104,7 +104,20 @@ return;
 
           </div>
         </div>
-
+        
+<!--         <h3 id="sel-plat">Please specify your device</h3>
+        <div class="ui-group">
+          <div id="filters" class="button-group">
+            <button class="button is-checked" data-filter="*"><img id="plat-img" alt="smart phone button" src="img/rwd.png"><br><span id="all">All</span></button>
+            <button class="button" data-filter=".mobile"><img id="plat-img" alt="smart phone button" src="img/smart-phone.png"><br><span id="all">Mobile</span></button>
+            <button class="button" data-filter=".tablet"><img id="plat-img" alt="tablet button" src="img/tablet.png"><br><span id="all">Tablet</span></button>
+            <button class="button" data-filter=".desktop"><img id="plat-img" alt="desktop button" src="img/desktop.png"><br>
+              <span id="all">Desktop</span>
+            </button>
+          </div>
+      </div> -->
+<!--       <h3 id="sel-plat">or</h3>
+ -->      <h3 id="sel-plat">Please specify your platform</h3>
       <div class="ui-group">
         <div id="filters" class="button-group">
           <button class="button is-checked" data-filter="*"><img id="plat-img" alt="all device screen sizes" src="img/all-plat.jpg"><br><span id="all">All</span></button>
@@ -120,8 +133,22 @@ return;
             <span id="quick-width" class="widthValue">Width:</span><br>
             <span id="quick-height" class="heightValue">Height:</span>
           </div>
-    <!--       <button class="button" data-filter="ium">&#x2013;ium</button>
-     --></div>
+
+          <div id="qards">
+            <a href="http://designmodo.com/shop/?u=2593" rel="nofollow" title="Shop" target="_blank"><img src="http://designmodo.com/img/affiliate/shop_125_125.jpg" border="0"  width="125" height="125" alt="Shop" /></a>
+          </div>
+          <div id="flat">
+            <a href="http://designmodo.com/shop/?u=2593" rel="nofollow" title="Slides" target="_blank"><img src="http://designmodo.com/img/affiliate/slides_125_125.jpg" border="0"  width="125" height="125" alt="Slides" /></a>
+          </div> 
+          <div id="shop">
+            <a href="http://designmodo.com/shop/?u=2593" rel="nofollow" title="Qards" target="_blank"><img src="http://designmodo.com/img/affiliate/qards_125_125.jpg" border="0"  width="125" height="125" alt="Qards" /></a>
+          </div>
+          <div id="slides">
+            <a href="http://designmodo.com/shop/?u=2593" rel="nofollow" title="Flat UI Pro" target="_blank"><img src="http://designmodo.com/img/affiliate/flatui_125_125.jpg" border="0"  width="125" height="125" alt="Flat UI Pro" /></a>
+          </div> 
+
+
+        </div>
       </div>
 
 
@@ -131,124 +158,119 @@ return;
 
 <!-- Windows Laptops -->
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1800', '3200');" onmouseover="getDimensionsL('1800', '3200');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Dell XPS 13 9350</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('360', '640');" onmouseover="getDimensions('360', '640');" onmouseout="hideDimensions();">
-        <h5 class="name">android</h5>
-        <p class="symbol">HTC One</p>
-    </div>
-
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1080', '1920');" onmouseover="getDimensionsL('1080', '1920');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Asus ZenBook UX303U</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('2000', '3000');" onmouseover="getDimensions('2000', '3000');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('2000', '3000');" onmouseover="getDimensionsL('2000', '3000');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Microsoft Surface Book</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1080', '1920');" onmouseover="getDimensionsL('1080', '1920');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">HP Envy 13</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('2160', '3840');" onmouseover="getDimensions('2160', '3840');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('2160', '3840');" onmouseover="getDimensionsL('2160', '3840');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Dell Inspiron 15 7559</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();"> 
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1080', '1920');" onmouseover="getDimensionsL('1080', '1920');" onmouseout="hideDimensions();"> 
         <h5 class="name">windows</h5>
         <p class="symbol">Lenovo Yoga 710</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1800', '3200');" onmouseover="getDimensions('1800', '3200');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1800', '3200');" onmouseover="getDimensionsL('1800', '3200');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Asus Zenbook UX305CA</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1080', '1920');" onmouseover="getDimensionsL('1080', '1920');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">HP Spectre 13</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1800', '3200');" onmouseover="getDimensions('1800', '3200');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1800', '3200');" onmouseover="getDimensionsL('1800', '3200');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Lenovo Yoga 900</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1824', '2736');" onmouseover="getDimensions('1824', '2736');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1824', '2736');" onmouseover="getDimensionsL('1824', '2736');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Microsoft Surface Pro 4</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1080', '1920');" onmouseover="getDimensionsL('1080', '1920');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Acer Aspire V3-574G</p>
     </div>
 
-        <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1440', '2160');" onmouseover="getDimensions('1440', '2160');" onmouseout="hideDimensions();">
+        <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1440', '2160');" onmouseover="getDimensionsL('1440', '2160');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Microsoft Surface Pro 3</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1080', '1920');" onmouseover="getDimensionsL('1080', '1920');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">MSI GE62 2QD Apache Pro</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('2160', '3840');" onmouseover="getDimensions('2160', '3840');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('2160', '3840');" onmouseover="getDimensionsL('2160', '3840');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Asus ZenBook Pro UX501</p>
     </div>
 
 
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1080', '1920');" onmouseover="getDimensionsL('1080', '1920');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Acer Chromebook 14</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1080', '1920');" onmouseover="getDimensionsL('1080', '1920');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Acer Aspire R 14</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('768', '1366');" onmouseover="getDimensions('768', '1366');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('768', '1366');" onmouseover="getDimensionsL('768', '1366');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Dell Inspiron 11 3000 Series</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('2160', '3840');"onmouseover="getDimensions('2160', '3840');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('2160', '3840');"onmouseover="getDimensionsL('2160', '3840');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Dell XPS 15 Touch</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1080', '1920');" onmouseover="getDimensionsL('1080', '1920');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Lenovo ThinkPad 13</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1440', '2560');" onmouseover="getDimensions('1440', '2560');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1440', '2560');" onmouseover="getDimensionsL('1440', '2560');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Lenovo ThinkPad X1 Carbon</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1080', '1920');" onmouseover="getDimensionsL('1080', '1920');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Lenovo ThinkPad X1 Yoga</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1080', '1920');" onmouseover="getDimensionsL('1080', '1920');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Origin EON17-X</p>
     </div>
 
-    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQuery('1440', '2560');" onmouseover="getDimensions('1440', '2560');" onmouseout="hideDimensions();">
+    <div value="ML640XL" class="element-item windows" data-category="transition" onclick="getMediaQueryL('1440', '2560');" onmouseover="getDimensionsL('1440', '2560');" onmouseout="hideDimensions();">
         <h5 class="name">windows</h5>
         <p class="symbol">Razer Blade Stealth</p>
     </div>
@@ -310,12 +332,12 @@ return;
  <!-- New Windows start -->
  <!-- Windows search -->
 
-     <div class="element-item windows " data-category="transition" onclick="getMediaQuery('768', '1366');" onmouseover="getDimensions('768', '1366');" onmouseout="hideDimensions();">
+     <div class="element-item windows " data-category="transition" onclick="getMediaQueryL('768', '1366');" onmouseover="getDimensionsL('768', '1366');" onmouseout="hideDimensions();">
             <h5 class="name">windows</h5>
             <p class="symbol">ASUS Vivo</p>
      </div>
 
-     <div class="element-item windows " data-category="transition" onclick="getMediaQuery('800', '1280');" onmouseover="getDimensions('800', '1280');" onmouseout="hideDimensions();">
+     <div class="element-item windows " data-category="transition" onclick="getMediaQueryL('800', '1280');" onmouseover="getDimensionsL('800', '1280');" onmouseout="hideDimensions();">
             <h5 class="name">windows</h5>
             <p class="symbol">Dell Venue 8</p>
      </div>
@@ -330,17 +352,17 @@ return;
             <p class="symbol">HTC Windows Phone 8X</p>
      </div>
 
-     <div class="element-item windows " data-category="transition" onclick="getMediaQuery('768', '1366');" onmouseover="getDimensions('768', '1366');" onmouseout="hideDimensions();">
+     <div class="element-item windows " data-category="transition" onclick="getMediaQueryL('768', '1366');" onmouseover="getDimensionsL('768', '1366');" onmouseout="hideDimensions();">
             <h5 class="name">windows</h5>
             <p class="symbol">Microsoft Surface</p>
      </div>
 
-     <div class="element-item windows " data-category="transition" onclick="getMediaQuery('720', '1280');" onmouseover="getDimensions('720', '1280');" onmouseout="hideDimensions();">
+     <div class="element-item windows " data-category="transition" onclick="getMediaQueryL('720', '1280');" onmouseover="getDimensionsL('720', '1280');" onmouseout="hideDimensions();">
             <h5 class="name">windows</h5>
             <p class="symbol">Microsoft Surface Pro</p>
      </div>
 
-     <div class="element-item windows " data-category="transition" onclick="getMediaQuery('900', '1600');" onmouseover="getDimensions('900', '1600');" onmouseout="hideDimensions();">
+     <div class="element-item windows " data-category="transition" onclick="getMediaQueryL('900', '1600');" onmouseover="getDimensionsL('900', '1600');" onmouseout="hideDimensions();">
             <h5 class="name">windows</h5>
             <p class="symbol">Sony VAIO Tap 20</p>
      </div>
@@ -840,6 +862,12 @@ return;
       <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('480', '800');" onmouseover="getDimensions('480', '800');" onmouseout="hideDimensions();">
         <h5 class="name">android</h5>
         <p class="symbol">HTC Desire Z (Vision)</p>
+      </div>
+
+
+      <div value="ML640XL" class="element-item android" data-category="transition" onclick="getMediaQuery('360', '640');" onmouseover="getDimensions('360', '640');" onmouseout="hideDimensions();">
+          <h5 class="name">android</h5>
+          <p class="symbol">HTC One</p>
       </div>
 
       <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('320', '480');" onmouseover="getDimensions('320', '480');" onmouseout="hideDimensions();">
@@ -1718,7 +1746,8 @@ function yourAR(){
 <footer id="footer-container">
     <div id="share-buttons">
 
-    <a href="https://twitter.com/share?url=http://simplecss.eu&amp;text=CSS%20Media%20Query%20Generator:%20&amp;CSS%20Media%20Query%20Generator%20&amp;hashtags=simplecss" target="_blank">
+     <!-- Twitter -->
+    <a href="https://twitter.com/share?url=http://simplecss.eu&amp;text=CSS%20Generator:%20&amp;hashtags=simplecss" target="_blank">
         <img alt="simple-twitter-share" src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
     </a>
 
@@ -1789,5 +1818,27 @@ $(document).ready(function () {
     }); // fin resize
 });
 </script>
+<script type="text/javascript">
+    adroll_adv_id = "343ZZ3TM6ZCKPLYHCDW64O";
+    adroll_pix_id = "VT3SMF3T7FG7FMQJRDKKYO";
+    /* OPTIONAL: provide email to improve user identification */
+    /* adroll_email = "username@example.com"; */
+    (function () {
+        var _onload = function(){
+            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+            if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+            var scr = document.createElement("script");
+            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+            scr.setAttribute('async', 'true');
+            scr.type = "text/javascript";
+            scr.src = host + "/j/roundtrip.js";
+            ((document.getElementsByTagName('head') || [null])[0] ||
+                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+        };
+        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+        else {window.attachEvent('onload', _onload)}
+    }());
+</script>
+
 </body>
 </html>

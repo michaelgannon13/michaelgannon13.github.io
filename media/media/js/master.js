@@ -155,6 +155,20 @@ function getVendorPrefix(value, prop){
      $(".heightValue").text("Height: " + height + units);
   }
 
+    function getDimensionsL(width, height){
+  	 $(".widthValue").css("visibility", "visible");
+     $(".heightValue").css("visibility", "visible");
+     $("#quick").css("visibility", "visible");
+     $(".quick-holder").css("visibility", "visible");
+     $(".widthValue").css("opacity", "1");
+     $(".heightValue").css("opacity", "1");
+     $("#quick").css("opacity", "1");
+     $(".quick-holder").css("opacity", "1");
+
+     $(".widthValue").text("Width: " + height + units);
+     $(".heightValue").text("Height: " + width + units);
+  }
+
   function hideDimensions(width, height){
   	  $(".widthValue").css("opacity", "0");
       $(".heightValue").css("opacity", "0");
@@ -176,6 +190,24 @@ function getMediaQuery(width, height){
       var media = "@media only screen ";
       var maxWidth = "   " + "and (max-width : " + width + ") ";
       var maxHeight = "   " + "and (max-height : " + height + ") " + "{" ;
+      var css = "   " + "/* Styles here */" ;
+      var brack = "\n" + "}";
+
+      $('#gen-media').text(media + "\n" + maxWidth + "\n" + maxHeight + "\n" + css + brack);
+      $('#myModal').modal();
+  }
+
+  function getMediaQueryL(width, height){
+      $("#copy-button").text("Copy");
+      $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
+      $('#modalFooter').css("visibility", "hidden");
+
+      width = width + units;
+      height = height + units;
+
+      var media = "@media only screen ";
+      var maxWidth = "   " + "and (max-width : " + height + ") ";
+      var maxHeight = "   " + "and (max-height : " + width + ") " + "{" ;
       var css = "   " + "/* Styles here */" ;
       var brack = "\n" + "}";
 
