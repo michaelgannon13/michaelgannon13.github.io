@@ -1371,7 +1371,7 @@ two columns for large devices
 }
 
 span#simple {
-    color: #FC5185;
+    color: #fc5185;
     font-weight: 500;
     background: -webkit-linear-gradient(-145deg,#a000e2, #FC5185);
     -webkit-background-clip: text;
@@ -1418,7 +1418,7 @@ h1#title {
 
 span#quick-width, span#quick-height {
     font-weight: 900;
-    color: #364f6b;
+    color: #fc5185;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -1427,13 +1427,13 @@ span#quick-width, span#quick-height {
 }
 
 .quick-holder {
-    color: #364f6b;
+    color: #fc5185;
+    font-size: 30px;
     position: fixed;
-    right: 2%;
-    top: 30%;
-    text-align: right;
+    width: 100%;
+    text-align: center;
     z-index: 3;
-
+    bottom: 5%;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;

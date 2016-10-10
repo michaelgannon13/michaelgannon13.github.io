@@ -150,6 +150,7 @@ function getVendorPrefix(value, prop){
      $(".heightValue").css("opacity", "1");
      $("#quick").css("opacity", "1");
      $(".quick-holder").css("opacity", "1");
+     $(".quick-holder").css("background", "#222");
 
      $(".widthValue").text("Width: " + width + units);
      $(".heightValue").text("Height: " + height + units);
@@ -164,6 +165,7 @@ function getVendorPrefix(value, prop){
      $(".heightValue").css("opacity", "1");
      $("#quick").css("opacity", "1");
      $(".quick-holder").css("opacity", "1");
+     $(".quick-holder").css("background", "#222");
 
      $(".widthValue").text("Width: " + height + units);
      $(".heightValue").text("Height: " + width + units);
@@ -176,6 +178,7 @@ function getVendorPrefix(value, prop){
   	  $(".widthValue").css("visibility", "hidden");
       $(".heightValue").css("visibility", "hidden");
       $("#quick").css("visibility", "hidden");
+      $(".quick-holder").css("background", "rgba(255, 255, 255, 0)");
   }
 
   
