@@ -2811,8 +2811,8 @@ span#all {
 .lista-menu a, .btn-menu {
     display: block;
     width: 100%;
-    height: 3em;
-    line-height: 3em;
+    height: 4em;
+    line-height: 4em;
 }
 .btn-menu {
     display: none;
