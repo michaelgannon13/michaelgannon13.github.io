@@ -40,6 +40,10 @@ div#qards,div#flat {
     left: 0;
 }
 
+div#filter-container{
+    padding-bottom: 60px;
+}
+
 div#qards, div#shop {
     top: 45%;
 }
