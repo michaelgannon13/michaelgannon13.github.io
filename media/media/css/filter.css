@@ -1,3 +1,20 @@
+h3#filter-name {
+    text-align: center;
+    color: #222;
+}
+
+h1#title {
+    color: #28C7FA;
+}
+
+h3#prompt {
+    color: #28C7FA;
+}
+
+a.thumbnail:hover {
+    border-color: #28C7FA;
+}
+
 img#bw{
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);

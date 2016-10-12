@@ -97,11 +97,21 @@ var buttonFilter;
 var moz = "-moz-";
 var mozCom = "/*Firefox*/";
 var webk = "-webkit-";
+var webkF = "-webkit-filter: ";
+var filter = "filter: ";
 var webkCom = "/*Chrome, Safari, Android*/";
 var ms = "-ms-";
 var msCom = "/*IE, Edge*/";
 var o = "-o-";
 var oCom = "/*Opera*/";
+
+var filt = "img {" +"\n";
+var media = "@media only screen ";
+var maxWidth = "   " + "and (max-width : " + width + ") ";
+var maxHeight = "   " + "and (max-height : " + height + ") " + "{" ;
+var css = "   " + "/* Styles here */" ;
+var brack = "\n" + "}";
+var ind = "   ";
 
 function getVendorPrefix(value, prop){
   $("#copy-button").text("Copy");
@@ -136,6 +146,37 @@ function getVendorPrefix(value, prop){
       } else if (value=="2o"){
 	      $('#gen-media').text(o + prop + "\n" + prop);
       }
+
+  $('#myModal').modal();
+}
+
+function getFilter(value, prop){
+  $("#copy-button").text("Copy");
+  $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
+  $('#modalFooter').css("visibility", "hidden");
+
+
+   if (value=="bw") { 
+	      $('#gen-media').text(filt + ind + filter + prop +  "\n" + ind + webkF + prop + brack);
+      } else if (value=="blur"){
+	      $('#gen-media').text(filt + ind + filter + prop +  "\n" + ind + webkF + prop + brack);
+      } else if (value=="bright"){
+	      $('#gen-media').text(filt + ind + filter + prop +  "\n" + ind + webkF + prop + brack);
+      } else if (value=="contrast"){
+	      $('#gen-media').text(filt + ind + filter + prop +  "\n" + ind + webkF + prop + brack);
+      } else if (value=="dShadow"){
+	      $('#gen-media').text(filt + ind + filter + prop +  "\n" + ind + webkF + prop + brack);
+      } else if (value=="hueRot"){
+	      $('#gen-media').text(filt + ind + filter + prop +  "\n" + ind + webkF + prop + brack);
+      } else if (value=="invert"){
+	      $('#gen-media').text(filt + ind + filter + prop +  "\n" + ind + webkF + prop + brack);
+      } else if (value=="opac"){
+	      $('#gen-media').text(filt + ind + filter + prop +  "\n" + ind + webkF + prop + brack);
+      } else if (value=="sat"){
+	      $('#gen-media').text(filt + ind + filter + prop +  "\n" + ind + webkF + prop + brack);
+      } else if (value=="sep"){
+	      $('#gen-media').text(filt + ind + filter + prop +  "\n" + ind + webkF + prop + brack);
+      } 
 
   $('#myModal').modal();
 }
@@ -189,12 +230,6 @@ function getMediaQuery(width, height){
 
       width = width + units;
       height = height + units;
-
-      var media = "@media only screen ";
-      var maxWidth = "   " + "and (max-width : " + width + ") ";
-      var maxHeight = "   " + "and (max-height : " + height + ") " + "{" ;
-      var css = "   " + "/* Styles here */" ;
-      var brack = "\n" + "}";
 
       $('#gen-media').text(media + "\n" + maxWidth + "\n" + maxHeight + "\n" + css + brack);
       $('#myModal').modal();

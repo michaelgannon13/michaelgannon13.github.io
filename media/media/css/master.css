@@ -2799,7 +2799,7 @@ span#all {
 .lista-menu li {
     display: inline-block;
     float: left;
-    width: 33.3%;
+    width: 25%;
     border-right: 1px solid #7E7E7E;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

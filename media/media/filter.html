@@ -65,6 +65,9 @@
                 <li><a href="breakpoints.html">Browser Breakpoints</a>
 
                 </li>
+                <li><a href="filter.html">Image Filters</a>
+
+                </li>
             </ul>
         </div>
     </div>
@@ -90,7 +93,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Here is your CSS Vendor Prefix</h4>
+                <h4 class="modal-title">Here is your CSS Image Filter</h4>
               </div>
               <div class="modal-body">
                 <p>
@@ -134,63 +137,75 @@
         <div class="row">
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <h3 id="filter-name">Black & white</h3>
                 <a class="thumbnail" href="#">
-                    <img id="bw" class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    <img id="bw" onclick="getFilter(this.id, 'grayscale(100%);');" class="img-responsive" src="http://placehold.it/400x300" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <h3 id="filter-name">Blur</h3>
                 <a class="thumbnail" href="#">
-                    <img id="blur" class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    <img id="blur" onclick="getFilter(this.id, 'blur(5px);');" class="img-responsive" src="http://placehold.it/400x300" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <h3 id="filter-name">Brighten</h3>
                 <a class="thumbnail" href="#">
-                    <img id="bright" class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    <img id="bright" onclick="getFilter(this.id, 'brightness(200%);');" class="img-responsive" src="http://placehold.it/400x300" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <h3 id="filter-name">Contrast</h3>
                 <a class="thumbnail" href="#">
-                    <img  id="contrast" class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    <img id="contrast" onclick="getFilter(this.id, 'contrast(200%);');" class="img-responsive" src="http://placehold.it/400x300" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <h3 id="filter-name">Drop shadow</h3>
                 <a class="thumbnail" href="#">
-                    <img id="dShadow" class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    <img id="dShadow" onclick="getFilter(this.id, 'drop-shadow(8px 8px 10px grey);');"  class="img-responsive" src="http://placehold.it/400x300" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <h3 id="filter-name">Hue rotate</h3>
                 <a class="thumbnail" href="#">
-                    <img id="hueRot" class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    <img id="hueRot" onclick="getFilter(this.id, 'hue-rotate(90deg);');" class="img-responsive" src="http://placehold.it/400x300" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <h3 id="filter-name">Invert</h3>
                 <a class="thumbnail" href="#">
-                    <img id="invert" class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    <img id="invert" onclick="getFilter(this.id, 'invert(100%);');" class="img-responsive" src="http://placehold.it/400x300" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <h3 id="filter-name">Opacity</h3>
                 <a class="thumbnail" href="#">
-                    <img  id="opac" class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    <img  id="opac" onclick="getFilter(this.id, 'opacity(30%);');" class="img-responsive" src="http://placehold.it/400x300" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <h3 id="filter-name">Saturated</h3>
                 <a class="thumbnail" href="#">
-                    <img id="sat" class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    <img id="sat" onclick="getFilter(this.id, 'saturate(800%);');" class="img-responsive" src="http://placehold.it/400x300" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <h3 id="filter-name">Sepia</h3>
                 <a class="thumbnail" href="#">
-                    <img id="sep" class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    <img id="sep" onclick="getFilter(this.id, 'sepia(100%);');" class="img-responsive" src="http://placehold.it/400x300" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <h3 id="filter-name">Overlay</h3>
                 <a class="thumbnail" href="#">
-                    <img id="overlay" class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    <img id="overlay" onclick="getFilter(this.id, 'opacity(30%);');" class="img-responsive" src="http://placehold.it/400x300" alt="">
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <h3 id="filter-name">Overlay</h3>
                 <a class="thumbnail" href="#">
-                    <img id="overlay" class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    <img id="overlay" onclick="getFilter(this.id, 'opacity(30%);');" class="img-responsive" src="http://placehold.it/400x300" alt="">
                 </a>
             </div>
         </div>
