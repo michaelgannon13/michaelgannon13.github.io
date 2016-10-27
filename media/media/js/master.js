@@ -176,6 +176,8 @@ function getFilter(value, prop){
 	      $('#gen-media').text(filt + ind + filter + prop +  "\n" + ind + webkF + prop + brack);
       } else if (value=="sep"){
 	      $('#gen-media').text(filt + ind + filter + prop +  "\n" + ind + webkF + prop + brack);
+      } else if (value=="mul"){
+	      $('#gen-media').text(filt + ind + filter + prop +  "\n" + ind + webkF + prop + brack);
       } 
 
   $('#myModal').modal();
@@ -230,6 +232,12 @@ function getMediaQuery(width, height){
 
       width = width + units;
       height = height + units;
+
+       var media = "@media only screen ";
+      var maxWidth = "   " + "and (max-width : " + width + ") ";
+      var maxHeight = "   " + "and (max-height : " + height + ") " + "{" ;
+      var css = "   " + "/* Styles here */" ;
+      var brack = "\n" + "}";
 
       $('#gen-media').text(media + "\n" + maxWidth + "\n" + maxHeight + "\n" + css + brack);
       $('#myModal').modal();

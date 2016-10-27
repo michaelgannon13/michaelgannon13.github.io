@@ -1,3 +1,7 @@
+.grid{
+    margin-left:  0;
+}
+
 h3#filter-name {
     text-align: center;
     color: #222;
@@ -65,11 +69,7 @@ img#sep{
   filter: sepia(100%);
 }
 
-img#overlay{
-  background:
-    /* top, transparent red */
-    linear-gradient(
-      rgba(255, 0, 0, 0.45),
-      rgba(255, 0, 0, 0.45)
-    )
+img#mul {
+    -webkit-filter: blur(2px) grayscale(0.5) opacity(0.8);
+    filter: blur(2px) grayscale(0.5) opacity(0.8);
 }
