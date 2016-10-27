@@ -189,6 +189,39 @@ function getClip(value, prop){
   $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
   $('#modalFooter').css("visibility", "hidden");
 
+	 if (value=="x") { 
+		      $('#gen-media').text(filt + ind + prop +  "\n" + ind + webkC + prop + brack);
+	      } else if (value=="tri"){
+		      $('#gen-media').text(filt + ind + prop +  "\n" + ind + webkC + prop + brack);
+	      } else if (value=="rho"){
+		      $('#gen-media').text(filt + ind + prop +  "\n" + ind + webkC + prop + brack);
+	      } else if (value=="oct"){
+		      $('#gen-media').text(filt + ind + prop +  "\n" + ind + webkC + prop + brack);
+	      } else if (value=="non"){
+		      $('#gen-media').text(filt + ind + prop +  "\n" + ind + webkC + prop + brack);
+	      } else if (value=="arrL"){
+		      $('#gen-media').text(filt + ind + prop +  "\n" + ind + webkC + prop + brack);
+	      } else if (value=="arrR"){
+		      $('#gen-media').text(filt + ind + prop +  "\n" + ind + webkC + prop + brack);
+	      } else if (value=="star"){
+		      $('#gen-media').text(filt + ind + prop +  "\n" + ind + webkC + prop + brack);
+	      } else if (value=="cross"){
+		      $('#gen-media').text(filt + ind + prop +  "\n" + ind + webkC + prop + brack);
+	      } else if (value=="frame"){
+		      $('#gen-media').text(filt + ind + prop +  "\n" + ind + webkC + prop + brack);
+	      } else if (value=="circle"){
+		      $('#gen-media').text(filt + ind + prop +  "\n" + ind + webkC + prop + brack);
+	      } else if (value=="bev"){
+		      $('#gen-media').text(filt + ind + prop +  "\n" + ind + webkC + prop + brack);
+	      } 
+
+  $('#myModal').modal();
+}
+
+function getSVG(value, prop){
+  $("#copy-button").text("Copy");
+  $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
+  $('#modalFooter').css("visibility", "hidden");
 
 	 if (value=="x") { 
 		      $('#gen-media').text(filt + ind + prop +  "\n" + ind + webkC + prop + brack);

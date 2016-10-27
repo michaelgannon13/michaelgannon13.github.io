@@ -2806,7 +2806,7 @@ span#all {
 .lista-menu li {
     display: inline-block;
     float: left;
-    width: 25%;
+    width: 20%;
     border-right: 1px solid #7E7E7E;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -2847,8 +2847,26 @@ span#all {
     font-weight: 900;
     text-transform: uppercase;
 }
-.lista-menu a:hover {
-    background-color: #ec559a;
+
+
+.lista-menu a#med:hover {
+    background-color: #364F6B;
+}
+
+.lista-menu a#ven:hover {
+    background-color: #3D289B;
+}
+
+.lista-menu a#fil:hover {
+    background-color: #28C7FA;
+}
+
+.lista-menu a#clip:hover {
+    background-color: #5E89EF;
+}
+
+.lista-menu a#break:hover {
+    background-color: #7D77F6;
 }
 /*  ------------- media queries ----------*/
  @media screen and (max-width:480px) {
