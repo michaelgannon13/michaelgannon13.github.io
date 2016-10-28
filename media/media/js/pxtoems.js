@@ -1,15 +1,14 @@
-var pxInput = $('px').val();
 var emsInput = $('ems').val();
-var emBase = 16;
 
-function convert(px){
-
-	var enteredPX = px; 
+function convert(){
 
 	if (pxInput !== "") {
-		emsInput = enteredPX/emBase;
-		document.getElementById("ems").value = enteredPX/emBase;
+		var pxInput = document.getElementById("px").value;
+		var baseInput = document.getElementById("base").value;
+		emsInput = pxInput/baseInput;
+		document.getElementById("ems").value = pxInput/baseInput;
 	} else {
-		console.log("nothing in px field")
+		document.getElementById("ems").value = "";
 	}
+	//setInterval(convert, 500);
 }
