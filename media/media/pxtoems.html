@@ -55,8 +55,9 @@
             <!-- Menú de navegación -->
             <ul id="submenu" class="lista-menu aln-centro">
                 <li><a id="med" href="index.html">Media Queries</a></li>
+                <li><a id="pxtoems" href="pxtoems.html" style="background-color:#47D0BD">Units</a></li>
                 <li><a id="ven" href="prefix.html">Vendor Prefixes</a></li>
-                <li><a id="fil" href="filter.html" style="background-color:#28C7FA">Image Filters</a></li>
+                <li><a id="fil" href="filter.html">Image Filters</a></li>
                 <li><a id="clip" href="clip-path.html">Clip-paths</a></li>
                 <li><a id="break" href="breakpoints.html">Browser Breakpoints</a></li>
             </ul>
@@ -81,7 +82,7 @@
           <div class="modal-dialog">
 
             <!-- Modal content-->
-            <div class="modal-content">
+<!--             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <h4 class="modal-title">Here is your CSS Image Filter</h4>
@@ -95,15 +96,15 @@
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 <button id="copy-button" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="textarea">Copy</button>
               </div>
-            </div>
+            </div> -->
 
           </div>
         </div>
 
       <div class="ui-group">
         <div id="filters" class="button-group">
-          <h3 id="prompt">Click the filter to generate your CSS</h3>
-          <div id="qards">
+<!--           <h3 id="prompt">Click the filter to generate your CSS</h3>
+ -->          <div id="qards">
             <a href="http://designmodo.com/shop/?u=2593" rel="nofollow" title="Shop" target="_blank"><img alt="affiliate-ad" src="http://designmodo.com/img/affiliate/shop_125_125.jpg" border="0"  width="125" height="125" alt="Shop" /></a>
           </div>
           <div id="flat">
@@ -129,7 +130,7 @@
       <form class="form-inline">
         <div class="form-group">
           <label id="pxLabel" for="email">PX</label><br>
-          <input type="number" type="number" step="1" class="form-control" value="" onKeyUp="convert()" id="px" placeholder="Pixels">
+          <input type="text" class="form-control" value="" onKeyUp="convert()" id="px" placeholder="Pixels">
         </div>
         <div class="form-group">
           <label id="emLabel" for="pwd">EMS</label><br>
