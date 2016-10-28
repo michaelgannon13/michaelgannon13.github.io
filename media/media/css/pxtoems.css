@@ -1,10 +1,13 @@
-.grid{
-  margin-left: 0;
-  text-align: center;
-}
-
 h1#title {
     color: #3D289B;
+}
+
+.form-group {
+    display: inline-block;
+}
+
+.container {
+    text-align: center;
 }
 
 input#base {
@@ -13,14 +16,32 @@ input#base {
 }
 
 input#px, input#ems {
-    height: auto;
-    font-size: 40px;
-    width: 90%;
+    height: 2em;
+    font-size: 8em;
+    width: 4em;
     text-align: center;
+    font-weight: 700;
+    color: #fc5185;
+    letter-spacing: -5px;
+    border-radius: 22px;
 }
 
 input#base {
-    font-size: 40px;
-    height: auto;
-    width: 20%;
+    height: 1.2em;
+    font-size: 3em;
+    width: 2.2em;
+    text-align: center;
+    font-weight: 900;
+    color: #c8c8c8;
+    border-radius: 11px;
+}
+
+input[type=number] {
+    display: none;
+} 
+input[type=number]::-webkit-inner-spin-button { 
+  display: none;
+}    
+input[type=number]:hover::-webkit-inner-spin-button { 
+    display: none;
 }
