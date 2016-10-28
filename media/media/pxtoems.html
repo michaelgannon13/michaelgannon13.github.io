@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en-US" class="export">
 <head>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
+<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+ --><!-- <script>
   (adsbygoogle = window.adsbygoogle || []).push({
     google_ad_client: "ca-pub-3919315193284770",
     enable_page_level_ads: true
   });
-</script>
+</script> -->
 
   <meta charset="utf-8">
   <meta http-equiv="pragma" content="no-cache" />
@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width">
 
   <meta name="description" content="CSS Image Filter Code Generator for applying CSS filters to your images.">
-  <title>SVG Generator</title>
+  <title>CSS image filter generator</title>
 
   <meta itemprop="name" content="Simple CSS">
   <meta itemprop="description" content="Simple CSS Generator for returning CSS code for media queries, vendor prefixes and browser breakpoints.">
@@ -40,7 +40,7 @@
 
     <!-- Isotope does not require any CSS files -->
   <link rel="stylesheet" href="css/master.css" media="screen">
-  <link rel="stylesheet" href="css/svg-generate.css" media="screen">
+  <link rel="stylesheet" href="css/pxtoems.css" media="screen">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 
@@ -56,7 +56,7 @@
             <ul id="submenu" class="lista-menu aln-centro">
                 <li><a id="med" href="index.html">Media Queries</a></li>
                 <li><a id="ven" href="prefix.html">Vendor Prefixes</a></li>
-                <li><a id="fil" href="filter.html">Image Filters</a></li>
+                <li><a id="fil" href="filter.html" style="background-color:#28C7FA">Image Filters</a></li>
                 <li><a id="clip" href="clip-path.html">Clip-paths</a></li>
                 <li><a id="break" href="breakpoints.html">Browser Breakpoints</a></li>
             </ul>
@@ -66,8 +66,8 @@
 <div class="hero">
   <div class="primary-content">
   <h1 id="title">
-    <span id="simple">Simple CSS</span> SVG</h1>
-    <p id="simple-intro">Simple CSS Clips is a free tool for Web Designers & Front End Developers to simplify CSS clip-paths. Just click the image to generate the CSS clip-path you want. If you have recommendations or comments I'd love to hear from you...<a id="mail-link" href="mailto:michael.gannon13@gmail.com?Subject=Hello%20again" target="_top">let me know</a>.
+    <span id="simple">Simple CSS</span> Units</h1>
+    <p id="simple-intro">Simple CSS Filter is a free tool for Web Designers & Front End Developers to make CSS filters, simple. Just click the image to generate the CSS filter. If you have recommendations or comments I'd love to hear from you...<a id="mail-link" href="mailto:michael.gannon13@gmail.com?Subject=Hello%20again" target="_top">let me know</a>.
     </p>
 
     <div id="options-container">
@@ -84,7 +84,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Here is your CSS Clip-path</h4>
+                <h4 class="modal-title">Here is your CSS Image Filter</h4>
               </div>
               <div class="modal-body">
                 <p>
@@ -102,7 +102,7 @@
 
       <div class="ui-group">
         <div id="filters" class="button-group">
-          <h3 id="prompt">Click the image to generate your CSS clip-path</h3>
+          <h3 id="prompt">Click the filter to generate your CSS</h3>
           <div id="qards">
             <a href="http://designmodo.com/shop/?u=2593" rel="nofollow" title="Shop" target="_blank"><img alt="affiliate-ad" src="http://designmodo.com/img/affiliate/shop_125_125.jpg" border="0"  width="125" height="125" alt="Shop" /></a>
           </div>
@@ -122,132 +122,17 @@
   <div class="grid">
 
 
-    <!-- Page Content -->
-    <div id="filter-container" class="container">
-
-        <div class="row">
-
-            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
-                <h3 id="filter-name">Circle</h3>
-                <a id="cirlce" class="thumbnail" onclick="getSVG(this.id, 'grayscale(100%);');" href="#">
-                    <svg width="100" height="100">
-                      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-                    </svg>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
-                <h3 id="filter-name">Rectangle</h3>
-                <a id="rect" class="thumbnail" onclick="getSVG(this.id, 'grayscale(100%);');" href="#">
-                    <svg width="400" height="110">
-                      <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
-                    </svg>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
-                <h3 id="filter-name">Ellipse</h3>
-                <a id="ell" class="thumbnail" onclick="getSVG(this.id, 'grayscale(100%);');" href="#">
-                    <svg height="140" width="500">
-                      <ellipse cx="200" cy="80" rx="100" ry="50"
-                      style="fill:yellow;stroke:purple;stroke-width:2" />
-                    </svg>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
-                <h3 id="filter-name">Line</h3>
-                <a id="line" class="thumbnail" onclick="getSVG(this.id, 'grayscale(100%);');" href="#">
-                    <svg height="210" width="500">
-                      <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
-                    </svg>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
-                <h3 id="filter-name">Polygon</h3>
-                <a id="poly" class="thumbnail" onclick="getSVG(this.id, 'grayscale(100%);');" href="#">
-                    <svg height="210" width="250">
-                      <polygon points="200,10 250,190 160,210" style="fill:lime;stroke:purple;stroke-width:1" />
-                    </svg>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
-                <h3 id="filter-name">Polyline</h3>
-                <a id="polyline" class="thumbnail" onclick="getSVG(this.id, 'grayscale(100%);');" href="#" >
-                    <svg height="200" width="500">
-                      <polyline points="20,20 40,25 60,40 80,120 120,140 200,180"
-                      style="fill:none;stroke:black;stroke-width:3" />
-                    </svg>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
-                <h3 id="filter-name">Path</h3>
-                <a id="path" class="thumbnail" onclick="getSVG(this.id, 'grayscale(100%);');" href="#">
-                    <svg height="210" width="400">
-                      <path d="M150 0 L75 200 L225 200 Z" />
-                      Sorry, your browser does not support inline SVG.
-                    </svg>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
-                <h3 id="filter-name">Text</h3>
-                <a id="svg-text" class="thumbnail" onclick="getSVG(this.id, 'grayscale(100%);');" href="#">
-                    <svg height="30" width="200">
-                      <text x="0" y="15" fill="red">I love SVG!</text>
-                      Sorry, your browser does not support inline SVG.
-                    </svg>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
-                <h3 id="filter-name">Stroke</h3>
-                <a id="stroke" class="thumbnail" onclick="getSVG(this.id, 'grayscale(100%);');" href="#">
-                    <svg height="80" width="300">
-                      <g fill="none">
-                        <path stroke="red" d="M5 20 l215 0" />
-                        <path stroke="black" d="M5 40 l215 0" />
-                        <path stroke="blue" d="M5 60 l215 0" />
-                      </g>
-                    </svg>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
-                <h3 id="filter-name">Linear Gradient</h3>
-                <a id="lin-grad" class="thumbnail" onclick="getSVG(this.id, 'grayscale(100%);');" href="#">
-                  <svg height="150" width="400">
-                    <defs>
-                      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
-                      </linearGradient>
-                    </defs>
-                    <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
-                    Sorry, your browser does not support inline SVG.
-                  </svg>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
-                <h3 id="filter-name">Radial Gradient</h3>
-                <a id="rad-grad" class="thumbnail" onclick="getSVG(this.id, 'grayscale(100%);');" href="#">
-                    <svg height="150" width="500">
-                    <defs>
-                      <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-                        <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
-                        <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
-                      </radialGradient>
-                    </defs>
-                    <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
-                    Sorry, your browser does not support inline SVG.
-                  </svg>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
-                <h3 id="filter-name">Star</h3>
-                <a id="star" class="thumbnail" onclick="getSVG(this.id, 'grayscale(100%);');" href="#">
-                    <svg height="210" width="500">
-                      <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:nonzero;"/>
-                      Sorry, your browser does not support inline SVG.
-                    </svg>
-                </a>
-            </div>
+    <div class="container">
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="email">PX</label><br>
+          <input type="text" class="form-control" value="" onKeyDown="convert(this.value)" id="px" placeholder="Enter pixels">
         </div>
-
+        <div class="form-group">
+          <label for="pwd">EMS</label><br>
+          <input type="text" class="form-control" value="" id="ems" placeholder="Ems">
+        </div>
+      </form>
     </div>
   </div>
 
@@ -264,7 +149,7 @@
 <!-- Isotope does NOT require jQuery. But it does make things easier -->
 
 <!-- <script src="js/isotope-docs.min.js"></script> -->
-<script src="js/master.js"></script>
+<script src="js/pxtoems.js"></script>
 <!-- <script src="js/clipboard.min.js"></script> -->
 
 <script>
@@ -277,7 +162,7 @@
   ga('send', 'pageview');
 
 </script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 
   var clipboard = new Clipboard('.btn', {
         target: function() {
@@ -297,7 +182,7 @@
     clipboard.on('error', function(e) {
         //console.log(e);
     });
-</script>
+</script> -->
 
 <footer id="footer-container">
   <div id="share-buttons">
