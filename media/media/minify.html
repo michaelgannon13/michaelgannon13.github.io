@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width">
 
   <meta name="description" content="CSS Image Filter Code Generator for applying CSS filters to your images.">
-  <title>CSS Unit Converter - px, em, pt, %</title>
+  <title>Free and Simple CSS Minifier</title>
 
   <meta itemprop="name" content="Simple CSS Units">
   <meta itemprop="description" content="Real time unit converter for CSS for Front End Developers, Web Designer or anyone working with Responsive Design.">
@@ -66,7 +66,7 @@
   <div class="hero">
     <div class="primary-content">
       <h1 id="title">
-      <span id="simple">Simple CSS</span> Units</h1>
+      <span id="simple">Simple CSS</span> Minify</h1>
       <p id="simple-intro">Simple CSS Filter is a free tool for Web Designers & Front End Developers to make CSS filters, simple. Just click the image to generate the CSS filter. If you have recommendations or comments I'd love to hear from you...<a id="mail-link" href="mailto:michael.gannon13@gmail.com?Subject=Hello%20again" target="_top">let me know</a>.
       </p>
 
@@ -95,15 +95,15 @@
     <div class="container">
       <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <label id="pxLabel" for="email">Enter CSS Here</label><br>
-            <textarea type="text" class="form-control" value="" onKeyUp="minify()" id="css" placeholder="Enter CSS here"></textarea><br><br>
-            <button id="copy-button1" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="textarea">Copy</button>
+            <label id="cssLabel" for="email">Enter CSS Here <img id="snail" src="img/snail.png"></label>
+            <textarea type="text" class="form-control" value="" onKeyUp="minify()" id="css" placeholder="Enter CSS here"></textarea><br>
             <button id="clear" class="btn btn-primary" onclick="clearText()">Clear</button>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <label id="emLabel" for="pwd">Minified CSS</label><br>
-            <textarea type="text" class="form-control" value="" id="cssmin" placeholder="Minified CSS here"></textarea><br><br>
-            <button id="copy-button2" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="textarea">Copy</button>
+            <label id="minCssLabel" for="pwd">Minified CSS <img id="cheetah" src="img/cheetah.png"></label>
+            <textarea type="text" class="form-control" value="" id="cssmin" placeholder="Minified CSS here"></textarea><br>
+            <label style="visibility: hidden;" id="notice">That's it! Your code has been minified and copied to your clipboard already.</label>
+            <button style="visibility: hidden;" id="copy-button2" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="textarea">Copy</button>
           </div>
       </div>
     </div>

@@ -1,0 +1,11 @@
+textarea#css, textarea#cssmin {
+    border-radius: 6px;
+    font-size: 14px;
+    height: 30vh;
+}
+
+#cssLabel, #minCssLabel{
+  display: block ;
+  text-align: center;
+}
+
