@@ -94,22 +94,21 @@
 
     <div class="container">
       <div class="row">
-        <form class="form-inline">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="form-group ">
               <label id="pxLabel" for="email">Enter CSS Here</label><br>
               <textarea type="text" class="form-control" value="" onKeyUp="minify()" id="css" placeholder="Enter CSS here"></textarea><br><br>
-              <button id="copy-button1" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="input">Copy</button>
+              <button id="copy-button1" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="textarea">Copy</button>
+              <button id="clear" class="btn btn-primary" onclick="clearText()">Clear</button>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="form-group">
               <label id="emLabel" for="pwd">Minified CSS</label><br>
               <textarea type="text" class="form-control" value="" id="cssmin" placeholder="Minified CSS here"></textarea><br><br>
-              <button id="copy-button2" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="input">Copy</button>
+              <button id="copy-button2" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="textarea">Copy</button>
             </div>
           </div>
-        </form>
       </div>
     </div>
   </div>
@@ -135,13 +134,13 @@
 
         var clipboard = new Clipboard('.btn', {
             target: function() {
-                return document.querySelector('input#css');
+                return document.querySelector('textarea#css');
             }
         });
 
         var clipboard = new Clipboard('.btn', {
             target: function() {
-                return document.querySelector('input#cssmin');
+                return document.querySelector('textarea#cssmin');
             }
         });
 
