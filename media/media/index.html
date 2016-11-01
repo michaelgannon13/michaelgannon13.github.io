@@ -97,20 +97,77 @@
 
           </div>
         </div>
-        
-<!--         <h3 id="sel-plat">Please specify your device</h3>
-        <div class="ui-group">
-          <div id="filters" class="button-group">
-            <button class="button is-checked" data-filter="*"><img id="plat-img" alt="smart phone button" src="img/rwd.png"><br><span id="all">All</span></button>
-            <button class="button" data-filter=".mobile"><img id="plat-img" alt="smart phone button" src="img/smart-phone.png"><br><span id="all">Mobile</span></button>
-            <button class="button" data-filter=".tablet"><img id="plat-img" alt="tablet button" src="img/tablet.png"><br><span id="all">Tablet</span></button>
-            <button class="button" data-filter=".desktop"><img id="plat-img" alt="desktop button" src="img/desktop.png"><br>
-              <span id="all">Desktop</span>
-            </button>
-          </div>
-      </div> -->
-<!--       <h3 id="sel-plat">or</h3>
- -->      <h3 id="sel-plat">Please specify your platform</h3>
+
+      <div id="options-container">
+          
+          <div class="big-demo" data-js-module="hero-demo">
+            <h3 id="sel-plat">Specify your breakpoint (mobile first approach)</h3>
+            <div class="ui-group">
+              <div id="breakpoints" class="button-group">
+                <button value="Mobile" class="button is-checked" data-filter="*" onclick="smallPhone(this.value);"><img alt="small phone button" id="plat-img" src="img/small-phone.png"><br><span id="all">Small Phone</span></button>
+                <button value="Mobile" class="button" data-filter=".iOS" onclick="smartPhone(this.value);"><img id="plat-img" alt="smart phone button" src="img/smart-phone.png"><br><span id="all">Smart phone</span></button>
+                <button value="Mobile" class="button" data-filter=".android" onclick="tablet(this.value);"><img id="plat-img" alt="tablet button" src="img/tablet.png"><br><span id="all">Tablet</span></button>
+                <button value="Mobile" class="button" data-filter=".windows" onclick="laptop(this.value);"><img id="plat-img" alt="laptop button" src="img/laptop.png"><br><span id="all">Laptop</span></button>
+                <button value="Mobile" class="button" id="screen-button" onclick="largeDesktop(this.value);"><img id="plat-img" alt="desktop button" src="img/desktop.png"><br><span id="all">Desktop</span>
+                </button>
+              </div>
+              <h3 id="or">or...</h3>
+            <h3 id="sel-plat">Specify your breakpoint (desktop first approach)</h3>
+              <button value="Desktop" class="button is-checked" data-filter="*" onclick="smallPhone(this.value);"><img alt="small phone button" id="plat-img" src="img/small-phone.png"><br><span id="all">Small Phone</span></button>
+                <button value="Desktop" class="button" data-filter=".iOS" onclick="smartPhone(this.value);"><img id="plat-img" alt="smart phone button" src="img/smart-phone.png"><br><span id="all">Smart phone</span></button>
+                <button value="Desktop" class="button" data-filter=".android" onclick="tablet(this.value);"><img id="plat-img" alt="tablet button" src="img/tablet.png"><br><span id="all">Tablet</span></button>
+                <button value="Desktop" class="button" data-filter=".windows" onclick="laptop(this.value);"><img id="plat-img" alt="laptop button" src="img/laptop.png"><br><span id="all">Laptop</span></button>
+                <button value="Desktop" class="button" id="screen-button" onclick="largeDesktop(this.value);"><img id="plat-img" alt="desktop button" src="img/desktop.png"><br><span id="all">Desktop</span>
+                </button>
+              </div>
+            </div>
+
+            <div id="qards">
+              <a href="http://designmodo.com/shop/?u=2593" rel="nofollow" title="Shop" target="_blank"><img alt="affiliate-ad" src="http://designmodo.com/img/affiliate/shop_125_125.jpg" border="0"  width="125" height="125" alt="Shop" /></a>
+            </div>
+            <div id="flat">
+              <a href="http://designmodo.com/shop/?u=2593" rel="nofollow" title="Slides" target="_blank"><img alt="affiliate-ad" src="http://designmodo.com/img/affiliate/slides_125_125.jpg" border="0"  width="125" height="125" alt="Slides" /></a>
+            </div> 
+            <div id="shop">
+              <a href="http://designmodo.com/shop/?u=2593" rel="nofollow" title="Qards" target="_blank"><img alt="affiliate-ad" src="http://designmodo.com/img/affiliate/qards_125_125.jpg" border="0"  width="125" height="125" alt="Qards" /></a>
+            </div>
+            <div id="slides">
+              <a href="http://designmodo.com/shop/?u=2593" rel="nofollow" title="Flat UI Pro" target="_blank"><img alt="affiliate-ad" src="http://designmodo.com/img/affiliate/flatui_125_125.jpg" border="0"  width="125" height="125" alt="Flat UI Pro" /></a>
+            </div> 
+
+              <div class="big-demo" data-js-module="hero-demo">
+
+              <!-- Modal -->
+              <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Here is your Browser breakpoint</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                        <textarea id="gen-media" class="copyTarget" style="width: 100%; resize: none;"></textarea>
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button id="copy-button" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="textarea">Copy</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+        </div>
+        </div>
+
+  </div>
+
+</div>
+      <h3 id="sel-plat">Please specify your platform</h3>
       <div class="ui-group">
         <div id="filters" class="button-group">
           <button class="button is-checked" data-filter="*"><img id="plat-img" alt="all device screen sizes" src="img/all-plat.jpg"><br><span id="all">All</span></button>
