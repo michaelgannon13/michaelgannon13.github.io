@@ -24,14 +24,14 @@ h3#prompt {
 }
 
 input#px, input#ems, input#pts, input#perc {
-    height: 1.3em;
+    height: 1.6em;
     font-size: 5.9em;
     width: 3em;
     text-align: center;
     font-weight: 700;
     color: #47D0BD;
     letter-spacing: -5px;
-    border-radius: 22px;
+    border-radius: 14px;
 }
 
 input#base {
@@ -41,7 +41,7 @@ input#base {
     text-align: center;
     font-weight: 900;
     color: #c8c8c8;
-    border-radius: 13px;
+    border-radius: 10px;
 }
 
 label#pxLabel, label#emLabel {

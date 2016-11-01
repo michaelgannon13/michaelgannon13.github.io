@@ -130,19 +130,23 @@
       <form class="form-inline">
         <div class="form-group">
           <label id="pxLabel" for="email">PX</label><br>
-          <input type="text" class="form-control" value="" onKeyUp="convert()" id="px" placeholder="Pixels">
+          <input type="text" class="form-control" value="" onKeyUp="convert()" id="px" placeholder="Pixels"><br><br>
+          <button id="copy-button1" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="input">Copy</button>
         </div>
         <div class="form-group">
           <label id="emLabel" for="pwd">EMS</label><br>
-          <input type="text" class="form-control" value="" id="ems" placeholder="Ems">
+          <input type="text" class="form-control" value="" onKeyUp="convertEm()" id="ems" placeholder="Ems"><br><br>
+          <button id="copy-button2" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="input">Copy</button>
         </div>
         <div class="form-group">
           <label id="pointsLabel" for="pwd">POINTS</label><br>
-          <input type="text" class="form-control" value="" id="pts" placeholder="Pts">
+          <input type="text" class="form-control" value="" onKeyUp="convertPt()" id="pts" placeholder="Pts"><br><br>
+          <button id="copy-button3" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="input">Copy</button>
         </div>
         <div class="form-group">
           <label id="perLabel" for="pwd">PERCENTAGE</label><br>
-          <input type="text" class="form-control" value="" id="perc" placeholder="%">
+          <input type="text" class="form-control" value="" onKeyUp="convertPer()" id="perc" placeholder="%"><br><br>
+          <button id="copy-button4" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="input">Copy</button>
         </div>
       </form>
     </div>
@@ -155,12 +159,8 @@
 
   </div>
 
-<!-- Looking for isotope.js? Use isotope.pkgd.min.js -->
-<!-- Isotope does NOT require jQuery. But it does make things easier -->
-
-<!-- <script src="js/isotope-docs.min.js"></script> -->
 <script src="js/pxtoems.js"></script>
-<!-- <script src="js/clipboard.min.js"></script> -->
+<script src="js/clipboard.min.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -176,13 +176,58 @@
 
   var clipboard = new Clipboard('.btn', {
         target: function() {
-            return document.querySelector('textarea#gen-media');
+            return document.querySelector('input#px');
         }
     });
 
-    $( "#copy-button" ).click(function() {
-      $("#copy-button").text("Copied!");
-      $("#copy-button").css("background-color", "#FC5185").css("border-color", "#FC5185").css("font-weight", "900");
+  var clipboard = new Clipboard('.btn', {
+        target: function() {
+            return document.querySelector('input#ems');
+        }
+    });
+
+  var clipboard = new Clipboard('.btn', {
+        target: function() {
+            return document.querySelector('input#pts');
+        }
+    });
+
+  var clipboard = new Clipboard('.btn', {
+        target: function() {
+            return document.querySelector('input#perc');
+        }
+    });
+
+    $( "#copy-button1" ).click(function() {
+      event.preventDefault();
+      $("#copy-button1").text("Copied!");
+      $("#copy-button1").css("background-color", "#47D0BD").css("border-color", "#47D0BD").css("font-weight", "900");
+      $("#px").css("border-color", "#47D0BD");
+      $("#px").css("color", "#47D0BD").css("border-width", "12px");
+    });
+
+    $( "#copy-button2" ).click(function() {
+      event.preventDefault();
+      $("#copy-button2").text("Copied!");
+      $("#copy-button2").css("background-color", "#47D0BD").css("border-color", "#47D0BD").css("font-weight", "900");
+      $("#ems").css("border-color", "#47D0BD");
+      $("#ems").css("color", "#47D0BD").css("border-width", "12px");
+    });
+
+    $( "#copy-button3" ).click(function() {
+      event.preventDefault();
+      $("#copy-button3").text("Copied!");
+      $("#copy-button3").css("background-color", "#47D0BD").css("border-color", "#47D0BD").css("font-weight", "900");
+      $("#pts").css("border-color", "#47D0BD");
+      $("#pts").css("color", "#47D0BD").css("border-width", "12px");
+    });
+
+    $( "#copy-button4" ).click(function() {
+      event.preventDefault();
+      $("#copy-button4").text("Copied!");
+      $("#copy-button4").css("background-color", "#47D0BD").css("border-color", "#47D0BD").css("font-weight", "900");
+      $("#perc").css("border-color", "#47D0BD");
+      $("#perc").css("color", "#47D0BD").css("border-width", "12px");
     });
 
     clipboard.on('success', function(e) {
