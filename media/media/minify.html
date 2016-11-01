@@ -40,7 +40,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="css/master.css" media="screen">
-  <link rel="stylesheet" href="css/pxtoems.css" media="screen">
+  <link rel="stylesheet" href="css/minify.css" media="screen">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 
@@ -95,19 +95,15 @@
     <div class="container">
       <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="form-group ">
-              <label id="pxLabel" for="email">Enter CSS Here</label><br>
-              <textarea type="text" class="form-control" value="" onKeyUp="minify()" id="css" placeholder="Enter CSS here"></textarea><br><br>
-              <button id="copy-button1" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="textarea">Copy</button>
-              <button id="clear" class="btn btn-primary" onclick="clearText()">Clear</button>
-            </div>
+            <label id="pxLabel" for="email">Enter CSS Here</label><br>
+            <textarea type="text" class="form-control" value="" onKeyUp="minify()" id="css" placeholder="Enter CSS here"></textarea><br><br>
+            <button id="copy-button1" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="textarea">Copy</button>
+            <button id="clear" class="btn btn-primary" onclick="clearText()">Clear</button>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="form-group">
-              <label id="emLabel" for="pwd">Minified CSS</label><br>
-              <textarea type="text" class="form-control" value="" id="cssmin" placeholder="Minified CSS here"></textarea><br><br>
-              <button id="copy-button2" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="textarea">Copy</button>
-            </div>
+            <label id="emLabel" for="pwd">Minified CSS</label><br>
+            <textarea type="text" class="form-control" value="" id="cssmin" placeholder="Minified CSS here"></textarea><br><br>
+            <button id="copy-button2" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="textarea">Copy</button>
           </div>
       </div>
     </div>
