@@ -7,13 +7,10 @@ var percent = "%";
 function reset(){
 	document.getElementById("px").value = "";
 	document.getElementById("px").style.color = "#ccc";
-
 	document.getElementById("ems").value = "";
 	document.getElementById("ems").style.color = "#ccc";
-
 	document.getElementById("pts").value = "";
 	document.getElementById("pts").style.color = "#ccc";
-
 	document.getElementById("perc").value = "";
 	document.getElementById("perc").style.color = "#ccc";
 }
