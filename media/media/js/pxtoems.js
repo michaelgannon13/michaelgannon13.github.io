@@ -5,17 +5,24 @@ var points = "pt";
 var percent = "%";
 
 function reset(){
-	document.getElementById("px").value = "Pixels";
+	document.getElementById("px").value = "";
 	document.getElementById("px").style.color = "#ccc";
 
-	document.getElementById("ems").value = "Ems";
+	document.getElementById("ems").value = "";
 	document.getElementById("ems").style.color = "#ccc";
 
-	document.getElementById("pts").value = "Pts";
+	document.getElementById("pts").value = "";
 	document.getElementById("pts").style.color = "#ccc";
 
-	document.getElementById("perc").value = "%";
+	document.getElementById("perc").value = "";
 	document.getElementById("perc").style.color = "#ccc";
+}
+
+function color(){
+	document.getElementById("px").style.color = "#47D0BD";
+	document.getElementById("ems").style.color = "#47D0BD";
+	document.getElementById("pts").style.color = "#47D0BD";
+	document.getElementById("perc").style.color = "#47D0BD";
 }
 
 function convert(){
@@ -25,22 +32,21 @@ function convert(){
 	if (pxInput !== "") {
 		
 		emsInput = pxInput/baseInput;
-		var roundEms = emsInput.toFixed(2) + ems;
+		var roundEms = emsInput.toFixed(2);
 
 		var perVal = emsInput*100;
-		var perValEms = perVal.toFixed(0) + percent;
+		var perValEms = perVal.toFixed(0);
 
 		ptInput = pxInput*0.75;
-		var roundPts = ptInput.toFixed(0) + points;
+		var roundPts = ptInput.toFixed(0);
 
 		document.getElementById("ems").value = roundEms;
-		document.getElementById("ems").style.color = "#47D0BD";
 
 		document.getElementById("pts").value = roundPts;
-		document.getElementById("pts").style.color = "#47D0BD";
 
 		document.getElementById("perc").value = perValEms;
-		document.getElementById("perc").style.color = "#47D0BD";
+
+		color();
 
 	} else {
 		reset();
@@ -54,17 +60,17 @@ function convertEm(){
 
 	if (emInput !== "") {
 		pxInput = emInput*baseInput;
-		document.getElementById("px").value = pxInput + pixels;
+		document.getElementById("px").value = pxInput;
 
 		var perVal = emInput*100;
-		var perValEms = perVal.toFixed(0) + percent;
+		var perValEms = perVal.toFixed(0);
 		document.getElementById("perc").value = perValEms;
-		document.getElementById("perc").style.color = "#47D0BD";
 
 		ptInput = emInput*12;
-		var roundPts = ptInput.toFixed(0) + points;
+		var roundPts = ptInput.toFixed(0);
 		document.getElementById("pts").value = roundPts;
-		document.getElementById("pts").style.color = "#47D0BD";
+
+		color();
 
 	} else {
 		reset();
@@ -79,18 +85,18 @@ function convertPt(){
 	if (ptInput !== "") {
 
 		pxInput = ptInput/0.75;
-		document.getElementById("px").value = pxInput + pixels;
-		document.getElementById("pts").style.color = "#47D0BD";
+		document.getElementById("px").value = pxInput;
 
 		emInput = ptInput/12;
-		var roundEms = emInput.toFixed(0) + ems;
+		var roundEms = emInput.toFixed(0);
 		document.getElementById("ems").value = roundEms;
-		document.getElementById("ems").style.color = "#47D0BD";
 
 		var perVal = ptInput*8.333;
-		var perValEms = perVal.toFixed(0) + percent;
+		var perValEms = perVal.toFixed(0);
 		document.getElementById("perc").value = perValEms;
-		document.getElementById("perc").style.color = "#47D0BD";
+
+		color();
+
 	} else {
 		reset();
 	}
@@ -104,20 +110,20 @@ function convertPer(){
 	if (perInput !== "") {
 		
 		pxInput = perInput/6.25;
-		document.getElementById("px").value = pxInput + pixels;
-		document.getElementById("pts").style.color = "#47D0BD";
+		document.getElementById("px").value = pxInput;
 
 		emInput = perInput/100;
-		var roundEms = emInput.toFixed(0) + ems;
+		var roundEms = emInput.toFixed(0);
 		document.getElementById("ems").value = roundEms;
-		document.getElementById("ems").style.color = "#47D0BD";
 
 		ptInput = perInput/8.333;
-		var roundPts = ptInput.toFixed(0) + points;
+		var roundPts = ptInput.toFixed(0);
 		document.getElementById("pts").value = roundPts;
-		document.getElementById("pts").style.color = "#47D0BD";
+
+		color();
 
 	} else {
+		reset();
 	}
 }
 
