@@ -46,19 +46,53 @@
       float: none;
   }
 
-  div#breakpoints {
-      padding-right: 40px;
+  div#options-container {
+      margin-top: 0;
   }
+
+  .button-group .button {
+      margin-right: -2px;
+  }
+
+  ::selection {
+        background: #364F6B;
+        color: #F5F5F5;
+    }
 
   h5#mobFirst {
       text-transform: uppercase;
       font-size: 12px;
+  }
+
+  .big-demo {
+      text-align: center;
+  }
+
+  div#breakpoints-d {
+      display: none;
   }
   </style>
 </head>
 
 <body id="main-container" class="page--index" data-page="index">
     <a id="bookmarkme" href="#" rel="sidebar" title="bookmark this page"><span id="b-text">Bookmark</span><img alt="simple-bookmark" id="bookmark" src="img/agenda.png"> </a>
+
+<script type="text/javascript">
+      
+  function mobFirst(){
+    $("#breakpoints-d").css("display", "none");
+    $("#breakpoints").css("display", "block");
+    $("#mob").prop("checked", true);
+    $("#desk").prop("checked", false);
+  }
+
+  function deskFirst(){
+    $("#breakpoints").css("display", "none");
+    $("#breakpoints-d").css("display", "block");
+    $("#desk").prop("checked", true);
+    $("#mob").prop("checked", false);
+  }
+</script>
 
 <div id="pagina">
         <div class="barra-menu">
@@ -70,7 +104,7 @@
                 <li><a id="ven" href="prefix.html">Vendor Prefixes</a></li>
                 <li><a id="fil" href="filter.html">Image Filters</a></li>
                 <li><a id="clip" href="clip-path.html">Clip-paths</a></li>
-                <li><a id="break" href="breakpoints.html">Browser Breakpoints</a></li>
+                <li><a id="break" href="minify.html">Minify</a></li>
             </ul>
         </div>
     </div>
@@ -115,8 +149,13 @@
       <div id="options-container">
           
           <div class="big-demo" data-js-module="hero-demo">
-            <h3 id="sel-plat">Browser</h3>
+            <h3 id="sel-plat">Browser breakpoints</h3>
+            <input type="radio" onchange="mobFirst()" name="example1" id="mob" value="mobile" />
+            <label for="mob">Mobile First</label>&nbsp;&nbsp;
+            <input type="radio" onchange="deskFirst()" name="example2" id="desk" value="desktop" />
+            <label for="desk">Desktop First</label>
             <div class="ui-group">
+
               <div id="breakpoints" class="button-group">
               <h5 id="mobFirst">Mobile First</h5>
                 <button value="Mobile" class="button is-checked" data-filter="*" onclick="smallPhone(this.value);"><img alt="small phone button" id="plat-img" src="img/small-phone.png"><br><span id="all">Small Phone</span></button>
@@ -126,6 +165,7 @@
                 <button value="Mobile" class="button" id="screen-button" onclick="largeDesktop(this.value);"><img id="plat-img" alt="desktop button" src="img/desktop.png"><br><span id="all">Desktop</span>
                 </button>
               </div>
+
               <div id="breakpoints-d" class="button-group">
               <h5 id="mobFirst">Desktop First</h5>
               <button value="Desktop" class="button is-checked" data-filter="*" onclick="smallPhone(this.value);"><img alt="small phone button" id="plat-img" src="img/small-phone.png"><br><span id="all">Small Phone</span></button>
@@ -135,6 +175,7 @@
                 <button value="Desktop" class="button" id="screen-button" onclick="largeDesktop(this.value);"><img id="plat-img" alt="desktop button" src="img/desktop.png"><br><span id="all">Desktop</span>
                 </button>
               </div>
+
               </div>
             </div>
 
@@ -183,7 +224,7 @@
   </div>
 
 </div>
-      <h3 id="sel-plat">Please specify your platform</h3>
+      <h3 id="sel-plat">Please specify your device</h3>
       <div class="ui-group">
         <div id="filters" class="button-group">
           <button class="button is-checked" data-filter="*"><img id="plat-img" alt="all device screen sizes" src="img/all-plat.jpg"><br><span id="all">All</span></button>
@@ -193,8 +234,6 @@
           <button class="button" id="screen-button" onclick="yourScreen();"><img alt="your screen size resolution" id="plat-img" src="img/screen.png"><br><span id="all">Your screen</span>
           </button><br>
           <input id="search" type="text" class="quicksearch" autofocus placeholder="Search for your device..." /><br><br>
-
-          
 
           <div id="qards">
             <a href="http://designmodo.com/shop/?u=2593" rel="nofollow" title="Shop" target="_blank"><img alt="affiliate-ad" src="http://designmodo.com/img/affiliate/shop_125_125.jpg" border="0"  width="125" height="125" alt="Shop" /></a>
@@ -1838,7 +1877,7 @@ function yourAR(){
 
     $( "#copy-button" ).click(function() {
       $("#copy-button").text("Copied!");
-      $("#copy-button").css("background-color", "#FC5185").css("border-color", "#FC5185").css("font-weight", "900");
+      $("#copy-button").css("background-color", "#364F6B").css("border-color", "#364F6B").css("font-weight", "900");
     });
 
     clipboard.on('success', function(e) {
@@ -1917,7 +1956,8 @@ function yourAR(){
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"30eda457c7d2bec3542d6d966","lid":"67381fd6e4"}) })</script>
 <script>
 $(document).ready(function () {
-      
+
+    $("#mob").prop("checked", true);
     /* Toggle menú de móviles  */
     $('#btn-drop').on('click', function (e) {
         e.preventDefault();
@@ -1934,27 +1974,6 @@ $(document).ready(function () {
     }); // fin resize
 });
 </script>
-<!-- <script type="text/javascript">
-    adroll_adv_id = "343ZZ3TM6ZCKPLYHCDW64O";
-    adroll_pix_id = "VT3SMF3T7FG7FMQJRDKKYO";
-    /* OPTIONAL: provide email to improve user identification */
-    /* adroll_email = "username@example.com"; */
-    (function () {
-        var _onload = function(){
-            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
-            if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
-            var scr = document.createElement("script");
-            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-            scr.setAttribute('async', 'true');
-            scr.type = "text/javascript";
-            scr.src = host + "/j/roundtrip.js";
-            ((document.getElementsByTagName('head') || [null])[0] ||
-                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
-        };
-        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
-        else {window.attachEvent('onload', _onload)}
-    }());
-</script> -->
 
 </body>
 </html>

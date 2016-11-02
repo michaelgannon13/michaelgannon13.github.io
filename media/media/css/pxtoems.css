@@ -2,6 +2,11 @@ h1#title {
     color: #47D0BD;
 }
 
+::selection {
+    background: #47D0BD;
+    color: #F5F5F5;
+}
+
 .form-group {
     display: inline-block;
 }

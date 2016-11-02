@@ -6,6 +6,11 @@ input#search{
   border: 2px solid #e6e6e6;
 }
 
+::selection {
+    background: #3D289B;
+    color: #F5F5F5;
+}
+
 span#simple {
     color: #FC5185;
     font-weight: 500;

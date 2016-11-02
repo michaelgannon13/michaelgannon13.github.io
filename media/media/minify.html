@@ -54,11 +54,11 @@
               <a href="#" id="btn-drop" class="btn-menu aln-centro">MENU</a>  
               <ul id="submenu" class="lista-menu aln-centro">
                   <li><a id="med" href="index.html">Media Queries</a></li>
-                  <li><a id="pxtoems" href="pxtoems.html" style="background-color:#47D0BD">Units</a></li>
+                  <li><a id="pxtoems" href="pxtoems.html">Units</a></li>
                   <li><a id="ven" href="prefix.html">Vendor Prefixes</a></li>
                   <li><a id="fil" href="filter.html">Image Filters</a></li>
                   <li><a id="clip" href="clip-path.html">Clip-paths</a></li>
-                  <li><a id="break" href="breakpoints.html">Browser Breakpoints</a></li>
+                  <li><a id="break" href="minify.html" style="background-color:#E82597;">Minify</a></li>
               </ul>
           </div>
       </div>
@@ -130,28 +130,14 @@
 
         var clipboard = new Clipboard('.btn', {
             target: function() {
-                return document.querySelector('textarea#css');
-            }
-        });
-
-        var clipboard = new Clipboard('.btn', {
-            target: function() {
                 return document.querySelector('textarea#cssmin');
             }
-        });
-
-        $( "#copy-button1" ).click(function() {
-          event.preventDefault();
-          $("#copy-button1").text("Copied!");
-          $("#copy-button1").css("background-color", "#47D0BD").css("border-color", "#47D0BD").css("font-weight", "900");
-          $("#px").css("border-color", "#47D0BD");
-          $("#px").css("color", "#47D0BD").css("border-width", "12px");
         });
 
         $( "#copy-button2" ).click(function() {
           event.preventDefault();
           $("#copy-button2").text("Copied!");
-          $("#copy-button2").css("background-color", "#47D0BD").css("border-color", "#47D0BD").css("font-weight", "900");
+          $("#copy-button2").css("background-color", "#a90063").css("border-color", "#a90063").css("font-weight", "900");
           $("#ems").css("border-color", "#47D0BD");
           $("#ems").css("color", "#47D0BD").css("border-width", "12px");
         });

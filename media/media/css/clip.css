@@ -2,6 +2,11 @@
     margin-left:  0;
 }
 
+::selection {
+    background: #5E89EF;
+    color: #F5F5F5;
+}
+
 h3#filter-name {
     text-align: center;
     color: #222;
