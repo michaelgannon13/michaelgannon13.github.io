@@ -11,10 +11,10 @@ function convert(){
 	if (pxInput !== "") {
 		
 		emsInput = pxInput/baseInput;
-		var roundEms = emsInput.toFixed(3) + ems;
+		var roundEms = emsInput.toFixed(2) + ems;
 
 		var perVal = emsInput*100;
-		var perValEms = perVal.toFixed(1) + percent;
+		var perValEms = perVal.toFixed(0) + percent;
 
 		ptInput = pxInput*0.75;
 		var roundPts = ptInput.toFixed(0) + points;
