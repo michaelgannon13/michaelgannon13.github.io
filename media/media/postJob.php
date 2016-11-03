@@ -65,19 +65,51 @@
 
   <div class="container">
   <form action="process.php" method="post">
+  
       <p>
+          <label for="company">Company:</label>
+          <input type="text" name="company" id="company">
+      </p>  
+      <p>
+          <label for="location">Location:</label>
+          <input type="text" name="location" id="location">
+      </p> 
+      <p>
+          <label for="salary">Salary:</label>
+          <input type="text" name="salary" id="salary">
+      </p>  
+      <p>
+          <label for="duration">Duration:</label>
+          <input type="text" name="duration" id="duration">
+      </p>  
+      <p>
+          <label for="experience">Experience required:</label>
+          <input type="text" name="experience" id="experience">
+      </p>  
+      <p>
+          <label for="skills">Desired Skills:</label>
+          <input type="text" name="skills" id="skills">
+      </p>  
+      <!-- <p>
+          <label for="description">Description:</label>
+          <input type="text" name="description" id="description">
+      </p>   -->
+      <p>
+          <label for="url">View Job:</label>
+          <input type="text" name="url" id="url">
+      </p>  
+      <p>
+          <label for="contact">Contact:</label>
+          <input type="text" name="contact" id="contact">
+      </p>  
+<!--       <p>
           <label for="emailAddress">Email Address:</label>
           <input type="text" name="email" id="emailAddress">
-      </p>
-      <p>
-          <label for="password">Password:</label>
-          <input type="text" name="password" id="password">
-      </p>
+      </p> -->
       <input type="submit" value="Submit">
   </form>
   </div>
 
-   
 
   <footer id="footer-container">
     <div id="share-buttons">

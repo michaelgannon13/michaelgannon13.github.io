@@ -7,9 +7,9 @@ if (!$con)
  
 mysql_select_db("db1429287_Jobs", $con);
  
-$sql="INSERT INTO submit_job (email, password)
+$sql="INSERT INTO submit_job (company, location, salary, duration, experience, skills, url, contact)
 VALUES
-('$_POST[email]','$_POST[password]')";
+('$_POST[company]','$_POST[location]','$_POST[salary]','$_POST[duration]','$_POST[experience]','$_POST[skills]','$_POST[url]','$_POST[contact]')";
  
 if (!mysql_query($sql,$con))
   {
@@ -19,3 +19,5 @@ echo "1 record added";
  
 mysql_close($con)
 ?>
+
+
