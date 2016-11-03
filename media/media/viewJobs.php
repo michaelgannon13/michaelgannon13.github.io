@@ -35,6 +35,9 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+  
+
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -79,25 +82,25 @@
 
   <thead>
     <tr>
-      <th>
+      <th><i class="fa fa-briefcase" aria-hidden="true"></i>
         Company
       </th>
-      <th>
+      <th><i class="fa fa-handshake-o" aria-hidden="true"></i>
         Experience
       </th>
-      <th>
+      <th><i class="fa fa-map-marker" aria-hidden="true"></i>
         Location
       </th>
-      <th>
+      <th><i class="fa fa-eur" aria-hidden="true"></i>
         Salary
       </th>
-      <th>
+      <th><i class="fa fa-clock-o" aria-hidden="true"></i>
         Duration
       </th>
-      <th>
+      <th><i class="fa fa-television" aria-hidden="true"></i>
         Link
       </th>
-      <th>
+      <th><i class="fa fa-envelope-o" aria-hidden="true"></i>
         Contact
       </th>
     </tr>
