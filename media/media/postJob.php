@@ -64,50 +64,110 @@
   </div>
 
   <div class="container">
-  <form action="process.php" method="post">
-  
-      <p>
-          <label for="company">Company:</label>
-          <input type="text" name="company" id="company">
-      </p>  
-      <p>
-          <label for="location">Location:</label>
-          <input type="text" name="location" id="location">
-      </p> 
-      <p>
-          <label for="salary">Salary:</label>
-          <input type="text" name="salary" id="salary">
-      </p>  
-      <p>
-          <label for="duration">Duration:</label>
-          <input type="text" name="duration" id="duration">
-      </p>  
-      <p>
-          <label for="experience">Experience required:</label>
-          <input type="text" name="experience" id="experience">
-      </p>  
-      <p>
-          <label for="skills">Desired Skills:</label>
-          <input type="text" name="skills" id="skills">
-      </p>  
-      <!-- <p>
-          <label for="description">Description:</label>
-          <input type="text" name="description" id="description">
-      </p>   -->
-      <p>
-          <label for="url">View Job:</label>
-          <input type="text" name="url" id="url">
-      </p>  
-      <p>
-          <label for="contact">Contact:</label>
-          <input type="text" name="contact" id="contact">
-      </p>  
-<!--       <p>
-          <label for="emailAddress">Email Address:</label>
-          <input type="text" name="email" id="emailAddress">
-      </p> -->
-      <input type="submit" value="Submit">
-  </form>
+
+ 
+
+  <form action="process.php" method="post" class="form-horizontal" style="top:0px;">
+<fieldset>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="company">Company</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="company" type="text" placeholder="Company..." class="form-control input-md" required="">
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="salary">Salary</label>
+  <div class="col-md-4">
+    <select id="selectbasic" name="salary" class="form-control">
+      <option value="Negotiable">Negotiable</option>
+      <option value="20,000-30,000">20,000-30,000</option>
+      <option value="20,000-30,000">20,000-30,000</option>
+      <option value="40,000-50,000">40,000-50,000</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="location">Location</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="location" type="text" placeholder="Location..." class="form-control input-md" required="">
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="duration">Duration</label>
+  <div class="col-md-4"> 
+    <label class="radio-inline" for="radios-0">
+      <input type="radio" name="duration" id="radios-0" value="Permanent" checked="checked">
+      Permanent
+    </label> 
+    <label class="radio-inline" for="radios-1">
+      <input type="radio" name="duration" id="radios-1" value="Contract">
+      Contract
+    </label>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="experience">Experience</label>
+  <div class="col-md-4">
+    <select id="selectbasic" name="experience" class="form-control">
+      <option value="1 year - 3 years">1 year - 3 years</option>
+      <option value="3 year - 5 years">3 year - 5 years</option>
+      <option value="5 year - 10 years">5 year - 10 years</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Multiple -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="skills">Skills Required</label>
+  <div class="col-md-4">
+    <select id="selectmultiple" name="skills" class="form-control" multiple="multiple">
+      <option value="1">HTML</option>
+      <option value="2HTML">CSS</option>
+      <option value="CSS">Javascript</option>
+      <option value="Javascript">Angular</option>
+      <option value="Angular">MongoDB</option>
+      <option value="MongoDB">Node</option>
+      <option value="Node">Adobe Suite</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="contact">Contact</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="contact" type="text" placeholder="Contact..." class="form-control input-md" required="">
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="url">Link</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="url" type="text" placeholder="Applciation" class="form-control input-md" required="">
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton"></label>
+  <div class="col-md-4">
+    <button id="singlebutton" type="submit" name="singlebutton" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
   </div>
 
 
