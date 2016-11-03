@@ -15,7 +15,7 @@ if (!mysql_query($sql,$con))
   {
   die('Error: ' . mysql_error());
   }
-header('Location: viewJobs.php');
+header('Location: postJob.php');
  
 mysql_close($con)
 ?>
