@@ -80,13 +80,14 @@
 
 <!-- Select Basic -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="salary">Salary</label>
+  <label class="col-md-4 control-label" for="salary">Salary (€)</label>
   <div class="col-md-4">
     <select id="selectbasic" name="salary" class="form-control">
       <option value="Negotiable">Negotiable</option>
-      <option value="20,000-30,000">20,000-30,000</option>
-      <option value="20,000-30,000">20,000-30,000</option>
-      <option value="40,000-50,000">40,000-50,000</option>
+      <option value="20,000-30,000">20,000 - 30,000</option>
+      <option value="20,000-30,000">20,000 - 30,000</option>
+      <option value="40,000-50,000">40,000 - 50,000</option>
+      <option value="Contact for details">Contact for details</option>
     </select>
   </div>
 </div>
@@ -119,6 +120,7 @@
   <label class="col-md-4 control-label" for="experience">Experience</label>
   <div class="col-md-4">
     <select id="selectbasic" name="experience" class="form-control">
+      <option value="Internship">Internship</option>
       <option value="1 year - 3 years">1 year - 3 years</option>
       <option value="3 year - 5 years">3 years - 5 years</option>
       <option value="5 year - 10 years">5 years - 10 years</option>
@@ -131,13 +133,14 @@
   <label class="col-md-4 control-label" for="skills">Skills Required</label>
   <div class="col-md-4">
     <select id="selectmultiple" name="skills" class="form-control" multiple="multiple">
-      <option value="1">HTML</option>
-      <option value="2HTML">CSS</option>
-      <option value="CSS">Javascript</option>
-      <option value="Javascript">Angular</option>
-      <option value="Angular">MongoDB</option>
-      <option value="MongoDB">Node</option>
-      <option value="Node">Adobe Suite</option>
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+      <option value="Bootstrap/Foundation">Bootstrap/Foundation</option>
+      <option value="Javascript">Javascript</option>
+      <option value="Angular.js">Angular.js</option>
+      <option value="Backbone.js">Backbone.js</option>
+      <option value="Ember.js">Ember.js</option>
+      <option value="Adobe Suite">Adobe Suite</option>
     </select>
   </div>
 </div>
