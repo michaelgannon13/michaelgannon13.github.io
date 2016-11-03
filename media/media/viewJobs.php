@@ -91,6 +91,9 @@
       <th><i class="fa fa-map-marker" aria-hidden="true"></i>
         Location
       </th>
+      <th><i class="fa fa-code" aria-hidden="true"></i>
+        Skills
+      </th>
       <th><i class="fa fa-eur" aria-hidden="true"></i>
         Salary
       </th>
@@ -119,6 +122,9 @@
             </td>
             <td>
               <?php echo $row['location'];?>
+            </td>
+            <td>
+              <?php echo $row['skills'];?>
             </td>
             <td>
               <?php echo $row['salary'];?>

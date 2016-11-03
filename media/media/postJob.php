@@ -72,7 +72,7 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="company">Company</label>  
+  <label class="col-md-4 control-label" for="company"><i class="fa fa-briefcase" aria-hidden="true"></i>Company</label>  
   <div class="col-md-4">
   <input id="textinput" name="company" type="text" placeholder="Company..." class="form-control input-md" required="">
   </div>
@@ -80,7 +80,7 @@
 
 <!-- Select Basic -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="salary">Salary (€)</label>
+  <label class="col-md-4 control-label" for="salary"><i class="fa fa-eur" aria-hidden="true"></i>Salary</label>
   <div class="col-md-4">
     <select id="selectbasic" name="salary" class="form-control">
       <option value="Negotiable">Negotiable</option>
@@ -94,7 +94,7 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="location">Location</label>  
+  <label class="col-md-4 control-label" for="location"><i class="fa fa-map-marker" aria-hidden="true"></i>Location</label>  
   <div class="col-md-4">
   <input id="textinput" name="location" type="text" placeholder="Location..." class="form-control input-md" required="">
   </div>
@@ -102,7 +102,7 @@
 
 <!-- Multiple Radios (inline) -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="duration">Duration</label>
+  <label class="col-md-4 control-label" for="duration"><i class="fa fa-clock-o" aria-hidden="true"></i>Duration</label>
   <div class="col-md-4"> 
     <label class="radio-inline" for="radios-0">
       <input type="radio" name="duration" id="radios-0" value="Permanent" checked="checked">
@@ -117,7 +117,7 @@
 
 <!-- Select Basic -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="experience">Experience</label>
+  <label class="col-md-4 control-label" for="experience"><i class="fa fa-handshake-o" aria-hidden="true"></i>Experience</label>
   <div class="col-md-4">
     <select id="selectbasic" name="experience" class="form-control">
       <option value="Internship">Internship</option>
@@ -130,7 +130,7 @@
 
 <!-- Select Multiple -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="skills">Skills Required</label>
+  <label class="col-md-4 control-label" for="skills"><i class="fa fa-code" aria-hidden="true"></i>Skills Required</label>
   <div class="col-md-4">
     <select id="selectmultiple" name="skills" class="form-control" multiple="multiple">
       <option value="HTML">HTML</option>
@@ -147,7 +147,7 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="contact">Contact</label>  
+  <label class="col-md-4 control-label" for="contact"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact</label>  
   <div class="col-md-4">
   <input id="textinput" name="contact" type="text" placeholder="Contact..." class="form-control input-md" required="">
   </div>
@@ -155,7 +155,7 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="url">Link</label>  
+  <label class="col-md-4 control-label" for="url"><i class="fa fa-television" aria-hidden="true"></i>Link</label>  
   <div class="col-md-4">
   <input id="textinput" name="url" type="text" placeholder="Applciation" class="form-control input-md" required="">
   </div>
