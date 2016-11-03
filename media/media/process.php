@@ -15,7 +15,7 @@ if (!mysql_query($sql,$con))
   {
   die('Error: ' . mysql_error());
   }
-echo "1 record added";
+header('Location: viewJobs.php');
  
 mysql_close($con)
 ?>

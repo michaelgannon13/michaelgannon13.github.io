@@ -120,8 +120,8 @@
   <div class="col-md-4">
     <select id="selectbasic" name="experience" class="form-control">
       <option value="1 year - 3 years">1 year - 3 years</option>
-      <option value="3 year - 5 years">3 year - 5 years</option>
-      <option value="5 year - 10 years">5 year - 10 years</option>
+      <option value="3 year - 5 years">3 years - 5 years</option>
+      <option value="5 year - 10 years">5 years - 10 years</option>
     </select>
   </div>
 </div>
