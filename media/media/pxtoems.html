@@ -102,7 +102,7 @@
       <form class="form-inline">
         <div class="form-group">
           <label for="email">Base size (px)</label><br>
-          <input type="text" class="form-control" value="16" onKeyUp="convert()" id="base">
+          <input type="text" class="form-control" value="16" onKeyUp="convert(), test()" readonly id="base">
         </div>
       </form>
       <form class="form-inline">
@@ -122,6 +122,7 @@
           <label id="perLabel" for="pwd">PERCENTAGE</label><br>
           <input type="text" class="form-control" value="" onKeyUp="convertPer()" id="perc" placeholder="%"><br><br>
         </div>
+        <span id="preview">Preview</span>
       </form>
     </div>
   </div>
