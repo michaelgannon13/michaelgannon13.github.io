@@ -20,7 +20,7 @@ div#options-container{
     margin-bottom: 100px;
 }
 
-span#preview {
+div#preview {
     font-size: 16px;
     font-weight: 300;
     color: #333333

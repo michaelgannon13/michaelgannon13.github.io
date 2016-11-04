@@ -100,7 +100,7 @@ function convertPer(){
 		document.getElementById("px").value = pxInput;
 
 		emInput = perInput/100;
-		var roundEms = emInput.toFixed(0);
+		var roundEms = emInput.toFixed(2);
 		document.getElementById("ems").value = roundEms;
 
 		ptInput = perInput/8.333;
