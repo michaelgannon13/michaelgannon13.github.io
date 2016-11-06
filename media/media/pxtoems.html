@@ -102,25 +102,25 @@
       <form class="form-inline">
         <div class="form-group">
           <label for="email">Base size (px)</label><br>
-          <input type="text" class="form-control" value="16" onKeyUp="convert(), test()" readonly id="base">
+          <input type="number" class="form-control" value="16" onKeyUp="convert(), test()" readonly id="base">
         </div>
       </form>
       <form class="form-inline">
         <div class="form-group">
           <label id="pxLabel" for="email">PX</label><br>
-          <input type="text" autofocus class="form-control" value="" onKeyUp="convert()" id="px" placeholder="Pixels"><br><br>
+          <input type="number" autofocus class="form-control" value="" onKeyUp="convert()" id="px" placeholder="Pixels"><br><br>
         </div>
         <div class="form-group">
           <label id="emLabel" for="pwd">EMS</label><br>
-          <input type="text" class="form-control" value="" onKeyUp="convertEm()" id="ems" placeholder="Ems"><br><br>
+          <input type="number" class="form-control" value="" onKeyUp="convertEm()" id="ems" placeholder="Ems"><br><br>
         </div>
         <div class="form-group">
           <label id="pointsLabel" for="pwd">POINTS</label><br>
-          <input type="text" class="form-control" value="" onKeyUp="convertPt()" id="pts" placeholder="Pts"><br><br>
+          <input type="number" class="form-control" value="" onKeyUp="convertPt()" id="pts" placeholder="Pts"><br><br>
         </div>
         <div class="form-group">
           <label id="perLabel" for="pwd">PERCENTAGE</label><br>
-          <input type="text" class="form-control" value="" onKeyUp="convertPer()" id="perc" placeholder="%"><br><br>
+          <input type="number" class="form-control" value="" onKeyUp="convertPer()" id="perc" placeholder="%"><br><br>
         </div>
         <div id="preview">Preview</div>
       </form>
