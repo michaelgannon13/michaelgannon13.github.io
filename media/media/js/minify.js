@@ -4,7 +4,8 @@ function minify(){
 
 	if (css !== "") {
 		var css = document.getElementById("css").value;
-		var minified = css.replace(/\s/g,'')
+		var minified = css.replace(/\s/g,'').replace(/(\/\*([\s\S]*?)\*\/)|(\/\/(.*)$)/gm, '');;
+
 
 		$("#cssmin").text(minified);
 
