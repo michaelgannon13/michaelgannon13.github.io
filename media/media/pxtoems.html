@@ -98,11 +98,13 @@
       <form class="form-inline">
         <div class="form-group">
           <label id="pxLabel" for="email">PX</label><br>
-          <input type="number" autofocus class="form-control" value="" onKeyUp="convert()" id="px" placeholder="Pixels"><br><br>
+          <input type="number" name="ageOutputName" autofocus class="form-control" value="" onKeyUp="convert()" id="px" placeholder="Pixels"><br><br>
+          <input type="range" name="ageInputName" id="ageInputId" value="16" min="1" max="100" oninput="px.value = ageInputId.value, convert()">
         </div>
         <div class="form-group">
           <label id="emLabel" for="pwd">EMS</label><br>
           <input type="number" class="form-control" value="" onKeyUp="convertEm()" id="ems" placeholder="Ems"><br><br>
+          <input type="range" name="ageInputName" id="ageInputId2" value="1" min="1" max="100" oninput="ems.value = ageInputId2.value, convertEm()">
         </div>
         <div class="form-group">
           <label id="pointsLabel" for="pwd">POINTS</label><br>

@@ -27,7 +27,8 @@ function convert(){
 
 		pxInput = emsInput*16;
 
-		
+		document.getElementById("ageInputId").value = pxInput;
+		document.getElementById("ageInputId2").value = emInput;
 		$('#preview').css("font-size", pxInput);
 		color();
 
@@ -54,6 +55,8 @@ function convertEm(){
 		var roundPts = ptInput.toFixed(0);
 		document.getElementById("pts").value = roundPts;
 
+		document.getElementById("ageInputId2").value = emInput;
+		document.getElementById("ageInputId").value = pxInput;
 		$('#preview').css("font-size", pxInput);
 		color();
 
