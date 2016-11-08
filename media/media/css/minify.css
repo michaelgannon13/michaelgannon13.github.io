@@ -9,6 +9,12 @@ textarea#css, textarea#cssmin {
     color: #F5F5F5;
 }
 
+a#feedback {
+    color: #E82597;
+    font-weight: 900;
+    font-size: 14px;
+}
+
 #cssLabel, #minCssLabel{
   display: block ;
   text-align: center;

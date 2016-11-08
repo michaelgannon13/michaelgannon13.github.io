@@ -7,6 +7,12 @@
     color: #F5F5F5;
 }
 
+a#feedback {
+    color: #5E89EF;
+    font-weight: 900;
+    font-size: 14px;
+}
+
 h3#filter-name {
     text-align: center;
     color: #222;

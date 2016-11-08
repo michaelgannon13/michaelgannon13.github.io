@@ -20,6 +20,12 @@ h3#prompt {
     color: #28C7FA;
 }
 
+a#feedback {
+    color: #28C7FA;
+    font-weight: 900;
+    font-size: 14px;
+}
+
 a.thumbnail:hover {
     border-color: #28C7FA;
 }

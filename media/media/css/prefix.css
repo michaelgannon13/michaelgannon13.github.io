@@ -21,6 +21,12 @@ span#simple {
     font-weight: 100;
 } 
 
+a#feedback {
+    color: #3D289B;
+    font-weight: 900;
+    font-size: 14px;
+}
+
 h1#title {
     color: #3D289B;
 }

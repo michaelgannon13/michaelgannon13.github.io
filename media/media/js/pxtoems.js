@@ -7,8 +7,10 @@ var percent = "%";
 
 
 function convert(){
+	var ptInput = document.getElementById("pts").value;
 	var pxInput = document.getElementById("px").value;
 	var emInput = document.getElementById("ems").value;
+	var perInput = document.getElementById("perc").value;
 	var baseInput = document.getElementById("base").value;
 
 	if (pxInput !== "") {
@@ -29,6 +31,9 @@ function convert(){
 
 		document.getElementById("ageInputId").value = pxInput;
 		document.getElementById("ageInputId2").value = emInput;
+		document.getElementById("ageInputId3").value = ptInput;
+		document.getElementById("ageInputId4").value = perInput;
+
 		$('#preview').css("font-size", pxInput);
 		color();
 
@@ -38,8 +43,10 @@ function convert(){
 }
 
 function convertEm(){
-	var emInput = document.getElementById("ems").value;
+	var ptInput = document.getElementById("pts").value;
 	var pxInput = document.getElementById("px").value;
+	var emInput = document.getElementById("ems").value;
+	var perInput = document.getElementById("perc").value;
 	var baseInput = document.getElementById("base").value;
 
 	if (emInput !== "") {
@@ -55,8 +62,11 @@ function convertEm(){
 		var roundPts = ptInput.toFixed(0);
 		document.getElementById("pts").value = roundPts;
 
-		document.getElementById("ageInputId2").value = emInput;
 		document.getElementById("ageInputId").value = pxInput;
+		document.getElementById("ageInputId2").value = emInput;
+		document.getElementById("ageInputId3").value = ptInput;
+		document.getElementById("ageInputId4").value = perInput;
+
 		$('#preview').css("font-size", pxInput);
 		color();
 
@@ -68,6 +78,8 @@ function convertEm(){
 function convertPt(){
 	var ptInput = document.getElementById("pts").value;
 	var pxInput = document.getElementById("px").value;
+	var emInput = document.getElementById("ems").value;
+	var perInput = document.getElementById("perc").value;
 	var baseInput = document.getElementById("base").value;
 
 	if (ptInput !== "") {
@@ -84,6 +96,11 @@ function convertPt(){
 		var perValEms = perVal.toFixed(0);
 		document.getElementById("perc").value = perValEms;
 
+		document.getElementById("ageInputId").value = pxInput;
+		document.getElementById("ageInputId2").value = emInput;
+		document.getElementById("ageInputId3").value = ptInput;
+		document.getElementById("ageInputId4").value = perInput;
+
 		$('#preview').css("font-size", pxInput);
 		color();
 
@@ -93,8 +110,10 @@ function convertPt(){
 }
 
 function convertPer(){
-	var perInput = document.getElementById("perc").value;
+	var ptInput = document.getElementById("pts").value;
 	var pxInput = document.getElementById("px").value;
+	var emInput = document.getElementById("ems").value;
+	var perInput = document.getElementById("perc").value;
 	var baseInput = document.getElementById("base").value;
 
 	if (perInput !== "") {
@@ -109,6 +128,11 @@ function convertPer(){
 		ptInput = perInput/8.333;
 		var roundPts = ptInput.toFixed(0);
 		document.getElementById("pts").value = roundPts;
+
+		document.getElementById("ageInputId").value = pxInput;
+		document.getElementById("ageInputId2").value = emInput;
+		document.getElementById("ageInputId3").value = ptInput;
+		document.getElementById("ageInputId4").value = perInput;
 
 		$('#preview').css("font-size", pxInput);
 		color();
