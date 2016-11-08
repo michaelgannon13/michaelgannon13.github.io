@@ -1,0 +1,8 @@
+button#post, button#postPre {
+    font-size: 16px;
+    margin: 6px;
+}
+
+div#button-holder {
+    text-align: center;
+}
