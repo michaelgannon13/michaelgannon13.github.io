@@ -1,5 +1,7 @@
 <?php
-$con = mysql_connect("mysql2779int.cp.blacknight.com", "u1429287_michael", "S@3+Nmr1K[?h|Tu5", "db1429287_Jobs");
+// $con = mysql_connect("mysql2779int.cp.blacknight.com", "u1429287_michael", "S@3+Nmr1K[?h|Tu5", "db1429287_Jobs");
+$con = mysql_connect("localhost", "root", "root", "db1429287_Jobs");
+
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());

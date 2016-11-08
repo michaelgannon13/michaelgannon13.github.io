@@ -217,10 +217,16 @@
 
 
     <?php
-  $server = mysql_connect("mysql2779int.cp.blacknight.com", "u1429287_michael", "S@3+Nmr1K[?h|Tu5"); 
-  $db = mysql_select_db("db1429287_Jobs", $server); 
-  $query = mysql_query("SELECT * FROM submit_job"); 
-?>
+      // $server = mysql_connect("mysql2779int.cp.blacknight.com", "u1429287_michael", "S@3+Nmr1K[?h|Tu5"); 
+      // $db = mysql_select_db("db1429287_Jobs", $server); 
+      // $query = mysql_query("SELECT * FROM submit_job"); 
+    ?>
+
+    <?php
+      $server = mysql_connect("localhost", "root", "root"); 
+      $db = mysql_select_db("db1429287_Jobs", $server); 
+      $query = mysql_query("SELECT * FROM submit_job"); 
+    ?>
 
 <table class="table table-striped table-responsive">
 
