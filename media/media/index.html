@@ -54,6 +54,10 @@ window.location="http://simplecss.eu";
       margin-top: 0;
   }
 
+  div#target {
+    text-align: left;
+  }
+
   .button-group .button {
       margin-right: -2px;
   }
@@ -76,12 +80,50 @@ window.location="http://simplecss.eu";
       display: none;
   }
 
+  button#screen-button {
+      background: #333;
+      color: white;
+  }
+
   a#feedback {
-    color: #364F6B;
-    font-weight: 900;
-    font-size: 14px;
-}
+      color: #364F6B;
+      font-weight: 900;
+      font-size: 14px;
+  }
+
+  div#customFooter{
+        margin-top: 20px;
+  }
+
+  .button-group .button:first-child {
+      border-radius: .5em 0 0 .5em;
+  }
+
+  button#first-button {
+      border-radius: .5em 0 0 .5em;
+  }
+
+  div#customBody{
+    margin-top: -30px;
+  }
+
+  div#or {
+      text-align: center;
+      margin-bottom: -15px;
+      font-weight: 900;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #333333;
+  }
+
+  @media (max-width:992px){
+
+    div#target {
+        text-align: center;
+    }
+  }
   </style>
+
 </head>
 
 <body id="main-container" class="page--index" data-page="index">
@@ -180,21 +222,21 @@ window.location="http://simplecss.eu";
 
               <div id="breakpoints" class="button-group">
               <h5 id="mobFirst">Mobile First</h5>
-                <button value="Mobile" class="button is-checked" data-filter="*" onclick="smallPhone(this.value);"><img alt="small phone button" id="plat-img" src="img/small-phone.png"><br><span id="all">Small Phone</span></button>
+                <button value="Mobile" id="first-button" class="button is-checked" data-filter="*" onclick="smallPhone(this.value);"><img alt="small phone button" id="plat-img" src="img/small-phone.png"><br><span id="all">Small Phone</span></button>
                 <button value="Mobile" class="button" data-filter=".iOS" onclick="smartPhone(this.value);"><img id="plat-img" alt="smart phone button" src="img/smart-phone.png"><br><span id="all">Smart phone</span></button>
                 <button value="Mobile" class="button" data-filter=".android" onclick="tablet(this.value);"><img id="plat-img" alt="tablet button" src="img/tablet.png"><br><span id="all">Tablet</span></button>
                 <button value="Mobile" class="button" data-filter=".windows" onclick="laptop(this.value);"><img id="plat-img" alt="laptop button" src="img/laptop.png"><br><span id="all">Laptop</span></button>
-                <button value="Mobile" class="button" id="screen-button" onclick="largeDesktop(this.value);"><img id="plat-img" alt="desktop button" src="img/desktop.png"><br><span id="all">Desktop</span>
+                <button value="Mobile" class="button" onclick="largeDesktop(this.value);"><img id="plat-img" alt="desktop button" src="img/desktop.png"><br><span id="all">Desktop</span>
                 </button>
               </div>
 
               <div id="breakpoints-d" class="button-group">
               <h5 id="mobFirst">Desktop First</h5>
-              <button value="Desktop" class="button is-checked" data-filter="*" onclick="smallPhone(this.value);"><img alt="small phone button" id="plat-img" src="img/small-phone.png"><br><span id="all">Small Phone</span></button>
+              <button value="Desktop" id="first-button" class="button is-checked" data-filter="*" onclick="smallPhone(this.value);"><img alt="small phone button" id="plat-img" src="img/small-phone.png"><br><span id="all">Small Phone</span></button>
                 <button value="Desktop" class="button" data-filter=".iOS" onclick="smartPhone(this.value);"><img id="plat-img" alt="smart phone button" src="img/smart-phone.png"><br><span id="all">Smart phone</span></button>
                 <button value="Desktop" class="button" data-filter=".android" onclick="tablet(this.value);"><img id="plat-img" alt="tablet button" src="img/tablet.png"><br><span id="all">Tablet</span></button>
                 <button value="Desktop" class="button" data-filter=".windows" onclick="laptop(this.value);"><img id="plat-img" alt="laptop button" src="img/laptop.png"><br><span id="all">Laptop</span></button>
-                <button value="Desktop" class="button" id="screen-button" onclick="largeDesktop(this.value);"><img id="plat-img" alt="desktop button" src="img/desktop.png"><br><span id="all">Desktop</span>
+                <button value="Desktop" class="button" onclick="largeDesktop(this.value);"><img id="plat-img" alt="desktop button" src="img/desktop.png"><br><span id="all">Desktop</span>
                 </button>
               </div>
 
@@ -227,12 +269,84 @@ window.location="http://simplecss.eu";
                 </div>
               </div>
 
+              <!-- Modal -->
+              <div id="customModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Enter your specifications below</h4>
+                    </div>
+                    <div id="customBody" class="modal-body">
+                      <form id="custom" class="form-horizontal">
+                        <fieldset>
+
+                        <!-- Multiple Radios -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="radios">Target</label>
+                          <div id="target" class="col-md-4">
+                          <div class="radio">
+                            <label for="radios-0">
+                              <input type="radio" name="radios" id="radios-0" value="min" checked="checked">
+                              Mobile First
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label for="radios-1">
+                              <input type="radio" name="radios" id="radios-1" value="max">
+                              Desktop First
+                            </label>
+                          </div>
+                          </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="textinput">Screen width</label>  
+                          <div class="col-md-4">
+                          <input id="textinputWidth" name="textinput" type="number" placeholder="Screen width" class="form-control input-md" required="">
+                          </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="textinput">Screen height</label>  
+                          <div class="col-md-4">
+                          <input id="textinputHeight" name="textinput" type="number" placeholder="Screen height" class="form-control input-md" required="">
+                          </div>
+                        </div>
+                        <!-- Select Basic -->
+                        <div class="form-group">
+                          <label class="col-md-4 control-label" for="selectbasic">Select Units</label>
+                          <div class="col-md-4">
+                            <select id="selectbasic" name="selectbasic" class="form-control">
+                              <option value="px">Pixels</option>
+                              <option value="em">Em</option>
+                              <option value="cm">Cm</option>
+                              <option value="mm">Mm</option>
+                              <option value="%">Percentage</option>
+                            </select>
+                          </div>
+                        </div>
+                        </fieldset>
+                        </form>
+                    </div>
+                    <div id="customFooter" class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button  class="btn btn-primary" onclick="customLaunch();">Launch</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
         </div>
         </div>
 
   </div>
 
 </div>
+<div id="or">or</div>
       <h3 id="sel-plat">Please specify your device</h3>
       <div class="ui-group">
         <div id="filters" class="button-group">
@@ -240,24 +354,12 @@ window.location="http://simplecss.eu";
           <button class="button" data-filter=".iOS"><img id="plat-img" alt="ios screen sizes" src="img/apple.png"><br><span id="all">iOS</span></button>
           <button class="button" data-filter=".android"><img id="plat-img" alt="android screen sizes" src="img/android.png"><br><span id="all">Android</span></button>
           <button class="button" data-filter=".windows"><img id="plat-img" alt="windows screen sizes" src="img/windows.png"><br><span id="all">Windows</span></button>
-          <button class="button" id="screen-button" onclick="yourScreen();"><img alt="your screen size resolution" id="plat-img" src="img/screen.png"><br><span id="all">Your screen</span>
-          </button><br>
+          <button class="button" onclick="yourScreen();"><img alt="your screen size resolution" id="plat-img" src="img/screen.png"><br><span id="all">Your screen</span>
+          </button>
+          <button value="Mobile" class="button" id="screen-button" onclick="custom();"><img id="plat-img" alt="desktop button" src="img/custom.png"><br><span id="all">Custom</span>
+          </button>
+          <br>
           <input id="search" type="text" class="quicksearch" autofocus placeholder="Search for your device..." /><br><br>
-<!-- 
-          <div id="qards">
-            <a href="http://designmodo.com/shop/?u=2593" rel="nofollow" title="Shop" target="_blank"><img alt="affiliate-ad" src="http://designmodo.com/img/affiliate/shop_125_125.jpg" border="0"  width="125" height="125" alt="Shop" /></a>
-          </div>
-          <div id="flat">
-            <a href="http://designmodo.com/shop/?u=2593" rel="nofollow" title="Slides" target="_blank"><img alt="affiliate-ad" src="http://designmodo.com/img/affiliate/slides_125_125.jpg" border="0"  width="125" height="125" alt="Slides" /></a>
-          </div> 
-          <div id="shop">
-            <a href="http://designmodo.com/shop/?u=2593" rel="nofollow" title="Qards" target="_blank"><img alt="affiliate-ad" src="http://designmodo.com/img/affiliate/qards_125_125.jpg" border="0"  width="125" height="125" alt="Qards" /></a>
-          </div>
-          <div id="slides">
-            <a href="http://designmodo.com/shop/?u=2593" rel="nofollow" title="Flat UI Pro" target="_blank"><img alt="affiliate-ad" src="http://designmodo.com/img/affiliate/flatui_125_125.jpg" border="0"  width="125" height="125" alt="Flat UI Pro" /></a>
-          </div>  -->
-
-
         </div>
       </div>
 
@@ -542,56 +644,50 @@ window.location="http://simplecss.eu";
         <p class="symbol">iPhone 3GS</p>
       </div>
 
-      <div class="element-item iOS " data-category="post-transition" onclick="getMediaQuery('320', '480');" onmouseover="getDimensions('320', '480');" onmouseout="hideDimensions();">
+      <div class="element-item iOS " data-category="post-transition" onclick="getMediaQuery('640', '960');" onmouseover="getDimensions('640', '960');" onmouseout="hideDimensions();">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 4</p>
 <!--         <p class="weight">207.2</p>
  -->      </div>
-      <div class="element-item iOS " data-category="transition" onclick="getMediaQuery('320', '480');" onmouseover="getDimensions('320', '480');" onmouseout="hideDimensions();">
+      <div class="element-item iOS " data-category="transition" onclick="getMediaQuery('640', '960');" onmouseover="getDimensions('640', '960');" onmouseout="hideDimensions();">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 4s</p>
 <!--         <p class="weight">196.967</p>
  -->      </div>
-      <div class="element-item iOS " data-category="alkali" onclick="getMediaQuery('320', '568');" onmouseover="getDimensions('320', '568');" onmouseout="hideDimensions();">
+      <div class="element-item iOS " data-category="alkali" onclick="getMediaQuery('640', '1136');" onmouseover="getDimensions('640', '1136');" onmouseout="hideDimensions();">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 5</p>
      </div>
-     <div class="element-item iOS " data-category="alkali" onclick="getMediaQuery('320', '568');" onmouseover="getDimensions('320', '568');" onmouseout="hideDimensions();">
+     <div class="element-item iOS " data-category="alkali" onclick="getMediaQuery('640', '1136');" onmouseover="getDimensions('640', '1136');" onmouseout="hideDimensions();">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 5C</p>
      </div>
-     <div class="element-item iOS " data-category="alkali" onclick="getMediaQuery('320', '568');" onmouseover="getDimensions('320', '568');" onmouseout="hideDimensions();">
+     <div class="element-item iOS " data-category="alkali" onclick="getMediaQuery('640', '1136');" onmouseover="getDimensions('640', '1136');" onmouseout="hideDimensions();">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 5S</p>
      </div>
-     <div class="element-item iOS " data-category="alkali" onclick="getMediaQuery('375', '667');" onmouseover="getDimensions('375', '667');" onmouseout="hideDimensions();">
+     <div class="element-item iOS " data-category="alkali" onclick="getMediaQuery('750', '1334');" onmouseover="getDimensions('750', '1334');" onmouseout="hideDimensions();">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 6</p>
      </div>
-     <div class="element-item iOS " data-category="alkali" onclick="getMediaQuery('414', '736');" onmouseover="getDimensions('414', '736');" onmouseout="hideDimensions();">
+     <div class="element-item iOS " data-category="alkali" onclick="getMediaQuery('750', '1334');" onmouseover="getDimensions('750', '1334');" onmouseout="hideDimensions();">
+        <h5 class="name">iOS</h5>
+        <p class="symbol">iPhone 6s</p>
+     </div>
+     <div class="element-item iOS " data-category="alkali" onclick="getMediaQuery('1125', '2001');" onmouseover="getDimensions('1125', '2001');" onmouseout="hideDimensions();">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 6 Plus</p>
      </div>
 
-      <div class="element-item iOS " data-category="alkali" onclick="getMediaQuery('720', '1280');" onmouseover="getDimensions('720', '1280');" onmouseout="hideDimensions();">
+<!--       <div class="element-item iOS " data-category="alkali" onclick="getMediaQuery('720', '1280');" onmouseover="getDimensions('720', '1280');" onmouseout="hideDimensions();">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 5s</p>
-<!--         <p class="weight">22.99</p>
- -->      </div>
-      <div class="element-item iOS " data-category="transition" onclick="getMediaQuery('720', '1280');" onmouseover="getDimensions('720', '1280');" onmouseout="hideDimensions();">
+     </div> -->
+<!--       <div class="element-item iOS " data-category="transition" onclick="getMediaQuery('720', '1280');" onmouseover="getDimensions('720', '1280');" onmouseout="hideDimensions();">
         <h5 class="name">iOS</h5>
         <p class="symbol">iPhone 5c</p>
-<!--         <p class="weight">112.411</p>
- -->      </div>
-      <!-- <div class="element-item iOS " data-category="alkaline-earth" onclick="getMediaQuery('720', '1280');" onmouseover="getDimensions('720', '1280');" onmouseout="hideDimensions();">
-        <h5 class="name">iOS</h5>
-        <p class="symbol">iPhone 6</p>
-      </div>
-
-      <div class="element-item iOS " data-category="transition" onclick="getMediaQuery('720', '1280');" onmouseover="getDimensions('720', '1280');" onmouseout="hideDimensions();">
-        <h5 class="name">iOS</h5>
-        <p class="symbol">iPhone 6 plus</p>
       </div> -->
+
 
      <div class="element-item iOS" data-category="actinoid" onclick="getMediaQuery('720', '946');" onmouseover="getDimensions('720', '946');" onmouseout="hideDimensions();">
             <h5 class="name">iOS</h5>
@@ -739,27 +835,45 @@ window.location="http://simplecss.eu";
       <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1440', '2560');" onmouseover="getDimensions('1440', '2560');" onmouseout="hideDimensions();">
         <h5 class="name">android</h5>
         <p class="symbol">Nexus 6P</p>
-        <!--Resolution: 1440 x 2560-->
-<!--         <p class="weight">121.76</p>
- -->      </div>
+     </div>
+
+     <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1440', '2560');" onmouseover="getDimensions('1440', '2560');" onmouseout="hideDimensions();">
+        <h5 class="name">android</h5>
+        <p class="symbol">Nexus 6</p>
+     </div>
+
+    <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('540', '960');" onmouseover="getDimensions('540', '960');" onmouseout="hideDimensions();">
+        <h5 class="name">android</h5>
+        <p class="symbol">Oppo A33</p>
+     </div>
+
+     <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('540', '960');" onmouseover="getDimensions('540', '960');" onmouseout="hideDimensions();">
+        <h5 class="name">android</h5>
+        <p class="symbol">Oppo A33</p>
+     </div>
+
       <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1080', '1280');" onmouseover="getDimensions('1080', '1280');" onmouseout="hideDimensions();">
         <h5 class="name">android</h5>
         <p class="symbol">Sony Xperia Z5</p>
         <!--Resolution: 1080 x 1920 -->
 <!--         <p class="weight">121.76</p>
  -->      </div>
-      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1440', '2560');" onmouseover="getDimensions('1440', '2560');" onmouseout="hideDimensions();">
+
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
         <h5 class="name">android</h5>
-        <p class="symbol">LG G5</p>
-        <!--Resolution: 1440 x 2560-->
-<!--         <p class="weight">121.76</p>
- -->      </div>
+        <p class="symbol">OnePlus 1</p>
+      </div>
+
       <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
         <h5 class="name">android</h5>
         <p class="symbol">OnePlus 3</p>
-        <!--Resolution: 1080 x 1920-->
-<!--         <p class="weight">121.76</p>
- -->      </div>
+      </div>
+
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
+        <h5 class="name">android</h5>
+        <p class="symbol">OnePlus X</p>
+      </div>
+
       <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1440', '2560');"  onmouseover="getDimensions('1440', '2560');" onmouseout="hideDimensions();">
         <h5 class="name">android</h5>
         <p class="symbol">HTC 10</p>
@@ -953,6 +1067,26 @@ window.location="http://simplecss.eu";
         <p class="symbol">Galaxy Nexus</p>
       </div>
 
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
+        <h5 class="name">android</h5>
+        <p class="symbol">BQ Aquaris M5</p>
+      </div>
+
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1440', '2560');" onmouseover="getDimensions('1440', '2560');" onmouseout="hideDimensions();">
+        <h5 class="name">android</h5>
+        <p class="symbol">Oppo Find 7</p>
+      </div>
+
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('720', '1280');" onmouseover="getDimensions('720', '1280');" onmouseout="hideDimensions();">
+        <h5 class="name">android</h5>
+        <p class="symbol">Xiaomi Redmi Note</p>
+      </div>
+
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
+        <h5 class="name">android</h5>
+        <p class="symbol">Xiaomi Redmi Note 3</p>
+      </div>
+      
       <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('600', '1024');" onmouseover="getDimensions('600', '1024');" onmouseout="hideDimensions();">
         <h5 class="name">android</h5>
         <p class="symbol">HP Slate 7 2800</p>
@@ -1180,6 +1314,16 @@ window.location="http://simplecss.eu";
       <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('360', '598');" onmouseover="getDimensions('360', '598');" onmouseout="hideDimensions();">
         <h5 class="name">android</h5>
         <p class="symbol">LG G2</p>
+      </div>
+
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1440', '2560');" onmouseover="getDimensions('1440', '2560');" onmouseout="hideDimensions();">
+        <h5 class="name">android</h5>
+        <p class="symbol">LG G3</p>
+      </div>
+
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1440', '2560');" onmouseover="getDimensions('1440', '2560');" onmouseout="hideDimensions();">
+        <h5 class="name">android</h5>
+        <p class="symbol">LG G5</p>
       </div>
 
       <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('320', '533');" onmouseover="getDimensions('320', '533');" onmouseout="hideDimensions();">
@@ -1575,6 +1719,11 @@ window.location="http://simplecss.eu";
         <p class="symbol">Samsung Galaxy Tab 8.9 4G P7320</p>
       </div>
 
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('240', '320');" onmouseover="getDimensions('240', '320');" onmouseout="hideDimensions();">
+        <h5 class="name">android</h5>
+        <p class="symbol">Samsung Galaxy Pocket Neo S5310</p>
+      </div>
+
 
 
 <!-- End of Page 3 -->
@@ -1650,6 +1799,11 @@ window.location="http://simplecss.eu";
       <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('320', '480');" onmouseover="getDimensions('320', '480');" onmouseout="hideDimensions();">
         <h5 class="name">android</h5>
         <p class="symbol">Sony Ericsson Xperia X8</p>
+      </div>
+
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
+        <h5 class="name">android</h5>
+        <p class="symbol">Sony Xperia Z3 Plus, Xperia Z4, Sony E6553</p>
       </div>
 
       <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('800', '1280');" onmouseover="getDimensions('800', '1280');" onmouseout="hideDimensions();">
@@ -1754,6 +1908,11 @@ window.location="http://simplecss.eu";
         <p class="symbol">Xiaomi MI-3</p>
       </div>
 
+      <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('1080', '1920');" onmouseover="getDimensions('1080', '1920');" onmouseout="hideDimensions();">
+        <h5 class="name">android</h5>
+        <p class="symbol">Xiaomi MI-5</p>
+      </div>
+
       <div class="element-item android " data-category="metalloid" onclick="getMediaQuery('768', '1024');" onmouseover="getDimensions('768', '1024');" onmouseout="hideDimensions();">
         <h5 class="name">android</h5>
         <p class="symbol">Yarvik Xenta Tab 8c</p>
@@ -1841,6 +2000,11 @@ $('.grid').isotope({
   itemSelector: '.grid-item',
   percentPosition: true
 });
+
+
+function custom(){
+  $('#customModal').modal();
+}
 
 $(window).resize(function () {
   
@@ -1988,6 +2152,7 @@ $(document).ready(function () {
         }
     }); // fin resize
 });
+
 </script>
 
 </body>

@@ -184,6 +184,35 @@ function getFilter(value, prop){
   $('#myModal').modal();
 }
 
+function getFont(value){
+  $("#copy-button").text("Copy");
+  $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
+  $('#modalFooter').css("visibility", "hidden");
+  var font = value;
+
+  var top = "@font-face {";
+  var fontfam = "font-family: " + "'" + font + "';";
+  var path1 = "src: url('path/to/fonts/" + font + ".eot');";
+  var path2 = "src: url('path/to/fonts/" + font + ".woff');";
+  var path3 = "src: url('path/to/fonts/" + font + ".ttf');";
+  var path4 = "src: url('path/to/fonts/" + font + ".svg');";
+
+  var weight = "font-weight: normal;";
+  var style = "font-style: normal;";
+
+  $('#gen-media').text(top + "\n" 
+  	+ ind + fontfam + "\n" 
+  	+ ind + path1 + "\n" 
+  	+ ind + path2 + "\n" 
+  	+ ind + path3 + "\n" 
+  	+ ind + path4 + "\n" 
+  	+ ind + weight + "\n" 
+  	+ ind + style + "\n" 
+  	+ "}");
+
+  $('#myModal').modal();
+}
+
 function getClip(value, prop){
   $("#copy-button").text("Copy");
   $("#copy-button").css("background-color", "#337ab7").css("border-color", "#337ab7").css("font-weight", "500");
@@ -305,6 +334,25 @@ function getMediaQuery(width, height){
        var media = "@media only screen ";
       var maxWidth = "   " + "and (max-width : " + width + ") ";
       var maxHeight = "   " + "and (max-height : " + height + ") " + "{" ;
+      var css = "   " + "/* Styles here */" ;
+      var brack = "\n" + "}";
+
+      $('#gen-media').text(media + "\n" + maxWidth + "\n" + maxHeight + "\n" + css + brack);
+      $('#myModal').modal();
+  }
+
+  function customLaunch(){
+
+  	  $('#customModal').modal("hide");
+
+  	  var target = $("form#custom input[type='radio']:checked").val();
+  	  var width = $( "input#textinputWidth" ).val();
+  	  var height = $( "input#textinputHeight" ).val();
+  	  var units = $( "select#selectbasic" ).val();
+
+      var media = "@media only screen ";
+      var maxWidth = "   " + "and (" + target + "-width : " + width + units + ") ";
+      var maxHeight = "   " + "and ("+ target +"-height : " + height + units + ") " + "{" ;
       var css = "   " + "/* Styles here */" ;
       var brack = "\n" + "}";
 
