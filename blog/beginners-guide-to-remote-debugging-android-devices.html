@@ -150,7 +150,7 @@
 
                     <p>Also if it is the first time you have connected this device to your laptop your device may appear as 'Unknown', with a message below saying 'Pending Authorization', this is normal. Just go to your mobile and click OK on the permission request dialogue box that will be visible on your phone and your browser will then be able to identify your phone.</p>
 
-                    <p>Next select your device from the menu on the left, in this case it’s SM-G920F. Enter the url of the website you wish to debug on your mobile, hit open and the site will be launched on your mobile. Click 'Inspect' to the right of the site you just opened and it will allow you to see the code in your browser window that makes up the site in your mobile browser window.</p>
+                    <p>Next select your device from the menu on the left, in this case it’s SM-G920F. Enter the url of the website you wish to debug on your mobile, hit open and the site will be launched on your mobile. Click 'Inspect' to the right of the site you just opened and it will allow you to see the code in your browser window that makes up the site in your mobile browser window. You might also notice the 3 verticle grey dots from before to the right of the word 'Inspect'. When clicked this gives a dropdown list of other actions you can perform on your remote device. For example, you can reload the page, close the page of focus to the nearest input field in the page from here.</p>
 
                     <p>
                         <div class="row">
@@ -175,7 +175,31 @@
                     </p>
                     <p>It is recommended you hide this mobile emulation because when this is visible you can not actually interact with the real device, only the emulated device. For example, if you hover over the DOM elements with the emulation visible, it will just highlight the corresponding DOM elements in the mobile emulation. If you hide this emulation, you can interact with your actual mobile device. To turn this emulation off just click the button outlined in pink above. It is worth noting that when you do this you can no longer physically interact with the website on your phone, only through your browser!</p>
 
-                    <p>Talk about focus, reload or close tab from chrome</p>
+                    
+                    <p><h2 class="section-heading">Port Foreward Debugging</h2>
+                    If you're developing with localhost:8000 there is also a way for your phone to debug this. In the remote devices section of Inspect Element, to the left you will see the Setting option (1). Click Setting and ensure that Port Forewarding is ticked. This enables port forewarding. To add a port just click 'Add rule', enter the port number you are working on and the local address including the port number and excluding http://.</p>
+                    <p>
+                        <div class="row">
+                                <img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/port-forewarding.png">
+                        </div> 
+                    </p><p>
+                    Once you have entered a valid port number and local address the red border around the input field will turn blue and this is how you know it is a valid local address that can be added. From here you can either manually enter localhost:3000 into your phone and you will see it appear in the remote devices section as a new tab that has been opepened, or you can enter the local address straight from Inspect element. Once you've found the new local address in you remote devices list of open tabs, Inspect element in the same way as before and you can begin debugging.</p>
+                    <p>
+                        <div class="row">
+                                <img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/port-forewarding-tab.png">
+                        </div> 
+                    </p>
+
+
+                    Here's an example of an Angular 2 project I am working on, on localhost:3000. Note it is not responsive!
+
+                    <p>
+                        <div class="row">
+                                <img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/mobile-port-forewarding.png">
+                        </div> 
+                    </p>
+                    
+                    </p>
 
 
                     
