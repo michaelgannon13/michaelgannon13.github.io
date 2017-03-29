@@ -29,6 +29,12 @@
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <style type="text/css">
+        span#ref, span#ref a {
+        color: #ccc;
+        font-size: 12px;
+    }
+    </style>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -62,13 +68,13 @@
  
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/4.jpg')">
+    <header class="intro-header" style="background-image: url('img/angular1-vs-angular2.png')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                        <h1 style="-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: black;">Beginners guide to remote debugging Android devices</h1>
-                        <h2 style="-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: black;" class="subheading">Simple step-by-step guide to mobile debugging</h2>
+                        <h1 id="angular-differences" style="-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: black;">The Differences between Angular 1 and Angular 2</h1>
+                        <h2 style="-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: black;" class="subheading">Identifying the main differences between Google's Angular 1 and 2</h2>
                         <span class="meta">Posted by <a href="../index.html">Michael Gannon</a> on March 13, 2017</span>
 
 
@@ -84,43 +90,52 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <p><h2 class="section-heading">TL;DR</h2>
+                    <span id="angular2" style="color: #ccc;text-transform: uppercase;font-style: italic;">Angular 2...</span>
                     <ol>
-                        <li>Enable USB Debugging on your Android mobile device and open Chrome.</li>
-                        <li>Connect your mobile device to your desktop and open Chrome on your desktop.</li>
-                        <li>Inspect element in Chrome and open remote devices window.</li>
-                        <li>Click open tab and start debugging.</li>
+                        <li>Performs better than Angular 1.</li>
+                        <li>Is easier to use.</li>
+                        <li>Is future proofed with ES6.</li>
+                        <li>Uses emerging web standards.</li>
+                        <li>Uses lots of new syntax.</li>
+                        <li>Does not facilitate two way data binding.</li>
+                        <li>Uses the Javascript precompiler, Typescript, as it's default language.</li>
+                        <li>It doesn't have controllers, it has component. These are made up of a views and Javascript classes.</li>
+                        <li>It has a new compnent router.</li>
                     </ol>
-                    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/j8KTWWpgDeE?ecver=2' frameborder='0' allowfullscreen></iframe></div>
+                    <div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/fBeuaDOBk3s?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+                    <span id="ref">Video by <a href="https://www.youtube.com/channel/UCBFgwtV9lIIhvoNh0xoQ7Pg">SSW TV</a></span>
                     </p>
 
-                    <p><h2 class="section-heading">Context</h2>
-                    Your overweight, overpaid and underqualified boss is moaning that the site looks poor on his mobile device despite looking great in your desktop's browser, even when you resize to mobile dimensions. <i class="em em-expressionless"></i></p>
+                    <p><h2 class="section-heading">Context and Angular 1</h2>
+                    Google in their infinite wisdom did a complete re-write of <a target="_blank" href="https://angularjs.org/">Angular</a> to make it easier to use, more future proof and more efficient. <i class="em em-smile"></i> However, with this new release there has also been a lot of changes to the syntax, the framework architecture and the way we interact with it, so this means it's quite different from Angular 1 (but not dramaticallt different so be not afraid!). <i class="em em-anguished"></i></p>
 
+                    <p>Angular 1 is built using an <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">M.V.C architechture</a>, which stands for Model, View and Controller. This is how Angular code is kept modular. The Model contains our raw data whether it be in JSON format or XML format. Our View contains all of our HTML templates which will be rendered on the screen and will be populated with Model data. Our Controllers retrieve our raw data (from our Model) and contains the logic that decides what is to be done with this data. Angular is very clever. <i class="em em-eyeglasses"></i></p>
 
+                    <p>
+                        <div class="row">
+                            <img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/MVC.png">
+                        </div>    
+                    </p>
+                    <p>Above we can see the view on the left displaying a HTML table, which is receiving the table data from our controller, which is retrieving this data from a Javascript object.....Anyway none of this matters because now Angular 2 is out. <i class="em em-hear_no_evil"></i> No a lot of it is still relevent</p>
 
-                    <p>Ever wondered why this happens or why you can’t replicate mobile specific issues on your desktop?
-                    It’s because there’s different versions of the browser for each platform e.g. Google Chrome <a target="_blank" href="https://en.wikipedia.org/wiki/Google_Chrome#Android_version">Android Version</a>,  <a target="_blank" href="https://en.wikipedia.org/wiki/Google_Chrome#iOS_version">iOS Version</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/Google_Chrome#Windows">Windows Version</a> and <a target="_blank" href="https://en.wikipedia.org/wiki/Google_Chrome#macOS">Mac Version</a>.</p>
+                    <p><h2 class="section-heading">Angular 2</h2>
 
-                    <p>This means problems can occur exclusively on these platforms and it may not be possible to replicate the issue and subsequently debug. The solution is to remotely debug your mobile device and it’s really simple and extremely useful!
-                    And no I don’t mean prefixing the browser url with 'view-source:’. <i class="em em-eyes"></i> </p>
-
-                    <p>In this article you'll be shown how to set up your remote debugging environment and the necessary prerequisites, the process involved in replicating bugs on mobile devices and you'll be shown how to debug remotely in a development environment.
+                    <p>Angular is made up of Components, Directives, Services and Routers.<br> The components encapsulates the template, the data and the behaviour of the view. A component can contain components and can also be reused e.g. the same navbar can be used repeatedly. Basically a component is a Javascript class that has properties and methods. Below is an visual of what a component is in relation to the DOM. 
                     </p>
 
-                    <p><h2 class="section-heading">Prerequisites</h2>
-                    <ol>
-                        <li>Laptop/Desktop with Google Chrome installed (version 32 or later).</li>
-                        <li>An Android (version 4.0 or later)  phone or tablet with Google Chrome installed.</li>
-                        <li><a target="_blank" href="https://developer.android.com/studio/run/oem-usb.html">USB Drivers</a> if you're using a Windows development environment.</li>
-                        <li>A USB lead to connect your laptop to your mobile device.</li>
-                        <li>If you're a Windows user you .</li>
-                    </ol>
+                    <p>
+                        <div class="row">
+                            <img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/component.png">
+                        </div>  
+                        <span id="ref">Visual representation of an Angular component.</span> 
+                    </p>
+
                     </p>
 
                     <p><h3 class="sub-heading">Step 1</h3><h4>Enable USB Debugging on device</h4>
-                    First we'll have to unhide the developer options which is hidden by default on Android devices 4.2 or later. It will usually be in Settings > About Phone > Software info > Build Number > Tap it 7 times to become a Developer.
-                    Then you will see Developer options is now visible in the Settings menu so click
-                    it and ensure USB debugging is set to on.
+                    It will usually be in Settings > About Phone > Build Number > Tap it 7 times to become a Developer.
+                    Then you will see Developer options is available in the Settings menu so click
+                    it and ensure USB debugging is set to on. Ensure Google Chrome is open on your mobile and your desktop simultaneously.
                     </p>
                     <p>
                         <div class="row">
@@ -131,24 +146,19 @@
                         </div>    
                     </p>
 
-                    <p><h3 class="sub-heading">Step 2</h3><h4>Sign into Chrome</h4>
-                    Next we open Chrome on the development machine and on our mobile device. We must also sign into Google Chrome on both devices. </p>
 
-
-                    <p><h3 class="sub-heading">Step 3</h3><h4>Connect your mobile device to your developent machine</h4>
-                    Connect your mobile device to the development machine using your USB cable. In Google Chrome and open developer tools (Cmd + alt + i / Ctrl + shift + i). Click the 3 dots on the top right courner > More tools > Remote devices. This will bring up a new panel showing the devices connected to your machine.</p>
+                    <p><h3 class="sub-heading">Step 2</h3><h4>Connect your device to your desktop</h4>
+                    Connect your mobile device to the desktop, open chrome and open developer tools (Cmd + alt + i / Ctrl + shift + i).
+                    Click the 3 dots on the top right courner > More tools > Remote devices.</p>
 
                     <p>
                         <div class="row">
                             <img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/find-remote-devices.png">
-                        </div>    
+                        </div>   
                     </p>
 
-                    <p><h3 class="sub-heading">Step 4</h3><h4>Select device and open a tab</h4>
-                    The panel below should now be visible at the bottom of your inspect element section.
-                    In the remote devices section, on the left hand side you’ll see a list of remote devices connected to the computer and a settings tab. Click Settings and ensure Discover USB devices is ticked. </p>
-
-                    <p>Also if it is the first time you have connected this device to your laptop your device may appear as 'Unknown', with a message below saying 'Pending Authorization', this is normal. Just go to your mobile and click OK on the permission request dialogue box that will be visible on your phone and your browser will then be able to identify your phone.</p>
+                    <p><h3 class="sub-heading">Step 3</h3><h4>Select device and open a tab</h4>
+                    In the remote devices section, of developer tools, on the left hand side you’ll see a list of remote devices connected to the computer and a settings tab. Click Settings and ensure Discover USB devices is ticked.</p>
 
                     <p>Next select your device from the menu on the left, in this case it’s SM-G920F. Enter the url of the website you wish to debug on your mobile, hit open and the site will be launched on your mobile. Click 'Inspect' to the right of the site you just opened and it will allow you to traverse the DOM of your mobile phone's browser from your desktop's browser.</p>
 
@@ -157,13 +167,6 @@
                             <img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/locate-device.png">
                         </div>    
                     </p>
-
-                    <p><h2 class="section-heading">Debugging</h2>
-                    bla bla bla
-                    </p>
-
-
-                    
 
                     <p>For anyone interested in debugging a local development environment on mobile check out this <a target="_blank" href="https://developers.google.com/web/tools/chrome-devtools/remote-debugging/local-server"> tutorial</a> or <a target="_blank" href="https://www.html5rocks.com/en/tutorials/developertools/mobile/"> this one</a>. And that’s it, surprisingly simple! <i class="em em---1"></i></p>
 
