@@ -30,14 +30,6 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body>
@@ -152,14 +144,14 @@
 
                     <p>Next select your device from the menu on the left, in this case it’s SM-G920F. Enter the url of the website you wish to debug on your mobile, hit open and the site will be launched on your mobile. Click 'Inspect' to the right of the site you just opened and it will allow you to see the code in your browser window that makes up the site in your mobile browser window. You might also notice the 3 verticle grey dots from before to the right of the word 'Inspect'. When clicked this gives a dropdown list of other actions you can perform on your remote device. For example, you can reload the page, close the page of focus to the nearest input field in the page from here.</p>
 
-                    <p>
+                    <p> 
                         <div class="row">
                             <img class="col-xs-12 col-sm-12 col-md-12 col-lg-12" src="img/locate-device.png">
                         </div>    
                     </p>
 
                     <p><h2 class="section-heading">Debugging</h2>
-                    The first thing you may notice when you hit inspect on the website you're debugging is that a new inspect element window opens (this will depend on how your inspect element is set up). It is recommended to use the full browser window to debug since you can view what you're debugging on the mobile display. This can be customized by clicking the 3 verticle dots from before
+                    The first thing you may notice when you hit inspect on the website you're debugging is that a new inspect element window opens (this will depend on how your inspect element is set up). It is recommended to use the full browser window to debug since you can view what you're debugging on the mobile display. This can be customized by clicking the 3 verticle dots from before.
                     </p>
                      <p>
                         <div class="row">
@@ -191,7 +183,27 @@
                     </p>
                     As you can see this is not pretty and it happens on mobile (but also when you resize your browser to this size, so it's to do with the screen size not the browser in use). <a href="http://isotope.metafizzy.co/">Isotope.js</a> is being used to filter the grid items and they do support responsive grids as you can see<a target="_blank" href="http://isotope.metafizzy.co/v1/demos/fluid-responsive.html"> here</a>. The problem in this case is that the code that handles this grid reconfiguration has been overwritten. 
                     <p>
-                        When we open <a target="_blank" href="http://simplecss.eu">Simple CSS</a> remotely from our desktop browser we can see how to start debugging the site remotely. Just hover over the HTML elements in your desktops browser and watch as your site starts flickering because the HTML elements are being hovered over from the desktop browser. See the image below where the HTML element with the class name 'grid' as shown below. The element with the class name 'grid' has a margin-left of 25px applied to it below a screen width of 400px. This CSS rule is overwriting the built in functionalty of Isotope.js to reconfigure the grid correctly and thus is pushing the grid too far to the left. <i class="em em-disappointed"></i>
+                        Lets open <a target="_blank" href="http://simplecss.eu">Simple CSS</a> remotely from our desktop browser so we can begin debugging. Hover over the HTML elements in your desktops browser and watch as your HTML elements start flickering. See the image below where the HTML element with the class name 'grid' as shown below. 
+                        <p>
+                        The element with the class name 'grid' has a margin-left of 25px applied to it below a screen width of 400px. This CSS rule is overwriting the built in functionalty of Isotope.js to reconfigure the grid correctly and thus is pushing the grid too far to the left. <i class="em em-disappointed"></i>
+                        </p>
+
+                        <p>
+                        If we disable this margin-left on our 'grid' element, we will see that now there is a margin-left of 40px being applied to our grid element at all screen sizes <i class="em em-neutral_face"></i>. As we can see one CSS style has cascaded into another, hence the name Cascading Style Sheets!
+                        <p>
+                            <div class="row">
+                                    <img class="col-xs-12 col-sm-12 col-md-6 col-lg-12" src="img/cascade.png">
+                            </div> 
+                        </p>
+
+                        <p>
+                            <div class="row">
+                                    <img class="col-xs-12 col-sm-12 col-md-6 col-lg-offset-3 col-lg-6 col-lg-offset-3" src="img/mobile-cascade.png">
+                            </div> 
+                        </p>
+                        This has made the grid look worse unfortunately! As we can see the gap is now bigger due to a margin-left of 40px being applied in the master.css stylesheet. Lets see how the grid looks if we disable this css rule...
+                        </p>
+
                         <p>
                         <div class="row">
                                 <img class="col-xs-12 col-sm-12 col-md-6 col-lg-12" src="img/simple-css-grid.png">
