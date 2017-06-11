@@ -192,9 +192,9 @@ function getFont(value){
 
   var top = "@font-face {";
   var fontfam = "font-family: " + "'" + font + "';";
-  var path1 = "src: url('path/to/fonts/" + font + ".eot');";
-  var path2 = "src: url('path/to/fonts/" + font + ".woff');";
-  var path3 = "src: url('path/to/fonts/" + font + ".ttf');";
+  var path1 = "src: url('path/to/fonts/" + font + ".eot'),";
+  var path2 = "src: url('path/to/fonts/" + font + ".woff'),";
+  var path3 = "src: url('path/to/fonts/" + font + ".ttf'),";
   var path4 = "src: url('path/to/fonts/" + font + ".svg');";
 
   var weight = "font-weight: normal;";
