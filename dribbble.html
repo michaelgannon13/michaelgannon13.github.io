@@ -1,0 +1,17 @@
+<script type='text/javascript'>
+    $(function() {
+      $.getJSON('https://api.dribbble.com/v1/users/michael_gannon13/shots?access_token=bffcb7a30cfec1dcb82a2dc8a15fdd04f4ffbaba9e06ea5661b24b3d6a1d52b4&callback=?', function(resp) {
+        if (resp.data.length > 0) {							
+          $.each(resp.data.reverse(), function(i, val) {
+            $('#dribbble').prepend(
+              '<li class="box"><img src="'+val.images.normal+'" /><h2>'+val.title+'</h2><p><a href="'+val.html_url+'">original post &rarr;</a></p></li>'
+            );
+          });
+        }
+        else {
+          $('#dribbble').append('<li>No shots.</li>');
+        }
+      });		   							    
+    });
+    </script>
+    <ul id="dribbble"></ul> 
