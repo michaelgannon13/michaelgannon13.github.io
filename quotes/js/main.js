@@ -1,51 +1,110 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2014, Codrops
- * http://www.codrops.com
- */
-(function() {
+var counter;
+var authorImage = $('#image-behind');
+var authorQuote = $('#quote');
+var authorName = $('#author');
+var quoteHolder;
+var authorHolder;
+var createTweetBtn = document.createElement('a');
+var tweetIcon = document.createElement('i');
+var linkText = document.createTextNode(" Tweet");
 
-	var bodyEl = document.body,
-		content = document.querySelector( '.content-wrap' ),
-		openbtn = document.getElementById( 'open-button' ),
-		closebtn = document.getElementById( 'close-button' ),
-		isOpen = false;
+function onload() {
+	counter = 0;
+	currentPerson = motivation;
+	nextQuote();
+	createTweetBtn.className = "twitter-share-button";
+	tweetIcon.className = "fa fa-twitter";
+	createTweetBtn.appendChild(linkText);
+	createTweetBtn.prepend(tweetIcon);    
+	document.getElementById("tweet-button-container").appendChild(createTweetBtn);
+}
 
-	function init() {
-		initEvents();
+window.onkeydown = function (e) {
+	if (e.keyCode === 32) {
+		e.preventDefault();
+		nextQuote();
 	}
+};
 
-	function initEvents() {
-		openbtn.addEventListener( 'click', toggleMenu );
-		if( closebtn ) {
-			closebtn.addEventListener( 'click', toggleMenu );
-		}
+function resetCounter() {
+	counter = 0;
+}
 
-		// close the menu element if the target it´s not the menu element or one of its descendants..
-		content.addEventListener( 'click', function(ev) {
-			var target = ev.target;
-			if( isOpen && target !== openbtn ) {
-				toggleMenu();
-			}
-		} );
+function fadeIn() {
+	authorImage.fadeTo('slow', 0.2);
+	authorQuote.fadeTo('slow', 1);
+	authorName.fadeTo('slow', 1);
+}
+
+function fadeOut() {
+	authorImage.css('opacity', 0);
+	authorQuote.css('opacity', 0);
+	authorName.css('opacity', 0);
+}
+
+function loadMotivation() {
+	currentPerson = motivation;
+	resetCounter();
+	nextQuote();
+}
+
+function loadSerenity() {
+	currentPerson = serenity;
+	resetCounter();	
+	nextQuote();
+}
+
+function loadCourage() {
+	currentPerson = courage;
+	resetCounter();	
+	nextQuote();
+}
+
+function loadInspiration() {
+	currentPerson = inspiration;
+	resetCounter();	
+	nextQuote();
+}
+
+function loadCompassion() {
+	currentPerson = compassion;
+	resetCounter();	
+	nextQuote();
+}
+
+function loadJoy() {
+	currentPerson = joy;
+	resetCounter();	
+	nextQuote();
+}
+
+
+function updateURL() { 
+	createTweetBtn.href = "https://twitter.com/intent/tweet?text=" + quoteHolder + " - " + authorHolder;
+}
+
+function nextQuote() {
+	if (counter !== currentPerson.length) {
+		fadeOut();
+		authorName.text(currentPerson[counter].author);
+		authorQuote.text(currentPerson[counter].quote);
+		authorImage.attr("src", currentPerson[counter].authorImg);
+
+		authorHolder = currentPerson[counter].author;
+		quoteHolder = currentPerson[counter].quote;
+
+		console.log("authorHolder = " + authorHolder);
+		console.log("quoteHolder = " + quoteHolder);
+
+		updateURL();
+
+		fadeIn();
+		counter++;
+	} else {
+		counter = 0;
+		nextQuote();
 	}
+}
 
-	function toggleMenu() {
-		if( isOpen ) {
-			classie.remove( bodyEl, 'show-menu' );
-		}
-		else {
-			classie.add( bodyEl, 'show-menu' );
-		}
-		isOpen = !isOpen;
-	}
 
-	init();
-
-})();
 

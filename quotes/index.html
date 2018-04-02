@@ -1,169 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/menu_sideslide.css" />
-  </head>
-  <body>
-
-  	<script>
-	  	window.twttr = (function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0],
-			    t = window.twttr || {};
-			  if (d.getElementById(id)) return t;
-			  js = d.createElement(s);
-			  js.id = id;
-			  js.src = "https://platform.twitter.com/widgets.js";
-			  fjs.parentNode.insertBefore(js, fjs);
-			 
-			  t._e = [];
-			  t.ready = function(f) {
-			    t._e.push(f);
-			  };
-			 
-			  return t;
-			}(document, "script", "twitter-wjs"));
-	</script>
-
-   <!-- SIDE MENU -->
+</head>
+<body onload="onload();">
 	<div class="menu-wrap">
 		<nav class="menu">
-		<h5 id="category">Categories</h5>
+			<h5 id="category">Categories</h5>
 			<div class="icon-list">
-
-				<a href="#"><i class="fa fa-fw fa-star-o"></i><span onclick="changeMot()">Motivation</span></a>
-				<a href="#"><i class="fa fa-fw fa-bell-o"></i><span onclick="changeDis()">Discipline</span></a>
-				<a href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Bounderies</span></a>
-				<a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Confrontation</span></a>
-				<a href="#"><i class="fa fa-fw fa-bar-chart-o"></i><span>Detatchment</span></a>
-				<a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span onclick="reset()">Reset</span></a>
-
+				<a href="#">
+					<i class="fa fa-fire"></i>
+					<span onclick="loadMotivation()">Motivation</span>
+				</a>
+				<a href="#">
+					<i class="fa fa-delicious" aria-hidden="true"></i>
+					<span onclick="loadSerenity()">Serenity</span>
+				</a>
+				<a href="#">
+					<i class="fa fa-fighter-jet"></i>
+					<span onclick="loadCourage()">Courage</span>
+				</a>
+				<a href="#">
+					<i class="fa fa-quote-left	"></i>
+					<span onclick="loadInspiration()">Inspiration</span>
+				</a>
+				<a href="#">
+					<i class="fa fa-heart-o"></i>
+					<span onclick="loadCompassion()">Compassion</span>
+				</a>
+				<a href="#">
+					<i class="fa fa-smile-o"></i>
+					<span onclick="loadJoy()">Joy</span>
+				</a>
 			</div>
 		</nav>
 		<button class="close-button" id="close-button">Close Menu</button>
 	</div>
-
-	<!-- MAIN CONTENT -->
-    <div  class="container-fluid">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-12">
 				<button class="menu-button" id="open-button"></button>
-				<img id="image-behind" src="img/ali.jpg">
+				<img id="image-behind" src="">
 				<div id="content-container" class="content-wrap">
 					<h3 id="one">Just pick one</h3>
 					<blockquote>
-						<p id="quote">I am the greatest, I said that even before I knew I was.
-						</p> <small id="author">Muhummad Ali</small>
-					</blockquote> 
-					<script type="text/javascript">
-						var quotes = [
-						"'Doubt is removed by action'", 
-						"'My Success isn’t the result of arrogance, it’s the result of belief'", 
-						"'Talent does not exist, we are all equal as human beings'", 
-						"'The more you seek the uncomfortable, the more you will become comfortable'",
-						"'What you think you become'"];
-						var authors = ["Conor McGregor", "Conor McGregor", "Conor McGregor", "Conor McGregor", "Buddha"];
-						var pics = ["conor.jpg", "conor2.jpeg", "conor3.jpg", "conor.jpg", "buddha.jpg"];
-
-						var mot = ["'There's only one thing that's impossible, and that's to beat a man who doesn't give up'", "'It's OK to be the greatest you'", "'The main thing people are controlled by is their perceptions of themselves'", "'Believe in your flyness, conquer your shyness'", "'Shoot for the stars, so if you fall you land on a cloud'"];
-						var motAuthors = ["Conor McGregor", "Kanye West", "Kanye West", "Kanye West", "Kanye West"];
-						var motPics = ["conor.jpg", "kanye1.png", "kanye2.png", "kanye3.jpg", "kanye4.jpg"];		
-
-						var dis = ["'Discipline is the bridge between goals and accomplishment'", "'It's ok to be the greatest you'", "'The main thing people are controlled by is their perceptions of themselves'", "'Believe in your flyness, conquer your shyness'", "'Shoot for the stars, so if you fall you land on a cloud'"];
-						var disAuthors = ["Jim Rohn", "Kanye West", "Kanye West", "Kanye West", "Kanye West"];
-						var disPics = ["conor.jpg", "kanye1.png", "kanye2.png", "kanye3.jpg", "kanye4.jpg"];			
-
-
-						var counter = 0;
-						var check = 0;
-
-						function fade(){
-							 $('body').fadeOut('300').fadeIn('slow');
-						}
-
-						window.onkeydown = function(e){
-
-							function press(){
-								fade();
-							    e.preventDefault();
-							    counter++;
-
-							    if (counter == quotes.length || counter == authors.length || counter == pics.length || counter == mot.length) {
-							    	counter = 0;
-							    }
-							    load();
-							}
-							
-							if(e.keyCode === 32){
-								press();
-							}
-						};
-
-					    function load(){
-					    	if (check == 1) {
-					        	document.getElementById('quote').innerHTML = mot[counter];
-					        	document.getElementById('author').innerHTML = motAuthors[counter];
-					        	document.getElementById('image-behind').src = "img/" + motPics[counter];
-					        	
-					    	} else if (check == 2) {
-					    			document.getElementById('quote').innerHTML = dis[counter];
-					        	document.getElementById('author').innerHTML = disAuthors[counter];
-					        	document.getElementById('image-behind').src = "img/" + disPics[counter];
-
-					    	} else {
-					        	document.getElementById('quote').innerHTML = quotes[counter];
-					        	document.getElementById('author').innerHTML = authors[counter];
-					        	document.getElementById('image-behind').src = "img/" + pics[counter];
-					        }
-
-					    };
-
-					    function changeMot(){
-					    	check = 1;
-					        load();
-					    };
-
-					    function changeDis(){
-					    	check = 2;
-					        load();
-					    };
-
-					    function reset(){
-					    	check = 0;
-					        load();
-					    };
-					</script>
+						<p id="quote">
+						</p>
+						<small id="author"></small>
+					</blockquote>
+					<div id="tweet-button-container"></div>
 				</div>
 
 			</div>
 		</div>
 		<footer>
-			<h5 id="spacebar">Hit the spacebar</h5><br>
-
+			<br>
+			<h5 id="spacebar">Hit the spacebar</h5>
+			<br>
 			<svg width="100" height="18">
 				<rect width="100" height="18" style="fill: rgb(226, 226, 226);stroke-width: 3px;stroke: rgb(138, 138, 138);">
-					  Sorry, your browser does not support inline SVG.
+					Sorry, your browser does not support inline SVG.
 				</rect>
-			</svg><br>
-
-			<link rel="canonical" href="https://inspiredaily.com">
-
-	  		<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Cool%20Quote" data-size="large" >
-				<img id="tweet" src="img/twitter.png">
-			</a>
+			</svg>
 		</footer>
 	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/categories.js"></script>
 	<script src="js/classie.js"></script>
 	<script src="js/main.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+	<script src="js/sidebar.js"></script>
+	<script src="js/twitter.js"></script>	
+</body>
 </html>
