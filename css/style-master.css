@@ -140,6 +140,10 @@ a#award{
 	background: url(http://www.bestcss.in/ribbons/gray-left.png) no-repeat;
 }
 
+img.inspire-compressed{
+  width: 100%;
+}
+
 .mac-compressed{
   background-position: -352px -3px ;
   width: 562px;
