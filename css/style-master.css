@@ -908,6 +908,9 @@ i.fa.fa-angle-down.arrow.animated.infinite.bounce{
   background-color: #00A789;
 }
 
+.codepen span{
+  background-color: rgba(0,0,0,0.95);
+}
 /* Icons */
 .icon-button i {
   background: none;
@@ -936,7 +939,8 @@ i.fa.fa-angle-down.arrow.animated.infinite.bounce{
 
 .icon-button:hover .icon-twitter,
 .icon-button:hover .icon-facebook,
-.icon-button:hover .icon-google-plus, {
+.icon-button:hover .icon-google-plus, 
+.icon-button:hover .fa.fa-codepen{
   color: white;
 }
 
