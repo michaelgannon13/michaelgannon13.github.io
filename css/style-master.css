@@ -2330,8 +2330,8 @@ and (orientation : portrait) {
 .overlay nav {
   text-align: center;
   position: relative;
-  top: 50%;
-  height: 60%;
+  top: 35%;
+  height: 50%;
   font-size: 70px;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
