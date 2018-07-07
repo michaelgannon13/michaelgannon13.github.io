@@ -76,15 +76,26 @@ h6#right-exp {
     color: rgba(0,67,111,0.7);
 }
 
-a#link:hover, button#flash:hover {
-    text-decoration: none !important;
-    background: #00A789;
-    -o-transition:color .2s ease-out, background .2s ease-in;
-    -ms-transition:color .2s ease-out, background .2s ease-in;
-    -moz-transition:color .2s ease-out, background .2s ease-in;
-    -webkit-transition:color .2s ease-out, background .2s ease-in;
-    transition:color .2s ease-out, background .2s ease-in;
+a#link:hover, button#flash:hover{
+  text-decoration: none !important;
+  background: #00A789;
+  -o-transition:color .2s ease-out, background .2s ease-in;
+  -ms-transition:color .2s ease-out, background .2s ease-in;
+  -moz-transition:color .2s ease-out, background .2s ease-in;
+  -webkit-transition:color .2s ease-out, background .2s ease-in;
+  transition:color .2s ease-out, background .2s ease-in;
 }
+
+i#down-arrow:hover, i#up-arrow:hover {
+  text-decoration: none !important;
+  color: #00A789;
+  -o-transition:color .2s ease-out, background .2s ease-in;
+  -ms-transition:color .2s ease-out, background .2s ease-in;
+  -moz-transition:color .2s ease-out, background .2s ease-in;
+  -webkit-transition:color .2s ease-out, background .2s ease-in;
+  transition:color .2s ease-out, background .2s ease-in;
+}
+
 
 a#link:visited, a#link:active, a#link:link{
 	text-decoration: none !important;
@@ -635,7 +646,7 @@ div#email-container, div#social-holder {
       opacity:0.7;
   }
 
-  a#link {
+  a#link{
     font-weight: 600;
     color: white;
     font-size: 11px;
@@ -651,6 +662,15 @@ div#email-container, div#social-holder {
     -webkit-transition:color .2s ease-out, background .2s ease-in;
     transition:color .2s ease-out, background .2s ease-in;
   }
+
+  i#down-arrow, i#up-arrow {
+  -o-transition:color .2s ease-out, background .2s ease-in;
+  -ms-transition:color .2s ease-out, background .2s ease-in;
+  -moz-transition:color .2s ease-out, background .2s ease-in;
+  -webkit-transition:color .2s ease-out, background .2s ease-in;
+  transition:color .2s ease-out, background .2s ease-in;
+}
+
 
   h3#ui-id-1, h3#ui-id-3, h3#ui-id-5, h3#ui-id-7, h3#ui-id-9, h3#ui-id-11 {
     border: 1px solid #8E8E8E;
