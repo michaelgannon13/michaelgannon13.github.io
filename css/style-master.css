@@ -933,6 +933,10 @@ i.fa.fa-angle-down.arrow.animated.infinite.bounce{
 .codepen span{
   background-color: rgba(0,0,0,0.95);
 }
+
+.instagram span{
+  background-color: #9C41B9;
+}
 /* Icons */
 .icon-button i {
   background: none;
@@ -959,7 +963,8 @@ i.fa.fa-angle-down.arrow.animated.infinite.bounce{
 .icon-button:hover .icon-twitter,
 .icon-button:hover .icon-facebook,
 .icon-button:hover .fa.fa-codepen,
-.icon-button:hover .fa.fa-flickr{
+.icon-button:hover .fa.fa-flickr,
+.icon-button:hover .fa.fa-instagram{
   color: white;
 }
 
