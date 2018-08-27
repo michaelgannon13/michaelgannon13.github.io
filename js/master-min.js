@@ -118,6 +118,31 @@
             if($(this).scrollTop() > 700) { 
                 $('.navbar').addClass('solid');
                 $('#top-logo').fadeIn(1000);
+
+                $('.vis-compressed').attr("src","data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAwIAAAGxAQMAAADrs5MJAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAEBJREFUeNrtwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4GpcIAAYESoh0AAAAASUVORK5CYII=");
+
+                $('.doddle-compressed').attr("src","data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAu4AAAHfAQMAAAA1Hc8cAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAENJREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM4GscEAAWaWhnQAAAAASUVORK5CYII=");
+
+                $('.doddleco-compressed').attr("src","img/doddle-top-compressed.png");
+
+                $('.simplecss').attr("src","img/css-media-query.png");
+
+                $('.inspire-compressed').attr("src","img/inspire.png");
+
+                $('.ufc-pic').attr("src","img/ufc.png");
+
+                $('.letsgo-compressed').attr("src","data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAwIAAAFXAQMAAAArrmuWAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADdJREFUeNrtwTEBAAAAwqD1T20JT6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOBlg04AAW4UWnoAAAAASUVORK5CYII=");
+
+                $('.quick-trip-compressed').attr("src","data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVQAAAISAQMAAACptaUaAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAC1JREFUeNrtwTEBAAAAwqD1T20KP6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4G9bGAAB1lLcNAAAAABJRU5ErkJggg==");
+
+                $('.mac-compressed').attr("src","data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjIAAAHCAQMAAADPeLGeAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeDR+kAABdezbqAAAAABJRU5ErkJggg==");
+                
+                $('.bus-compressed').attr("src","data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAwIAAAJNAQMAAAC4C1D2AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAE9JREFUeNrtwQENAAAAwqD3T20ON6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgF8D4XoAAfVIk1EAAAAASUVORK5CYII=");
+
+                $('.paint-compressed').attr("src","data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAwIAAAGxAQMAAADrs5MJAAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAAEBJREFUeNrtwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF4GpcIAAYESoh0AAAAASUVORK5CYII=");
+
+                $('.inspire-pic').attr("src","img/no-bootstrap.png");
+
             } else {
                 $('.navbar').removeClass('solid');
                 $('#top-logo').fadeOut(1000);
