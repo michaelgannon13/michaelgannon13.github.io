@@ -1,0 +1,85 @@
+/*test*/
+
+h1#title {
+    color: #47D0BD;
+}
+
+::selection {
+    background: #47D0BD;
+    color: #F5F5F5;
+}
+
+.form-group {
+    display: inline-block;
+}
+
+a#feedback {
+    color: #47d0bd;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+}
+
+div#options-container{
+  margin-top: -50px;
+}
+
+.container {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+div#preview {
+    font-size: 16px;
+    font-weight: 300;
+    color: #333333
+}
+
+.form-group {
+    margin: 14px;
+}
+
+div#list {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    color: #333333;
+}
+
+p#instr {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+h3#prompt {
+    color: #47D0BD;
+}
+
+input#px, input#ems, input#pts, input#perc {
+    height: 1.6em;
+    font-size: 5.9em;
+    width: 3em;
+    text-align: center;
+    font-weight: 700;
+    color: #47D0BD;
+    letter-spacing: -5px;
+    border-radius: 9px;
+}
+
+input#base {
+    height: 1.4em;
+    font-size: 2.2em;
+    width: 3.2em;
+    text-align: center;
+    font-weight: 900;
+    color: #c8c8c8;
+    border-radius: 5px;
+}
+
+label#pxLabel, label#emLabel {
+    color: #333;
+}
