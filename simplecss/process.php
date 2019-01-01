@@ -5,7 +5,7 @@ try {
 	require_once('Stripe/lib/Stripe.php');
 	
 	// Set your own stripe test or live secret key
-	Stripe::setApiKey("sk_live_OEXC1H9Ro7YmuZChGQcF5GbS");
+	Stripe::setApiKey("Stripe API key here");
 	
 	//Create the customer . Customer is created on your Stripe account.You can see customers on your stripe dashboard.
 	//It contains Stripe token , Plan name that you created first time ,and payer email
