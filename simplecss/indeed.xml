@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<response version="2">
+    <query>java</query>
+    <location>austin, tx</location>
+    <dupefilter>true</dupefilter>
+    <highlight>false</highlight>
+    <totalresults>547</totalresults>
+    <start>1</start>
+    <end>10</end>
+    <radius>25</radius>
+    <pageNumber>0</pageNumber>
+    <results>
+        <result>
+            <jobtitle>Java Developer</jobtitle>
+            <company>XYZ Corp.</company>
+            <city>Austin</city>
+            <state>TX</state>
+            <country>US</country>
+            <formattedLocation>Austin, TX</formattedLocation>
+            <source>Dice</source>
+            <date>Mon, 02 Aug 2010 16:21:00 GMT</date>
+            <snippet>looking for an object-oriented Java Developer... Java Servlets, HTML, JavaScript,
+            AJAX, Struts, Struts2, JSF) desirable. Familiarity with Tomcat and the Java...</snippet>
+            <url>http://www.indeed.com/viewjob?jk=12345&indpubnum=8343699265155203</url>
+            <onmousedown>indeed_clk(this,'0000');</onmousedown>
+            <latitude>30.27127</latitude>
+            <longitude>-97.74103</longitude>
+            <jobkey>12345</jobkey>
+            <sponsored>false</sponsored>
+            <expired>false</expired>
+            <formattedLocationFull>Austin, TX</formattedLocationFull>
+            <formattedRelativeTime>11 hours ago</formattedRelativeTime>
+        </result>
+        ...
+    </results>
+</response>

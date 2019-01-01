@@ -1,0 +1,78 @@
+/* input#search{
+  width: 40vw;
+  height: 6vh;
+  margin-bottom: 30px;
+  border-radius: 0.5em;
+  border: 2px solid #e6e6e6;
+}
+
+span#simple {
+    color: #FC5185;
+    font-weight: 500;
+    background: -webkit-linear-gradient(-145deg,#a000e2, #FC5185);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: blink;
+    font-weight: 100;
+} 
+
+h1#title {
+    color: #3D289B;
+}
+
+.element-item .symbol{
+    font-size: 0.9em;
+    position: initial;
+}
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  padding: 10px;
+  background: #3D289B;
+  color: #white;
+  border-radius: 0.5em;
+
+  -o-transition:color .2s ease-out, background .2s ease-in-out;
+  -ms-transition:color .2s ease-out, background .2s ease-in-out;
+  -moz-transition:color .2s ease-out, background .2s ease-in-out;
+  -webkit-transition:color .2s ease-out, background .2s ease-in-out;
+  transition:color .2s ease-out, background .2s ease-in-out;
+}
+
+.element-item:hover {
+  background: #FC5185;
+  -o-transition:color .2s ease-out, background .2s ease-in-out;
+  -ms-transition:color .2s ease-out, background .2s ease-in-out;
+  -moz-transition:color .2s ease-out, background .2s ease-in-out;
+  -webkit-transition:color .2s ease-out, background .2s ease-in-out;
+  transition:color .2s ease-out, background .2s ease-in-out;
+}
+
+button#pre {
+    border: none;
+    outline: none;
+}
+
+@media screen and (max-width:1000px) {
+  input#search{
+    width: 50vw;
+    height: 7vh;
+  }
+}
+
+@media screen and (max-width:600px) {
+  input#search{
+    width: 80vw;
+  }
+} */
+
+h1#title {
+    color: #7D77F6;
+    /*#78E4D4*/
+    /*#0A91AB*/
+}
+

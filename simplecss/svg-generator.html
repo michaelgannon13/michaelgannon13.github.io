@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en-US" class="export">
+<head>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3919315193284770",
+    enable_page_level_ads: true
+  });
+</script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+
+  <meta name="description" content="CSS Image Filter Code Generator for applying CSS filters to your images.">
+  <title>SVG Generator</title>
+
+  <meta itemprop="name" content="Simple CSS">
+  <meta itemprop="description" content="Simple CSS Generator for returning CSS code for media queries, vendor prefixes and browser breakpoints.">
+  <meta property="og:title" content="Simple CSS">
+  <meta property="og:url" content="http://simplecss.eu">
+  <meta property="og:site_name" content="Simple CSS">
+  <meta property="og:description" content="Simple CSS Generator for returning CSS code for media queries, vendor prefixes and browser breakpoints.">
+  <meta name="twitter:site" content="@simplecss">
+  <meta name="twitter:description" content="Simple CSS Generator for returning CSS code for media queries, vendor prefixes and browser breakpoints.">
+  <meta name="twitter:title" content="Simple CSS">
+  <meta name="twitter:url" content="http://simplecss.eu">
+  <meta name="twitter:creator" content="@michaelgannon90">
+  <meta name="keywords" content="simple, css, css media query generator, generator, easy css, tool, productivity, template, popular, devices">
+
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Isotope does not require any CSS files -->
+  <link rel="stylesheet" href="css/master.css" media="screen">
+  <link rel="stylesheet" href="css/svg-generate.css" media="screen">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+
+<style type="text/css">
+  ::selection {
+    background: #ff0000;
+}
+
+a.thumbnail {
+    display: block;
+    height: 250px;
+}
+
+a:active, a:active code {
+    background: white;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+svg {
+    position: relative;
+    top: 47%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+</style>
+
+
+<body id="main-container" class="page--index" data-page="index">
+
+    <a id="bookmarkme" href="#" rel="sidebar" title="bookmark this page"><span id="b-text">Bookmark</span><img alt="simple-bookmark" id="bookmark" src="img/agenda.png"> </a>
+
+    <div id="pagina">
+        <div class="barra-menu">
+            <!-- Boton Desplegar/Replegar menú -->  <a href="#" id="btn-drop" class="btn-menu aln-centro">MENU</a>  
+            <!-- Menú de navegación -->
+            <ul id="submenu" class="lista-menu aln-centro">
+                <li><a id="med" href="index.html">Media Queries</a></li>
+                <li><a id="pxtoems" href="pxtoems.html">Units</a></li>
+                <li><a id="ven" href="prefix.html">Vendor Prefixes</a></li>
+                <li><a id="fil" href="filter.html">Image Filters</a></li>
+                <li><a id="clip" href="clip-path.html">Clip-paths</a></li>
+                 <li><a id="svg" href="svg-generator.html" style="background-color: #ff0000; color:white">SVGs</a></li>
+                <li><a id="fonts" href="fontface-generator.html">Fonts</a></li>
+                <li><a target="_blank" id="blog" href="http://blog.simplecss.eu">Blog</a></li>
+                <li><a id="min" href="minify.html">Minify</a></li>
+                <li><a id="break" href="breakpoints.html">Breakpoints</a></li>
+                <li><a id="job" href="jobs.php">Jobs</a></li>
+            </ul>
+        </div>
+    </div>
+
+<div class="hero">
+  <div class="primary-content">
+  <h1 id="title">
+    <span id="simple">Simple CSS</span> <span style="color:#ff0000">SVG</span></h1>
+    <p id="simple-intro">Simple CSS SVG is a free css generator for Web Designers & Front End Developers to simplify creating SVG shapes by providing a 'jumping off point'. Just click the SVG to generate the SVG you want. If you want to change the paths, colors etc you already have the template of the shape you want so all that needs to be done is to modify it. If you have recommendations or comments I'd love to hear from you...<a id="mail-link" href="mailto:hello@simplecss.eu?Subject=Hello%20again" target="_top">let me know</a>.
+    </p><p id="simple-intro-partner">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hello@simplecss.eu">
+        Want to write for us?
+      </a>
+    </p>
+
+    <div id="options-container">
+        <div class="big-demo" data-js-module="hero-demo">
+
+<!--         <h3 id="sel-plat">Enter your CSS below</h3>
+ -->    <div class="big-demo" data-js-module="hero-demo">
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Here is your SVG</h4>
+              </div>
+              <div class="modal-body">
+                <p>
+                  <textarea id="gen-media" class="copyTarget" style="width: 100%; resize: none;"></textarea>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button id="copy-button" class="btn btn-primary" data-clipboard-action="copy" data-clipboard-target="textarea">Copy</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+  </div>
+  <div class="grid">
+
+
+    <!-- Page Content -->
+    <div id="filter-container" class="container">
+
+        <div class="row">
+
+            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
+                <h3 id="filter-name">Circle</h3>
+                <a id="circle" class="thumbnail text-center" onclick="getSVG(this.id);">
+                    <svg width="100" height="100">
+                      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                    </svg>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
+                <h3 id="filter-name">Rectangle</h3>
+                <a id="rect" class="thumbnail text-center" onclick="getSVG(this.id);">
+                    <svg width="300" height="110">
+                      <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+                    </svg>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
+                <h3 id="filter-name">Ellipse</h3>
+                <a id="ell" class="thumbnail" onclick="getSVG(this.id);">
+                    <svg height="140" width="350">
+                      <ellipse cx="170" cy="80" rx="100" ry="50"
+                      style="fill:yellow;stroke:purple;stroke-width:2" />
+                    </svg>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
+                <h3 id="filter-name">Line</h3>
+                <a id="line" class="thumbnail text-center" onclick="getSVG(this.id);">
+                    <svg height="210" width="250">
+                      <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+                    </svg>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
+                <h3 id="filter-name">Polygon</h3>
+                <a id="poly" class="thumbnail" onclick="getSVG(this.id);">
+                    <svg height="210" width="250">
+                      <polygon points="200,10 250,190 160,210" style="fill:lime;stroke:purple;stroke-width:1" />
+                    </svg>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
+                <h3 id="filter-name">Polyline</h3>
+                <a id="polyline" class="thumbnail text-center" onclick="getSVG(this.id);">
+                    <svg height="200" width="250">
+                      <polyline points="20,20 40,25 60,40 80,120 120,140 200,180"
+                      style="fill:none;stroke:black;stroke-width:3" />
+                    </svg>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
+                <h3 id="filter-name">Path</h3>
+                <a id="path" class="thumbnail" onclick="getSVG(this.id);">
+                    <svg height="210" width="250">
+                      <path d="M150 0 L75 200 L225 200 Z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
+                <h3 id="filter-name">Text</h3>
+                <a id="svg-text" class="thumbnail text-center" onclick="getSVG(this.id);">
+                    <svg height="30" width="80">
+                      <text x="0" y="15" fill="red">I love SVG!</text>
+                    </svg>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
+                <h3 id="filter-name">Stroke</h3>
+                <a id="stroke" class="thumbnail text-center" onclick="getSVG(this.id);">
+                    <svg height="80" width="220">
+                      <g fill="none">
+                        <path stroke="red" d="M5 20 l215 0" />
+                        <path stroke="black" d="M5 40 l215 0" />
+                        <path stroke="blue" d="M5 60 l215 0" />
+                      </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
+                <h3 id="filter-name">Linear Gradient</h3>
+                <a id="lin-grad" class="thumbnail" onclick="getSVG(this.id);">
+                  <svg height="150" width="300">
+                    <defs>
+                      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+                  </svg>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-12 thumb">
+                <h3 id="filter-name">Star</h3>
+                <a id="star" class="thumbnail text-center" onclick="getSVG(this.id);">
+                    <svg height="210" width="200">
+                      <polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:nonzero;"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+    </div>
+  </div>
+ 
+  </div>
+
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+<!-- Looking for isotope.js? Use isotope.pkgd.min.js -->
+<!-- Isotope does NOT require jQuery. But it does make things easier -->
+
+<!-- <script src="js/isotope-docs.min.js"></script> -->
+<script src="js/master.js"></script>
+<!-- <script src="js/clipboard.min.js"></script> -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83159967-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+
+  var clipboard = new Clipboard('.btn', {
+        target: function() {
+            return document.querySelector('textarea#gen-media');
+        }
+    });
+
+    $( "#copy-button" ).click(function() {
+      $("#copy-button").text("Copied!");
+      $("#copy-button").css("background-color", "#ff0000").css("border-color", "#ff0000").css("font-weight", "900");
+    });
+
+    clipboard.on('success', function(e) {
+        //console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        //console.log(e);
+    });
+</script>
+
+<footer id="footer-container">
+  <div id="share-buttons">
+
+    <!-- Twitter -->
+    <a href="https://twitter.com/share?url=http://simplecss.eu&amp;text=CSS%20Generator:%20&amp;hashtags=simplecss" target="_blank">
+        <img alt="simple-twitter-share" src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+    </a>
+
+    <!-- Facebook -->
+    <a href="http://www.facebook.com/sharer.php?u=http://simplecss.eu" target="_blank">
+        <img alt="simple-facebook-share" src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+    </a>
+    
+    <!-- Google+ -->
+    <a href="https://plus.google.com/share?url=http://simplecss.eu" target="_blank">
+        <img alt="simple-google-share" src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+    </a>
+    
+    <!-- LinkedIn -->
+    <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://simplecss.eu" target="_blank">
+        <img alt="simple-linkedin-share" src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+    </a>
+    
+    <!-- Reddit -->
+    <a href="http://reddit.com/submit?url=http://simplecss.eu&amp;title=Simple Share Buttons" target="_blank">
+        <img alt="simple-reddit-share" src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+    </a>
+
+    
+    <!-- Tumblr-->
+    <a href="http://www.tumblr.com/share/link?url=http://simplecss.eu&amp;title=Simple Share Buttons" target="_blank">
+        <img alt="simple-tumblr-share" src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
+    </a>
+
+
+    <!-- Email -->
+    <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 http://simplecss.eu">
+        <img alt="simple-mail-share" src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+    </a>
+
+    <form id="donate-button" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="CU55YNWUKVAQU">
+      <input id="donate"   type="image" src="img/button.png" border="none" name="submit" alt="PayPal - The safer, easier way to pay online!"><!-- 
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> -->
+    </form>
+    
+</div>
+
+</footer>
+
+
+<script type="text/javascript">
+    var images = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png', '11.png', '12.png', '13.png', '15.png', '18.png' , '19.png' , '20.png' , '21.png' , '22.png' , '23.png' , '24.png' , '25.png' , '26.png' , '27.png' ];
+
+ $('body').css({'background-image': 'url(img/' + images[Math.floor(Math.random() * images.length)] + ')'});
+</script>
+
+<!-- <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"30eda457c7d2bec3542d6d966","lid":"67381fd6e4"}) })</script>
+
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"30eda457c7d2bec3542d6d966","lid":"67381fd6e4"}) })</script> -->
+
+<script type="text/javascript">
+
+
+$(document).ready(function () {
+      
+    /* Toggle menú de móviles  */
+    $('#btn-drop').on('click', function (e) {
+        e.preventDefault();
+        $('#submenu').slideToggle(500);
+    }); // fin click
+    
+    /* Hacer visible el menú al agrandar */
+    $(window).resize(function () {
+        if (innerWidth >= 480) {
+            if ($('#submenu').css('display') == 'none') {
+                $('#submenu').removeAttr('style');
+            }
+        }
+    }); // fin resize
+});
+
+
+</script>
+</body>
+</html>

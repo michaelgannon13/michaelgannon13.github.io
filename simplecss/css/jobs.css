@@ -1,0 +1,326 @@
+body{
+    background-image: url("../img/11.png");
+}
+
+span#company, span#link, span#skills, span#exp, span#contact, span#salary, span#duration, span#location, span#description {
+    font-weight: 900;
+    color: #f03861;
+    font-size: 14px;
+} 
+
+p#explain {
+    color: #333333;
+}
+
+ div#share-buttons {
+    bottom: 0;
+    width: 100%;
+}
+
+a:active, a:active code {
+    color: initial;
+    background: initial;
+}
+
+span#compare {
+    font-weight: 900;
+}
+
+span#compare:hover {
+    cursor: pointer;
+}
+
+div#urlPar {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+span#link-notice {
+    color: #888888;
+    font-size: 12px;
+}
+
+div#desPar {
+    max-height: 60px;
+    overflow-y: auto;
+}
+
+li#exposure {
+    padding: 6px;
+}
+
+h4#header {
+    letter-spacing: initial;
+    color: #f03861;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+span#link {
+    padding: 0;
+}
+
+li.item-1 {
+    color: #f03861;
+    font-weight: 900;
+    font-size: 16px !important;
+}
+
+span#see {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+span#see:hover {
+    cursor: pointer;
+}
+
+.type-wrap {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    color: #f03861;
+    margin-top: -10px;
+}
+
+div#price-holder {
+    text-align: center;
+}
+
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: white;
+    color: #112D4E;
+    font-weight: 900;
+}
+
+
+
+a#see {
+    text-align: center;
+    display: inherit;
+    font-size: 12px;
+    font-weight: 900;
+    color: #333333 !important;
+    text-transform: uppercase;
+    padding-top: 10px;
+    margin-bottom: -10px;
+}
+
+a#see:hover {
+    color: #f03861 !important;
+}
+
+div#job-container {
+    /* display: flex;
+    text-align: center; */
+}
+
+h6#exp {
+    text-align: center;
+    color: #888888;
+    line-height: 20px;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border: 1px solid #ddd !important;
+}
+
+div#job-container {
+    background: white;
+    border: 1px solid #e2e2e2;
+    padding: 20px;
+    border-radius: 20px;
+    color: #333;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 6px #b0b0b0;
+}
+
+div#data-row {
+    color: #999;
+}
+
+th#job-header {
+    width: 140px;
+    background: #112d4e;
+    color: white;
+    border: 1px solid white;
+}
+
+input#myInput {
+    text-align: center;
+}
+
+p#jobsforwho {
+    text-align: center;
+}
+
+div#button-holder{
+  text-align: center;
+  margin: 25px 0;
+}
+
+div#data-row {
+    word-wrap: break-word;
+}
+
+th#job-header {
+    width: 140px;
+}
+
+div#pagina {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+a#web-link {
+    color: #00afff !important;
+    width: 100%;
+}
+
+input[type=radio] {
+    position: inherit !important; 
+}
+
+td#data-row, td {
+    vertical-align: middle !important;
+}
+
+p#jobsforwho {
+    text-align: center;
+    font-size: 15px;
+    color: #5d5d5d;
+}
+
+.form-horizontal .control-label{
+  padding-top: 0;
+}
+
+input#search-jobs {
+    width: 420px;
+    font-size: 20px;
+    outline: 0!important;
+    border-radius: 7px;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+}
+
+ol#list-why {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#holder {
+    text-align: center;
+}
+
+div#stats {
+    background: white;
+    color: rgba(17,45,78,0.8);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 390px;
+    text-align: center;
+    border: 3px solid rgba(17,45,78,0.2);
+}
+
+h3#why {
+    border-bottom: 3px solid hsl(212, 64%, 19%);
+    padding: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: -5px;
+    letter-spacing: -1px;
+    font-size: 18px;
+    color: #112d4e;
+    display: inline-block;
+}
+
+header {
+    font-family: 'Open Sans',sans-serif !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    background-color: #112d4e !important;
+}
+
+li#item {
+    font-size: 12px;
+    font-weight: 900;
+    text-align: left;
+}
+
+h1#title {
+    color: #f03861 !important;
+}
+
+button#post {
+    color: #F03861;
+    font-weight: 400;
+    border-color: #F03861;
+    border-width: 1px;
+    border-radius: 36px;
+    background: #FEF2F2;
+    outline: none !important;
+
+    -webkit-transition: background 1s ease, color 1s linear, border-color 1s ease;
+    -moz-transition: background 1s ease, color 1s linear, border-color 1s ease;
+    -o-transition: background 1s ease, color 1s linear, border-color 1s ease;
+    transition: background 1s ease, color 1s linear ,border-color 1s ease;
+}
+
+button#post:hover{
+  color: #FEF2F2;
+  border-color: #FEF2F2;
+  background: #F03861;
+}
+
+@media screen and (max-width: 480px){
+    #pagina {
+        width: inherit;
+    }
+
+    div#indeed_widget_wrapper, form#indeed{
+        display: none !important;
+    }
+}
+@media only screen 
+   and (max-width : 1160px)  {
+    div#stats {
+      margin: 0 300px;
+  }
+}
+
+@media only screen 
+   and (max-width : 1000px)  {
+    /* div#job-container {
+        display: block;
+    } */
+}
+
+@media only screen 
+   and (max-width : 992px)  {
+    div#job-container {
+        display: -webkit-box;
+    }
+
+    div#job-container {
+    text-align: center;
+}
+}
+
+
+
+@media only screen 
+   and (max-width : 885px)  {
+   div#stats { 
+      margin: 0 200px;
+    }
+}
+
+@media only screen and (max-width: 690px){
+  div#stats {
+      margin: 0 0;
+  }
+}
