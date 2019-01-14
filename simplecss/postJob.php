@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en-US" class="export">
 <head>
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
   <meta charset="utf-8">
   <meta http-equiv="pragma" content="no-cache" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
