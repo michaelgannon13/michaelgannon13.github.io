@@ -936,9 +936,93 @@
             </div>
             <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
               <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 11); change();"
+                data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
+              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 13); change();"
+                data-toggle="tooltip" title="Next Project" data-placement="top"></i>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+          <h3 id="accordian-header-text">
+            <span id="title-left">PAINT THE WEATHER / </span>
+            <span id="title-right">angular services</span>
+          </h3>
+          <div id="accordian-dropdown-container">
+            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp bottom-acc-container last">
+              <h4 id="acc-dropdown-content-header">Description</h4>
+              <p id="dropDown-content">
+                Leveraging the OpenWeather API to use the users local weather to see paintings containing that weather e.g. if it's rainy in your location it returns 
+                a painting containing rain, if it's sunny the app returns a sunny painting etc.
+              </p>
+              <br>
+              <br>
+              <p id="dropDown-content">
+                The users latitude and longitude are worked out using vanilla Javascript. This then gets used to build an API endpoint which gets called with a HTTP get request on the OpenWeather API
+                and returns the users location name and weather. The weather phrase ('Cloudy') is then used to build a second API endpoint which gets called on the M.E.T museum API and this returns all paintings
+                associated with this phrase in JSON array.</p> 
+              
+                <br>
+                <br>
+                <p id="dropDown-content">
+                
+                Each JSON object has a number of attributes associated with it e.g. 'Painting Name', 'Painting Artist', 'Painting Image' etc.
+                One of these JSON objects gets selected at random and it's image is then set to be the image on the right of the screen, keeping the left of the screen free for further details about the painting.
+              </p>
+              <br>
+              <br>
+            </div>
+            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp bottom-acc-container last">
+              <h4 id="acc-dropdown-content-header">Technologies</h4>
+              <ol id="tech-list">
+                <li id="tech-item">Angular 7</li>
+                <li id="tech-item">Typescript</li>
+                <li id="tech-item">SCSS</li>
+                <li id="tech-item">HTTP Client</li>
+              </ol>
+            </div>
+            <div id="accordian-dropDown-right" class="col-lg-5 col-md-12 col-sm-12 animated fadeInUp">
+              <p id="dropDown-content">
+                <img class="paint-weather img-responsive" alt="HTML Canvas Project" src="img/paint-weather.jpg">
+              </p>
+              <br>
+              <br>
+              <p id="dropDown-content">
+                <a id="link" target="_blank" rel="noopener" href="https://github.com/michaelgannon13/Paint-the-Weather" data-original-title=""
+                  title=""><i class="fa fa-github" aria-hidden="true"></i> View Github</a>
+                <br>
+                <br>
+              </p>
+            </div>
+
+            
+            <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
+              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 12); change();"
                 data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Previous Project"></i>
             </div>
           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
       </div>
     </div>
