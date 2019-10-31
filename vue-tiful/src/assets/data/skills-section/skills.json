@@ -1,0 +1,62 @@
+[
+    {
+    "name": "Prototyping",
+    "description": "Wireframe to reality. Proficient in Adobe Photoshop and XD. I have experience creating high fidelity prototypes rapidly and as well as diligently and informed by user feedback. Balsamique also. Pen and paper prototypes is the old reliable",
+    "image": "https://s3.amazonaws.com/www-inside-design/uploads/2018/05/lofi-hifi-proto-sq.jpg"
+    },
+    {
+    "name": "User Interface",
+    "description": "My specialty for 5+ years. Every aspect relating to the DOM. From creating static Photoshop files to implementing as robust, scalable solutions with an emphasis on user experience",
+    "image": "https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/07/shutterstock_160918730.jpg"
+    },
+    {
+    "name": "Javascript",
+    "description": "Angular js and Angular for 5 years. Experience with Vue js, stencil js, react, backbone js, all versions of Bootstrap, Google material, bulma, jQuery and plenty of vanilla JS",
+    "image": "https://miro.medium.com/max/5000/1*fqcYje1plRJWcIggILyuow.png "
+    },
+    {
+    "name": "Design Thinking",
+    "description": "Founder of the Accenture Design thinking guild. Monthly presentations and spreading the good work. Bringing Dt into all projects. Presenter at the design thinking academy workshops",
+    "image": "https://stvp-static-prod.s3.amazonaws.com/uploads/sites/2/2017/05/eCorner_originality.jpg     "
+    },
+    {
+    "name": "Optimization",
+    "description": "Always been fascinated with improving performance where possible in the web, especially the quick-win changes that have big impact and small overhead.",
+    "image": "https://st1.ning.com/topology/rest/1.0/file/get/1133364747?profile=original"
+    },
+    {
+    "name": "Search Engine Optimization",
+    "description": "Founder of simplecss.eu. a pet project that gained popularity, yielded ad revenue and sold for profit. Storing domain authority highly ranked in Google search results.",
+    "image": "http://www.posicionarnos.com/blog/wp-content/uploads/2019/05/GettyImages-858118324-1024x717.jpg"
+    },
+    {
+    "name": "Responsive Web Design",
+    "description": "Using bootstrap since it was in its infancy. I lean toward as mobile first approach and an efficient use of space. Experience with bulma, foundation aswell as flexbox, CSS grid and angular flex layout",
+    "image": "https://www.hughesandco.com/wp-content/uploads/2016/06/responsive-web-design-hughes-and-co-design.jpg"
+    },
+    {
+    "name": "Mobile Development",
+    "description": "Extremely enthusiastic about ionic and integrating with other js frameworks angular, react etc. Ionic, angular and stencil. Built a number of applications using ionic. As a front end engineer I lean towards this approach but have also built apps using native Java and XML for Android, the good old fashioned way!",
+    "image": "https://www.aatoon.com/cdn/images/service-ios-development.jpg"
+    },
+    {
+    "name": "Wordpress",
+    "description": "Extensive experience with WordPress websites using themes, customizing themes, from scratch, for blogs, for sites. This my staple CMS",
+    "image": "https://wplounge.org/wp-content/uploads/2018/03/What-are-WordPress-plugins.jpg"
+    },
+    {
+    "name": "Identity",
+    "description": "Logo creation, custom websites, blogs, graphic design, branding guidelines, colour palettes, consistency. Created identities for small projects to large scale organisations.",
+    "image": "https://www.ameyo.com/hubspot-images/hubfs/439789/Emerge_Blogs_Images/5-Key-Elements-Needed-for-Better-Branding-your-Startup.png"
+    },
+    {
+    "name": "Services",
+    "description": "Experience writing custom services leveraging 3rd party APIs, consuming response and parsing into human readable format only he UI.",
+    "image": "https://jss.sitecore.com/assets/img/JSS-CLI.svg"
+    },
+    {
+    "name": "Accessibility",
+    "description": "Pa11y, wave, screen reader, Google lighthouse audits",
+    "image": "https://www.dreamhost.com/blog/wp-content/uploads/2016/08/DreamHost-Accessibility-Tips-750x498.jpg"
+    }
+]
