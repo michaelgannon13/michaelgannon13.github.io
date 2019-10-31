@@ -1,0 +1,17 @@
+[
+    {
+    "section": "About Me",
+    "icon": "account_circle",
+    "link": "#details"
+    },
+    {
+    "section": "What can I do",
+    "icon": "build",
+    "link": "#skills"
+    },
+    {
+    "section": "Contact",
+    "icon": "email",
+    "link": "#contact"
+    }
+]

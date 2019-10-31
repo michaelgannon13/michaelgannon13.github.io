@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Email",
+        "icon": "email",
+        "link": "michael.gannon3@gmail.com",
+        "text": "Drop me a line via email"
+    },
+    {
+        "name": "LinkedIn",
+        "icon": "people_alt",
+        "link": "https://www.linkedin.com/in/michael-gannon/",
+        "text": "Connect on with me on LinkedIn"
+    },
+    {
+        "name": "Github",
+        "icon": "code",
+        "link": "https://github.com/michaelgannon13",
+        "text": "Check out my code"
+    },
+    {
+        "name": "Flikr",
+        "icon": "image",
+        "link": "https://www.flickr.com/photos/162114612@N02/albums",
+        "text": "Check out my graphics"
+    }           
+]
