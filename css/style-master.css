@@ -59,6 +59,9 @@ div#googlemaps {
 img.inspire-compressed {
   width: 85%;
 }
+img.vue-compressed {
+  width: 85%;
+}
 
 i#down-here {
     font-size: 40px;
