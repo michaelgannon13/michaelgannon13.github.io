@@ -79,116 +79,123 @@
       <div class="col-md-12" id="accordian-background">
         <div id="subheader-greeting">Projects</div>
         <div id="accordion">
+
+
+
+
           <h3 id="accordian-header-text">
-            <span id="title-left">VISUAL ID / </span>
-            <span id="title-right">website redesign</span>
+            <span id="title-left">PAINT THE WEATHER / </span>
+            <span id="title-right">angular & services</span>
           </h3>
           <div id="accordian-dropdown-container">
-            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp">
+            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp bottom-acc-container last">
               <h4 id="acc-dropdown-content-header">Description</h4>
               <p id="dropDown-content">
-                This was a redesign of the Visual ID website using the Wordpress CMS. The site is optimised for mobile, tablet and desktop.
-                The site has also been integrated with the existing Visual ID blog and linked to all related social media
-                platforms. The site is built from a theme and has been customized for a unique identity.
+                Leveraging the OpenWeather API to use the users local weather to see paintings containing that weather e.g. if it's rainy in your location it returns 
+                a painting containing rain, if it's sunny the app returns a sunny painting etc.
               </p>
               <br>
               <br>
               <p id="dropDown-content">
-                This project presented a great opportunity to learn how to use everybody's favourite content management system. Extensive
-                security measures were taken to keep the data secure, for example changing the wp-admin address, tracking
-                the site's traffic and blocking all hack attemps.
+                The users latitude and longitude are worked out using vanilla Javascript. This then gets used to build an API endpoint which gets called with a HTTP get request on the OpenWeather API
+                and returns the users location name and weather. The weather phrase ('Cloudy') is then used to build a second API endpoint which gets called on the M.E.T museum API and this returns all paintings
+                associated with this phrase in JSON array.</p> 
+              
+                <br>
+                <br>
+                <p id="dropDown-content">
+                
+                Each JSON object has a number of attributes associated with it e.g. 'Painting Name', 'Painting Artist', 'Painting Image' etc.
+                One of these JSON objects gets selected at random and it's image is then set to be the image on the right of the screen, keeping the left of the screen free for further details about the painting.
               </p>
               <br>
               <br>
-              <p id="dropDown-content">
-                The objective was to bring a new look and feel to existing Visual ID website. Visual ID have a lot of products, partners,
-                pricing plans and clients so the website has a lot of content which needed to be managed so the site visitor
-                is not overwhelmed with information.
-              </p>
             </div>
-            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp">
-
+            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp bottom-acc-container last">
               <h4 id="acc-dropdown-content-header">Technologies</h4>
               <ol id="tech-list">
-                <li id="tech-item">Wordpress CMS</li>
-                <li id="tech-item">CSS3</li>
-                <li id="tech-item">PHP</li>
-                <li id="tech-item">Google Analytics</li>
+                <li id="tech-item">Angular 7</li>
+                <li id="tech-item">Typescript</li>
+                <li id="tech-item">SCSS</li>
+                <li id="tech-item">HTTP Client</li>
               </ol>
             </div>
             <div id="accordian-dropDown-right" class="col-lg-5 col-md-12 col-sm-12 animated fadeInUp">
-
               <p id="dropDown-content">
-                <img class="vis-compressed" alt="VisualID brochure site" src="">
+                <img class="paint-weather img-responsive" alt="HTML Canvas Project" src="img/paint-weather.jpg">
               </p>
-
               <br>
               <br>
               <p id="dropDown-content">
-                <a id="link" target="_blank" rel="noopener" href="http://visualid.com/"><i class="fa fa-link" aria-hidden="true"></i> Live Website</a>
+                <a id="link" target="_blank" rel="noopener" href="https://github.com/michaelgannon13/Paint-the-Weather" data-original-title=""
+                  title=""><i class="fa fa-github" aria-hidden="true"></i> View Github</a>
                 <br>
                 <br>
               </p>
             </div>
+
+            
             <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
-              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 1); change();"
-                data-toggle="tooltip" title="Next Project" data-placement="top"></i>
+              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 1); change();"
+                data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Previous Project"></i>
             </div>
           </div>
 
+
+
+
           <h3 id="accordian-header-text">
-            <span id="title-left">DODDLECO / </span>
-            <span id="title-right">website design</span>
+            <span id="title-left">UFC FIGHTER SEARCH / </span>
+            <span id="title-right">angular app</span>
           </h3>
           <div id="accordian-dropdown-container">
-            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp">
+            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp bottom-acc-container">
               <h4 id="acc-dropdown-content-header">Description</h4>
-
               <p id="dropDown-content">
-                An information site to promote a new product from Visual ID called Doddle. Doddle is a marketing material builder that allows
-                users to create point of sale content for print, web, digital screens and social media. It is a redesign
-                of the Visual ID marketing material production system.
+                A web application built on Google's Angular.js web application framework. The UFC Fighter directory allows users search through
+                the UFC fighters and filter the results alphabetically, by weight, by gender or in descending order. There
+                is also a brief bio for each fighter.
               </p>
               <br>
               <br>
               <p id="dropDown-content">
-                The website was built using the Wordpress CMS and a theme which was heavily customised to ensure mobile responsiveness and
-                create a unique identity for the new product. The website also includes a Live Chat function, which I manage.
-                Doddle involved extensive research into all target markets to devise an accurate marketing strategy.
+                The benefit of using Angular was being able to avail of Angular's built in filter funcionality without having to write the
+                javascript from scratch. The other benefit was working with the modular structure of Angular.
               </p>
               <br>
               <br>
               <p id="dropDown-content">
-                The site is essentially a single page but the theme was a multi-page template so I had to restructure the landing page and
-                customize a lot of the page functionality. Blogging was carried out regularly and shared across all platforms
-                as well as using Yeost SEO and Google Analytics to monitor website activity.
+                There is a data.json file which contains name value pairs of the fighter's name, weight, gender and bio. This is looped through
+                using Angular's ng-repeat tag. To read the data from the JSON the HTTP Service was used. In the details page
+                there is a fighter bio and a next and previous button. These buttons make use of Angular's partials so different
+                data is loaded into the same template view without the page having to be reloaded.
               </p>
+              <br>
+              <br>
             </div>
-            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp">
+            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp bottom-acc-container">
               <h4 id="acc-dropdown-content-header">Technologies</h4>
               <ol id="tech-list">
-                <li id="tech-item">Wordpress CMS</li>
-                <li id="tech-item">CSS3</li>
-                <li id="tech-item">PHP</li>
-                <li id="tech-item">Google Analytics</li>
-                <li id="tech-item">Tawk API</li>
+                <li id="tech-item">Angular.js</li>
+                <li id="tech-item">Javascript</li>
+                <li id="tech-item">JSON</li>
               </ol>
             </div>
-            <div id="accordian-dropDown-right" class="col-lg-5 col-md-12 col-sm-12 animated fadeInUp">
+            <div id="accordian-dropDown-right" class="col-lg-5 col-md-12 col-sm-12 animated fadeInUp bottom-acc-container">
               <p id="dropDown-content">
-                <img class="doddle-compressed" alt="Doddle brochure site" src="">
+                <img class="ufc-pic img-responsive" alt="The Gannon Times" src="">
               </p>
               <br>
               <br>
               <p id="dropDown-content">
-                <a id="link" target="_blank" rel="noopener" href="http://www.doddleco.com/"><i class="fa fa-link" aria-hidden="true"></i> Live Website</a>
-                <a id="link" target="_blank" rel="noopener" href="https://www.flickr.com/photos/162114612@N02/albums/72157691725886430">
-                  <i class="fa fa-flickr" aria-hidden="true"></i> Flikr</a>
+                <a id="link" target="_blank" rel="noopener" href="angular/index.html"><i class="fa fa-link" aria-hidden="true"></i> Live Website</a>
+                <a id="link" target="_blank" rel="noopener" href="https://github.com/michaelgannon13/UFC-Search"><i class="fa fa-github" aria-hidden="true"></i>
+                  View Github</a>
                 <br>
                 <br>
               </p>
             </div>
-            <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
+            <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp last-elem">
               <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 0); change();"
                 data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
               <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 2); change();"
@@ -196,76 +203,66 @@
             </div>
           </div>
 
-          <h3 id="accordian-header-text" class="doddle-click">
-            <span id="title-left">DODDLE / </span>
-            <span id="title-right">marketing material builder</span>
+
+
+
+
+          <h3 id="accordian-header-text">
+            <span id="title-left">VUE-TIFUL CV / </span>
+            <span id="title-right">vue cv</span>
           </h3>
-
           <div id="accordian-dropdown-container">
-            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp">
-
+            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp bottom-acc-container last">
               <h4 id="acc-dropdown-content-header">Description</h4>
               <p id="dropDown-content">
-
-                A redesign of the Visual ID artwork creation toolkit. The objective was to make the toolkit easier to navigate, easier to
-                access and easier to understand for both client side and administration side. The old system contains a lot
-                of functionality, which requires one to one training. Doddle comes with integrated walk through tours of
-                major operation flows, video tutorials and a more intuitive user experience.
+                I wanted to learn Vue.js so I decided to rewrite my CV/Portfolio using the popular Javascript. It's a bit of a 'template-ey' design but the focus was more to familiarize myself with Vue and Vuetify.
               </p>
               <br>
               <br>
               <p id="dropDown-content">
-                Doddle is integrated with the Stripe API for secure online payments, the Tawk API which enables live chat and the Facebook
-                API which allows marketing materials to be shared on Facebook. One of the challenges with creating Doddle
-                was writing HTML which was nested in Lasso Script and styling elements which were generated by Lasso on the
-                fly.
+                It was straightforeward enough getting set up and Vuetify provides a lot if nice UI components. Having worked with Angular, Material Design and vanilla JS for years it was easy to get up and running.
               </p>
               <br>
               <br>
               <p id="dropDown-content">
-                The primary goal of Doddle, is to be an entirely on-demand product involving no client interfacing. It is a refined version
-                of the Visual ID toolkit which includes functionality to create your marketing materials, share them on Facebook
-                and push promotions to Digital Screens. I am
-                <a href="#section3">Project Manager</a> of Doddle.
+                I didn't want to hardcode anything so I extracted virtually all the content in the UI to JSON files and imported them and looped through.
               </p>
               <br>
               <br>
             </div>
-            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp">
+            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp bottom-acc-container last">
               <h4 id="acc-dropdown-content-header">Technologies</h4>
               <ol id="tech-list">
-                <li id="tech-item">HTML5</li>
-                <li id="tech-item">CSS3</li>
-                <li id="tech-item">Javascript & jQuery</li>
-                <li id="tech-item">Bootstrap 2/3</li>
-                <li id="tech-item">Vagrant</li>
-                <li id="tech-item">Bitbucket</li>
-                <li id="tech-item">Source Tree</li>
-                <li id="tech-item">Facebook API</li>
-                <li id="tech-item">Tawk API</li>
+                <li id="tech-item">Vue</li>
+                <li id="tech-item">Vuetify</li>
+                <li id="tech-item">JSON</li>
+                <li id="tech-item">Flex-box</li>
               </ol>
             </div>
             <div id="accordian-dropDown-right" class="col-lg-5 col-md-12 col-sm-12 animated fadeInUp">
               <p id="dropDown-content">
-                <!-- concat with sprite sheet -->
-                <img alt="doddle marketing material builder" class="doddleco-compressed img-responsive" src="">
+                <img class="vue-cv" alt="HTML Canvas Project" src="./img/vue-cv.PNG">
               </p>
               <br>
               <br>
               <p id="dropDown-content">
-                <a id="link" target="_blank" rel="noopener" href="http://my.doddleco.com/"><i class="fa fa-link" aria-hidden="true"></i> Live Website</a>
-                <a id="link" target="_blank" rel="noopener" href="https://www.flickr.com/photos/162114612@N02/albums/72157691725886430">
-                  <i class="fa fa-flickr" aria-hidden="true"></i> Flikr</a>
+                <a id="link" rel="noopener" href="vue-cv/dist/" data-original-title="" title=""><i class="fa fa-link" aria-hidden="true"></i> Live Website</a>
+                <a id="link" target="_blank" rel="noopener" href="https://github.com/michaelgannon13/vue-cv" data-original-title=""
+                  title=""><i class="fa fa-github" aria-hidden="true"></i>
+                  View Github</a>
+                <br>
+                <br>
               </p>
             </div>
             <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
               <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 1); change();"
-                data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
+                data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Previous Project"></i>
               <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 3); change();"
-                data-toggle="tooltip" title="Next Project" data-placement="top"></i>
+                data-toggle="tooltip" title="" data-placement="top" data-original-title="Next Project"></i>
             </div>
           </div>
 
+          
           <h3 id="accordian-header-text">
             <span id="title-left">SIMPLE CSS / </span>
             <span id="title-right">css generator</span>
@@ -406,6 +403,143 @@
             </div>
           </div>
 
+
+
+
+          
+          <h3 id="accordian-header-text">
+            <span id="title-left">DODDLECO / </span>
+            <span id="title-right">website design</span>
+          </h3>
+          <div id="accordian-dropdown-container">
+            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp">
+              <h4 id="acc-dropdown-content-header">Description</h4>
+
+              <p id="dropDown-content">
+                An information site to promote a new product from Visual ID called Doddle. Doddle is a marketing material builder that allows
+                users to create point of sale content for print, web, digital screens and social media. It is a redesign
+                of the Visual ID marketing material production system.
+              </p>
+              <br>
+              <br>
+              <p id="dropDown-content">
+                The website was built using the Wordpress CMS and a theme which was heavily customised to ensure mobile responsiveness and
+                create a unique identity for the new product. The website also includes a Live Chat function, which I manage.
+                Doddle involved extensive research into all target markets to devise an accurate marketing strategy.
+              </p>
+              <br>
+              <br>
+              <p id="dropDown-content">
+                The site is essentially a single page but the theme was a multi-page template so I had to restructure the landing page and
+                customize a lot of the page functionality. Blogging was carried out regularly and shared across all platforms
+                as well as using Yeost SEO and Google Analytics to monitor website activity.
+              </p>
+            </div>
+            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp">
+              <h4 id="acc-dropdown-content-header">Technologies</h4>
+              <ol id="tech-list">
+                <li id="tech-item">Wordpress CMS</li>
+                <li id="tech-item">CSS3</li>
+                <li id="tech-item">PHP</li>
+                <li id="tech-item">Google Analytics</li>
+                <li id="tech-item">Tawk API</li>
+              </ol>
+            </div>
+            <div id="accordian-dropDown-right" class="col-lg-5 col-md-12 col-sm-12 animated fadeInUp">
+              <p id="dropDown-content">
+                <img class="doddle-compressed" alt="Doddle brochure site" src="">
+              </p>
+              <br>
+              <br>
+              <p id="dropDown-content">
+                <a id="link" target="_blank" rel="noopener" href="http://www.doddleco.com/"><i class="fa fa-link" aria-hidden="true"></i> Live Website</a>
+                <a id="link" target="_blank" rel="noopener" href="https://www.flickr.com/photos/162114612@N02/albums/72157691725886430">
+                  <i class="fa fa-flickr" aria-hidden="true"></i> Flikr</a>
+                <br>
+                <br>
+              </p>
+            </div>
+            <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
+              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 3); change();"
+                data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
+              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 5); change();"
+                data-toggle="tooltip" title="Next Project" data-placement="top"></i>
+            </div>
+          </div>
+
+          <h3 id="accordian-header-text" class="doddle-click">
+            <span id="title-left">DODDLE / </span>
+            <span id="title-right">marketing material builder</span>
+          </h3>
+
+          <div id="accordian-dropdown-container">
+            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp">
+
+              <h4 id="acc-dropdown-content-header">Description</h4>
+              <p id="dropDown-content">
+
+                A redesign of the Visual ID artwork creation toolkit. The objective was to make the toolkit easier to navigate, easier to
+                access and easier to understand for both client side and administration side. The old system contains a lot
+                of functionality, which requires one to one training. Doddle comes with integrated walk through tours of
+                major operation flows, video tutorials and a more intuitive user experience.
+              </p>
+              <br>
+              <br>
+              <p id="dropDown-content">
+                Doddle is integrated with the Stripe API for secure online payments, the Tawk API which enables live chat and the Facebook
+                API which allows marketing materials to be shared on Facebook. One of the challenges with creating Doddle
+                was writing HTML which was nested in Lasso Script and styling elements which were generated by Lasso on the
+                fly.
+              </p>
+              <br>
+              <br>
+              <p id="dropDown-content">
+                The primary goal of Doddle, is to be an entirely on-demand product involving no client interfacing. It is a refined version
+                of the Visual ID toolkit which includes functionality to create your marketing materials, share them on Facebook
+                and push promotions to Digital Screens. I am
+                <a href="#section3">Project Manager</a> of Doddle.
+              </p>
+              <br>
+              <br>
+            </div>
+            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp">
+              <h4 id="acc-dropdown-content-header">Technologies</h4>
+              <ol id="tech-list">
+                <li id="tech-item">HTML5</li>
+                <li id="tech-item">CSS3</li>
+                <li id="tech-item">Javascript & jQuery</li>
+                <li id="tech-item">Bootstrap 2/3</li>
+                <li id="tech-item">Vagrant</li>
+                <li id="tech-item">Bitbucket</li>
+                <li id="tech-item">Source Tree</li>
+                <li id="tech-item">Facebook API</li>
+                <li id="tech-item">Tawk API</li>
+              </ol>
+            </div>
+            <div id="accordian-dropDown-right" class="col-lg-5 col-md-12 col-sm-12 animated fadeInUp">
+              <p id="dropDown-content">
+                <!-- concat with sprite sheet -->
+                <img alt="doddle marketing material builder" class="doddleco-compressed img-responsive" src="">
+              </p>
+              <br>
+              <br>
+              <p id="dropDown-content">
+                <a id="link" target="_blank" rel="noopener" href="http://my.doddleco.com/"><i class="fa fa-link" aria-hidden="true"></i> Live Website</a>
+                <a id="link" target="_blank" rel="noopener" href="https://www.flickr.com/photos/162114612@N02/albums/72157691725886430">
+                  <i class="fa fa-flickr" aria-hidden="true"></i> Flikr</a>
+              </p>
+            </div>
+            <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
+              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 4); change();"
+                data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
+              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 6); change();"
+                data-toggle="tooltip" title="Next Project" data-placement="top"></i>
+            </div>
+          </div>
+
+
+
+
           <h3 id="accordian-header-text">
             <span id="title-left">INSPIRE DAILY / </span>
             <span id="title-right">twitter quote generator</span>
@@ -456,133 +590,214 @@
                 <a id="link" target="_blank" rel="noopener" href="quotes/index.html" data-original-title="" title=""><i class="fa fa-link" aria-hidden="true"></i> Live Website</a>
                 <a id="link" target="_blank" rel="noopener" href="https://github.com/michaelgannon13/twitter-quote-share" data-original-title=""
                   title=""><i class="fa fa-github" aria-hidden="true"></i>
-                   View Github</a>
+                  View Github</a>
                 <br>
                 <br>
               </p>
             </div>
             <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
-              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 3); change();"
+              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 5); change();"
                 data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Previous Project"></i>
-              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 5); change();"
+              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 7); change();"
                 data-toggle="tooltip" title="" data-placement="top" data-original-title="Next Project"></i>
             </div>
           </div>
 
 
+<!--here-->
+
+
           <h3 id="accordian-header-text">
-            <span id="title-left">VUE-TIFUL CV / </span>
-            <span id="title-right">personal cv</span>
+            <span id="title-left">THE GANNON TIMES / </span>
+            <span id="title-right">bootstrap news site</span>
           </h3>
           <div id="accordian-dropdown-container">
-            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp bottom-acc-container last">
+            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp">
               <h4 id="acc-dropdown-content-header">Description</h4>
               <p id="dropDown-content">
-                I wanted to learn Vue.js so I decided to rewrite my CV/Portfolio using the popular Javascript. It's a bit of a 'template-ey' design but the focus was more to familiarize myself with Vue and Vuetify.
+                This is a college project undertaken in order to learn the most popular responsive web design framework, Twitter Bootstrap.
+                It was also essential for gaining an undertanding of web typography and web design principles. The objective
+                was to use no colour until the very end and create a visually appealing page using just black and white,
+                an appropriate font combination and making correct use of the space available.
               </p>
               <br>
               <br>
               <p id="dropDown-content">
-                It was straightforeward enough getting set up and Vuetify provides a lot if nice UI components. Having worked with Angular, Material Design and vanilla JS for years it was easy to get up and running.
+                Inspirations came from the French newspaper 'Le Monde', 'The Financial Times' and 'The Boston Globe' news site. Extensive
+                research was carried out on newspaper design trends dating back as far as 1630. Then two concept designs
+                were drawn up in Photoshop and iterated again and again until they met the task objectives.
               </p>
               <br>
               <br>
               <p id="dropDown-content">
-                I didn't want to hardcode anything so I extracted virtually all the content in the UI to JSON files and imported them and looped through.
+                JavaScript was used to start a timer every 30 minutes to emulate a feed of updates to the site. The clock at the top of the
+                screen displays the current time of the device the site is being viewed on.
+                <br>
+                <br>
               </p>
-              <br>
-              <br>
             </div>
-            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp bottom-acc-container last">
+            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp">
               <h4 id="acc-dropdown-content-header">Technologies</h4>
               <ol id="tech-list">
-                <li id="tech-item">Vue</li>
-                <li id="tech-item">Vuetify</li>
-                <li id="tech-item">JSON</li>
-                <li id="tech-item">Flex-box</li>
+                <li id="tech-item">HTML5</li>
+                <li id="tech-item">CSS3</li>
+                <li id="tech-item">Bootstrap 3</li>
+                <li id="tech-item">Javascript</li>
+                <li id="tech-item">Photoshop</li>
               </ol>
             </div>
             <div id="accordian-dropDown-right" class="col-lg-5 col-md-12 col-sm-12 animated fadeInUp">
               <p id="dropDown-content">
-                <img class="vue-cv" alt="HTML Canvas Project" src="./img/vue-cv.PNG">
+                <img class="mac-compressed" alt="The Gannon Times" src="">
               </p>
               <br>
               <br>
               <p id="dropDown-content">
-                <a id="link" rel="noopener" href="vue-cv/dist/" data-original-title="" title=""><i class="fa fa-link" aria-hidden="true"></i> Live Website</a>
-                <a id="link" target="_blank" rel="noopener" href="https://github.com/michaelgannon13/vue-cv" data-original-title=""
-                  title=""><i class="fa fa-github" aria-hidden="true"></i>
-                   View Github</a>
+                <a id="link" target="_blank" rel="noopener" href="https://www.flickr.com/photos/162114612@N02/albums/72157694355514712">
+                  <i class="fa fa-flickr" aria-hidden="true"></i> Flikr</a>
+                <a id="link" target="_blank" rel="noopener" href="gannon/index.html"><i class="fa fa-link" aria-hidden="true"></i> Live Website</a>
                 <br>
                 <br>
               </p>
             </div>
             <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
-              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 4); change();"
-                data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Previous Project"></i>
-              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 6); change();"
-                data-toggle="tooltip" title="" data-placement="top" data-original-title="Next Project"></i>
-            </div>
-          </div>
-
-          <h3 id="accordian-header-text">
-            <span id="title-left">UFC FIGHTER SEARCH / </span>
-            <span id="title-right">angular app</span>
-          </h3>
-          <div id="accordian-dropdown-container">
-            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp bottom-acc-container">
-              <h4 id="acc-dropdown-content-header">Description</h4>
-              <p id="dropDown-content">
-                A web application built on Google's Angular.js web application framework. The UFC Fighter directory allows users search through
-                the UFC fighters and filter the results alphabetically, by weight, by gender or in descending order. There
-                is also a brief bio for each fighter.
-              </p>
-              <br>
-              <br>
-              <p id="dropDown-content">
-                The benefit of using Angular was being able to avail of Angular's built in filter funcionality without having to write the
-                javascript from scratch. The other benefit was working with the modular structure of Angular.
-              </p>
-              <br>
-              <br>
-              <p id="dropDown-content">
-                There is a data.json file which contains name value pairs of the fighter's name, weight, gender and bio. This is looped through
-                using Angular's ng-repeat tag. To read the data from the JSON the HTTP Service was used. In the details page
-                there is a fighter bio and a next and previous button. These buttons make use of Angular's partials so different
-                data is loaded into the same template view without the page having to be reloaded.
-              </p>
-              <br>
-              <br>
-            </div>
-            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp bottom-acc-container">
-              <h4 id="acc-dropdown-content-header">Technologies</h4>
-              <ol id="tech-list">
-                <li id="tech-item">Angular.js</li>
-                <li id="tech-item">Javascript</li>
-                <li id="tech-item">JSON</li>
-              </ol>
-            </div>
-            <div id="accordian-dropDown-right" class="col-lg-5 col-md-12 col-sm-12 animated fadeInUp bottom-acc-container">
-              <p id="dropDown-content">
-                <img class="ufc-pic img-responsive" alt="The Gannon Times" src="">
-              </p>
-              <br>
-              <br>
-              <p id="dropDown-content">
-                <a id="link" target="_blank" rel="noopener" href="angular/index.html"><i class="fa fa-link" aria-hidden="true"></i> Live Website</a>
-                <a id="link" target="_blank" rel="noopener" href="https://github.com/michaelgannon13/UFC-Search"><i class="fa fa-github" aria-hidden="true"></i>
-                   View Github</a>
-                <br>
-                <br>
-              </p>
-            </div>
-            <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp last-elem">
-              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 5); change();"
+              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 6); change();"
                 data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
-              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 7); change();"
+              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 8); change();"
                 data-toggle="tooltip" title="Next Project" data-placement="top"></i>
             </div>
           </div>
+          <h3 id="accordian-header-text">
+            <span id="title-left">COUNSELLING BUSINESS / </span>
+            <span id="title-right">bootstrap brochure site</span>
+          </h3>
+          <div id="accordian-dropdown-container">
+            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp">
+              <h4 id="acc-dropdown-content-header">Description</h4>
+              <p id="dropDown-content">
+                Responsive Web Design is going nowhere so I decided to make a RWD brochure site for my mother's new business venture. As
+                a branding excercise I also designed custom business cards from scratch.
+              </p>
+              <br>
+              <br>
+              <p id="dropDown-content">
+                The site uses CSS animations, has a contact form which relies on PHP for the back end handling and is built on Twitter Bootstrap.
+                The purpose of the site is to be an information point for people suffering from depression, alcoholism etc.
+              </p>
+              <br>
+              <br>
+              <p id="dropDown-content">
+                This website was a good exercise in gathering user requirements and showing the client the possibilities available to them
+                aswell as being a good excercise in copywriting and communicating visually with the end user.
+              </p>
+            </div>
+            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp">
+              <h4 id="acc-dropdown-content-header">Technologies</h4>
+              <ol id="tech-list">
+                <li id="tech-item">HTML5</li>
+                <li id="tech-item">CSS3</li>
+                <li id="tech-item">Bootstrap 3</li>
+                <li id="tech-item">Photoshop</li>
+              </ol>
+            </div>
+            <div id="accordian-dropDown-right" class="col-lg-5 col-md-12 col-sm-12 animated fadeInUp">
+              <p id="dropDown-content">
+                <img class="bus-compressed" alt="Counselling Business" src="">
+              </p>
+              <br>
+              <br>
+              <p id="dropDown-content">
+              <a id="link" target="_blank" rel="noopener" href="https://www.flickr.com/photos/162114612@N02/albums/72157697506950875">
+                <i class="fa fa-flickr" aria-hidden="true"></i> Flikr</a>
+                <a id="link" target="_blank" rel="noopener" href="counsellor/index.html"><i class="fa fa-link" aria-hidden="true"></i> Live Website</a>
+                <br>
+                <br>
+              </p>
+            </div>
+            <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
+              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 7); change();"
+                data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
+              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 9); change();"
+                data-toggle="tooltip" title="Next Project" data-placement="top"></i>
+            </div>
+          </div>
+
+
+
+          <h3 id="accordian-header-text">
+            <span id="title-left">VISUAL ID / </span>
+            <span id="title-right">website redesign</span>
+          </h3>
+          <div id="accordian-dropdown-container">
+            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp">
+              <h4 id="acc-dropdown-content-header">Description</h4>
+              <p id="dropDown-content">
+                This was a redesign of the Visual ID website using the Wordpress CMS. The site is optimised for mobile, tablet and desktop.
+                The site has also been integrated with the existing Visual ID blog and linked to all related social media
+                platforms. The site is built from a theme and has been customized for a unique identity.
+              </p>
+              <br>
+              <br>
+              <p id="dropDown-content">
+                This project presented a great opportunity to learn how to use everybody's favourite content management system. Extensive
+                security measures were taken to keep the data secure, for example changing the wp-admin address, tracking
+                the site's traffic and blocking all hack attemps.
+              </p>
+              <br>
+              <br>
+              <p id="dropDown-content">
+                The objective was to bring a new look and feel to existing Visual ID website. Visual ID have a lot of products, partners,
+                pricing plans and clients so the website has a lot of content which needed to be managed so the site visitor
+                is not overwhelmed with information.
+              </p>
+            </div>
+            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp">
+
+              <h4 id="acc-dropdown-content-header">Technologies</h4>
+              <ol id="tech-list">
+                <li id="tech-item">Wordpress CMS</li>
+                <li id="tech-item">CSS3</li>
+                <li id="tech-item">PHP</li>
+                <li id="tech-item">Google Analytics</li>
+              </ol>
+            </div>
+            <div id="accordian-dropDown-right" class="col-lg-5 col-md-12 col-sm-12 animated fadeInUp">
+
+              <p id="dropDown-content">
+                <img class="vis-compressed" alt="VisualID brochure site" src="">
+              </p>
+
+              <br>
+              <br>
+              <p id="dropDown-content">
+                <a id="link" target="_blank" rel="noopener" href="http://visualid.com/"><i class="fa fa-link" aria-hidden="true"></i> Live Website</a>
+                <br>
+                <br>
+              </p>
+            </div>
+            <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
+              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 8); change();"
+              data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
+              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 10); change();"
+                data-toggle="tooltip" title="Next Project" data-placement="top"></i>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           <h3 id="accordian-header-text">
             <span id="title-left">LET'S GO / </span>
@@ -640,16 +855,16 @@
               </p>
             </div>
             <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
-              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 6); change();"
+              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 9); change();"
                 data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
-              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 8); change();"
+              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 11); change();"
                 data-toggle="tooltip" title="Next Project" data-placement="top"></i>
             </div>
           </div>
 
           <h3 id="accordian-header-text">
             <span id="title-left">QUICK TRIP / </span>
-            <span id="title-right">fuel efficiency app</span>
+            <span id="title-right">android app</span>
           </h3>
           <div id="accordian-dropdown-container">
             <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp">
@@ -708,128 +923,14 @@
               </p>
             </div>
             <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
-              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active',7); change();"
+              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 10); change();"
                 data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
-              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 9); change();"
+              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 12); change();"
                 data-toggle="tooltip" title="Next Project" data-placement="top"></i>
             </div>
           </div>
 
           
-          <h3 id="accordian-header-text">
-            <span id="title-left">THE GANNON TIMES / </span>
-            <span id="title-right">responsive news site</span>
-          </h3>
-          <div id="accordian-dropdown-container">
-            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp">
-              <h4 id="acc-dropdown-content-header">Description</h4>
-              <p id="dropDown-content">
-                This is a college project undertaken in order to learn the most popular responsive web design framework, Twitter Bootstrap.
-                It was also essential for gaining an undertanding of web typography and web design principles. The objective
-                was to use no colour until the very end and create a visually appealing page using just black and white,
-                an appropriate font combination and making correct use of the space available.
-              </p>
-              <br>
-              <br>
-              <p id="dropDown-content">
-                Inspirations came from the French newspaper 'Le Monde', 'The Financial Times' and 'The Boston Globe' news site. Extensive
-                research was carried out on newspaper design trends dating back as far as 1630. Then two concept designs
-                were drawn up in Photoshop and iterated again and again until they met the task objectives.
-              </p>
-              <br>
-              <br>
-              <p id="dropDown-content">
-                JavaScript was used to start a timer every 30 minutes to emulate a feed of updates to the site. The clock at the top of the
-                screen displays the current time of the device the site is being viewed on.
-                <br>
-                <br>
-              </p>
-            </div>
-            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp">
-              <h4 id="acc-dropdown-content-header">Technologies</h4>
-              <ol id="tech-list">
-                <li id="tech-item">HTML5</li>
-                <li id="tech-item">CSS3</li>
-                <li id="tech-item">Bootstrap 3</li>
-                <li id="tech-item">Javascript</li>
-                <li id="tech-item">Photoshop</li>
-              </ol>
-            </div>
-            <div id="accordian-dropDown-right" class="col-lg-5 col-md-12 col-sm-12 animated fadeInUp">
-              <p id="dropDown-content">
-                <img class="mac-compressed" alt="The Gannon Times" src="">
-              </p>
-              <br>
-              <br>
-              <p id="dropDown-content">
-                <a id="link" target="_blank" rel="noopener" href="https://www.flickr.com/photos/162114612@N02/albums/72157694355514712">
-                  <i class="fa fa-flickr" aria-hidden="true"></i> Flikr</a>
-                <a id="link" target="_blank" rel="noopener" href="gannon/index.html"><i class="fa fa-link" aria-hidden="true"></i> Live Website</a>
-                <br>
-                <br>
-              </p>
-            </div>
-            <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
-              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 8); change();"
-                data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
-              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 10); change();"
-                data-toggle="tooltip" title="Next Project" data-placement="top"></i>
-            </div>
-          </div>
-          <h3 id="accordian-header-text">
-            <span id="title-left">COUNSELLING BUSINESS / </span>
-            <span id="title-right">responsive site</span>
-          </h3>
-          <div id="accordian-dropdown-container">
-            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp">
-              <h4 id="acc-dropdown-content-header">Description</h4>
-              <p id="dropDown-content">
-                Responsive Web Design is going nowhere so I decided to make a RWD brochure site for my mother's new business venture. As
-                a branding excercise I also designed custom business cards from scratch.
-              </p>
-              <br>
-              <br>
-              <p id="dropDown-content">
-                The site uses CSS animations, has a contact form which relies on PHP for the back end handling and is built on Twitter Bootstrap.
-                The purpose of the site is to be an information point for people suffering from depression, alcoholism etc.
-              </p>
-              <br>
-              <br>
-              <p id="dropDown-content">
-                This website was a good exercise in gathering user requirements and showing the client the possibilities available to them
-                aswell as being a good excercise in copywriting and communicating visually with the end user.
-              </p>
-            </div>
-            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp">
-              <h4 id="acc-dropdown-content-header">Technologies</h4>
-              <ol id="tech-list">
-                <li id="tech-item">HTML5</li>
-                <li id="tech-item">CSS3</li>
-                <li id="tech-item">Bootstrap 3</li>
-                <li id="tech-item">Photoshop</li>
-              </ol>
-            </div>
-            <div id="accordian-dropDown-right" class="col-lg-5 col-md-12 col-sm-12 animated fadeInUp">
-              <p id="dropDown-content">
-                <img class="bus-compressed" alt="Counselling Business" src="">
-              </p>
-              <br>
-              <br>
-              <p id="dropDown-content">
-              <a id="link" target="_blank" rel="noopener" href="https://www.flickr.com/photos/162114612@N02/albums/72157697506950875">
-                <i class="fa fa-flickr" aria-hidden="true"></i> Flikr</a>
-                <a id="link" target="_blank" rel="noopener" href="counsellor/index.html"><i class="fa fa-link" aria-hidden="true"></i> Live Website</a>
-                <br>
-                <br>
-              </p>
-            </div>
-            <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
-              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 9); change();"
-                data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
-              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 11); change();"
-                data-toggle="tooltip" title="Next Project" data-placement="top"></i>
-            </div>
-          </div>
           <h3 id="accordian-header-text">
             <span id="title-left">LETS PAINT / </span>
             <span id="title-right">drawing application</span>
@@ -879,9 +980,9 @@
               </p>
             </div>
             <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
-              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 10); change();"
+              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 11); change();"
                 data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
-              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 12); change();"
+              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 13); change();"
                 data-toggle="tooltip" title="Next Project" data-placement="top"></i>
             </div>
           </div>
@@ -929,9 +1030,9 @@
               </p>
             </div>
             <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp last">
-              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 11); change();"
+              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 12); change();"
                 data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
-              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 13); change();"
+              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 14); change();"
                 data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
             </div>
           </div>
@@ -988,81 +1089,24 @@
               </p>
             </div>
             <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
-              <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 12); change();"
-                data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
-              <i id="down-arrow" class="fa fa-chevron-circle-down animated bounceInDown" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 14); change();"
-                data-toggle="tooltip" title="Next Project" data-placement="top"></i>
-            </div>
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-          <h3 id="accordian-header-text">
-            <span id="title-left">PAINT THE WEATHER / </span>
-            <span id="title-right">angular services</span>
-          </h3>
-          <div id="accordian-dropdown-container">
-            <div id="accordian-dropDown-left" class="col-lg-4 col-md-6 col-sm-8 animated fadeInUp bottom-acc-container last">
-              <h4 id="acc-dropdown-content-header">Description</h4>
-              <p id="dropDown-content">
-                Leveraging the OpenWeather API to use the users local weather to see paintings containing that weather e.g. if it's rainy in your location it returns 
-                a painting containing rain, if it's sunny the app returns a sunny painting etc.
-              </p>
-              <br>
-              <br>
-              <p id="dropDown-content">
-                The users latitude and longitude are worked out using vanilla Javascript. This then gets used to build an API endpoint which gets called with a HTTP get request on the OpenWeather API
-                and returns the users location name and weather. The weather phrase ('Cloudy') is then used to build a second API endpoint which gets called on the M.E.T museum API and this returns all paintings
-                associated with this phrase in JSON array.</p> 
-              
-                <br>
-                <br>
-                <p id="dropDown-content">
-                
-                Each JSON object has a number of attributes associated with it e.g. 'Painting Name', 'Painting Artist', 'Painting Image' etc.
-                One of these JSON objects gets selected at random and it's image is then set to be the image on the right of the screen, keeping the left of the screen free for further details about the painting.
-              </p>
-              <br>
-              <br>
-            </div>
-            <div id="accordian-dropDown-left" class="col-lg-2 col-md-6 col-sm-4 animated fadeInUp bottom-acc-container last">
-              <h4 id="acc-dropdown-content-header">Technologies</h4>
-              <ol id="tech-list">
-                <li id="tech-item">Angular 7</li>
-                <li id="tech-item">Typescript</li>
-                <li id="tech-item">SCSS</li>
-                <li id="tech-item">HTTP Client</li>
-              </ol>
-            </div>
-            <div id="accordian-dropDown-right" class="col-lg-5 col-md-12 col-sm-12 animated fadeInUp">
-              <p id="dropDown-content">
-                <img class="paint-weather img-responsive" alt="HTML Canvas Project" src="img/paint-weather.jpg">
-              </p>
-              <br>
-              <br>
-              <p id="dropDown-content">
-                <a id="link" target="_blank" rel="noopener" href="https://github.com/michaelgannon13/Paint-the-Weather" data-original-title=""
-                  title=""><i class="fa fa-github" aria-hidden="true"></i> View Github</a>
-                <br>
-                <br>
-              </p>
-            </div>
-
-            
-            <div id="accordian-dropDown-right" class="col-lg-1 col-md-12 col-sm-12 animated fadeInUp">
               <i id="up-arrow" class="fa fa-chevron-circle-up animated bounceInUp" aria-hidden="true" onclick="$('#accordion').accordion('option', 'active', 13); change();"
-                data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Previous Project"></i>
+                data-toggle="tooltip" title="Previous Project" data-placement="bottom"></i>
+             
             </div>
           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1128,7 +1172,7 @@
               <h2 id="exp-edu">Experience</h2>
               <figure>
                 <figcaption id="right-items">Accenture</figcaption>
-                <h6 id="right-exp">2017 - 2018
+                <h6 id="right-exp">2017 - Present
                   <br>SENIOR UI DEVELOPER</h6>
                 <p>
                   UI Developer in CIO Dublin, based in The Dock. Primarily concerned with Front-end technologies such as HTML, CSS/SASS, Bootstrap 4, AngularJS and Angular. 
